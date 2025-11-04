@@ -48,17 +48,17 @@
         <div class="card-3d__brand">LaMorada</div>
 
         <div class="card-3d__number">
-          {{ form?.value?.card_number || '•••• •••• •••• ••••' }}
+          {{ form.value.card_number || '•••• •••• •••• ••••' }}
         </div>
 
         <div class="card-3d__meta">
           <div class="holder">
             <span>Nombre</span>
-            <strong>{{ form?.value?.card_name || 'JOHN DOE' }}</strong>
+            <strong>{{ form.value.card_name || 'JOHN DOE' }}</strong>
           </div>
           <div class="exp">
             <span>Vence</span>
-            <strong>{{ form?.value?.expiration_date || 'MM/AA' }}</strong>
+            <strong>{{ form.value.expiration_date || 'MM/AA' }}</strong>
           </div>
         </div>
       </div>

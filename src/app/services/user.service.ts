@@ -54,7 +54,7 @@ export class UserService {
     return new HttpHeaders({ 'Content-Type': 'application/json', Authorization: token ? `Bearer ${token}` : '' });
   }
 
-  // ---------- JWT utils (tolerante) ----------
+  // ---------- JWT utils ----------
   private decodeJwt<T = JwtPayload>(jwt: string | null): T | null {
     if (!jwt) return null;
     try {
@@ -66,7 +66,7 @@ export class UserService {
     } catch { return null; }
   }
 
-  /** Extrae id/rol/nombre/email (y si hay) phone/age/specialty del JWT, de forma tolerante */
+  /** Extrae id/rol/nombre/email/phone/age/specialty del JWT */
   profileFromToken(jwt: string | null): {
     id?: string; role?: string; name?: string; email?: string; phone?: string; age?: number; specialty?: string;
   } {
@@ -81,7 +81,7 @@ export class UserService {
     return { id: id ? String(id) : undefined, role, name, email, phone, age, specialty };
   }
 
-  // ---------- Bootstrap UI desde token (sin /user/me) ----------
+  // ---------- Bootstrap desde token ----------
   bootstrapFromToken(): Observable<{ role?: string; name?: string }> {
     const jwt = this.getToken();
     if (!jwt) return of({});
@@ -101,16 +101,12 @@ export class UserService {
   }
 
   // ---------- USER ----------
+  /** Registro (ahora con confirmación por correo automática) */
   register(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/user/register`, data);
   }
 
-  /**
-   * Con este back **NO existe /user/me**.
-   * - Si rol=psychologist: intenta completar el registro público con GET /user/get-psychologists.
-   * - Si rol=patient: devuelve sólo lo que hay en el token.
-   * Devuelve SIEMPRE un objeto "tipo User" (best-effort) para componentes que esperan _id/role/name/email.
-   */
+  /** Obtener perfil básico (token + API pública) */
   getMe(): Observable<any> {
     const t = this.profileFromToken(this.getToken());
     const base = {
@@ -126,12 +122,12 @@ export class UserService {
     if ((t.role ?? '').toLowerCase() === 'psychologist') {
       return this.http.get(`${this.baseUrl}/user/get-psychologists`).pipe(
         map((r: any) => {
-          const list: any[] = (r?.users ?? r?.psychologists ?? r?.data ?? r?.items ?? []);
+          const list: any[] = (r?.users ?? r?.psychologists ?? r?.data ?? []);
           const fromList = list.find(u =>
-            String(u?._id ?? u?.id ?? u?.user_id ?? '') === String(t.id ?? '') ||
+            String(u?._id ?? '') === String(t.id ?? '') ||
             String(u?.email ?? '') === String(t.email ?? '')
           ) || {};
-          return { ...fromList, ...base, _id: base._id ?? fromList?._id };
+          return { ...fromList, ...base };
         }),
         catchError(() => of(base))
       );
@@ -140,29 +136,39 @@ export class UserService {
     return of(base);
   }
 
-  /** PUT /user/:id usando el id del JWT */
+  /** PUT /user/:id — actualizar perfil */
   updateMe(id: string, data: any): Observable<any> {
     return this.http.put(`${this.baseUrl}/user/${encodeURIComponent(id)}`, data, { headers: this.getAuthHeaders() });
   }
 
-  /** Conveniencia: usa id del token automáticamente */
+  /** Conveniencia: usa el id del JWT */
   updateMeCompat(data: any): Observable<any> {
     const t = this.profileFromToken(this.getToken());
     if (!t.id) return of({ error: 'NO_ID_IN_TOKEN' });
     return this.updateMe(t.id, data);
   }
 
+  /** Solicitar código de recuperación */
+  requestPasswordReset(email: string): Observable<any> {
+    return this.http.post(`${this.baseUrl}/user/request-password-reset`, { email });
+  }
+
+  /** Restablecer contraseña con código */
+  resetPassword(data: { email: string; code: string; newPassword: string; confirmPassword: string }): Observable<any> {
+    return this.http.post(`${this.baseUrl}/user/reset-password`, data);
+  }
+
+  // ---------- Consultas ----------
   getPatients(): Observable<any> {
-    // requiere ser psicólogo (el back valida)
     return this.http.get(`${this.baseUrl}/user/get-patients`, { headers: this.getAuthHeaders() });
   }
 
   getPsychologists(): Observable<{ list: Psychologist[]; error?: any }> {
     return this.http.get(`${this.baseUrl}/user/get-psychologists`).pipe(
       map((r: any) => {
-        const raw = r?.psychologists ?? r?.users ?? r?.data ?? r?.result ?? r?.items ?? [];
+        const raw = r?.psychologists ?? r?.users ?? [];
         const list: Psychologist[] = (Array.isArray(raw) ? raw : []).map((u: any) => {
-          const _id = u?._id ?? u?.id ?? u?.user_id ?? u?.uid ?? '';
+          const _id = u?._id ?? '';
           return { _id: String(_id), name: u?.name ?? '', email: u?.email ?? '' };
         }).filter(p => !!p._id);
         return { list };

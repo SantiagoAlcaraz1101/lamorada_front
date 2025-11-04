@@ -30,10 +30,6 @@ h2 {
   padding: 16px;
   box-shadow: 0 10px 34px rgba(143, 107, 255, 0.14);
 }
-.card.warn {
-  border-color: #ffe4b3;
-  background: #fff9eb;
-}
 .card.muted {
   color: #6b6b6b;
 }
@@ -42,13 +38,20 @@ h2 {
 .form .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
-  gap: 14px 18px;
+  gap: 18px 24px; /* más espacio */
   margin: 10px 0 20px;
 }
 @media (max-width: 860px) {
   .form .grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Corrección para inputs de contraseña */
+.form .grid input[type='password'] {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
 }
 
 /* Etiquetas + inputs */
@@ -153,4 +156,23 @@ code {
 .wrap .btn:empty,
 .wrap .link:empty {
   display: none !important;
+}
+
+/* Estado de botón primario deshabilitado */
+.btn.primary[disabled] {
+  background: #bba3ff;
+  border-color: #bba3ff;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* Botón de eliminar */
+.btn.danger {
+  background: #a82c2c;
+  color: #fff;
+  border: none;
+}
+.btn.danger:hover {
+  background: #c64545;
+  box-shadow: 0 8px 20px rgba(168, 44, 44, 0.25);
 }

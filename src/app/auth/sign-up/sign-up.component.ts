@@ -15,7 +15,7 @@ import { UserService } from '../../services/user.service';
 // Política del backend (NO acepta ".", sí un símbolo de @$!%*?&)
 const PASSWORD_POLICY = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-// Validador para confirmar contraseña (UI)
+// Validador para confirmar contraseña
 function passwordsMatchValidator(group: AbstractControl): ValidationErrors | null {
   const p = (group.get('password')?.value ?? '').toString().trim();
   const c = (group.get('confirmPassword')?.value ?? '').toString().trim();
@@ -40,8 +40,7 @@ export class SignUpComponent {
   msg: string | null = null;
   error: string | null = null;
 
-  // ---- Logo con fallback automático ----
-  logoUrl = 'assets/lamorada-logo.png'; // pon tu archivo aquí: src/assets/lamorada-logo.png
+  logoUrl = 'assets/lamorada-logo.png';
   private readonly fallbackSvg =
     'data:image/svg+xml;utf8,' +
     encodeURIComponent(`
@@ -65,7 +64,7 @@ export class SignUpComponent {
     `);
 
   onLogoError() {
-    this.logoUrl = this.fallbackSvg; // si falla el PNG, mostramos el SVG de respaldo
+    this.logoUrl = this.fallbackSvg;
   }
 
   pwVisible = false;
@@ -184,14 +183,19 @@ export class SignUpComponent {
     try {
       const resp = await firstValueFrom(this.user.register(payload));
       const msg = this.extractMsg(resp);
+
       if (resp && resp.success === false) {
         this.error = this.translateBackendMessage(msg);
         this.loading = false;
         return;
       }
-      this.msg = 'Cuenta creada. Ingresa ahora.';
+
+      // ✅ Nuevo comportamiento con confirmación por correo
+      this.msg = 'Cuenta creada correctamente. 📧 Revisa tu correo electrónico para la confirmación.';
       this.loading = false;
-      this.router.navigate(['/sign-in']);
+
+      // Esperamos un poco antes de redirigir
+      setTimeout(() => this.router.navigate(['/sign-in']), 2500);
     } catch (e: any) {
       const msg = this.extractMsg(e?.error);
       this.error = this.translateBackendMessage(msg);

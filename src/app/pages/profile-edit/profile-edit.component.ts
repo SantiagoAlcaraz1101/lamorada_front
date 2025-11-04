@@ -76,13 +76,13 @@ export class ProfileEditComponent {
     if (this.isBrowser) setTimeout(() => (this.loading = false), 0);
   }
 
-  /** Validación simple de contraseña (puede ser la misma que ya usas) */
+  /** Validación de par de contraseñas */
   private validatePasswordPair(): string | null {
     const p = (this.form.controls.password.value ?? '').trim();
     const r = (this.form.controls.rePassword.value ?? '').trim();
 
     if (!p || !r) {
-      return 'El servidor exige establecer una contraseña válida para guardar cambios. Completa ambos campos (puede ser la misma).';
+      return 'Debes escribir una contraseña válida en ambos campos (puede ser la actual).';
     }
     if (p !== r) return 'Las contraseñas no coinciden.';
 
@@ -90,18 +90,17 @@ export class ProfileEditComponent {
     const hasU = /[A-Z]/.test(p);
     const hasL = /[a-z]/.test(p);
     const hasD = /\d/.test(p);
-    const hasS = /[^A-Za-z0-9]/.test(p);
+    const hasS = /[@$!%*?&]/.test(p);
     if (!(okLen && hasU && hasL && hasD && hasS)) {
-      return 'La contraseña debe tener mínimo 8 caracteres, con mayúscula, minúscula, dígito y símbolo.';
+      return 'La contraseña debe tener mínimo 8 caracteres, con mayúscula, minúscula, número y símbolo.';
     }
     return null;
   }
 
-  /** Carga inicial: token + best effort con /me */
+  /** Carga inicial del perfil */
   public fetch() {
     this.sub?.unsubscribe();
 
-    // 1) Pre-llenar desde el token
     const t = this.userSrv.profileFromToken(this.userSrv.getToken());
     this.role = t.role === 'patient' || t.role === 'psychologist' ? (t.role as Role) : 'unknown';
     this.hasIdentity = !!t.id;
@@ -120,7 +119,6 @@ export class ProfileEditComponent {
       return;
     }
 
-    // 2) Completar con el backend
     this.loading = true;
     this.sub = this.userSrv
       .getMe()
@@ -153,6 +151,7 @@ export class ProfileEditComponent {
     this.missingDoc = false;
   }
 
+  /** Guardar cambios de perfil */
   submit() {
     if (!this.hasIdentity) {
       this.router.navigateByUrl('/sign-up');
@@ -192,12 +191,38 @@ export class ProfileEditComponent {
             return;
           }
           if (data.name) this.userSrv.setName(data.name);
-          alert('Perfil actualizado ✅');
+          alert('Perfil actualizado correctamente ✅');
+          setTimeout(() => this.fetch(), 1500);
         },
         error: (err) => {
-          const msg = (err?.error?.message || err?.message || '').toString();
-          alert(msg || 'No se pudo actualizar el perfil.');
+          const raw = (err?.error?.message || err?.message || '').toUpperCase();
+          let msg = 'No se pudo actualizar el perfil.';
+          if (raw.includes('PASSWORD_MISMATCH')) msg = 'Las contraseñas no coinciden.';
+          else if (raw.includes('INVALID PASSWORD')) msg = 'La contraseña no cumple la política.';
+          else if (raw.includes('FIELDS NOT UPDATABLE')) msg = 'Algunos campos no pueden modificarse.';
+          else if (raw.includes('USER NOT FOUND')) msg = 'No se encontró el usuario.';
+          alert(msg);
         },
       });
+  }
+
+  /** 🗑️ Eliminar cuenta del usuario */
+  deleteAccount() {
+    const confirmDelete = confirm(
+      '⚠️ Esta acción eliminará tu cuenta permanentemente. ¿Deseas continuar?'
+    );
+    if (!confirmDelete) return;
+
+    this.userSrv.deleteMe().subscribe({
+      next: () => {
+        alert('Cuenta eliminada exitosamente 🗑️');
+        this.userSrv.clearToken();
+        this.router.navigate(['/sign-in']);
+      },
+      error: (err) => {
+        const msg = (err?.error?.message || err?.message || '').toString();
+        alert(msg || 'No se pudo eliminar la cuenta.');
+      },
+    });
   }
 }

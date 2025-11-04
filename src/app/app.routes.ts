@@ -30,89 +30,98 @@ import { PaymentComponent } from './pages/payment/payment.component';
 // Checkout
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 
+// Recuperación de contraseña (nuevo)
+import { PasswordRequestComponent } from './auth/password-request/password-request.component';
+import { PasswordResetComponent } from './auth/password-reset/password-reset.component';
+
 // Guards
 import { AuthRoleGuard } from './guards/auth-role.guard';
 import { clientOnlyGuard } from './guards/client-only.guard';
 
+
+
 export const routes: Routes = [
+  // ------------------- AUTENTICACIÓN -------------------
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
 
+  // ------------------- PÁGINAS BASE -------------------
   { path: 'home', component: HomeComponent },
   { path: 'product', component: ProductComponent },
-
-  // Posts
-  { path: 'post', component: PostListComponent }, // público
-
   { path: 'podcast', component: PodcastComponent },
 
-  // Crear producto (lazy loaded)
+  // ------------------- POSTS -------------------
+  { path: 'post', component: PostListComponent }, // público
   {
-  path: 'product/create',
-  loadComponent: () => import('./pages/product/product-create.component')
-    .then(m => m.ProductCreateComponent),
-  canActivate: [AuthRoleGuard],
-  data: { expectedRoles: ['psychologist'] }
+    path: 'post/editor',
+    loadComponent: () =>
+      import('./pages/post/post-editor.component').then((m) => m.PostEditorComponent),
+    canActivate: [AuthRoleGuard],
+    data: { expectedRoles: ['psychologist'] },
   },
 
-  // Carrito / Citas (protegidas)
+  // ------------------- PRODUCTOS -------------------
+  {
+    path: 'product/create',
+    loadComponent: () =>
+      import('./pages/product/product-create.component').then((m) => m.ProductCreateComponent),
+    canActivate: [AuthRoleGuard],
+    data: { expectedRoles: ['psychologist'] },
+  },
+
+  // ------------------- CARRITO / CITAS -------------------
   {
     path: 'cart',
     component: CartComponent,
     canActivate: [AuthRoleGuard],
-    data: { expectedRoles: ['patient', 'psychologist'] }
+    data: { expectedRoles: ['patient', 'psychologist'] },
   },
   {
     path: 'appointment',
     component: AppointmentComponent,
     canActivate: [AuthRoleGuard],
-    data: { expectedRoles: ['patient', 'psychologist'] }
+    data: { expectedRoles: ['patient', 'psychologist'] },
   },
 
-  // Disponibilidad
+  // ------------------- DISPONIBILIDAD -------------------
   { path: 'availability', component: AvailabilityComponent }, // pública
   {
     path: 'availability/manage',
     component: AvailabilityManageComponent,
     canActivate: [AuthRoleGuard],
-    data: { expectedRoles: ['psychologist'] }
+    data: { expectedRoles: ['psychologist'] },
   },
 
-  // Perfil (público): lista todos los psicólogos
-  { path: 'profile', component: ProfileComponent },
-
-  // Editar perfil propio (protegida + SOLO CLIENTE)
+  // ------------------- PERFIL -------------------
+  { path: 'profile', component: ProfileComponent }, // público
   {
     path: 'profile/edit',
     component: ProfileEditComponent,
-    canMatch: [clientOnlyGuard],  // <- evita SSR
+    canMatch: [clientOnlyGuard], // evita SSR
     canActivate: [AuthRoleGuard],
-    data: { expectedRoles: ['patient', 'psychologist'] }
+    data: { expectedRoles: ['patient', 'psychologist'] },
   },
-  // Métodos de pago (protegida + SOLO CLIENTE)
+
+  // ------------------- PAGOS -------------------
   {
     path: 'payment',
     component: PaymentComponent,
     canActivate: [AuthRoleGuard],
-    data: { expectedRoles: ['patient', 'psychologist'] }
+    data: { expectedRoles: ['patient', 'psychologist'] },
   },
-  // Checkout (protegida + SOLO CLIENTE)
   {
     path: 'checkout',
     component: CheckoutComponent,
     canActivate: [AuthRoleGuard],
-    data: { expectedRoles: ['patient', 'psychologist'] }
+    data: { expectedRoles: ['patient', 'psychologist'] },
   },
 
-  // Post Editor (lazy loaded)
-  {
-  path: 'post/editor',
-  loadComponent: () => import('./pages/post/post-editor.component').then(m => m.PostEditorComponent),
-  canActivate: [AuthRoleGuard],
-  data: { expectedRoles: ['psychologist'] }
-  },
+  // ------------------- RECUPERACIÓN DE CONTRASEÑA -------------------
+  { path: 'password-request', component: PasswordRequestComponent },
 
+  { path: 'password-reset', component: PasswordResetComponent },
 
+  // ------------------- REDIRECCIONES -------------------
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', redirectTo: 'home' },
 ];
