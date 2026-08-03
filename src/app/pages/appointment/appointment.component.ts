@@ -1,3 +1,4 @@
+import { environment } from '../../../environments/environment';
 import { Component, Inject, PLATFORM_ID, ChangeDetectorRef } from '@angular/core';
 import { CommonModule, NgIf, NgFor, isPlatformBrowser } from '@angular/common';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -146,7 +147,7 @@ export class AppointmentComponent {
 
   private fetchPsychologists(): Promise<void> {
     return new Promise((resolve) => {
-      const url = 'https://la-morada-back-production.up.railway.app/user/get-psychologists';
+      const url = `${environment.API_BASE}/user/get-psychologists`;
       this.http.get<any>(url, { headers: this.headers() })
         .subscribe({ next: (r) => { this.psychologists = this.hydrateUsers(this.extractUsers(r)); }, error: () => { this.psychologists = []; }, complete: () => resolve() });
     });
@@ -154,7 +155,7 @@ export class AppointmentComponent {
 
   private fetchPatients(): Promise<void> {
     return new Promise((resolve) => {
-      const url = 'https://la-morada-back-production.up.railway.app/user/get-patients';
+      const url = `${environment.API_BASE}/user/get-patients`;
       this.http.get<any>(url, { headers: this.headers() })
         .subscribe({ next: (r) => { this.patients = this.hydrateUsers(this.extractUsers(r)); }, error: () => { this.patients = []; }, complete: () => resolve() });
     });
@@ -268,12 +269,10 @@ export class AppointmentComponent {
     }
   }
 
-  // UTC fijo para conservar la hora elegida
-  private toStartISO(date: string, hourHHmm: string): string {
-    const [y, m, d] = date.split('-').map(Number);
-    const [H, Min] = hourHHmm.split(':').map(Number);
-    const dt = new Date(Date.UTC(y, m - 1, d, H, Min, 0, 0));
-    return dt.toISOString();
+private toStartISO(date: string, hourHHmm: string): string {
+    const [year, month, day] = date.split('-').map(Number);
+    const [hour, minute] = hourHHmm.split(':').map(Number);
+    return new Date(year, month - 1, day, hour, minute, 0, 0).toISOString();
   }
 
   public create() {

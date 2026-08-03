@@ -14,7 +14,7 @@ export class CartComponent {
   private cartSvc = inject(CartService);
 
   /** Moneda a mostrar en la UI */
-  currencyCode: string = 'USD';
+  currencyCode: string = 'COP';
 
   loading = false;
   err = '';

@@ -1,3 +1,4 @@
+import { environment } from '../../environments/environment';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
@@ -12,7 +13,7 @@ export interface PostDto {
 
 @Injectable({ providedIn: 'root' })
 export class PostApiService {
-  private readonly baseUrl = 'https://la-morada-back-production.up.railway.app/post';
+  private readonly baseUrl = `${environment.API_BASE}/post`;
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {}
 

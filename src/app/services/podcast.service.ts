@@ -1,3 +1,4 @@
+import { environment } from '../../environments/environment';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
@@ -12,7 +13,7 @@ export interface CreatePodcastDto {
 
 @Injectable({ providedIn: 'root' })
 export class PodcastService {
-  private readonly baseUrl = 'https://la-morada-back-production.up.railway.app/podcast';
+  private readonly baseUrl = `${environment.API_BASE}/podcast`;
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {}
 
