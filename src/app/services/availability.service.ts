@@ -1,3 +1,4 @@
+import { environment } from '../../environments/environment';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
@@ -7,7 +8,7 @@ import { EN2ES_PLAIN } from '../shared/day-utils';
 
 @Injectable({ providedIn: 'root' })
 export class AvailabilityService {
-  private baseUrl = 'https://la-morada-back-production.up.railway.app/availability';
+  private baseUrl = `${environment.API_BASE}/availability`;
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {}
 

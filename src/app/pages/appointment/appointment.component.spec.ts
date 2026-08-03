@@ -1,3 +1,5 @@
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppointmentComponent } from './appointment.component';
@@ -8,7 +10,8 @@ describe('AppointmentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppointmentComponent]
+      imports: [AppointmentComponent],
+      providers: [provideHttpClient(), provideRouter([])],
     })
     .compileComponents();
 

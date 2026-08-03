@@ -6,10 +6,10 @@ import { PaymentService } from '../../services/payment.service';
 
 type PaymentDoc = {
   _id: string;
-  card_number: string;
+  card_last4: string;
+  card_brand: string;
   card_name: string;
   expiration_date: string; // MM/AA
-  cvv?: string;
   createdAt?: string;
   updatedAt?: string;
 };

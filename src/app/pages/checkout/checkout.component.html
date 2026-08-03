@@ -45,14 +45,14 @@
         <ul class="list">
           <li *ngFor="let c of cards">
             <div class="info">
-              <div class="title">{{ mask(c.card_number) }}</div>
+              <div class="title">{{ c.card_brand }} · {{ mask(c.card_last4) }}</div>
               <div class="meta">
                 <span>{{ c.card_name }}</span>
                 <span>Vence: {{ c.expiration_date }}</span>
               </div>
             </div>
             <button class="btn primary" (click)="onPay(c)" [disabled]="paying">
-              {{ paying ? 'Procesando…' : 'Pagar' }}
+              {{ paying ? 'Procesando…' : 'Pagar (simulación)' }}
             </button>
           </li>
         </ul>

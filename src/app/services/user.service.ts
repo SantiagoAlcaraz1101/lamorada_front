@@ -1,3 +1,4 @@
+import { environment } from '../../environments/environment';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
@@ -24,7 +25,7 @@ type JwtPayload = {
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
-  private baseUrl = 'https://la-morada-back-production.up.railway.app';
+  private baseUrl = environment.API_BASE;
 
   constructor(
     private http: HttpClient,
