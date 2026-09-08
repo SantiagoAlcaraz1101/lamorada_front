@@ -47,6 +47,11 @@ Quality Gate: antes ERROR, después OK. No son puertas comparables sobre el mism
 
 ## Correcciones y merges
 
+Solicitudes de integración verificables:
+
+- [PR frontend #2](https://github.com/SantiagoAlcaraz1101/lamorada_front/pull/2).
+- [PR backend #2](https://github.com/SantiagoAlcaraz1101/la-morada-back/pull/2).
+
 Frontend: etiquetas asociadas a campos, contraste de botones morados, semántica de tabla, interfaces OnInit, dependencias readonly, eliminación de APIs obsoletas y migración de las plantillas de citas/carrito a @if/@for. Backend: simplificaciones equivalentes de validación y JWT, eliminación explícita de la contraseña de la respuesta de login y conjunto de estados permitidos de citas.
 
 Los cambios se proponen mediante PR desde fix/sonarqube-alcance hacia evidencia/sonarqube-comparacion en cada fork del estudiante. Se utiliza merge commit (dos padres), no squash. main y los repositorios upstream no se modifican.
