@@ -1,0 +1,266 @@
+{
+  "generatedAt": "2026-09-08T16:03:28.334Z",
+  "baselines": {
+    "frontend": "faed5bb2f8d41f1f6891e31e915240995a2de6ab",
+    "backend": "40db2d3a738b28dc4f205e43ea5d2056d6290f5b"
+  },
+  "profiles": {
+    "la-morada": [
+      {
+        "key": "a0b9d3c8-d8ca-4a52-bc07-5654bf28366f",
+        "language": "css",
+        "name": "Sonar way",
+        "activeRuleCount": 40,
+        "rulesUpdatedAt": "2026-09-03T15:41:13+0000"
+      },
+      {
+        "key": "2604109f-6109-453a-80e6-9587012b8b11",
+        "language": "js",
+        "name": "Sonar way",
+        "activeRuleCount": 420,
+        "rulesUpdatedAt": "2026-09-03T15:41:13+0000"
+      },
+      {
+        "key": "62b5a004-f764-4d62-906e-f325e13a2f73",
+        "language": "ts",
+        "name": "Sonar way",
+        "activeRuleCount": 435,
+        "rulesUpdatedAt": "2026-09-03T15:41:15+0000"
+      },
+      {
+        "key": "0d016915-0ffa-421a-84bd-7b763b375232",
+        "language": "web",
+        "name": "Sonar way",
+        "activeRuleCount": 61,
+        "rulesUpdatedAt": "2026-09-03T15:41:14+0000"
+      }
+    ],
+    "la-morada-despues": [
+      {
+        "key": "a0b9d3c8-d8ca-4a52-bc07-5654bf28366f",
+        "language": "css",
+        "name": "Sonar way",
+        "activeRuleCount": 40,
+        "rulesUpdatedAt": "2026-09-03T15:41:13+0000"
+      },
+      {
+        "key": "2604109f-6109-453a-80e6-9587012b8b11",
+        "language": "js",
+        "name": "Sonar way",
+        "activeRuleCount": 420,
+        "rulesUpdatedAt": "2026-09-03T15:41:13+0000"
+      },
+      {
+        "key": "62b5a004-f764-4d62-906e-f325e13a2f73",
+        "language": "ts",
+        "name": "Sonar way",
+        "activeRuleCount": 435,
+        "rulesUpdatedAt": "2026-09-03T15:41:15+0000"
+      },
+      {
+        "key": "0d016915-0ffa-421a-84bd-7b763b375232",
+        "language": "web",
+        "name": "Sonar way",
+        "activeRuleCount": 61,
+        "rulesUpdatedAt": "2026-09-03T15:41:14+0000"
+      }
+    ]
+  },
+  "sameProductionFiles": 55,
+  "originalTests": {
+    "backend": true,
+    "frontend": true,
+    "passed": true,
+    "startedAt": "2026-09-08T15:59:31.513Z",
+    "finishedAt": "2026-09-08T15:59:46.819Z"
+  },
+  "additionalTemplateTests": {
+    "passed": 4,
+    "includedInComparativeCoverage": false
+  },
+  "before": {
+    "project": "la-morada",
+    "analysisId": "3c39d019-b105-47da-84bd-6f450d91125e",
+    "counts": {
+      "totalServerIssues": 104,
+      "scopeUniqueIssues": 93,
+      "testIssues": 2,
+      "outsideScopeIssues": 9,
+      "scopeHotspots": 0
+    },
+    "gate": {
+      "status": "ERROR",
+      "conditions": [
+        {
+          "status": "ERROR",
+          "metricKey": "new_coverage",
+          "comparator": "LT",
+          "errorThreshold": "80",
+          "actualValue": "22.6"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_duplicated_lines_density",
+          "comparator": "GT",
+          "errorThreshold": "3",
+          "actualValue": "0.0"
+        },
+        {
+          "status": "ERROR",
+          "metricKey": "new_violations",
+          "comparator": "GT",
+          "errorThreshold": "0",
+          "actualValue": "6"
+        }
+      ],
+      "ignoredConditions": false,
+      "period": {
+        "mode": "PREVIOUS_VERSION",
+        "date": "2026-09-08T15:30:45+0000"
+      },
+      "caycStatus": "compliant"
+    },
+    "measures": [
+      {
+        "metric": "coverage",
+        "value": "46.8",
+        "bestValue": false
+      },
+      {
+        "metric": "complexity",
+        "value": "623"
+      },
+      {
+        "metric": "duplicated_lines_density",
+        "value": "0.0",
+        "bestValue": true
+      },
+      {
+        "metric": "lines_to_cover",
+        "value": "1142"
+      },
+      {
+        "metric": "uncovered_conditions",
+        "value": "373",
+        "bestValue": false
+      },
+      {
+        "metric": "branch_coverage",
+        "value": "34.4",
+        "bestValue": false
+      },
+      {
+        "metric": "uncovered_lines",
+        "value": "538",
+        "bestValue": false
+      },
+      {
+        "metric": "cognitive_complexity",
+        "value": "302",
+        "bestValue": false
+      },
+      {
+        "metric": "ncloc",
+        "value": "3719"
+      },
+      {
+        "metric": "conditions_to_cover",
+        "value": "569"
+      },
+      {
+        "metric": "line_coverage",
+        "value": "52.9",
+        "bestValue": false
+      }
+    ]
+  },
+  "after": {
+    "project": "la-morada-despues",
+    "analysisId": "dc21c2e0-1f47-4c8f-ba9b-02b283ead1e8",
+    "counts": {
+      "totalServerIssues": 11,
+      "scopeUniqueIssues": 0,
+      "testIssues": 2,
+      "outsideScopeIssues": 9,
+      "scopeHotspots": 0
+    },
+    "gate": {
+      "status": "OK",
+      "conditions": [
+        {
+          "status": "OK",
+          "metricKey": "new_duplicated_lines_density",
+          "comparator": "GT",
+          "errorThreshold": "3",
+          "actualValue": "0.0"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_violations",
+          "comparator": "GT",
+          "errorThreshold": "0",
+          "actualValue": "0"
+        }
+      ],
+      "ignoredConditions": false,
+      "period": {
+        "mode": "PREVIOUS_VERSION",
+        "date": "2026-09-08T15:53:03+0000"
+      },
+      "caycStatus": "compliant"
+    },
+    "measures": [
+      {
+        "metric": "coverage",
+        "value": "46.5",
+        "bestValue": false
+      },
+      {
+        "metric": "complexity",
+        "value": "618"
+      },
+      {
+        "metric": "duplicated_lines_density",
+        "value": "0.0",
+        "bestValue": true
+      },
+      {
+        "metric": "lines_to_cover",
+        "value": "1149"
+      },
+      {
+        "metric": "uncovered_conditions",
+        "value": "370",
+        "bestValue": false
+      },
+      {
+        "metric": "branch_coverage",
+        "value": "33.9",
+        "bestValue": false
+      },
+      {
+        "metric": "uncovered_lines",
+        "value": "544",
+        "bestValue": false
+      },
+      {
+        "metric": "cognitive_complexity",
+        "value": "298",
+        "bestValue": false
+      },
+      {
+        "metric": "ncloc",
+        "value": "3765"
+      },
+      {
+        "metric": "conditions_to_cover",
+        "value": "560"
+      },
+      {
+        "metric": "line_coverage",
+        "value": "52.7",
+        "bestValue": false
+      }
+    ]
+  }
+}

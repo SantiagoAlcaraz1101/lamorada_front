@@ -2,15 +2,15 @@ import { environment } from '../../environments/environment';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
-import { catchError, map, Observable, of, switchMap, throwError } from 'rxjs';
+import { catchError, map, Observable, throwError } from 'rxjs';
 import { AvailabilityDoc } from '../models/availability.model';
 import { EN2ES_PLAIN } from '../shared/day-utils';
 
 @Injectable({ providedIn: 'root' })
 export class AvailabilityService {
-  private baseUrl = `${environment.API_BASE}/availability`;
+  private readonly baseUrl = `${environment.API_BASE}/availability`;
 
-  constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(private readonly http: HttpClient, @Inject(PLATFORM_ID) private readonly platformId: Object) {}
 
   private isBrowser() { return isPlatformBrowser(this.platformId); }
   private headers(): HttpHeaders {

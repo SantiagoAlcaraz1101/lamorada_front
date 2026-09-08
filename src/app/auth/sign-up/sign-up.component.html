@@ -16,7 +16,7 @@
       <p>Un registro rápido para entrar a tu espacio de bienestar 💜</p>
     </header>
 
-    <div class="card" role="region" aria-labelledby="signup-title">
+    <section class="card" aria-labelledby="signup-title">
       <form [formGroup]="form" (ngSubmit)="submit()" class="form" autocomplete="off" novalidate>
         <!-- Sección 1 -->
         <div class="section">
@@ -25,10 +25,10 @@
           </div>
           <div class="grid-2">
             <div class="field">
-              <label class="label">Tipo de documento</label>
+              <label class="label" for="signup-document_type">Tipo de documento</label>
               <div class="input-wrap">
                 <span class="ico">🪪</span>
-                <select
+                <select id="signup-document_type"
                   formControlName="document_type"
                   [class.invalid]="f['document_type'].touched && f['document_type'].invalid"
                   required
@@ -40,10 +40,10 @@
             </div>
 
             <div class="field">
-              <label class="label">Número de documento</label>
+              <label class="label" for="signup-_id">Número de documento</label>
               <div class="input-wrap">
                 <span class="ico">#</span>
-                <input
+                <input id="signup-_id"
                   formControlName="_id"
                   placeholder="Ej: 123456789"
                   [class.invalid]="f['_id'].touched && f['_id'].invalid"
@@ -58,10 +58,10 @@
           <div class="legend"><span class="dot"></span> <span>Datos personales</span></div>
 
           <div class="field">
-            <label class="label">Nombre(s)</label>
+            <label class="label" for="signup-name">Nombre(s)</label>
             <div class="input-wrap">
               <span class="ico">👤</span>
-              <input
+              <input id="signup-name"
                 formControlName="name"
                 placeholder="Tu nombre"
                 [class.invalid]="f['name'].touched && f['name'].invalid"
@@ -71,10 +71,10 @@
 
           <div class="grid-2">
             <div class="field">
-              <label class="label">Primer apellido</label>
+              <label class="label" for="signup-last_name1">Primer apellido</label>
               <div class="input-wrap">
                 <span class="ico">👤</span>
-                <input
+                <input id="signup-last_name1"
                   formControlName="last_name1"
                   placeholder="Primer apellido"
                   [class.invalid]="f['last_name1'].touched && f['last_name1'].invalid"
@@ -82,10 +82,10 @@
               </div>
             </div>
             <div class="field">
-              <label class="label">Segundo apellido</label>
+              <label class="label" for="signup-last_name2">Segundo apellido</label>
               <div class="input-wrap">
                 <span class="ico">👤</span>
-                <input
+                <input id="signup-last_name2"
                   formControlName="last_name2"
                   placeholder="Segundo apellido"
                   [class.invalid]="f['last_name2'].touched && f['last_name2'].invalid"
@@ -101,10 +101,10 @@
 
           <div class="grid-2">
             <div class="field">
-              <label class="label">Edad</label>
+              <label class="label" for="signup-age">Edad</label>
               <div class="input-wrap">
                 <span class="ico">🎂</span>
-                <input
+                <input id="signup-age"
                   type="number"
                   min="1"
                   max="120"
@@ -116,10 +116,10 @@
             </div>
 
             <div class="field">
-              <label class="label">Teléfono</label>
+              <label class="label" for="signup-phone">Teléfono</label>
               <div class="input-wrap">
                 <span class="ico">📞</span>
-                <input
+                <input id="signup-phone"
                   formControlName="phone"
                   inputmode="tel"
                   placeholder="Ej: 3001234567"
@@ -130,10 +130,10 @@
           </div>
 
           <div class="field">
-            <label class="label">Email</label>
+            <label class="label" for="signup-email">Email</label>
             <div class="input-wrap">
               <span class="ico">✉️</span>
-              <input
+              <input id="signup-email"
                 type="email"
                 autocomplete="email"
                 inputmode="email"
@@ -150,10 +150,10 @@
           <div class="legend"><span class="dot"></span> <span>Seguridad</span></div>
 
           <div class="field">
-            <label class="label">Contraseña</label>
+            <label class="label" for="signup-password">Contraseña</label>
             <div class="input-wrap">
               <span class="ico">🔒</span>
-              <input
+              <input id="signup-password"
                 [type]="pwVisible ? 'text' : 'password'"
                 placeholder="Mín. 8, 1 mayúscula, 1 número y 1 símbolo de @$!%*?&"
                 formControlName="password"
@@ -178,10 +178,10 @@
           </div>
 
           <div class="field">
-            <label class="label">Confirmar contraseña</label>
+            <label class="label" for="signup-confirmPassword">Confirmar contraseña</label>
             <div class="input-wrap">
               <span class="ico">✅</span>
-              <input
+              <input id="signup-confirmPassword"
                 [type]="cpwVisible ? 'text' : 'password'"
                 placeholder="Repite tu contraseña"
                 formControlName="confirmPassword"
@@ -214,6 +214,6 @@
         <div class="banner ok" *ngIf="msg" aria-live="polite">{{ msg }}</div>
         <div class="banner err" *ngIf="error" aria-live="assertive">{{ error }}</div>
       </form>
-    </div>
+    </section>
   </div>
 </section>
