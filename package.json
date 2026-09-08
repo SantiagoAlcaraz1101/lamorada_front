@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "sonar": "node ../quality/scan.mjs",
     "serve:ssr:front-lamorada": "node dist/front-lamorada/server/server.mjs"
   },
   "prettier": {
@@ -40,6 +41,7 @@
     "@angular/build": "20.3.32",
     "@angular/cli": "20.3.32",
     "@angular/compiler-cli": "20.3.27",
+    "@sonar/scan": "^5.0.0",
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
