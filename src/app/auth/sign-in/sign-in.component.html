@@ -19,18 +19,18 @@
     <div class="card">
       <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
         <div class="field">
-          <label class="label">Email</label>
+          <label class="label" for="signin-email">Email</label>
           <div class="input-wrap">
             <span class="ico">✉️</span>
-            <input type="email" placeholder="tucorreo@ejemplo.com" formControlName="email" />
+            <input id="signin-email" type="email" placeholder="tucorreo@ejemplo.com" formControlName="email" />
           </div>
         </div>
 
         <div class="field">
-          <label class="label">Contraseña</label>
+          <label class="label" for="signin-password">Contraseña</label>
           <div class="input-wrap">
             <span class="ico">🔒</span>
-            <input type="password" placeholder="Tu contraseña" formControlName="password" />
+            <input id="signin-password" type="password" placeholder="Tu contraseña" formControlName="password" />
           </div>
         </div>
 

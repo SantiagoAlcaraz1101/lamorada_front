@@ -1,0 +1,4933 @@
+{
+  "generatedAt": "2026-09-08T15:39:26.576Z",
+  "server": "http://localhost:9000",
+  "project": "la-morada",
+  "serverVersion": "26.9.0.129388",
+  "analysisId": "3c39d019-b105-47da-84bd-6f450d91125e",
+  "taskId": "19c7afb8-70d8-46c6-8555-d00115fa9545",
+  "gate": {
+    "status": "ERROR",
+    "conditions": [
+      {
+        "status": "ERROR",
+        "metricKey": "new_coverage",
+        "comparator": "LT",
+        "errorThreshold": "80",
+        "actualValue": "22.6"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_duplicated_lines_density",
+        "comparator": "GT",
+        "errorThreshold": "3",
+        "actualValue": "0.0"
+      },
+      {
+        "status": "ERROR",
+        "metricKey": "new_violations",
+        "comparator": "GT",
+        "errorThreshold": "0",
+        "actualValue": "6"
+      }
+    ],
+    "ignoredConditions": false,
+    "period": {
+      "mode": "PREVIOUS_VERSION",
+      "date": "2026-09-08T15:30:45+0000"
+    },
+    "caycStatus": "compliant"
+  },
+  "measures": [
+    {
+      "metric": "coverage",
+      "value": "46.8",
+      "bestValue": false
+    },
+    {
+      "metric": "complexity",
+      "value": "623"
+    },
+    {
+      "metric": "duplicated_lines_density",
+      "value": "0.0",
+      "bestValue": true
+    },
+    {
+      "metric": "lines_to_cover",
+      "value": "1142"
+    },
+    {
+      "metric": "uncovered_conditions",
+      "value": "373",
+      "bestValue": false
+    },
+    {
+      "metric": "branch_coverage",
+      "value": "34.4",
+      "bestValue": false
+    },
+    {
+      "metric": "uncovered_lines",
+      "value": "538",
+      "bestValue": false
+    },
+    {
+      "metric": "cognitive_complexity",
+      "value": "302",
+      "bestValue": false
+    },
+    {
+      "metric": "ncloc",
+      "value": "3719"
+    },
+    {
+      "metric": "conditions_to_cover",
+      "value": "569"
+    },
+    {
+      "metric": "line_coverage",
+      "value": "52.9",
+      "bestValue": false
+    }
+  ],
+  "counts": {
+    "totalServerIssues": 104,
+    "scopeUniqueIssues": 93,
+    "testIssues": 2,
+    "outsideScopeIssues": 9,
+    "scopeHotspots": 0
+  },
+  "features": {
+    "F01": {
+      "name": "Registro de pacientes",
+      "direct": 0,
+      "shared": 36,
+      "hotspots": 0
+    },
+    "F02": {
+      "name": "Registro de psicólogos",
+      "direct": 0,
+      "shared": 36,
+      "hotspots": 0
+    },
+    "F03": {
+      "name": "Inicio de sesión",
+      "direct": 16,
+      "shared": 9,
+      "hotspots": 0
+    },
+    "F04": {
+      "name": "Cierre de sesión",
+      "direct": 6,
+      "shared": 7,
+      "hotspots": 0
+    },
+    "F13": {
+      "name": "Crear cita",
+      "direct": 5,
+      "shared": 14,
+      "hotspots": 0
+    },
+    "F14": {
+      "name": "Listar citas del usuario autenticado",
+      "direct": 0,
+      "shared": 14,
+      "hotspots": 0
+    },
+    "F15": {
+      "name": "Actualizar estado de cita autorizada",
+      "direct": 1,
+      "shared": 14,
+      "hotspots": 0
+    },
+    "F16": {
+      "name": "Cancelar cita autorizada",
+      "direct": 0,
+      "shared": 14,
+      "hotspots": 0
+    },
+    "F26": {
+      "name": "Agregar producto al carrito",
+      "direct": 2,
+      "shared": 5,
+      "hotspots": 0
+    },
+    "F27": {
+      "name": "Consultar carrito persistido",
+      "direct": 9,
+      "shared": 5,
+      "hotspots": 0
+    }
+  },
+  "issues": [
+    {
+      "key": "8f2d8f62-15d8-4196-b1f1-b115885f2b73",
+      "file": "frontend/src/app/core/utils/jwt.ts",
+      "line": 8,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": "decodeJwt",
+      "rule": "typescript:S7781",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=8f2d8f62-15d8-4196-b1f1-b115885f2b73&open=8f2d8f62-15d8-4196-b1f1-b115885f2b73"
+    },
+    {
+      "key": "cad7122c-a186-4758-99cd-ed218cb6649c",
+      "file": "frontend/src/app/core/utils/jwt.ts",
+      "line": 8,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": "decodeJwt",
+      "rule": "typescript:S7781",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=cad7122c-a186-4758-99cd-ed218cb6649c&open=cad7122c-a186-4758-99cd-ed218cb6649c"
+    },
+    {
+      "key": "ef8a3cd1-352f-47a4-bd30-d80f37d48603",
+      "file": "frontend/src/app/core/utils/jwt.ts",
+      "line": 17,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": "decodeJwt",
+      "rule": "typescript:S7758",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `String#codePointAt()` over `String#charCodeAt()`.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=ef8a3cd1-352f-47a4-bd30-d80f37d48603&open=ef8a3cd1-352f-47a4-bd30-d80f37d48603"
+    },
+    {
+      "key": "1e06ac7f-db91-4cf1-af53-c4b55b65c315",
+      "file": "frontend/src/app/services/availability.service.ts",
+      "line": 5,
+      "features": [
+        "F13"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S1128",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Remove this unused import of 'switchMap'.",
+      "effort": "1min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=1e06ac7f-db91-4cf1-af53-c4b55b65c315&open=1e06ac7f-db91-4cf1-af53-c4b55b65c315"
+    },
+    {
+      "key": "90d730ee-b5f5-4a3a-945b-4c4e6db6be49",
+      "file": "frontend/src/app/services/availability.service.ts",
+      "line": 5,
+      "features": [
+        "F13"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S1128",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Remove this unused import of 'of'.",
+      "effort": "1min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=90d730ee-b5f5-4a3a-945b-4c4e6db6be49&open=90d730ee-b5f5-4a3a-945b-4c4e6db6be49"
+    },
+    {
+      "key": "fb1f0bab-1ee0-4cd5-90be-6b01dd01d50c",
+      "file": "frontend/src/app/services/availability.service.ts",
+      "line": 10,
+      "features": [
+        "F13"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark these members as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=fb1f0bab-1ee0-4cd5-90be-6b01dd01d50c&open=fb1f0bab-1ee0-4cd5-90be-6b01dd01d50c"
+    },
+    {
+      "key": "0b01d526-1963-42d4-bfe9-53eef030ff8c",
+      "file": "backend/src/middlewares/jwt-middleware.js",
+      "line": 5,
+      "features": [
+        "F04",
+        "F13",
+        "F14",
+        "F15",
+        "F16",
+        "F26",
+        "F27"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "javascript:S7773",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `Number.parseInt` over `parseInt`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=0b01d526-1963-42d4-bfe9-53eef030ff8c&open=0b01d526-1963-42d4-bfe9-53eef030ff8c"
+    },
+    {
+      "key": "792496af-b3e6-4518-8c92-5708ba85b2df",
+      "file": "backend/src/modules/appointment/appointment-service.js",
+      "line": 8,
+      "features": [
+        "F15"
+      ],
+      "relation": "direct",
+      "method": "declaración",
+      "rule": "javascript:S7776",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "`ALLOWED_STATUSES` should be a `Set`, and use `ALLOWED_STATUSES.has()` to check existence or non-existence.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=792496af-b3e6-4518-8c92-5708ba85b2df&open=792496af-b3e6-4518-8c92-5708ba85b2df"
+    },
+    {
+      "key": "e6729dd5-ebf0-4777-9128-72296d6afb3d",
+      "file": "backend/src/modules/appointment/appointment-service.js",
+      "line": 51,
+      "features": [
+        "F13"
+      ],
+      "relation": "direct",
+      "method": "createAppointment",
+      "rule": "javascript:S6582",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer using an optional chain expression instead, as it's more concise and easier to read.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=e6729dd5-ebf0-4777-9128-72296d6afb3d&open=e6729dd5-ebf0-4777-9128-72296d6afb3d"
+    },
+    {
+      "key": "2eb29334-1eeb-428c-9dd7-832c836eaa0b",
+      "file": "backend/src/modules/appointment/appointment-service.js",
+      "line": 52,
+      "features": [
+        "F13"
+      ],
+      "relation": "direct",
+      "method": "createAppointment",
+      "rule": "javascript:S6582",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer using an optional chain expression instead, as it's more concise and easier to read.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=2eb29334-1eeb-428c-9dd7-832c836eaa0b&open=2eb29334-1eeb-428c-9dd7-832c836eaa0b"
+    },
+    {
+      "key": "33386b54-76c1-471d-86d1-864d012fdb96",
+      "file": "backend/src/modules/auth/auth-service.js",
+      "line": 21,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": "loginUser",
+      "rule": "javascript:S1481",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Remove the declaration of the unused '_' variable.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=33386b54-76c1-471d-86d1-864d012fdb96&open=33386b54-76c1-471d-86d1-864d012fdb96"
+    },
+    {
+      "key": "0ddcb6be-3075-4212-9e04-31fae79ae414",
+      "file": "backend/src/modules/auth/strategies/jwt-strategy.js",
+      "line": 5,
+      "features": [
+        "F03",
+        "F04"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "javascript:S7773",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `Number.parseInt` over `parseInt`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=0ddcb6be-3075-4212-9e04-31fae79ae414&open=0ddcb6be-3075-4212-9e04-31fae79ae414"
+    },
+    {
+      "key": "aa342c2a-ac4a-4d50-819d-264319c98616",
+      "file": "backend/src/modules/auth/validators/auth-validator.js",
+      "line": 18,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": "validateLogin",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=aa342c2a-ac4a-4d50-819d-264319c98616&open=aa342c2a-ac4a-4d50-819d-264319c98616"
+    },
+    {
+      "key": "b18a0b8a-c7f3-4a83-aef2-663a93354ce1",
+      "file": "backend/src/modules/user/user-service.js",
+      "line": 6,
+      "features": [],
+      "relation": "outside",
+      "method": "declaración",
+      "rule": "javascript:S7772",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `node:crypto` over `crypto`.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=b18a0b8a-c7f3-4a83-aef2-663a93354ce1&open=b18a0b8a-c7f3-4a83-aef2-663a93354ce1"
+    },
+    {
+      "key": "75a2db2e-46f0-4350-9a23-eabb45be821b",
+      "file": "backend/src/modules/user/user-service.js",
+      "line": 50,
+      "features": [],
+      "relation": "outside",
+      "method": "update",
+      "rule": "javascript:S7776",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "`allowedFields` should be a `Set`, and use `allowedFields.has()` to check existence or non-existence.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=75a2db2e-46f0-4350-9a23-eabb45be821b&open=75a2db2e-46f0-4350-9a23-eabb45be821b"
+    },
+    {
+      "key": "eb5f84e2-e692-4812-bfcb-5dc4f29acc60",
+      "file": "backend/src/modules/user/user-service.js",
+      "line": 82,
+      "features": [],
+      "relation": "outside",
+      "method": "getPsychologistsBySpecialty",
+      "rule": "javascript:S7780",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "`String.raw` should be used to avoid escaping `\\`.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=eb5f84e2-e692-4812-bfcb-5dc4f29acc60&open=eb5f84e2-e692-4812-bfcb-5dc4f29acc60"
+    },
+    {
+      "key": "0a05f459-d749-4ce8-950d-8d3d4ae5e9d6",
+      "file": "backend/src/modules/user/user-service.js",
+      "line": 102,
+      "features": [],
+      "relation": "outside",
+      "method": "requestPasswordReset",
+      "rule": "javascript:S7773",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `Number.parseInt` over `parseInt`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=0a05f459-d749-4ce8-950d-8d3d4ae5e9d6&open=0a05f459-d749-4ce8-950d-8d3d4ae5e9d6"
+    },
+    {
+      "key": "837eb86f-7d4b-48ac-a587-a5a28de2983b",
+      "file": "backend/src/modules/user/validators/user-validator.js",
+      "line": 4,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": "validateUser",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=837eb86f-7d4b-48ac-a587-a5a28de2983b&open=837eb86f-7d4b-48ac-a587-a5a28de2983b"
+    },
+    {
+      "key": "40db192d-3f57-42ee-b161-f7abaafc5e97",
+      "file": "backend/src/modules/user/validators/user-validator.js",
+      "line": 10,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": "validateUser",
+      "rule": "javascript:S6397",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Replace this character class by the character itself.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=40db192d-3f57-42ee-b161-f7abaafc5e97&open=40db192d-3f57-42ee-b161-f7abaafc5e97"
+    },
+    {
+      "key": "6c99db29-d513-4035-a6da-7a3d3bf15ef8",
+      "file": "backend/src/modules/user/validators/user-validator.js",
+      "line": 10,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": "validateUser",
+      "rule": "javascript:S6397",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Replace this character class by the character itself.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=6c99db29-d513-4035-a6da-7a3d3bf15ef8&open=6c99db29-d513-4035-a6da-7a3d3bf15ef8"
+    },
+    {
+      "key": "7e2ed808-de50-4a80-b3ed-e6511d02a718",
+      "file": "backend/src/modules/user/validators/user-validator.js",
+      "line": 19,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": "validateUser",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=7e2ed808-de50-4a80-b3ed-e6511d02a718&open=7e2ed808-de50-4a80-b3ed-e6511d02a718"
+    },
+    {
+      "key": "e4b6c172-3fb4-401e-b7c2-783a057d98e2",
+      "file": "backend/src/modules/user/validators/user-validator.js",
+      "line": 23,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": "validateUser",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=e4b6c172-3fb4-401e-b7c2-783a057d98e2&open=e4b6c172-3fb4-401e-b7c2-783a057d98e2"
+    },
+    {
+      "key": "44f3b057-6ce9-40ac-a3fe-dff90e5628b8",
+      "file": "frontend/src/app/auth/sign-in/sign-in.component.css",
+      "line": 158,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "css:S7924",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Text does not meet the minimal contrast requirement with its background.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=44f3b057-6ce9-40ac-a3fe-dff90e5628b8&open=44f3b057-6ce9-40ac-a3fe-dff90e5628b8"
+    },
+    {
+      "key": "190eccdf-1f69-4687-971a-3ced34307ecc",
+      "file": "frontend/src/app/auth/sign-in/sign-in.component.html",
+      "line": 22,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=190eccdf-1f69-4687-971a-3ced34307ecc&open=190eccdf-1f69-4687-971a-3ced34307ecc"
+    },
+    {
+      "key": "d3c79004-a95e-4157-93d4-1a880b122716",
+      "file": "frontend/src/app/auth/sign-in/sign-in.component.html",
+      "line": 25,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=d3c79004-a95e-4157-93d4-1a880b122716&open=d3c79004-a95e-4157-93d4-1a880b122716"
+    },
+    {
+      "key": "09f5c217-7237-4d9f-909b-59ff55a6342d",
+      "file": "frontend/src/app/auth/sign-in/sign-in.component.html",
+      "line": 30,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=09f5c217-7237-4d9f-909b-59ff55a6342d&open=09f5c217-7237-4d9f-909b-59ff55a6342d"
+    },
+    {
+      "key": "5cc1fc96-2e16-44f8-8a10-c73cba6d48be",
+      "file": "frontend/src/app/auth/sign-in/sign-in.component.html",
+      "line": 33,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=5cc1fc96-2e16-44f8-8a10-c73cba6d48be&open=5cc1fc96-2e16-44f8-8a10-c73cba6d48be"
+    },
+    {
+      "key": "23a95dcd-a27a-4e5f-bda9-bb3fa5afe93f",
+      "file": "frontend/src/app/auth/sign-in/sign-in.component.ts",
+      "line": 1,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S3863",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\frontend\\node_modules\\@angular\\core\\fesm2022\\core.mjs' imported multiple times.",
+      "effort": "1min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=23a95dcd-a27a-4e5f-bda9-bb3fa5afe93f&open=23a95dcd-a27a-4e5f-bda9-bb3fa5afe93f"
+    },
+    {
+      "key": "0fae2e96-1c39-4409-907c-d685a2069fa9",
+      "file": "frontend/src/app/auth/sign-in/sign-in.component.ts",
+      "line": 5,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S3863",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\frontend\\node_modules\\@angular\\core\\fesm2022\\core.mjs' imported multiple times.",
+      "effort": "1min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=0fae2e96-1c39-4409-907c-d685a2069fa9&open=0fae2e96-1c39-4409-907c-d685a2069fa9"
+    },
+    {
+      "key": "9a2f846d-56a1-4e17-ade8-e60aac27c05b",
+      "file": "frontend/src/app/auth/sign-in/sign-in.component.ts",
+      "line": 18,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark these members as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=9a2f846d-56a1-4e17-ade8-e60aac27c05b&open=9a2f846d-56a1-4e17-ade8-e60aac27c05b"
+    },
+    {
+      "key": "43098ed0-0bf1-487e-96e8-6916f0fb499b",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.css",
+      "line": 266,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "css:S7924",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Text does not meet the minimal contrast requirement with its background.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=43098ed0-0bf1-487e-96e8-6916f0fb499b&open=43098ed0-0bf1-487e-96e8-6916f0fb499b"
+    },
+    {
+      "key": "d216ccae-86d4-4816-b7ff-6c972abfbe6f",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 19,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6819",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Use <section> instead of the region role to ensure accessibility across all devices.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=d216ccae-86d4-4816-b7ff-6c972abfbe6f&open=d216ccae-86d4-4816-b7ff-6c972abfbe6f"
+    },
+    {
+      "key": "05c8020a-76e5-4fcd-9fb7-13927a928bf7",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 28,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=05c8020a-76e5-4fcd-9fb7-13927a928bf7&open=05c8020a-76e5-4fcd-9fb7-13927a928bf7"
+    },
+    {
+      "key": "1e539a82-cda1-400e-bb7d-80fb1cc29334",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 31,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=1e539a82-cda1-400e-bb7d-80fb1cc29334&open=1e539a82-cda1-400e-bb7d-80fb1cc29334"
+    },
+    {
+      "key": "12d560da-635b-4ea5-a6c2-7561fbc8ee03",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 43,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=12d560da-635b-4ea5-a6c2-7561fbc8ee03&open=12d560da-635b-4ea5-a6c2-7561fbc8ee03"
+    },
+    {
+      "key": "9c67d686-b7d1-4fed-bd18-05979849fbf1",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 46,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=9c67d686-b7d1-4fed-bd18-05979849fbf1&open=9c67d686-b7d1-4fed-bd18-05979849fbf1"
+    },
+    {
+      "key": "255d53fd-4d91-42ae-a13e-5c632f65deb2",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 61,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=255d53fd-4d91-42ae-a13e-5c632f65deb2&open=255d53fd-4d91-42ae-a13e-5c632f65deb2"
+    },
+    {
+      "key": "4e1ecc6c-7133-4d15-83e3-e2c5f785da66",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 64,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=4e1ecc6c-7133-4d15-83e3-e2c5f785da66&open=4e1ecc6c-7133-4d15-83e3-e2c5f785da66"
+    },
+    {
+      "key": "f1193d4e-7838-4312-8112-5b56c3b53bf3",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 74,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=f1193d4e-7838-4312-8112-5b56c3b53bf3&open=f1193d4e-7838-4312-8112-5b56c3b53bf3"
+    },
+    {
+      "key": "28a59531-b997-4c25-a9da-8c150d15ff3d",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 77,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=28a59531-b997-4c25-a9da-8c150d15ff3d&open=28a59531-b997-4c25-a9da-8c150d15ff3d"
+    },
+    {
+      "key": "1d16f6ec-9444-4566-9f7a-14656fde8630",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 85,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=1d16f6ec-9444-4566-9f7a-14656fde8630&open=1d16f6ec-9444-4566-9f7a-14656fde8630"
+    },
+    {
+      "key": "366b6e49-4557-4b89-8c96-b40755d119dc",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 88,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=366b6e49-4557-4b89-8c96-b40755d119dc&open=366b6e49-4557-4b89-8c96-b40755d119dc"
+    },
+    {
+      "key": "d524bd1d-bc12-4b21-a1de-2fcea94fde4a",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 104,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=d524bd1d-bc12-4b21-a1de-2fcea94fde4a&open=d524bd1d-bc12-4b21-a1de-2fcea94fde4a"
+    },
+    {
+      "key": "02350faf-a561-4654-805b-2b7839ec4899",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 107,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=02350faf-a561-4654-805b-2b7839ec4899&open=02350faf-a561-4654-805b-2b7839ec4899"
+    },
+    {
+      "key": "361f9827-2609-4514-9736-fae03bf427fb",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 119,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=361f9827-2609-4514-9736-fae03bf427fb&open=361f9827-2609-4514-9736-fae03bf427fb"
+    },
+    {
+      "key": "4da640cb-2061-4b74-87d8-e140a434ab1e",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 122,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=4da640cb-2061-4b74-87d8-e140a434ab1e&open=4da640cb-2061-4b74-87d8-e140a434ab1e"
+    },
+    {
+      "key": "39af131d-f479-4587-9c69-2abc3b08afe0",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 133,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=39af131d-f479-4587-9c69-2abc3b08afe0&open=39af131d-f479-4587-9c69-2abc3b08afe0"
+    },
+    {
+      "key": "fbb6bb0c-fc34-4d0d-aeb4-956ef94d857b",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 136,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=fbb6bb0c-fc34-4d0d-aeb4-956ef94d857b&open=fbb6bb0c-fc34-4d0d-aeb4-956ef94d857b"
+    },
+    {
+      "key": "f338b3bf-3e4f-4ff9-ad79-df23206e6776",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 153,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=f338b3bf-3e4f-4ff9-ad79-df23206e6776&open=f338b3bf-3e4f-4ff9-ad79-df23206e6776"
+    },
+    {
+      "key": "8b1a5551-3dbf-4a03-8989-a5ba424b3247",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 156,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=8b1a5551-3dbf-4a03-8989-a5ba424b3247&open=8b1a5551-3dbf-4a03-8989-a5ba424b3247"
+    },
+    {
+      "key": "616b7e50-fee5-44e9-a0e4-5363e97db685",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 181,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:S6853",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "A form label must be associated with a control and have accessible text.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=616b7e50-fee5-44e9-a0e4-5363e97db685&open=616b7e50-fee5-44e9-a0e4-5363e97db685"
+    },
+    {
+      "key": "b46b2a41-23e9-4ac7-90c6-a607cc25683c",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "line": 184,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=b46b2a41-23e9-4ac7-90c6-a607cc25683c&open=b46b2a41-23e9-4ac7-90c6-a607cc25683c"
+    },
+    {
+      "key": "4846427d-7b90-41a0-b76d-7640098aeaf6",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "line": 28,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S6353",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=4846427d-7b90-41a0-b76d-7640098aeaf6&open=4846427d-7b90-41a0-b76d-7640098aeaf6"
+    },
+    {
+      "key": "1068ca51-09ef-4b4b-abf2-4e1c4a13fc39",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "line": 37,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark these members as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=1068ca51-09ef-4b4b-abf2-4e1c4a13fc39&open=1068ca51-09ef-4b4b-abf2-4e1c4a13fc39"
+    },
+    {
+      "key": "b99cc70b-aca5-44da-8e6c-74af9a6f5faa",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "line": 114,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": "passwordStrength",
+      "rule": "typescript:S3358",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=b99cc70b-aca5-44da-8e6c-74af9a6f5faa&open=b99cc70b-aca5-44da-8e6c-74af9a6f5faa"
+    },
+    {
+      "key": "edb60ecb-f2d6-4ce5-8888-8655edb88a93",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "line": 114,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": "passwordStrength",
+      "rule": "typescript:S3358",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=edb60ecb-f2d6-4ce5-8888-8655edb88a93&open=edb60ecb-f2d6-4ce5-8888-8655edb88a93"
+    },
+    {
+      "key": "faeeaf11-364a-4012-a88b-53bc43f1b506",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "line": 120,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": "passwordErrors",
+      "rule": "typescript:S6582",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer using an optional chain expression instead, as it's more concise and easier to read.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=faeeaf11-364a-4012-a88b-53bc43f1b506&open=faeeaf11-364a-4012-a88b-53bc43f1b506"
+    },
+    {
+      "key": "f37a0fa6-c38e-4e18-8c76-6e13e1667bf4",
+      "file": "frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "line": 187,
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "relation": "shared",
+      "method": "submit",
+      "rule": "typescript:S6582",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer using an optional chain expression instead, as it's more concise and easier to read.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=f37a0fa6-c38e-4e18-8c76-6e13e1667bf4&open=f37a0fa6-c38e-4e18-8c76-6e13e1667bf4"
+    },
+    {
+      "key": "e23584ae-ed07-403e-aa61-114c516ecaab",
+      "file": "frontend/src/app/core/state/auth-state.service.ts",
+      "line": 13,
+      "features": [
+        "F03",
+        "F04"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark this member as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=e23584ae-ed07-403e-aa61-114c516ecaab&open=e23584ae-ed07-403e-aa61-114c516ecaab"
+    },
+    {
+      "key": "e5f9fad3-2661-4ec9-9ac8-8d42b0a0d873",
+      "file": "frontend/src/app/delivery.paths.spec.ts",
+      "line": 205,
+      "features": [],
+      "relation": "test",
+      "method": null,
+      "rule": "typescript:S5906",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer \"expect(component.appointments).toHaveSize(1)\" over this generic assertion for better reporting; it works on any object with a numeric length property.",
+      "effort": "1min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=e5f9fad3-2661-4ec9-9ac8-8d42b0a0d873&open=e5f9fad3-2661-4ec9-9ac8-8d42b0a0d873"
+    },
+    {
+      "key": "2010d827-3526-44dc-bf43-f92cedcbfd25",
+      "file": "frontend/src/app/delivery.paths.spec.ts",
+      "line": 294,
+      "features": [],
+      "relation": "test",
+      "method": null,
+      "rule": "typescript:S5906",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer \"expect(component.items).toHaveSize(1)\" over this generic assertion for better reporting; it works on any object with a numeric length property.",
+      "effort": "1min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=2010d827-3526-44dc-bf43-f92cedcbfd25&open=2010d827-3526-44dc-bf43-f92cedcbfd25"
+    },
+    {
+      "key": "fbb6cf3e-da28-4f13-be81-8e02a8ef565a",
+      "file": "frontend/src/app/guards/auth-role.guard.ts",
+      "line": 1,
+      "features": [
+        "F03",
+        "F13",
+        "F14",
+        "F15",
+        "F16",
+        "F26",
+        "F27"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S3863",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\frontend\\node_modules\\@angular\\core\\fesm2022\\core.mjs' imported multiple times.",
+      "effort": "1min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=fbb6cf3e-da28-4f13-be81-8e02a8ef565a&open=fbb6cf3e-da28-4f13-be81-8e02a8ef565a"
+    },
+    {
+      "key": "fe4ac1fc-d10c-4cca-a41e-b2840a20b442",
+      "file": "frontend/src/app/guards/auth-role.guard.ts",
+      "line": 4,
+      "features": [
+        "F03",
+        "F13",
+        "F14",
+        "F15",
+        "F16",
+        "F26",
+        "F27"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S3863",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\frontend\\node_modules\\@angular\\core\\fesm2022\\core.mjs' imported multiple times.",
+      "effort": "1min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=fe4ac1fc-d10c-4cca-a41e-b2840a20b442&open=fe4ac1fc-d10c-4cca-a41e-b2840a20b442"
+    },
+    {
+      "key": "1243bcb5-4bbf-42cd-9951-d1b86c28b80a",
+      "file": "frontend/src/app/guards/auth-role.guard.ts",
+      "line": 36,
+      "features": [
+        "F03",
+        "F13",
+        "F14",
+        "F15",
+        "F16",
+        "F26",
+        "F27"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S6582",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer using an optional chain expression instead, as it's more concise and easier to read.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=1243bcb5-4bbf-42cd-9951-d1b86c28b80a&open=1243bcb5-4bbf-42cd-9951-d1b86c28b80a"
+    },
+    {
+      "key": "65ce4f03-cbb8-431a-95ef-1555f7efb23e",
+      "file": "frontend/src/app/layout/header/header.component.css",
+      "line": 77,
+      "features": [
+        "F04"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "css:S7924",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Text does not meet the minimal contrast requirement with its background.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=65ce4f03-cbb8-431a-95ef-1555f7efb23e&open=65ce4f03-cbb8-431a-95ef-1555f7efb23e"
+    },
+    {
+      "key": "c5c5b2e2-57c8-4694-a9d6-b33245181d32",
+      "file": "frontend/src/app/layout/header/header.component.css",
+      "line": 84,
+      "features": [
+        "F04"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "css:S7924",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Text does not meet the minimal contrast requirement with its background.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=c5c5b2e2-57c8-4694-a9d6-b33245181d32&open=c5c5b2e2-57c8-4694-a9d6-b33245181d32"
+    },
+    {
+      "key": "a2295530-b4d6-4a5d-9b91-538331e9c692",
+      "file": "frontend/src/app/layout/header/header.component.ts",
+      "line": 14,
+      "features": [
+        "F04"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark these members as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=a2295530-b4d6-4a5d-9b91-538331e9c692&open=a2295530-b4d6-4a5d-9b91-538331e9c692"
+    },
+    {
+      "key": "f307acc3-a042-4fdc-b014-15d82b51495b",
+      "file": "frontend/src/app/layout/header/header.component.ts",
+      "line": 26,
+      "features": [
+        "F04"
+      ],
+      "relation": "direct",
+      "method": "ngOnInit",
+      "rule": "typescript:S7655",
+      "severity": "BLOCKER",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Lifecycle interface 'OnInit' should be implemented for method 'ngOnInit'. (https://angular.dev/style-guide#use-lifecycle-hook-interfaces)",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=f307acc3-a042-4fdc-b014-15d82b51495b&open=f307acc3-a042-4fdc-b014-15d82b51495b"
+    },
+    {
+      "key": "16468c49-a0bd-4f5c-b085-161f4c87dd02",
+      "file": "frontend/src/app/layout/header/header.component.ts",
+      "line": 39,
+      "features": [
+        "F04"
+      ],
+      "relation": "direct",
+      "method": "onLogout",
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'(): Promise<any>' is deprecated.",
+      "effort": "15min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=16468c49-a0bd-4f5c-b085-161f4c87dd02&open=16468c49-a0bd-4f5c-b085-161f4c87dd02"
+    },
+    {
+      "key": "4f4fdf30-b77c-4b43-9ed6-2fa465814c3e",
+      "file": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "line": 3,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'NgIf' is deprecated.",
+      "effort": "15min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=4f4fdf30-b77c-4b43-9ed6-2fa465814c3e&open=4f4fdf30-b77c-4b43-9ed6-2fa465814c3e"
+    },
+    {
+      "key": "5c47f0fe-cd44-4d80-b265-390894a0fab8",
+      "file": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "line": 3,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'NgForOf' is deprecated.",
+      "effort": "15min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=5c47f0fe-cd44-4d80-b265-390894a0fab8&open=5c47f0fe-cd44-4d80-b265-390894a0fab8"
+    },
+    {
+      "key": "0489cf81-6869-496a-93f1-b1ed50b3dbd2",
+      "file": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "line": 45,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'NgIf' is deprecated.",
+      "effort": "15min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=0489cf81-6869-496a-93f1-b1ed50b3dbd2&open=0489cf81-6869-496a-93f1-b1ed50b3dbd2"
+    },
+    {
+      "key": "0bf3315e-740a-42ac-95a8-d49dfb468840",
+      "file": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "line": 45,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'NgFor' is deprecated.",
+      "effort": "15min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=0bf3315e-740a-42ac-95a8-d49dfb468840&open=0bf3315e-740a-42ac-95a8-d49dfb468840"
+    },
+    {
+      "key": "1264861a-256f-4a00-89db-e6c90cccf4a9",
+      "file": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "line": 49,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark these members as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=1264861a-256f-4a00-89db-e6c90cccf4a9&open=1264861a-256f-4a00-89db-e6c90cccf4a9"
+    },
+    {
+      "key": "1239a8a2-ca8a-4bd6-8761-b777da87c16a",
+      "file": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "line": 88,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": "decodeToken",
+      "rule": "typescript:S6571",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'any' overrides all other types in this union type.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=1239a8a2-ca8a-4bd6-8761-b777da87c16a&open=1239a8a2-ca8a-4bd6-8761-b777da87c16a"
+    },
+    {
+      "key": "3bf353a7-fd24-40d7-9620-332aa6584b02",
+      "file": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "line": 94,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": "decodeToken",
+      "rule": "typescript:S7781",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=3bf353a7-fd24-40d7-9620-332aa6584b02&open=3bf353a7-fd24-40d7-9620-332aa6584b02"
+    },
+    {
+      "key": "41041338-dcb0-4bbf-903b-5566264019ed",
+      "file": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "line": 94,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": "decodeToken",
+      "rule": "typescript:S7781",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=41041338-dcb0-4bbf-903b-5566264019ed&open=41041338-dcb0-4bbf-903b-5566264019ed"
+    },
+    {
+      "key": "097a0023-ed9b-4af2-aba8-88e0212fee8a",
+      "file": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "line": 99,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": "ngOnInit",
+      "rule": "typescript:S7655",
+      "severity": "BLOCKER",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Lifecycle interface 'OnInit' should be implemented for method 'ngOnInit'. (https://angular.dev/style-guide#use-lifecycle-hook-interfaces)",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=097a0023-ed9b-4af2-aba8-88e0212fee8a&open=097a0023-ed9b-4af2-aba8-88e0212fee8a"
+    },
+    {
+      "key": "ad95a8bc-dcf8-4337-a5f1-3fa6bdf71014",
+      "file": "frontend/src/app/pages/cart/cart.component.css",
+      "line": 199,
+      "features": [
+        "F27"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "css:S7924",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Text does not meet the minimal contrast requirement with its background.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=ad95a8bc-dcf8-4337-a5f1-3fa6bdf71014&open=ad95a8bc-dcf8-4337-a5f1-3fa6bdf71014"
+    },
+    {
+      "key": "2b428ebc-b82c-4d6b-96c7-65d12ae1311f",
+      "file": "frontend/src/app/pages/cart/cart.component.html",
+      "line": 43,
+      "features": [],
+      "relation": "outside",
+      "method": "bloque delimitado",
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=2b428ebc-b82c-4d6b-96c7-65d12ae1311f&open=2b428ebc-b82c-4d6b-96c7-65d12ae1311f"
+    },
+    {
+      "key": "41fa007f-67c2-4edd-9ac8-1b5c6a1dcf1c",
+      "file": "frontend/src/app/pages/cart/cart.component.html",
+      "line": 69,
+      "features": [
+        "F27"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "Web:TableHeaderHasIdOrScopeCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add either an 'id' or a 'scope' attribute to this <th> tag.",
+      "effort": "10min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=41fa007f-67c2-4edd-9ac8-1b5c6a1dcf1c&open=41fa007f-67c2-4edd-9ac8-1b5c6a1dcf1c"
+    },
+    {
+      "key": "e6ee7a81-0d13-4607-b4d8-c0b62d08923a",
+      "file": "frontend/src/app/pages/cart/cart.component.html",
+      "line": 70,
+      "features": [
+        "F27"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "Web:TableHeaderHasIdOrScopeCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add either an 'id' or a 'scope' attribute to this <th> tag.",
+      "effort": "10min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=e6ee7a81-0d13-4607-b4d8-c0b62d08923a&open=e6ee7a81-0d13-4607-b4d8-c0b62d08923a"
+    },
+    {
+      "key": "3eb740b3-2a8d-4673-b4bb-934f75539191",
+      "file": "frontend/src/app/pages/cart/cart.component.ts",
+      "line": 2,
+      "features": [
+        "F27"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'NgForOf' is deprecated.",
+      "effort": "15min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=3eb740b3-2a8d-4673-b4bb-934f75539191&open=3eb740b3-2a8d-4673-b4bb-934f75539191"
+    },
+    {
+      "key": "5f1cac92-b4cd-4832-9038-22fb5e7d1a51",
+      "file": "frontend/src/app/pages/cart/cart.component.ts",
+      "line": 2,
+      "features": [
+        "F27"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'NgIf' is deprecated.",
+      "effort": "15min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=5f1cac92-b4cd-4832-9038-22fb5e7d1a51&open=5f1cac92-b4cd-4832-9038-22fb5e7d1a51"
+    },
+    {
+      "key": "296a1ca7-627e-4ddf-966f-d9c6af08883c",
+      "file": "frontend/src/app/pages/cart/cart.component.ts",
+      "line": 11,
+      "features": [
+        "F27"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'NgFor' is deprecated.",
+      "effort": "15min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=296a1ca7-627e-4ddf-966f-d9c6af08883c&open=296a1ca7-627e-4ddf-966f-d9c6af08883c"
+    },
+    {
+      "key": "a1e583aa-4db3-497a-8e1a-7689bd470d8f",
+      "file": "frontend/src/app/pages/cart/cart.component.ts",
+      "line": 11,
+      "features": [
+        "F27"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "'NgIf' is deprecated.",
+      "effort": "15min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=a1e583aa-4db3-497a-8e1a-7689bd470d8f&open=a1e583aa-4db3-497a-8e1a-7689bd470d8f"
+    },
+    {
+      "key": "1bff0ab0-9f5e-41ef-b0a3-ae0f276894aa",
+      "file": "frontend/src/app/pages/cart/cart.component.ts",
+      "line": 13,
+      "features": [
+        "F27"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark this member as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=1bff0ab0-9f5e-41ef-b0a3-ae0f276894aa&open=1bff0ab0-9f5e-41ef-b0a3-ae0f276894aa"
+    },
+    {
+      "key": "b3bed5e7-cf64-43c2-8028-5f3e251e1c23",
+      "file": "frontend/src/app/pages/cart/cart.component.ts",
+      "line": 25,
+      "features": [
+        "F27"
+      ],
+      "relation": "direct",
+      "method": "ngOnInit",
+      "rule": "typescript:S7655",
+      "severity": "BLOCKER",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Lifecycle interface 'OnInit' should be implemented for method 'ngOnInit'. (https://angular.dev/style-guide#use-lifecycle-hook-interfaces)",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=b3bed5e7-cf64-43c2-8028-5f3e251e1c23&open=b3bed5e7-cf64-43c2-8028-5f3e251e1c23"
+    },
+    {
+      "key": "17cea5d5-3c36-4566-97b1-72f2eff05798",
+      "file": "frontend/src/app/pages/product/product.component.css",
+      "line": 69,
+      "features": [],
+      "relation": "outside",
+      "method": "bloque delimitado",
+      "rule": "css:S7924",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Text does not meet the minimal contrast requirement with its background.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=17cea5d5-3c36-4566-97b1-72f2eff05798&open=17cea5d5-3c36-4566-97b1-72f2eff05798"
+    },
+    {
+      "key": "d2e9f7f4-19d1-4cde-b7d0-64e026c43918",
+      "file": "frontend/src/app/pages/product/product.component.css",
+      "line": 152,
+      "features": [
+        "F26"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "css:S7924",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Text does not meet the minimal contrast requirement with its background.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=d2e9f7f4-19d1-4cde-b7d0-64e026c43918&open=d2e9f7f4-19d1-4cde-b7d0-64e026c43918"
+    },
+    {
+      "key": "64a252c8-e540-4079-98be-270f04193bfb",
+      "file": "frontend/src/app/pages/product/product.component.html",
+      "line": 6,
+      "features": [],
+      "relation": "outside",
+      "method": "bloque delimitado",
+      "rule": "Web:InputWithoutLabelCheck",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Add an \"id\" attribute to this input field and associate it with a label.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=64a252c8-e540-4079-98be-270f04193bfb&open=64a252c8-e540-4079-98be-270f04193bfb"
+    },
+    {
+      "key": "0a713c3c-bd9b-4c63-b6e4-fb89e8956801",
+      "file": "frontend/src/app/pages/product/product.component.ts",
+      "line": 24,
+      "features": [
+        "F26"
+      ],
+      "relation": "direct",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark these members as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=0a713c3c-bd9b-4c63-b6e4-fb89e8956801&open=0a713c3c-bd9b-4c63-b6e4-fb89e8956801"
+    },
+    {
+      "key": "f2ee5a7a-2695-4967-baa5-7afb25b7bc3a",
+      "file": "frontend/src/app/pages/product/product.component.ts",
+      "line": 40,
+      "features": [],
+      "relation": "outside",
+      "method": "ngOnInit",
+      "rule": "typescript:S6544",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "BUG",
+      "status": "OPEN",
+      "message": "Promise-returning method provided where a void return was expected by extended/implemented type 'OnInit'.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=f2ee5a7a-2695-4967-baa5-7afb25b7bc3a&open=f2ee5a7a-2695-4967-baa5-7afb25b7bc3a"
+    },
+    {
+      "key": "1b545355-e25b-4d7d-b981-829447245b50",
+      "file": "frontend/src/app/pages/product/product.component.ts",
+      "line": 77,
+      "features": [],
+      "relation": "outside",
+      "method": "search",
+      "rule": "typescript:S3358",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=1b545355-e25b-4d7d-b981-829447245b50&open=1b545355-e25b-4d7d-b981-829447245b50"
+    },
+    {
+      "key": "3ca84912-f39c-4f17-ad48-8c3a98af7c66",
+      "file": "frontend/src/app/services/appointment.service.ts",
+      "line": 8,
+      "features": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark these members as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=3ca84912-f39c-4f17-ad48-8c3a98af7c66&open=3ca84912-f39c-4f17-ad48-8c3a98af7c66"
+    },
+    {
+      "key": "9f9904a9-e0b4-4939-8eba-a7566eaf3008",
+      "file": "frontend/src/app/services/cart.service.ts",
+      "line": 27,
+      "features": [
+        "F26",
+        "F27"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark these members as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=9f9904a9-e0b4-4939-8eba-a7566eaf3008&open=9f9904a9-e0b4-4939-8eba-a7566eaf3008"
+    },
+    {
+      "key": "4a638c7d-d3f4-4d3c-8064-eb08d52fd624",
+      "file": "frontend/src/app/services/user.service.ts",
+      "line": 19,
+      "features": [
+        "F01",
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S6571",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "\"patient\" is overridden by string in this union type.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=4a638c7d-d3f4-4d3c-8064-eb08d52fd624&open=4a638c7d-d3f4-4d3c-8064-eb08d52fd624"
+    },
+    {
+      "key": "a2f391ed-9f24-4611-9c1d-e925ef8fcae3",
+      "file": "frontend/src/app/services/user.service.ts",
+      "line": 19,
+      "features": [
+        "F01",
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S6571",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "\"psychologist\" is overridden by string in this union type.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=a2f391ed-9f24-4611-9c1d-e925ef8fcae3&open=a2f391ed-9f24-4611-9c1d-e925ef8fcae3"
+    },
+    {
+      "key": "2c4fbb78-7283-42d7-8110-f85c03a08a1f",
+      "file": "frontend/src/app/services/user.service.ts",
+      "line": 27,
+      "features": [
+        "F01",
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "relation": "shared",
+      "method": null,
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Mark these members as `readonly`.",
+      "effort": "2min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=2c4fbb78-7283-42d7-8110-f85c03a08a1f&open=2c4fbb78-7283-42d7-8110-f85c03a08a1f"
+    },
+    {
+      "key": "2727f53a-59d8-4e8c-a91b-ac8c50924ebf",
+      "file": "frontend/src/app/services/user.service.ts",
+      "line": 38,
+      "features": [
+        "F03",
+        "F04"
+      ],
+      "relation": "shared",
+      "method": "lsGet",
+      "rule": "typescript:S2681",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "This statement will not be executed conditionally; only the first statement will be. The rest will execute unconditionally.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=2727f53a-59d8-4e8c-a91b-ac8c50924ebf&open=2727f53a-59d8-4e8c-a91b-ac8c50924ebf"
+    },
+    {
+      "key": "e8892465-8445-4fab-953d-33315f8d0bbb",
+      "file": "frontend/src/app/services/user.service.ts",
+      "line": 39,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": "lsSet",
+      "rule": "typescript:S2681",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "This statement will not be executed conditionally; only the first statement will be. The rest will execute unconditionally.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=e8892465-8445-4fab-953d-33315f8d0bbb&open=e8892465-8445-4fab-953d-33315f8d0bbb"
+    },
+    {
+      "key": "bb7ab25b-7557-49f4-82d5-b19b09ccff8a",
+      "file": "frontend/src/app/services/user.service.ts",
+      "line": 40,
+      "features": [
+        "F04"
+      ],
+      "relation": "direct",
+      "method": "lsRemove",
+      "rule": "typescript:S2681",
+      "severity": "MAJOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "This statement will not be executed conditionally; only the first statement will be. The rest will execute unconditionally.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=bb7ab25b-7557-49f4-82d5-b19b09ccff8a&open=bb7ab25b-7557-49f4-82d5-b19b09ccff8a"
+    },
+    {
+      "key": "202a63d0-be46-4a59-9593-834b2e27d286",
+      "file": "frontend/src/app/services/user.service.ts",
+      "line": 63,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": "decodeJwt",
+      "rule": "typescript:S7781",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=202a63d0-be46-4a59-9593-834b2e27d286&open=202a63d0-be46-4a59-9593-834b2e27d286"
+    },
+    {
+      "key": "c1e5aacc-468c-49f0-8f9b-689be7af2d58",
+      "file": "frontend/src/app/services/user.service.ts",
+      "line": 63,
+      "features": [
+        "F03"
+      ],
+      "relation": "direct",
+      "method": "decodeJwt",
+      "rule": "typescript:S7781",
+      "severity": "MINOR",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "type": "CODE_SMELL",
+      "status": "OPEN",
+      "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+      "effort": "5min",
+      "url": "http://localhost:9000/project/issues?id=la-morada&issues=c1e5aacc-468c-49f0-8f9b-689be7af2d58&open=c1e5aacc-468c-49f0-8f9b-689be7af2d58"
+    }
+  ],
+  "hotspots": [],
+  "components": [
+    {
+      "key": "la-morada:backend/src/modules/appointment/appointment-controller.js",
+      "name": "appointment-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/appointment-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "7",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "7"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "6"
+        },
+        {
+          "metric": "coverage",
+          "value": "93.3",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "51"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/appointment/appointment-routes.js",
+      "name": "appointment-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/appointment-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "ncloc",
+          "value": "10"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/appointment/appointment-service.js",
+      "name": "appointment-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/appointment-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "20",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "35"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "46"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "58"
+        },
+        {
+          "metric": "ncloc",
+          "value": "110"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/pages/appointment/appointment.component.css",
+      "name": "appointment.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/appointment/appointment.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "137"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/pages/appointment/appointment.component.html",
+      "name": "appointment.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/appointment/appointment.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "77"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/pages/appointment/appointment.component.ts",
+      "name": "appointment.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "25.5",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "58",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "133"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "106"
+        },
+        {
+          "metric": "coverage",
+          "value": "37.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "44.3",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "183"
+        },
+        {
+          "metric": "ncloc",
+          "value": "326"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "79",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "102",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/appointment/models/appointment.js",
+      "name": "appointment.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/models/appointment.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "5"
+        },
+        {
+          "metric": "ncloc",
+          "value": "18"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/models/appointment.model.ts",
+      "name": "appointment.model.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/models/appointment.model.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "ncloc",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/services/appointment.service.ts",
+      "name": "appointment.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/appointment.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "9"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "coverage",
+          "value": "7.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "9.1",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "11"
+        },
+        {
+          "metric": "ncloc",
+          "value": "22"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "10",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/auth/auth-controller.js",
+      "name": "auth-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/auth-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "4"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "coverage",
+          "value": "84.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "90.5",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "21"
+        },
+        {
+          "metric": "ncloc",
+          "value": "41"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "2",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/guards/auth-role.guard.ts",
+      "name": "auth-role.guard.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/guards/auth-role.guard.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "cognitive_complexity",
+          "value": "9",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "14"
+        },
+        {
+          "metric": "coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "22"
+        },
+        {
+          "metric": "ncloc",
+          "value": "33"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "22",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/auth/auth-routes.js",
+      "name": "auth-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/auth-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "8"
+        },
+        {
+          "metric": "ncloc",
+          "value": "8"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/auth/auth-service.js",
+      "name": "auth-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/auth-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "6"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "26"
+        },
+        {
+          "metric": "ncloc",
+          "value": "35"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/core/state/auth-state.service.ts",
+      "name": "auth-state.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/core/state/auth-state.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "12"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "13"
+        },
+        {
+          "metric": "coverage",
+          "value": "2.7",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "4.2",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "50"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "13",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "23",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/auth/validators/auth-validator.js",
+      "name": "auth-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/validators/auth-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "9"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "12"
+        },
+        {
+          "metric": "coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "38"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "8",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/core/interceptors/auth.interceptor.ts",
+      "name": "auth.interceptor.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/core/interceptors/auth.interceptor.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "cognitive_complexity",
+          "value": "15",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "16"
+        },
+        {
+          "metric": "ncloc",
+          "value": "41"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "16",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/availability/models/availability.js",
+      "name": "availability.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/availability/models/availability.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "ncloc",
+          "value": "10"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/models/availability.model.ts",
+      "name": "availability.model.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/models/availability.model.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "ncloc",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/services/availability.service.ts",
+      "name": "availability.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/availability.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "6",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "26"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "21"
+        },
+        {
+          "metric": "coverage",
+          "value": "2.2",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "4.2",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "54"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "21",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "23",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/cart/cart-controller.js",
+      "name": "cart-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/cart-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "2"
+        },
+        {
+          "metric": "coverage",
+          "value": "51.3",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "51.4",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "37"
+        },
+        {
+          "metric": "ncloc",
+          "value": "55"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "18",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/cart/cart-routes.js",
+      "name": "cart-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/cart-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "9"
+        },
+        {
+          "metric": "ncloc",
+          "value": "9"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/cart/cart-service.js",
+      "name": "cart-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/cart-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "15"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "9"
+        },
+        {
+          "metric": "coverage",
+          "value": "68.8",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "69.2",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "39"
+        },
+        {
+          "metric": "ncloc",
+          "value": "56"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "12",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/cart/validators/cart-validator.js",
+      "name": "cart-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/validators/cart-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "80.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "6"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "82.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "85.7",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "7"
+        },
+        {
+          "metric": "ncloc",
+          "value": "12"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/pages/cart/cart.component.css",
+      "name": "cart.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/cart/cart.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "198"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/pages/cart/cart.component.html",
+      "name": "cart.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/cart/cart.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/pages/cart/cart.component.ts",
+      "name": "cart.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/cart/cart.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "5.4",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "10",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "47"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "37"
+        },
+        {
+          "metric": "coverage",
+          "value": "17.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "25.5",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "55"
+        },
+        {
+          "metric": "ncloc",
+          "value": "101"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "35",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "41",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/cart/models/cart.js",
+      "name": "cart.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/models/cart.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "12"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/models/cart.models.ts",
+      "name": "cart.models.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/models/cart.models.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "ncloc",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/services/cart.service.ts",
+      "name": "cart.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/cart.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "17"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "2.9",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "4.0",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "25"
+        },
+        {
+          "metric": "ncloc",
+          "value": "70"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "10",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "24",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/guards/client-only.guard.ts",
+      "name": "client-only.guard.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/guards/client-only.guard.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "7"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "3",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/layout/header/header.component.css",
+      "name": "header.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/layout/header/header.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "128"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/layout/header/header.component.html",
+      "name": "header.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/layout/header/header.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/layout/header/header.component.ts",
+      "name": "header.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/layout/header/header.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "1"
+        },
+        {
+          "metric": "coverage",
+          "value": "61.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "64.7",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "17"
+        },
+        {
+          "metric": "ncloc",
+          "value": "35"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "6",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/middlewares/jwt-middleware.js",
+      "name": "jwt-middleware.js",
+      "qualifier": "FIL",
+      "path": "backend/src/middlewares/jwt-middleware.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "80.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "6"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "82.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "82.8",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "29"
+        },
+        {
+          "metric": "ncloc",
+          "value": "37"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "5",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/auth/strategies/jwt-strategy.js",
+      "name": "jwt-strategy.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/strategies/jwt-strategy.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "coverage",
+          "value": "95.7",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "94.7",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "19"
+        },
+        {
+          "metric": "ncloc",
+          "value": "32"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/core/utils/jwt.ts",
+      "name": "jwt.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/core/utils/jwt.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "6"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "6"
+        },
+        {
+          "metric": "coverage",
+          "value": "76.5",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "90.9",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "11"
+        },
+        {
+          "metric": "ncloc",
+          "value": "20"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/auth/strategies/password-strategy.js",
+      "name": "password-strategy.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/strategies/password-strategy.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "cognitive_complexity",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "2"
+        },
+        {
+          "metric": "coverage",
+          "value": "57.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "57.1",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "7"
+        },
+        {
+          "metric": "ncloc",
+          "value": "22"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "3",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/pages/product/product.component.css",
+      "name": "product.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/product/product.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "207"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/pages/product/product.component.html",
+      "name": "product.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/product/product.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/pages/product/product.component.ts",
+      "name": "product.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/product/product.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "27.6",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "19",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "24"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "29"
+        },
+        {
+          "metric": "coverage",
+          "value": "46.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "55.2",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "58"
+        },
+        {
+          "metric": "ncloc",
+          "value": "114"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "21",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "26",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/product/models/product.js",
+      "name": "product.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/product/models/product.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "ncloc",
+          "value": "13"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/middlewares/rate-limit-middleware.js",
+      "name": "rate-limit-middleware.js",
+      "qualifier": "FIL",
+      "path": "backend/src/middlewares/rate-limit-middleware.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "2"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "coverage",
+          "value": "77.8",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "5"
+        },
+        {
+          "metric": "ncloc",
+          "value": "8"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/middlewares/role-middleware.js",
+      "name": "role-middleware.js",
+      "qualifier": "FIL",
+      "path": "backend/src/middlewares/role-middleware.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "40.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "4"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "5"
+        },
+        {
+          "metric": "coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "53.8",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "13"
+        },
+        {
+          "metric": "ncloc",
+          "value": "19"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "6",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/auth/sign-in/sign-in.component.css",
+      "name": "sign-in.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-in/sign-in.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "185"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/auth/sign-in/sign-in.component.html",
+      "name": "sign-in.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-in/sign-in.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/auth/sign-in/sign-in.component.ts",
+      "name": "sign-in.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-in/sign-in.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "94.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "15",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "17"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "19"
+        },
+        {
+          "metric": "coverage",
+          "value": "98.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "30"
+        },
+        {
+          "metric": "ncloc",
+          "value": "61"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/auth/sign-up/sign-up.component.css",
+      "name": "sign-up.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-up/sign-up.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "284"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/auth/sign-up/sign-up.component.html",
+      "name": "sign-up.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "name": "sign-up.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "32.3",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "32",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "57"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "65"
+        },
+        {
+          "metric": "coverage",
+          "value": "53.7",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "70.7",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "82"
+        },
+        {
+          "metric": "ncloc",
+          "value": "176"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "44",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "24",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/user/user-controller.js",
+      "name": "user-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/user-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "10.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "13",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "13"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "19.3",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "21.3",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "47"
+        },
+        {
+          "metric": "ncloc",
+          "value": "81"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "9",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "37",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/user/user-routes.js",
+      "name": "user-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/user-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "14"
+        },
+        {
+          "metric": "ncloc",
+          "value": "14"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/user/user-service.js",
+      "name": "user-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/user-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "13.8",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "16",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "26"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "29"
+        },
+        {
+          "metric": "coverage",
+          "value": "27.6",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "33.3",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "69"
+        },
+        {
+          "metric": "ncloc",
+          "value": "92"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "25",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "46",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/user/validators/user-validator.js",
+      "name": "user-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/validators/user-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "60.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "11",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "13"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "25"
+        },
+        {
+          "metric": "coverage",
+          "value": "76.2",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "17"
+        },
+        {
+          "metric": "ncloc",
+          "value": "19"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "10",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:backend/src/modules/user/models/user.js",
+      "name": "user.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/models/user.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "17"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada:frontend/src/app/services/user.service.ts",
+      "name": "user.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/user.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "17",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "82"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "77"
+        },
+        {
+          "metric": "coverage",
+          "value": "0.6",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "1.3",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "79"
+        },
+        {
+          "metric": "ncloc",
+          "value": "148"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "77",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "78",
+          "bestValue": false
+        }
+      ]
+    }
+  ],
+  "sourceHashes": {
+    "backend/src/middlewares/jwt-middleware.js": "375e047b33fd37c7ccce3ae9d6e98ac9e2b6a22ab28815753aeec629da410e0e",
+    "backend/src/middlewares/rate-limit-middleware.js": "7c8b50194b393654a908ed657297c1083896728a142fe690c02c70e0f7ba84f4",
+    "backend/src/middlewares/role-middleware.js": "0b0e512867c5b12de908073482dc6d3f6162b8064d5fba07c65a7807a92d9261",
+    "backend/src/modules/appointment/appointment-controller.js": "15ab4c6da0489c0b6d61935f7effe42821a4eb44d314bed2f1c035f73ec8f2ae",
+    "backend/src/modules/appointment/appointment-routes.js": "9afbcc3ec5880966649d700e4a20b148d6abff88e91083c47646e95bc987ec01",
+    "backend/src/modules/appointment/appointment-service.js": "58da5c6dc35542a07fcba404f0fa9b7baec77a8546dd3c00e8dbd7000c6fb8b6",
+    "backend/src/modules/appointment/models/appointment.js": "cf0ab8a1b9f44d25babcb754e8ab7adb46b75b514844a376a3f0d83b2e783c0d",
+    "backend/src/modules/auth/auth-controller.js": "9b3aaa06e1bbb746cf5c2e01b6528b37fab6246d8660fa829f4c86c97724c672",
+    "backend/src/modules/auth/auth-routes.js": "6f04adddba0e0099cf9e89ed466cdeafe6bd14a11ad126bb0f2388f477eb6753",
+    "backend/src/modules/auth/auth-service.js": "3932803bc015195ff28881a09f055e829b665b42ded471cf7784ed583c0c311f",
+    "backend/src/modules/auth/strategies/jwt-strategy.js": "808eeb402c1c31ff975cdeaeb69c782c819a242f50e0f4aca10640120ab017bc",
+    "backend/src/modules/auth/strategies/password-strategy.js": "2f14c1919dff2242d3a5e0ab9c155082ac4fcabeda3a0255b4301e9da5ef21d8",
+    "backend/src/modules/auth/validators/auth-validator.js": "86413c26ebe57131425883b9708031f645723b063e80604e4b6a885e54c085f7",
+    "backend/src/modules/availability/models/availability.js": "8167d031715b3de2506fbaad87c0d018459b1dc65f504661aa4ec268f9a55d96",
+    "backend/src/modules/cart/cart-controller.js": "dcdb63f9bf0e76890e27e9f7241500dc6229b05eb5bcb1167fd7313d1cf580cb",
+    "backend/src/modules/cart/cart-routes.js": "fb0686ffa251ce5ae3f23c37264ed20415d1ca74f9a44ccad54a2dfa4a01ebd1",
+    "backend/src/modules/cart/cart-service.js": "ab2bd95344159426aa0c1892b5b30e7303b712c3387d08ba4380dea67b379f83",
+    "backend/src/modules/cart/models/cart.js": "716c043b2c36ac44f67966774a0df1569cd71e5cc18c734ee3282dc10b5160b7",
+    "backend/src/modules/cart/validators/cart-validator.js": "8ecce91efd72553d047b7f6f88d71b3df81c74a5125ea2e730d5cf70afe842d0",
+    "backend/src/modules/product/models/product.js": "692b882c6c136a94e51520f40f25e563ce9c829f344fd9ac7d4c31a06015c7b9",
+    "backend/src/modules/user/models/user.js": "be35a6e6d1642a3e064d979d2984f195991cd0aca64b6c443843e5ab2fa7d5a4",
+    "backend/src/modules/user/user-controller.js": "7cbf1b453a602b80c27708caf986c82c56c852307a4585972ea4f319b1c2b842",
+    "backend/src/modules/user/user-routes.js": "8bb558614575748dc5b50c6f6f94c702a0768d276995c770746fec7eb79ed96f",
+    "backend/src/modules/user/user-service.js": "9d71f7ec5646f25266eb609130dcc3eda6955e4aa99cd5ce6179378c5a4f3bb9",
+    "backend/src/modules/user/validators/user-validator.js": "47d02e05bcf9605918ed83cc8f7f7aeeaca4514383d3166d2e543a08768bdaeb",
+    "frontend/src/app/auth/sign-in/sign-in.component.css": "eec0dfd689025a55e5211296c19e40df9eff2052f36353f7c71007868eab1321",
+    "frontend/src/app/auth/sign-in/sign-in.component.html": "df91a1f1b1c6d4f45842f8f614a25b24e4f6f6f0beea8370c7b998806950da15",
+    "frontend/src/app/auth/sign-in/sign-in.component.ts": "f7a9e6d91b84e2764e5bf2c81d181331ac2fe33cd5272bb3047163833a1b8513",
+    "frontend/src/app/auth/sign-up/sign-up.component.css": "c203a6f1913dae5da06d8dd645b7e09f7ab3a0ad9d606593073f13e55894a618",
+    "frontend/src/app/auth/sign-up/sign-up.component.html": "9163a7bf1b501091147b1c4acbf33fa98a31c7c02f919290b25cb6b75e4b8e40",
+    "frontend/src/app/auth/sign-up/sign-up.component.ts": "4dd3839e2c35c1e9cdfe8bd5a6bc1afe1942e5bc354686f8dec11e9b99312851",
+    "frontend/src/app/core/interceptors/auth.interceptor.ts": "508b30a4b6881b3e2eaf582c39082398bd60af9ba7e1c17946ea1954299d55c3",
+    "frontend/src/app/core/state/auth-state.service.ts": "aa91b7d9f3d9f89b0038397c6564eab77c9c27e60711eac4aaf227440ab0bff5",
+    "frontend/src/app/core/utils/jwt.ts": "a77e28c13d6f12e838f33142b33255611f948d430f454125b23667a5e042747a",
+    "frontend/src/app/guards/auth-role.guard.ts": "02c832a70594d77c6b62f5001e6041fae2236fd92363381987bb8d349517ab21",
+    "frontend/src/app/guards/client-only.guard.ts": "a4d40b370b13148fbd49835ba0df108d9baf7f3e9fbdc2be4834754279370ea2",
+    "frontend/src/app/layout/header/header.component.css": "1834e04a7e2c621565db5618b7205458331dd42e12390fffc14213848245e5d4",
+    "frontend/src/app/layout/header/header.component.html": "08c2aaddc58ebfd8cda2c5da89247b2efd5c179943c86da06700b74850b8ae92",
+    "frontend/src/app/layout/header/header.component.ts": "91cd11f4405568903e1e462ff9f81b549656b8a00265c15b6f546a0a2ac2a005",
+    "frontend/src/app/models/appointment.model.ts": "c50b47d683540ec033456c54898a4b14e633adc1c3be4b43a0b289e893ffc905",
+    "frontend/src/app/models/availability.model.ts": "366cdc31ff9bed4b05e35d9cfcfb41758644c088dc7a1cdde08239e33f4caf1b",
+    "frontend/src/app/models/cart.models.ts": "f11c851f5bbf00e6d444dd066aaa3611bc475afdfda038c7a2ffed19be45b33d",
+    "frontend/src/app/pages/appointment/appointment.component.css": "b23d5cfd5d9832f7caf522a07e814ad7e7eefd91340601ae06b794a9994d1469",
+    "frontend/src/app/pages/appointment/appointment.component.html": "f1352ba1d2365842d43ce9dbf902493ff02b742ca53658af291a3264e516d9e4",
+    "frontend/src/app/pages/appointment/appointment.component.ts": "2b08311d12c7bc107e4fc7ab378d9a2b1e26a61a867cf1ae62cae470203fcfc2",
+    "frontend/src/app/pages/cart/cart.component.css": "dd14fc81e7684b303c779fe5f615d188b470e57f00c1f3fd5ca17244e0b07e53",
+    "frontend/src/app/pages/cart/cart.component.html": "15d2d5b827a94e2c3e5013faeea927750b193d537dec0cb09c15a4b8c5838b2b",
+    "frontend/src/app/pages/cart/cart.component.ts": "8be89afab8f5976109b5d0eb926fdb614ce5b6beaf3dec5c251561da1fa1961c",
+    "frontend/src/app/pages/product/product.component.css": "8b66970feeda302c6845a09d59377937124f06d21011f7da6948af0c30faee20",
+    "frontend/src/app/pages/product/product.component.html": "6c3c4b940d60b0af7a6935dabe9957877d175d0cc948ad9906ce62aab3c69df3",
+    "frontend/src/app/pages/product/product.component.ts": "44a4bc9e0f7dc0dafc7d4f79d7861a8573273f942861a42b3f48fe10310372fe",
+    "frontend/src/app/services/appointment.service.ts": "e8a8f95bdf7bb1ea94049923a9ecd2ed062d7fb07b5dbd27a9989eaf8e86c7aa",
+    "frontend/src/app/services/availability.service.ts": "011025e0eb1f8f0830d592513c0aa17fd55b51b14fecf7b468ca9a7b1f4a12e6",
+    "frontend/src/app/services/cart.service.ts": "b3b602fa288890ef0cbfb98ec555eab73b59618a40fc1ee5ac52dc716fbbbec2",
+    "frontend/src/app/services/user.service.ts": "0a928ca4b385edd6867e9ee16042551c901ec22eaf78adb5e7180523c8732eb0"
+  }
+}

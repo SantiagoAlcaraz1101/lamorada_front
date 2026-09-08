@@ -1,6 +1,6 @@
 import { environment } from '../../../environments/environment';
-import { Component, Inject, PLATFORM_ID, ChangeDetectorRef } from '@angular/core';
-import { CommonModule, NgIf, NgFor, isPlatformBrowser } from '@angular/common';
+import { Component, Inject, PLATFORM_ID, ChangeDetectorRef, OnInit } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { AppointmentService } from '../../services/appointment.service';
@@ -42,18 +42,18 @@ const HOURS_FALLBACK = [
 @Component({
   standalone: true,
   selector: 'app-appointment',
-  imports: [CommonModule, ReactiveFormsModule, NgIf, NgFor],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './appointment.component.html',
   styleUrls: ['./appointment.component.css'],
 })
-export class AppointmentComponent {
+export class AppointmentComponent implements OnInit {
   constructor(
-    private fb: FormBuilder,
-    private http: HttpClient,
-    private apSrv: AppointmentService,
-    private avSrv: AvailabilityService,
-    private cdr: ChangeDetectorRef,
-    @Inject(PLATFORM_ID) private platformId: Object
+    private readonly fb: FormBuilder,
+    private readonly http: HttpClient,
+    private readonly apSrv: AppointmentService,
+    private readonly avSrv: AvailabilityService,
+    private readonly cdr: ChangeDetectorRef,
+    @Inject(PLATFORM_ID) private readonly platformId: Object
   ) {
     this.form = this.fb.group({
       date: this.fb.control<string>('', { nonNullable: true, validators: [Validators.required] }),
@@ -85,13 +85,13 @@ export class AppointmentComponent {
     return new HttpHeaders({ 'Content-Type': 'application/json', Authorization: t ? `Bearer ${t}` : '' });
   }
 
-  private decodeToken(): any | null {
+  private decodeToken(): any {
     if (!this.isBrowser()) return null;
     try {
       const t = localStorage.getItem('token');
       if (!t) return null;
       const payload = t.split('.')[1];
-      const json = atob(payload.replace(/-/g, '+').replace(/_/g, '/'));
+      const json = atob(payload.replaceAll('-', '+').replaceAll('_', '/'));
       return JSON.parse(json);
     } catch { return null; }
   }

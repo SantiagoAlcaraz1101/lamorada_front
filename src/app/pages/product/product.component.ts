@@ -32,9 +32,9 @@ export class ProductComponent implements OnInit {
   q = '';
 
   constructor(
-    private prod: ProductService,
-    private cart: CartService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    private readonly prod: ProductService,
+    private readonly cart: CartService,
+    @Inject(PLATFORM_ID) private readonly platformId: Object
   ) {}
 
   async ngOnInit() {

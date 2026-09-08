@@ -31,8 +31,8 @@ export class CartService {
   readonly cart$ = this.state.asObservable();
 
   constructor(
-    private http: HttpClient,
-    @Inject(PLATFORM_ID) private platformId: Object,
+    private readonly http: HttpClient,
+    @Inject(PLATFORM_ID) private readonly platformId: Object,
   ) {}
 
   private headers(): HttpHeaders {

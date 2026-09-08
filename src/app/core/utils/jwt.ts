@@ -5,7 +5,7 @@ export function decodeJwt<T = any>(token: string | null): T | null {
     const parts = token.split('.');
     if (parts.length < 2) return null;
     // base64url → base64
-    const b64 = parts[1].replace(/-/g, '+').replace(/_/g, '/');
+    const b64 = parts[1].replaceAll('-', '+').replaceAll('_', '/');
     // padding
     const pad = b64.length % 4 ? '='.repeat(4 - (b64.length % 4)) : '';
     const json = typeof atob === 'function'
@@ -14,7 +14,7 @@ export function decodeJwt<T = any>(token: string | null): T | null {
     // decode UTF-8
     const utf8 = decodeURIComponent(
       Array.prototype.map
-        .call(json, (c: string) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
+        .call(json, (c: string) => '%' + ('00' + c.codePointAt(0)!.toString(16)).slice(-2))
         .join('')
     );
     return JSON.parse(utf8) as T;

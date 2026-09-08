@@ -6,9 +6,9 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class AppointmentService {
-  private baseUrl = `${environment.API_BASE}/appointment`;
+  private readonly baseUrl = `${environment.API_BASE}/appointment`;
 
-  constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(private readonly http: HttpClient, @Inject(PLATFORM_ID) private readonly platformId: Object) {}
 
   private isBrowser() { return isPlatformBrowser(this.platformId); }
   private headers(): HttpHeaders {

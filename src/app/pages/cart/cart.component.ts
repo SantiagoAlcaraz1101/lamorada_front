@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule, NgIf, NgFor, CurrencyPipe } from '@angular/common';
+import { Component, inject, OnInit } from '@angular/core';
+import { CommonModule, CurrencyPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { CartService, CartResponse, CartLine, CartProduct } from '../../services/cart.service';
 
@@ -8,10 +8,10 @@ import { CartService, CartResponse, CartLine, CartProduct } from '../../services
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css'],
-  imports: [CommonModule, NgIf, NgFor, CurrencyPipe, RouterLink],
+  imports: [CommonModule, CurrencyPipe, RouterLink],
 })
-export class CartComponent {
-  private cartSvc = inject(CartService);
+export class CartComponent implements OnInit {
+  private readonly cartSvc = inject(CartService);
 
   /** Moneda a mostrar en la UI */
   currencyCode: string = 'COP';

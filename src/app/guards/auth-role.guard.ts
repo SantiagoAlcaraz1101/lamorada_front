@@ -1,7 +1,6 @@
-import { inject } from '@angular/core';
+import { inject, PLATFORM_ID } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
-import { PLATFORM_ID } from '@angular/core';
 
 function getToken(platformId: Object): string | null {
   if (!isPlatformBrowser(platformId)) return null;
@@ -33,7 +32,7 @@ export const AuthRoleGuard: CanActivateFn = (route) => {
   const expected = route.data?.['expectedRoles'] as string[] | undefined;
   const roles = getRolesFromToken(token);
 
-  if (expected && expected.length && !expected.some(r => roles.includes(r))) {
+  if (expected?.length && !expected.some(r => roles.includes(r))) {
     router.navigate(['/home']);
     return false;
   }

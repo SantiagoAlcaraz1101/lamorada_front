@@ -263,7 +263,7 @@ button {
   letter-spacing: 0.2px;
   cursor: pointer;
   color: #fff;
-  background: linear-gradient(180deg, #b096ff, #9b7bff 60%, #8f6bff);
+  background: linear-gradient(180deg, #6941c6, #5e35b1 60%, #512da8);
   box-shadow: 0 10px 26px rgba(143, 107, 255, 0.35);
   transition: filter 0.15s ease, transform 0.06s ease, box-shadow 0.2s ease;
 }

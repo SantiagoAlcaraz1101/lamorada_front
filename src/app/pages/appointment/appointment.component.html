@@ -1,87 +1,94 @@
-<section class="box" *ngIf="!loading; else loadTpl">
-  <h2>Citas</h2>
-
-  <form class="form" [formGroup]="form" (ngSubmit)="$event.preventDefault(); create()">
-    <div class="row">
-      <label class="col">
-        <span>Fecha</span>
-        <input type="date" formControlName="date" [min]="minDate" (change)="regenerateHours()">
-      </label>
-
-      <label class="col">
-        <span>Hora</span>
-        <select formControlName="hour">
-          <option value="" disabled>Selecciona</option>
-          <option *ngFor="let h of hours" [value]="h">{{ h }}</option>
-        </select>
-      </label>
-
-      <label class="col">
-        <span>Psicólogo</span>
-        <select formControlName="psychologist_id">
-          <option value="" disabled>Selecciona</option>
-          <option *ngFor="let u of psychologists" [value]="u._id">
-            {{ u.name || u.email || u._id }}
-          </option>
-        </select>
-      </label>
-
-      <label class="col" *ngIf="role === 'psychologist'">
-        <span>Paciente</span>
-        <select formControlName="patient_id">
-          <option value="" disabled>Selecciona</option>
-          <option *ngFor="let u of patients" [value]="u._id">
-            {{ u.name || u.email || u._id }}
-          </option>
-        </select>
-      </label>
-    </div>
-
-    <div class="actions">
-      <button type="submit" [disabled]="creating || form.invalid">
-        {{ creating ? 'Creando…' : 'Crear cita' }}
-      </button>
-    </div>
-  </form>
-
-  <h3 class="mt">Mis citas</h3>
-  <div *ngIf="listing" class="muted">Cargando listado…</div>
-  <div *ngIf="!listing && !appointments.length" class="muted">No hay citas.</div>
-
-  <ul class="list" *ngIf="!listing && appointments.length">
-    <li *ngFor="let a of appointments">
-      <div class="row2">
-        <div class="who">
-          <div><strong>Psicólogo:</strong> {{ findUserName(a.psychologist_id) }}</div>
-          <div><strong>Paciente:</strong> {{ findUserName(a.patient_id) }}</div>
-        </div>
-        <div class="when">
-          <div><strong>Día:</strong> {{ a.day | titlecase }}</div>
-          <div><strong>Hora:</strong> {{ a.start }}–{{ a.end }}</div>
-        </div>
-        <div class="status">
-          <span class="chip" [class.pend]="a.status==='pendiente'"
-                            [class.conf]="a.status==='confirmada'"
-                            [class.comp]="a.status==='completada'"
-                            [class.canc]="a.status==='cancelada'">
-            {{ a.status | titlecase }}
-          </span>
-        </div>
+@if (!loading) {
+  <section class="box">
+    <h2>Citas</h2>
+    <form class="form" [formGroup]="form" (ngSubmit)="$event.preventDefault(); create()">
+      <div class="row">
+        <label class="col">
+          <span>Fecha</span>
+          <input type="date" formControlName="date" [min]="minDate" (change)="regenerateHours()">
+        </label>
+        <label class="col">
+          <span>Hora</span>
+          <select formControlName="hour">
+            <option value="" disabled>Selecciona</option>
+            @for (h of hours; track h) {
+              <option [value]="h">{{ h }}</option>
+            }
+          </select>
+        </label>
+        <label class="col">
+          <span>Psicólogo</span>
+          <select formControlName="psychologist_id">
+            <option value="" disabled>Selecciona</option>
+            @for (u of psychologists; track u) {
+              <option [value]="u._id">
+                {{ u.name || u.email || u._id }}
+              </option>
+            }
+          </select>
+        </label>
+        @if (role === 'psychologist') {
+          <label class="col">
+            <span>Paciente</span>
+            <select formControlName="patient_id">
+              <option value="" disabled>Selecciona</option>
+              @for (u of patients; track u) {
+                <option [value]="u._id">
+                  {{ u.name || u.email || u._id }}
+                </option>
+              }
+            </select>
+          </label>
+        }
       </div>
-
-      <div class="row3">
-        <button class="link danger" (click)="delete(a._id)">Cancelar</button>
-
-        <ng-container *ngIf="role === 'psychologist'">
-          <button class="link" (click)="setStatus(a, 'confirmada')" [disabled]="a.status==='cancelada' || a.status==='completada'">Confirmar</button>
-          <button class="link" (click)="setStatus(a, 'completada')" [disabled]="a.status==='cancelada'">Marcar completada</button>
-          <button class="link" (click)="setStatus(a, 'cancelada')" [disabled]="a.status==='completada'">Marcar cancelada</button>
-        </ng-container>
+      <div class="actions">
+        <button type="submit" [disabled]="creating || form.invalid">
+          {{ creating ? 'Creando…' : 'Crear cita' }}
+        </button>
       </div>
-    </li>
-  </ul>
-</section>
-
-<ng-template #loadTpl>
+    </form>
+    <h3 class="mt">Mis citas</h3>
+    @if (listing) {
+      <div class="muted">Cargando listado…</div>
+    }
+    @if (!listing && !appointments.length) {
+      <div class="muted">No hay citas.</div>
+    }
+    @if (!listing && appointments.length) {
+      <ul class="list">
+        @for (a of appointments; track a) {
+          <li>
+            <div class="row2">
+              <div class="who">
+                <div><strong>Psicólogo:</strong> {{ findUserName(a.psychologist_id) }}</div>
+                <div><strong>Paciente:</strong> {{ findUserName(a.patient_id) }}</div>
+              </div>
+              <div class="when">
+                <div><strong>Día:</strong> {{ a.day | titlecase }}</div>
+                <div><strong>Hora:</strong> {{ a.start }}–{{ a.end }}</div>
+              </div>
+              <div class="status">
+                <span class="chip" [class.pend]="a.status==='pendiente'"
+                  [class.conf]="a.status==='confirmada'"
+                  [class.comp]="a.status==='completada'"
+                  [class.canc]="a.status==='cancelada'">
+                  {{ a.status | titlecase }}
+                </span>
+              </div>
+            </div>
+            <div class="row3">
+              <button class="link danger" (click)="delete(a._id)">Cancelar</button>
+              @if (role === 'psychologist') {
+                <button class="link" (click)="setStatus(a, 'confirmada')" [disabled]="a.status==='cancelada' || a.status==='completada'">Confirmar</button>
+                <button class="link" (click)="setStatus(a, 'completada')" [disabled]="a.status==='cancelada'">Marcar completada</button>
+                <button class="link" (click)="setStatus(a, 'cancelada')" [disabled]="a.status==='completada'">Marcar cancelada</button>
+              }
+            </div>
+          </li>
+        }
+      </ul>
+    }
+  </section>
+} @else {
   <div class="box">Cargando…</div>
-</ng-template>
+}
