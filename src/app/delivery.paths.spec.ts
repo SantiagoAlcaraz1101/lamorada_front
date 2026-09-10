@@ -202,7 +202,7 @@ describe('Caminos exactos por función - frontend', () => {
     });
     it('F14-F-P2: respuesta objeto usa appointments en la rama falsa', () => {
       const { component, appointment } = appointmentSetup(); appointment.getAll.and.returnValue(of({ appointments: [row('c1')] }));
-      component.refreshList(); expect(component.appointments.length).toBe(1);
+      component.refreshList(); expect(component.appointments).toHaveSize(1);
     });
     it('F14-F-P3: excepción al normalizar entra al catch interno', () => {
       const { component, appointment } = appointmentSetup(); const bad: any = {}; Object.defineProperty(bad, 'appointments', { get: () => { throw new Error('dato inválido'); } }); appointment.getAll.and.returnValue(of(bad));
@@ -291,6 +291,6 @@ describe('Caminos exactos por función - frontend', () => {
     cart.cart$ = of({ products_id: [{ product_id: 'p1', quantity: 2 }], total: 100000 }); cart.getCart.and.returnValue(of({}));
     TestBed.resetTestingModule(); TestBed.configureTestingModule({ providers: [{ provide: CartService, useValue: cart }] });
     const component = TestBed.runInInjectionContext(() => new CartComponent()); component.ngOnInit();
-    expect(cart.getCart).toHaveBeenCalled(); expect(component.items.length).toBe(1); expect(component.total).toBe(100000); expect(component.loading).toBeFalse();
+    expect(cart.getCart).toHaveBeenCalled(); expect(component.items).toHaveSize(1); expect(component.total).toBe(100000); expect(component.loading).toBeFalse();
   });
 });

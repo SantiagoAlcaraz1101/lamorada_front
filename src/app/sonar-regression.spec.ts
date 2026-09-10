@@ -23,7 +23,7 @@ describe('Regresion de las plantillas corregidas por SonarQube', () => {
     const fixture = TestBed.createComponent(SignInComponent);
     fixture.detectChanges();
     const controls: NodeListOf<HTMLInputElement> = fixture.nativeElement.querySelectorAll('[formControlName]');
-    expect(controls.length).toBe(2);
+    expect(controls).toHaveSize(2);
     controls.forEach(control => expect(control.labels?.length).toBe(1));
     expect(fixture.nativeElement.querySelector('form button').disabled).toBeTrue();
   });
@@ -32,7 +32,7 @@ describe('Regresion de las plantillas corregidas por SonarQube', () => {
     const fixture = TestBed.createComponent(SignUpComponent);
     fixture.detectChanges();
     const controls: NodeListOf<HTMLInputElement | HTMLSelectElement> = fixture.nativeElement.querySelectorAll('[formControlName]');
-    expect(controls.length).toBe(10);
+    expect(controls).toHaveSize(10);
     controls.forEach(control => expect(control.labels?.length).toBe(1));
     expect(fixture.componentInstance.form.invalid).toBeTrue();
   });
@@ -48,10 +48,10 @@ describe('Regresion de las plantillas corregidas por SonarQube', () => {
     fixture.detectChanges();
     const root: HTMLElement = fixture.nativeElement;
     expect(getCart).toHaveBeenCalledTimes(1);
-    expect(root.querySelectorAll('tbody tr').length).toBe(1);
+    expect(root.querySelectorAll('tbody tr')).toHaveSize(1);
     expect(root.querySelector('tbody')?.textContent).toContain('Libro de prueba');
     expect(root.querySelector('tfoot th')?.getAttribute('scope')).toBe('row');
-    expect(root.querySelectorAll('tfoot th').length).toBe(1);
+    expect(root.querySelectorAll('tfoot th')).toHaveSize(1);
     expect(root.querySelector('tfoot td.total')?.textContent).toContain('40,000');
     state.next({ products_id: [], total: 0 });
     fixture.detectChanges();
@@ -71,12 +71,12 @@ describe('Regresion de las plantillas corregidas por SonarQube', () => {
       day: 'lunes', start: '09:00', end: '10:00', status: 'pendiente' }];
     fixture.detectChanges();
     const root: HTMLElement = fixture.nativeElement;
-    expect(root.querySelectorAll('.list li').length).toBe(1);
-    expect(root.querySelectorAll('.row3 button').length).toBe(1);
+    expect(root.querySelectorAll('.list li')).toHaveSize(1);
+    expect(root.querySelectorAll('.row3 button')).toHaveSize(1);
     expect(root.querySelector('[formControlName="patient_id"]')).toBeNull();
     component.role = 'psychologist';
     fixture.detectChanges();
-    expect(root.querySelectorAll('.row3 button').length).toBe(4);
+    expect(root.querySelectorAll('.row3 button')).toHaveSize(4);
     expect(root.querySelector('[formControlName="patient_id"]')).not.toBeNull();
     component.appointments = [];
     fixture.detectChanges();
