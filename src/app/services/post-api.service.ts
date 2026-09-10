@@ -15,7 +15,7 @@ export interface PostDto {
 export class PostApiService {
   private readonly baseUrl = `${environment.API_BASE}/post`;
 
-  constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(private readonly http: HttpClient, @Inject(PLATFORM_ID) private readonly platformId: Object) {}
 
   private authHeaders(): HttpHeaders {
     let token: string | null = null;

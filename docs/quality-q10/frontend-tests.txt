@@ -1,0 +1,225 @@
+> Building...
+√ Building...
+Initial chunk files           | Names                      |  Raw size
+chunk-U5NP2IZP.js             | -                          |   2.48 MB |
+polyfills.js                  | polyfills                  |   1.04 MB |
+chunk-SV5MMA4F.js             | -                          | 271.00 kB |
+chunk-55GCJSZA.js             | -                          | 253.98 kB |
+chunk-ZGALR2K6.js             | -                          | 242.84 kB |
+chunk-NMPW4APJ.js             | -                          | 209.27 kB |
+spec-delivery.paths.spec.js   | spec-delivery.paths.spec   | 105.88 kB |
+spec-plan20.post.spec.js      | spec-plan20.post.spec      | 103.92 kB |
+spec-plan20.profile.spec.js   | spec-plan20.profile.spec   | 102.21 kB |
+chunk-M4WJDGW7.js             | -                          | 101.56 kB |
+jasmine-cleanup-1.js          | jasmine-cleanup-1          |  67.20 kB |
+chunk-F54ASYTZ.js             | -                          |  56.70 kB |
+spec-quality.ui.spec.js       | spec-quality.ui.spec       |  46.50 kB |
+chunk-TQYO6WQX.js             | -                          |  43.38 kB |
+chunk-7CW7F7V7.js             | -                          |  26.07 kB |
+chunk-HPJ5G4PI.js             | -                          |  23.96 kB |
+spec-quality.http.spec.js     | spec-quality.http.spec     |  22.79 kB |
+test_main.js                  | test_main                  |  21.83 kB |
+chunk-Y5J7XBFZ.js             | -                          |  10.34 kB |
+spec-sonar-regression.spec.js | spec-sonar-regression.spec |   4.95 kB |
+chunk-3FMBEB3S.js             | -                          |   2.13 kB |
+jasmine-cleanup-0.js          | jasmine-cleanup-0          | 519 bytes |
+styles.css                    | styles                     | 406 bytes |
+
+                              | Initial total              |   5.24 MB
+
+Application bundle generation complete. [4.812 seconds] - 2026-09-10T16:07:23.486Z
+
+10 09 2026 11:07:24.226:INFO [karma-server]: Karma v6.4.4 server started at http://localhost:9876/
+10 09 2026 11:07:24.227:INFO [launcher]: Launching browsers ChromeHeadless with concurrency unlimited
+10 09 2026 11:07:24.234:INFO [launcher]: Starting browser ChromeHeadless
+10 09 2026 11:07:25.165:INFO [Chrome Headless 152.0.0.0 (Windows 10)]: Connected on socket eOV3mUPReiZp7HqRAAAB with id 79322309
+Chrome Headless 152.0.0.0 (Windows 10): Executed 0 of 173 SUCCESS (0 secs / 0 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 1 of 173 SUCCESS (0 secs / 0.007 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 2 of 173 SUCCESS (0 secs / 0.009 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 3 of 173 SUCCESS (0 secs / 0.061 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 4 of 173 SUCCESS (0 secs / 0.061 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 5 of 173 SUCCESS (0 secs / 0.062 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 6 of 173 SUCCESS (0 secs / 0.062 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 7 of 173 SUCCESS (0 secs / 0.063 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 8 of 173 SUCCESS (0 secs / 0.064 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 9 of 173 SUCCESS (0 secs / 0.064 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 10 of 173 SUCCESS (0 secs / 0.065 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 11 of 173 SUCCESS (0 secs / 0.065 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 12 of 173 SUCCESS (0 secs / 0.065 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 13 of 173 SUCCESS (0 secs / 0.066 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 14 of 173 SUCCESS (0 secs / 0.066 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 15 of 173 SUCCESS (0 secs / 0.067 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 16 of 173 SUCCESS (0 secs / 0.067 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 17 of 173 SUCCESS (0 secs / 0.067 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 18 of 173 SUCCESS (0 secs / 0.068 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 19 of 173 SUCCESS (0 secs / 0.068 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 20 of 173 SUCCESS (0 secs / 0.068 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 21 of 173 SUCCESS (0 secs / 0.072 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 22 of 173 SUCCESS (0 secs / 0.072 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 23 of 173 SUCCESS (0 secs / 0.072 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 24 of 173 SUCCESS (0 secs / 0.072 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 25 of 173 SUCCESS (0 secs / 0.073 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 26 of 173 SUCCESS (0 secs / 0.073 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 27 of 173 SUCCESS (0 secs / 0.078 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 28 of 173 SUCCESS (0 secs / 0.08 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 29 of 173 SUCCESS (0 secs / 0.082 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 30 of 173 SUCCESS (0 secs / 0.083 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 31 of 173 SUCCESS (0 secs / 0.085 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 32 of 173 SUCCESS (0 secs / 0.086 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 33 of 173 SUCCESS (0 secs / 0.087 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 34 of 173 SUCCESS (0 secs / 0.088 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 35 of 173 SUCCESS (0 secs / 0.089 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 36 of 173 SUCCESS (0 secs / 0.09 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 37 of 173 SUCCESS (0 secs / 0.091 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 38 of 173 SUCCESS (0 secs / 0.092 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 39 of 173 SUCCESS (0 secs / 0.093 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 40 of 173 SUCCESS (0 secs / 0.094 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 41 of 173 SUCCESS (0 secs / 0.095 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 42 of 173 SUCCESS (0 secs / 0.096 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 43 of 173 SUCCESS (0 secs / 0.097 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 44 of 173 SUCCESS (0 secs / 0.097 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 45 of 173 SUCCESS (0 secs / 0.098 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 46 of 173 SUCCESS (0 secs / 0.099 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 47 of 173 SUCCESS (0 secs / 0.1 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 48 of 173 SUCCESS (0 secs / 0.101 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 49 of 173 SUCCESS (0 secs / 0.101 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 50 of 173 SUCCESS (0 secs / 0.102 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 51 of 173 SUCCESS (0 secs / 0.104 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 52 of 173 SUCCESS (0 secs / 0.104 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 53 of 173 SUCCESS (0 secs / 0.105 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 54 of 173 SUCCESS (0 secs / 0.106 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 55 of 173 SUCCESS (0 secs / 0.107 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 56 of 173 SUCCESS (0 secs / 0.108 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 57 of 173 SUCCESS (0 secs / 0.109 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 58 of 173 SUCCESS (0 secs / 0.11 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 59 of 173 SUCCESS (0 secs / 0.111 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 60 of 173 SUCCESS (0 secs / 0.112 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 61 of 173 SUCCESS (0 secs / 0.113 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 62 of 173 SUCCESS (0 secs / 0.115 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 63 of 173 SUCCESS (0 secs / 0.117 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 64 of 173 SUCCESS (0 secs / 0.118 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 65 of 173 SUCCESS (0 secs / 0.119 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 66 of 173 SUCCESS (0 secs / 0.121 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 67 of 173 SUCCESS (0 secs / 0.122 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 68 of 173 SUCCESS (0 secs / 0.123 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 69 of 173 SUCCESS (0 secs / 0.124 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 70 of 173 SUCCESS (0 secs / 0.125 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 71 of 173 SUCCESS (0 secs / 0.126 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 72 of 173 SUCCESS (0 secs / 0.127 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 73 of 173 SUCCESS (0 secs / 0.127 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 74 of 173 SUCCESS (0 secs / 0.128 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 75 of 173 SUCCESS (0 secs / 0.13 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 76 of 173 SUCCESS (0 secs / 0.131 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 77 of 173 SUCCESS (0 secs / 0.132 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 78 of 173 SUCCESS (0 secs / 0.132 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 79 of 173 SUCCESS (0 secs / 0.133 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 80 of 173 SUCCESS (0 secs / 0.134 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 81 of 173 SUCCESS (0 secs / 0.134 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 82 of 173 SUCCESS (0 secs / 0.134 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 83 of 173 SUCCESS (0 secs / 0.134 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 84 of 173 SUCCESS (0 secs / 0.166 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 85 of 173 SUCCESS (0 secs / 0.168 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 86 of 173 SUCCESS (0 secs / 0.169 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 87 of 173 SUCCESS (0 secs / 0.17 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 88 of 173 SUCCESS (0 secs / 0.173 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 89 of 173 SUCCESS (0 secs / 0.175 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 90 of 173 SUCCESS (0 secs / 0.177 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 91 of 173 SUCCESS (0 secs / 0.178 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 92 of 173 SUCCESS (0 secs / 0.179 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 93 of 173 SUCCESS (0 secs / 0.179 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 94 of 173 SUCCESS (0 secs / 0.193 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 95 of 173 SUCCESS (0 secs / 0.194 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 96 of 173 SUCCESS (0 secs / 0.201 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 97 of 173 SUCCESS (0 secs / 0.202 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 98 of 173 SUCCESS (0 secs / 0.203 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 99 of 173 SUCCESS (0 secs / 0.203 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 100 of 173 SUCCESS (0 secs / 0.203 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 101 of 173 SUCCESS (0 secs / 0.204 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 102 of 173 SUCCESS (0 secs / 0.204 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 103 of 173 SUCCESS (0 secs / 0.205 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 104 of 173 SUCCESS (0 secs / 0.207 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 105 of 173 SUCCESS (0 secs / 0.208 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 106 of 173 SUCCESS (0 secs / 0.209 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 107 of 173 SUCCESS (0 secs / 0.209 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 108 of 173 SUCCESS (0 secs / 0.209 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 109 of 173 SUCCESS (0 secs / 0.209 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 110 of 173 SUCCESS (0 secs / 0.21 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 111 of 173 SUCCESS (0 secs / 0.21 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 112 of 173 SUCCESS (0 secs / 0.212 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 113 of 173 SUCCESS (0 secs / 0.215 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 114 of 173 SUCCESS (0 secs / 0.218 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 115 of 173 SUCCESS (0 secs / 0.22 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 116 of 173 SUCCESS (0 secs / 0.221 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 117 of 173 SUCCESS (0 secs / 0.223 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 118 of 173 SUCCESS (0 secs / 0.225 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 119 of 173 SUCCESS (0 secs / 0.254 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 120 of 173 SUCCESS (0 secs / 0.274 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 121 of 173 SUCCESS (0 secs / 0.307 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 122 of 173 SUCCESS (0 secs / 0.315 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 123 of 173 SUCCESS (0 secs / 0.317 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 124 of 173 SUCCESS (0 secs / 0.89 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 125 of 173 SUCCESS (0 secs / 0.891 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 126 of 173 SUCCESS (0 secs / 0.891 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 127 of 173 SUCCESS (0 secs / 0.892 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 128 of 173 SUCCESS (0 secs / 0.892 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 129 of 173 SUCCESS (0 secs / 0.892 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 130 of 173 SUCCESS (0 secs / 0.892 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 131 of 173 SUCCESS (0 secs / 0.892 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 132 of 173 SUCCESS (0 secs / 0.903 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 133 of 173 SUCCESS (0 secs / 0.904 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 134 of 173 SUCCESS (0 secs / 0.905 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 135 of 173 SUCCESS (0 secs / 0.905 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 136 of 173 SUCCESS (0 secs / 0.906 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 137 of 173 SUCCESS (0 secs / 0.906 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 138 of 173 SUCCESS (0 secs / 0.906 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 139 of 173 SUCCESS (0 secs / 0.906 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 140 of 173 SUCCESS (0 secs / 0.906 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 141 of 173 SUCCESS (0 secs / 0.907 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 142 of 173 SUCCESS (0 secs / 0.907 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 143 of 173 SUCCESS (0 secs / 0.907 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 144 of 173 SUCCESS (0 secs / 0.907 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 145 of 173 SUCCESS (0 secs / 0.907 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 146 of 173 SUCCESS (0 secs / 0.907 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 147 of 173 SUCCESS (0 secs / 0.907 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 148 of 173 SUCCESS (0 secs / 0.907 secs)
+ERROR: '[create appointment] status:', undefined, 'url:', undefined, 'body:', Object{message: 'TIME ALREADY BOOKED'}
+Chrome Headless 152.0.0.0 (Windows 10): Executed 148 of 173 SUCCESS (0 secs / 0.907 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 149 of 173 SUCCESS (0 secs / 0.908 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 150 of 173 SUCCESS (0 secs / 0.908 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 151 of 173 SUCCESS (0 secs / 0.908 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 152 of 173 SUCCESS (0 secs / 0.908 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 153 of 173 SUCCESS (0 secs / 0.908 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 154 of 173 SUCCESS (0 secs / 0.908 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 155 of 173 SUCCESS (0 secs / 0.909 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 156 of 173 SUCCESS (0 secs / 0.91 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 157 of 173 SUCCESS (0 secs / 0.911 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 158 of 173 SUCCESS (0 secs / 0.911 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 159 of 173 SUCCESS (0 secs / 0.912 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 160 of 173 SUCCESS (0 secs / 0.913 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 161 of 173 SUCCESS (0 secs / 0.913 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 162 of 173 SUCCESS (0 secs / 0.913 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 163 of 173 SUCCESS (0 secs / 0.913 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 164 of 173 SUCCESS (0 secs / 0.913 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 165 of 173 SUCCESS (0 secs / 0.913 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 166 of 173 SUCCESS (0 secs / 0.913 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 167 of 173 SUCCESS (0 secs / 0.913 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 168 of 173 SUCCESS (0 secs / 0.913 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 169 of 173 SUCCESS (0 secs / 0.914 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 170 of 173 SUCCESS (0 secs / 0.914 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 171 of 173 SUCCESS (0 secs / 0.915 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 172 of 173 SUCCESS (0 secs / 0.915 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 173 of 173 SUCCESS (0 secs / 0.915 secs)
+Chrome Headless 152.0.0.0 (Windows 10): Executed 173 of 173 SUCCESS (0.985 secs / 0.915 secs)
+TOTAL: 173 SUCCESS
+
+=============================== Coverage summary ===============================
+Statements   : 82.07% ( 838/1021 )
+Branches     : 73.14% ( 414/566 )
+Functions    : 74.01% ( 188/254 )
+Lines        : 83.56% ( 707/846 )
+================================================================================
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
