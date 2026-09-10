@@ -39,6 +39,9 @@ Llegar al 90% requiere autorización para ampliar las pruebas a esos comportamie
 
 ## Evidencia y trazabilidad
 
+- PR frontend: https://github.com/SantiagoAlcaraz1101/lamorada_front/pull/3
+- PR backend: https://github.com/SantiagoAlcaraz1101/la-morada-back/pull/3
+
 - Proyecto: [la-morada-despues](http://localhost:9000/dashboard?id=la-morada-despues).
 - Análisis ANTES de este ciclo con Q10: 6cf14d21-535a-4220-8f63-8bd938bc59aa.
 - Análisis DESPUÉS: d474671c-c764-4494-bb86-a8ec64a032d8.
