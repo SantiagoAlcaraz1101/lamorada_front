@@ -1,0 +1,806 @@
+{
+  "generatedAt": "2026-09-10T16:08:03.849Z",
+  "project": "la-morada-despues",
+  "definition": {
+    "name": "Q10",
+    "conditions": [
+      {
+        "id": "ef80522d-ad95-4587-a441-8cc0ab976ad7",
+        "metric": "new_violations",
+        "op": "GT",
+        "error": "0",
+        "isCaycCondition": true
+      },
+      {
+        "id": "12abc4ae-1404-42ea-a355-c7bf34357e97",
+        "metric": "new_coverage",
+        "op": "LT",
+        "error": "90",
+        "isCaycCondition": true
+      },
+      {
+        "id": "ee6f03ab-2224-46c6-8260-3b1bceba5503",
+        "metric": "new_duplicated_lines_density",
+        "op": "GT",
+        "error": "2",
+        "isCaycCondition": true
+      },
+      {
+        "id": "ffe820f8-1706-4690-8c12-cdf65ae4ac7d",
+        "metric": "new_security_hotspots_reviewed",
+        "op": "LT",
+        "error": "100",
+        "isCaycCondition": true
+      },
+      {
+        "id": "e1466538-f9d2-4694-87b8-3ecd828f21d5",
+        "metric": "new_software_quality_maintainability_remediation_effort",
+        "op": "GT",
+        "error": "90",
+        "isCaycCondition": false
+      }
+    ],
+    "isBuiltIn": false,
+    "actions": {
+      "rename": true,
+      "setAsDefault": true,
+      "copy": true,
+      "associateProjects": true,
+      "delete": true,
+      "manageConditions": true,
+      "delegate": true,
+      "manageAiCodeAssurance": false
+    },
+    "caycStatus": "over-compliant",
+    "isDefault": false,
+    "hasStandardConditions": false,
+    "hasMQRConditions": true,
+    "isAiCodeSupported": false
+  },
+  "association": {
+    "qualityGate": {
+      "name": "Q10",
+      "default": false
+    }
+  },
+  "measures": [
+    {
+      "metric": "new_coverage",
+      "period": {
+        "index": 1,
+        "value": "78.4",
+        "bestValue": false
+      }
+    },
+    {
+      "metric": "new_conditions_to_cover",
+      "period": {
+        "index": 1,
+        "value": "192"
+      }
+    },
+    {
+      "metric": "new_uncovered_conditions",
+      "period": {
+        "index": 1,
+        "value": "43",
+        "bestValue": false
+      }
+    },
+    {
+      "metric": "new_uncovered_lines",
+      "period": {
+        "index": 1,
+        "value": "68",
+        "bestValue": false
+      }
+    },
+    {
+      "metric": "new_lines_to_cover",
+      "period": {
+        "index": 1,
+        "value": "321"
+      }
+    }
+  ],
+  "denominator": 513,
+  "covered": 402,
+  "inScope": {
+    "units": 406,
+    "covered": 399
+  },
+  "outside": {
+    "units": 107,
+    "covered": 3
+  },
+  "ceilingWithoutExpandingTests": 79.72709551656921,
+  "uncovered": [
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 37,
+      "features": [],
+      "relation": "outside",
+      "method": "getPostById",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 38,
+      "features": [],
+      "relation": "outside",
+      "method": "getPostById",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 39,
+      "features": [],
+      "relation": "outside",
+      "method": "getPostById",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 40,
+      "features": [],
+      "relation": "outside",
+      "method": "getPostById",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 42,
+      "features": [],
+      "relation": "outside",
+      "method": "getPostById",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 43,
+      "features": [],
+      "relation": "outside",
+      "method": "getPostById",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 49,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 50,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 51,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 53,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 55,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 56,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 58,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 59,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 65,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 66,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 67,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 68,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 70,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-controller.js",
+      "line": 71,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 27,
+      "features": [],
+      "relation": "outside",
+      "method": "getPostById",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 29,
+      "features": [],
+      "relation": "outside",
+      "method": "getPostById",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 30,
+      "features": [],
+      "relation": "outside",
+      "method": "getPostById",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 35,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 36,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 38,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 39,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 42,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 43,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 44,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 46,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 47,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 48,
+      "features": [],
+      "relation": "outside",
+      "method": "updatePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 53,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 54,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 56,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 57,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 60,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 61,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/post-service.js",
+      "line": 62,
+      "features": [],
+      "relation": "outside",
+      "method": "deletePost",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "backend/src/modules/post/validators/post-validator.js",
+      "line": 16,
+      "features": [],
+      "relation": "outside",
+      "method": "declaración",
+      "units": 5,
+      "covered": 3
+    },
+    {
+      "file": "backend/src/modules/post/validators/post-validator.js",
+      "line": 17,
+      "features": [],
+      "relation": "outside",
+      "method": "declaración",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 209,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 2,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 210,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 2,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 212,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 213,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 214,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 216,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 218,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 221,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 222,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 225,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 226,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 227,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/post/post-editor.component.ts",
+      "line": 228,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 130,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "fetch",
+      "units": 4,
+      "covered": 2
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 131,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "fetch",
+      "units": 4,
+      "covered": 3
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 132,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "fetch",
+      "units": 4,
+      "covered": 3
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 178,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "submit",
+      "units": 4,
+      "covered": 3
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 180,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "submit",
+      "units": 3,
+      "covered": 2
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 181,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "submit",
+      "units": 3,
+      "covered": 2
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 211,
+      "features": [],
+      "relation": "outside",
+      "method": "deleteAccount",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 214,
+      "features": [],
+      "relation": "outside",
+      "method": "deleteAccount",
+      "units": 2,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 216,
+      "features": [],
+      "relation": "outside",
+      "method": "deleteAccount",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 218,
+      "features": [],
+      "relation": "outside",
+      "method": "deleteAccount",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 219,
+      "features": [],
+      "relation": "outside",
+      "method": "deleteAccount",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 220,
+      "features": [],
+      "relation": "outside",
+      "method": "deleteAccount",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 223,
+      "features": [],
+      "relation": "outside",
+      "method": "deleteAccount",
+      "units": 4,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 224,
+      "features": [],
+      "relation": "outside",
+      "method": "deleteAccount",
+      "units": 3,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/services/post-api.service.ts",
+      "line": 32,
+      "features": [],
+      "relation": "outside",
+      "method": "getPublic",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/services/post-api.service.ts",
+      "line": 33,
+      "features": [],
+      "relation": "outside",
+      "method": "getPublic",
+      "units": 5,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/services/post-api.service.ts",
+      "line": 60,
+      "features": [],
+      "relation": "outside",
+      "method": "update",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/services/post-api.service.ts",
+      "line": 61,
+      "features": [],
+      "relation": "outside",
+      "method": "update",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/services/post-api.service.ts",
+      "line": 66,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    },
+    {
+      "file": "frontend/src/app/services/post-api.service.ts",
+      "line": 67,
+      "features": [],
+      "relation": "outside",
+      "method": "remove",
+      "units": 1,
+      "covered": 0
+    }
+  ]
+}

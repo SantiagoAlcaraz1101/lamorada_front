@@ -1,0 +1,71 @@
+{
+  "planHash": "e60c9d1deffcd73ea55726e657591ea4365ce3344eb49cbfba91dfef00b50c5a",
+  "beforeAnalysis": "6cf14d21-535a-4220-8f63-8bd938bc59aa",
+  "afterAnalysis": "d474671c-c764-4494-bb86-a8ec64a032d8",
+  "sameFiles": {
+    "before": {
+      "lines_to_cover": 1149,
+      "uncovered_lines": 544,
+      "conditions_to_cover": 560,
+      "uncovered_conditions": 370,
+      "coverage": 46.5184318314804
+    },
+    "after": {
+      "lines_to_cover": 1149,
+      "uncovered_lines": 197,
+      "conditions_to_cover": 580,
+      "uncovered_conditions": 152,
+      "coverage": 79.81492192018507
+    }
+  },
+  "sourceFilesBefore": 55,
+  "sourceFilesAfter": 67,
+  "tests": {
+    "backend": 132,
+    "frontend": 173
+  },
+  "baselineCommits": {
+    "frontend": "a3a4d738ec271342a5904cf09dc41a7c4db7fbe3",
+    "backend": "1cbd7983ad3486b2c358230358d8eed0d13d4c98"
+  },
+  "gate": {
+    "status": "ERROR",
+    "conditions": [
+      {
+        "status": "ERROR",
+        "metricKey": "new_coverage",
+        "comparator": "LT",
+        "errorThreshold": "90",
+        "actualValue": "78.4"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_duplicated_lines_density",
+        "comparator": "GT",
+        "errorThreshold": "2",
+        "actualValue": "0.0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_software_quality_maintainability_remediation_effort",
+        "comparator": "GT",
+        "errorThreshold": "90",
+        "actualValue": "0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_violations",
+        "comparator": "GT",
+        "errorThreshold": "0",
+        "actualValue": "0"
+      }
+    ],
+    "ignoredConditions": false,
+    "period": {
+      "mode": "PREVIOUS_VERSION",
+      "date": "2026-09-08T15:53:03+0000"
+    },
+    "caycStatus": "over-compliant"
+  },
+  "ceilingWithoutExpandingTests": 79.72709551656921
+}

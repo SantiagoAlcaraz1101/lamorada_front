@@ -1,0 +1,555 @@
+[
+  {
+    "file": "tests/delivery.functional.test.js",
+    "cases": [
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-01: registra paciente, oculta password y crea carrito; rechaza duplicado",
+        "status": "passed"
+      },
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-02: evidencia la brecha: solicitar psychologist termina almacenando patient",
+        "status": "passed"
+      },
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-03: inicia sesion con credenciales validas y rechaza password incorrecto",
+        "status": "passed"
+      },
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-04: logout invalida el token y evita reutilizarlo",
+        "status": "passed"
+      },
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-13: crea cita disponible y rechaza horario cruzado y fecha pasada",
+        "status": "passed"
+      },
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-14: paciente y psicologo consultan únicamente sus citas autenticadas",
+        "status": "passed"
+      },
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-15: psicologo confirma su cita y el paciente no puede completarla",
+        "status": "passed"
+      },
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-16: un tercero no cancela la cita y el paciente propietario si puede",
+        "status": "passed"
+      },
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-26: agrega un producto al carrito y rechaza solicitudes invalidas",
+        "status": "passed"
+      },
+      {
+        "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-27: consulta el carrito autenticado con productos y total calculado",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "file": "tests/plan20.functional.test.js",
+    "cases": [
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB01 patient conserva cambios permitidos y oculta contraseña",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB01 psychologist conserva cambios permitidos y oculta contraseña",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB02 cambia la contraseña con confirmación y la almacena cifrada",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB03 no permite modificar un perfil ajeno",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB04 requiere sesión y rechaza token inválido",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida name= no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida name=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida last_name1=123 no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida last_name2= no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida email=sin-arroba no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida phone=123456 no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida phone=1111111111111111 no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=4 no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=111 no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=5.5 no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida role=psychologist no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida _id=999 no persiste",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB06 acepta edad límite 5",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB06 acepta edad límite 110",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-BB07 contraseñas diferentes o débiles no se guardan",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caja negra: actualización del perfil propio F07-GAP01 reproduce rechazo de specialty enviado por la pantalla del psicólogo",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=undefined",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=true",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=false",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB02 rechaza paciente y solicitudes sin sesión",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB03 valida title= antes de guardar",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB03 valida title=12 antes de guardar",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB03 valida content= antes de guardar",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB03 valida content=12 antes de guardar",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB03 valida active=true antes de guardar",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB03 valida active=null antes de guardar",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-BB04 revalida al autor en la base de datos",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caja negra: crear publicación F17-GAP01 documenta que la API no impone los límites 160/10 de la pantalla",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "file": "tests/plan20.whitebox.test.js",
+    "cases": [
+      {
+        "title": "F07 - caminos de actualización F07-B-P1 usuario inexistente termina sin hash",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caminos de actualización F07-B-P2 campo protegido termina sin persistir",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caminos de actualización F07-B-P3 datos inválidos terminan sin persistir",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caminos de actualización F07-B-P4 actualiza campos definidos y conserva el hash si no cambia contraseña",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caminos de actualización F07-B-P5 cifra la contraseña y no la devuelve",
+        "status": "passed"
+      },
+      {
+        "title": "F07 - caminos de actualización F07-B-P6 propaga fallo del almacenamiento",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-P0 error del refresco posterior a crear se informa, no se silencia",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-P1 autor inválido null no crea",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-P1 autor inválido {\"role\":\"patient\"} no crea",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-P2 creación conserva active=undefined",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-P2 creación conserva active=false",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-P3 fallo al guardar no se convierte en éxito",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-V valida partición {\"content\":\"Texto\"}",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-V valida partición {\"title\":1,\"content\":\"Texto\"}",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\"}",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\",\"content\":[]}",
+        "status": "passed"
+      },
+      {
+        "title": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\",\"content\":\"Texto\",\"active\":1}",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "file": "tests/whitebox.paths.test.js",
+    "cases": [
+      {
+        "title": "F01 - UserService.register (3 caminos exactos) F01-B-P1: existingById verdadero",
+        "status": "passed"
+      },
+      {
+        "title": "F01 - UserService.register (3 caminos exactos) F01-B-P2: ID libre y existingByEmail verdadero",
+        "status": "passed"
+      },
+      {
+        "title": "F01 - UserService.register (3 caminos exactos) F01-B-P3: ID y correo libres completan el registro",
+        "status": "passed"
+      },
+      {
+        "title": "F02 - UserService.register (3 caminos exactos) F02-B-P1: existingById verdadero",
+        "status": "passed"
+      },
+      {
+        "title": "F02 - UserService.register (3 caminos exactos) F02-B-P2: ID libre y existingByEmail verdadero",
+        "status": "passed"
+      },
+      {
+        "title": "F02 - UserService.register (3 caminos exactos) F02-B-P3: ID y correo libres completan el registro",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - AuthService.loginUser (2 caminos exactos) F03-B-P1: usuario no encontrado",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - AuthService.loginUser (2 caminos exactos) F03-B-P2: usuario encontrado completa validaciones y genera token",
+        "status": "passed"
+      },
+      {
+        "title": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P1: token ausente",
+        "status": "passed"
+      },
+      {
+        "title": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P2: token presente pero inválido",
+        "status": "passed"
+      },
+      {
+        "title": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P3: token válido se invalida",
+        "status": "passed"
+      },
+      {
+        "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P1: paciente inválido",
+        "status": "passed"
+      },
+      {
+        "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P2: psicólogo inválido",
+        "status": "passed"
+      },
+      {
+        "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P3: disponibilidad inexistente",
+        "status": "passed"
+      },
+      {
+        "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P4: fecha inválida",
+        "status": "passed"
+      },
+      {
+        "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P5: fecha no futura",
+        "status": "passed"
+      },
+      {
+        "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P6: día no disponible",
+        "status": "passed"
+      },
+      {
+        "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P7: hora fuera de los slots",
+        "status": "passed"
+      },
+      {
+        "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P8: horario ocupado",
+        "status": "passed"
+      },
+      {
+        "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P9: horario libre crea cita",
+        "status": "passed"
+      },
+      {
+        "title": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P1: rol patient consulta por paciente",
+        "status": "passed"
+      },
+      {
+        "title": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P2: rol distinto de patient consulta por psicólogo",
+        "status": "passed"
+      },
+      {
+        "title": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P3: excepción delegada a handleError",
+        "status": "passed"
+      },
+      {
+        "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P1: cita inexistente",
+        "status": "passed"
+      },
+      {
+        "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P2: usuario ajeno",
+        "status": "passed"
+      },
+      {
+        "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P3: estado inválido",
+        "status": "passed"
+      },
+      {
+        "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P4: paciente intenta estado distinto de cancelada",
+        "status": "passed"
+      },
+      {
+        "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P5: cita completada",
+        "status": "passed"
+      },
+      {
+        "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P6: cita cancelada",
+        "status": "passed"
+      },
+      {
+        "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P7: cambio permitido",
+        "status": "passed"
+      },
+      {
+        "title": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P1: cita inexistente",
+        "status": "passed"
+      },
+      {
+        "title": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P2: usuario ajeno",
+        "status": "passed"
+      },
+      {
+        "title": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P3: propietario cambia estado a cancelada",
+        "status": "passed"
+      },
+      {
+        "title": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P1: producto inexistente",
+        "status": "passed"
+      },
+      {
+        "title": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P2: producto nuevo usa rama else",
+        "status": "passed"
+      },
+      {
+        "title": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P3: producto existente usa rama if",
+        "status": "passed"
+      },
+      {
+        "title": "F27 - CartService.getCart (1 camino lineal) F27-B-P1: obtiene, recalcula, guarda y popula",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "file": "tests/quality.regression.test.js",
+    "cases": [
+      {
+        "title": "F03 - decisiones de validación de credenciales F03-V1  / Morada123! rechaza con MISSING CREDENTIALS",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - decisiones de validación de credenciales F03-V1 a@lamorada.test /  rechaza con MISSING CREDENTIALS",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - decisiones de validación de credenciales F03-V1 invalido / Morada123! rechaza con INVALID EMAIL",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - decisiones de validación de credenciales F03-V1 a@lamorada.test / debil rechaza con INVALID PASSWORD",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - decisiones de validación de credenciales F03-V2 acepta credenciales válidas",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - decisiones de validación de credenciales F03-V3 verificación de contraseña true",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - decisiones de validación de credenciales F03-V3 verificación de contraseña false",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - decisiones de validación de credenciales F03-V4 roles permitidos y prohibidos",
+        "status": "passed"
+      },
+      {
+        "title": "F03 - decisiones de validación de credenciales F01/F03 fallo de verificación del hash devuelve falso",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES01 no acepta token sin cabecera",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES02 rechaza token inválido",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES03 sesión revocada o diferente null",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES03 sesión revocada o diferente other-token",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES04 límite de renovación TTL=599",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES04 límite de renovación TTL=600",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES05 indisponibilidad Redis no autoriza",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor undefined",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor {\"role\":\"patient\"}",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor {\"role\":\"psychologist\"}",
+        "status": "passed"
+      },
+      {
+        "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL02 sin lista de roles no concede acceso",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 _id fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 _id fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 document_type fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 name fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 last_name1 fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 last_name2 fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 age fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 email fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 phone fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR01 password fuera del contrato",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR02 longitud ID válida 1",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR02 longitud ID válida 15",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR03 longitud teléfono válida 7",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR03 longitud teléfono válida 15",
+        "status": "passed"
+      },
+      {
+        "title": "F01/F02/F07 - particiones de datos de usuario USR04 actualizar sin contraseña conserva validación de otros campos",
+        "status": "passed"
+      }
+    ]
+  }
+]
