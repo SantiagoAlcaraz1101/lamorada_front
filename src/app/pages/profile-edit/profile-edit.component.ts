@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   FormBuilder,
@@ -31,7 +31,7 @@ type MeForm = FormGroup<{
   templateUrl: './profile-edit.component.html',
   styleUrls: ['./profile-edit.component.css'],
 })
-export class ProfileEditComponent {
+export class ProfileEditComponent implements OnInit, OnDestroy {
   form!: MeForm;
   loading = true;
   saving = false;
@@ -46,7 +46,7 @@ export class ProfileEditComponent {
     return typeof window !== 'undefined' && typeof document !== 'undefined';
   }
 
-  constructor(private fb: FormBuilder, private userSrv: UserService, private router: Router) {
+  constructor(private readonly fb: FormBuilder, private readonly userSrv: UserService, private readonly router: Router) {
     this.form = this.fb.group({
       name: this.fb.control<string>('', {
         nonNullable: true,
