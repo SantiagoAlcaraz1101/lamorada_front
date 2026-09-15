@@ -69,33 +69,28 @@ export class CartComponent implements OnInit {
     const id = this.idOf(it);
     if (!id) return;
     if ((it.quantity || 1) <= 1) return this.remove(it);
-    this.loading = true;
-    // Estrategia simple: remove y luego add con qty-1 (optimista emitida por el service)
-    this.cartSvc.removeProduct(id).subscribe({
-      next: () => {
-        const newQty = (it.quantity || 1) - 1;
-        this.cartSvc.addProduct(id, newQty).subscribe({
-          next: () => { this.loading = false; },
-          error: () => { this.err = 'No se pudo disminuir la cantidad.'; this.loading = false; }
-        });
-      },
-      error: () => { this.err = 'No se pudo disminuir la cantidad.'; this.loading = false; }
-    });
+    this.replaceQuantity(id, (it.quantity || 1) - 1, 'No se pudo disminuir la cantidad.');
   }
 
   onQtyChange(it: CartLine, raw: string) {
     const id = this.idOf(it);
     if (!id) return;
     const qty = Math.max(1, Number(raw || 1));
+    this.replaceQuantity(id, qty, 'No se pudo actualizar la cantidad.');
+  }
+
+  /** Comparte el protocolo existente retirar y reinsertar, sin cambiar su orden. */
+  private replaceQuantity(id: string, quantity: number, errorMessage: string) {
     this.loading = true;
+    const failed = () => { this.err = errorMessage; this.loading = false; };
     this.cartSvc.removeProduct(id).subscribe({
       next: () => {
-        this.cartSvc.addProduct(id, qty).subscribe({
+        this.cartSvc.addProduct(id, quantity).subscribe({
           next: () => { this.loading = false; },
-          error: () => { this.err = 'No se pudo actualizar la cantidad.'; this.loading = false; }
+          error: failed,
         });
       },
-      error: () => { this.err = 'No se pudo actualizar la cantidad.'; this.loading = false; }
+      error: failed,
     });
   }
 

@@ -49,7 +49,9 @@
               <td class="center">
                 <div class="qty" aria-label="Control de cantidad">
                   <button type="button" (click)="dec(it)" [disabled]="loading" aria-label="Disminuir">−</button>
+                  <label [for]="'cart-qty-' + $index">Cantidad</label>
                   <input
+                    [id]="'cart-qty-' + $index"
                     type="number"
                     [value]="it.quantity"
                     min="1"

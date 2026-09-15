@@ -1,0 +1,23 @@
+name: la-morada-quality
+services:
+  mongo-tests:
+    image: mongo:7
+    ports:
+      - "127.0.0.1:27028:27017"
+    tmpfs:
+      - /data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.runCommand({ ping: 1 }).ok"]
+      interval: 3s
+      timeout: 5s
+      retries: 30
+  redis-tests:
+    image: redis:7-alpine
+    ports:
+      - "127.0.0.1:6381:6379"
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 30

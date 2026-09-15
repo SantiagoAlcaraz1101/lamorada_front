@@ -260,7 +260,7 @@ describe('Caminos exactos por función - frontend', () => {
     const product = { _id: 'p1', title: 'Libro', author: 'Autor', publish_year: 2026, price: 50000, cover_url: 'portada' };
     function setup(platform: Object = 'browser') {
       const prod = jasmine.createSpyObj('ProductService', ['getAll']); const cart = jasmine.createSpyObj('CartService', ['addProduct']);
-      return { component: new ProductComponent(prod, cart, platform), cart };
+      return { component: new ProductComponent(prod, cart, platform, { markForCheck: jasmine.createSpy('markForCheck') } as any), cart };
     }
     afterEach(() => localStorage.removeItem('token'));
     it('F26-F-P1: fuera de browser termina inmediatamente', async () => {
