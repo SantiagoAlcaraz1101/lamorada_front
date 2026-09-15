@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ProductService } from '../../services/product.service';
@@ -34,12 +34,13 @@ export class ProductComponent implements OnInit {
   constructor(
     private readonly prod: ProductService,
     private readonly cart: CartService,
-    @Inject(PLATFORM_ID) private readonly platformId: Object
+    @Inject(PLATFORM_ID) private readonly platformId: Object,
+    private readonly cdr: ChangeDetectorRef,
   ) {}
 
-  async ngOnInit() {
+  ngOnInit(): void {
     if (!isPlatformBrowser(this.platformId)) return; // evitar llamadas en SSR
-    await this.loadAll();
+    void this.loadAll();
   }
 
   private async loadAll() {
@@ -54,6 +55,7 @@ export class ProductComponent implements OnInit {
       this.products = [];
     } finally {
       this.loading = false;
+      this.cdr.markForCheck();
     }
   }
 
@@ -74,13 +76,15 @@ export class ProductComponent implements OnInit {
         return;
       }
       const resp = await firstValueFrom(this.prod.getByTitle(q));
-      const list = Array.isArray(resp) ? resp : (resp?.products ?? (resp ? [resp] : []));
+      const fallback = resp ? [resp] : [];
+      const list = Array.isArray(resp) ? resp : (resp?.products ?? fallback);
       this.products = list as Product[];
     } catch (e: any) {
       this.err = e?.error?.message || 'No se pudo buscar';
       this.products = [];
     } finally {
       this.loading = false;
+      this.cdr.markForCheck();
     }
   }
 
@@ -126,6 +130,7 @@ export class ProductComponent implements OnInit {
       }
     } finally {
       this.addingId = null;
+      this.cdr.markForCheck();
     }
   }
 }

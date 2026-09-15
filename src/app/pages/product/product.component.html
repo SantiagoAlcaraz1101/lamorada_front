@@ -3,7 +3,8 @@
   <div class="toolbar">
     <form class="search" (ngSubmit)="search()">
       <span class="ico">🔎</span>
-      <input [(ngModel)]="q" name="q" placeholder="Buscar por título…" />
+      <label for="product-search">Buscar por título</label>
+      <input id="product-search" [(ngModel)]="q" name="q" placeholder="Buscar por título…" />
       <button class="btn" type="submit">Buscar</button>
     </form>
   </div>
