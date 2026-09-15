@@ -1,0 +1,5786 @@
+{
+  "capturedAt": "2026-09-15T00:43:30.423Z",
+  "project": "la-morada-despues",
+  "missingMetricKeys": [],
+  "measures": {
+    "component": {
+      "key": "la-morada-despues",
+      "name": "La Morada - Despues de correcciones",
+      "description": "Análisis SonarQube de F01–F04, F13–F16 y F26–F27",
+      "qualifier": "TRK",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "803"
+        },
+        {
+          "metric": "duplicated_lines_density",
+          "value": "0.0",
+          "bestValue": true
+        },
+        {
+          "metric": "duplicated_lines",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "78.4",
+            "bestValue": false
+          }
+        },
+        {
+          "metric": "software_quality_maintainability_remediation_effort",
+          "value": "22",
+          "bestValue": false
+        },
+        {
+          "metric": "sqale_index",
+          "value": "22",
+          "bestValue": false
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "bugs",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "1468"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "195",
+          "bestValue": false
+        },
+        {
+          "metric": "branch_coverage",
+          "value": "74.7",
+          "bestValue": false
+        },
+        {
+          "metric": "new_violations",
+          "period": {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "ncloc",
+          "value": "4944"
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "81.9",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "5880"
+        },
+        {
+          "metric": "coverage",
+          "value": "79.5",
+          "bestValue": false
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "code_smells",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "new_software_quality_maintainability_remediation_effort",
+          "period": {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "sqale_debt_ratio",
+          "value": "0.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_hotspots",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "comment_lines",
+          "value": "275"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "265",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "394",
+          "bestValue": false
+        },
+        {
+          "metric": "vulnerabilities",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "772"
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        }
+      ]
+    }
+  },
+  "analyses": {
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 10,
+      "total": 6
+    },
+    "analyses": [
+      {
+        "key": "d474671c-c764-4494-bb86-a8ec64a032d8",
+        "date": "2026-09-10T16:07:29+0000",
+        "events": [
+          {
+            "key": "868a5935-e9a3-424a-88fe-bbc14cd6478e",
+            "category": "VERSION",
+            "name": "not provided"
+          }
+        ],
+        "projectVersion": "not provided",
+        "manualNewCodePeriodBaseline": false,
+        "detectedCI": "undetected"
+      },
+      {
+        "key": "fbefd1be-d454-433b-8f6e-0ebc54eb8f4f",
+        "date": "2026-09-10T16:01:25+0000",
+        "events": [],
+        "projectVersion": "not provided",
+        "manualNewCodePeriodBaseline": false,
+        "detectedCI": "undetected"
+      },
+      {
+        "key": "1146209f-5382-4806-b16b-90e6064ff7d0",
+        "date": "2026-09-10T15:58:41+0000",
+        "events": [],
+        "projectVersion": "not provided",
+        "manualNewCodePeriodBaseline": false,
+        "detectedCI": "undetected"
+      },
+      {
+        "key": "5c0009cf-c7db-4269-8cf4-0ccd6b75985b",
+        "date": "2026-09-10T15:55:01+0000",
+        "events": [
+          {
+            "key": "cfb5afa8-cd7f-4a7b-b45b-a71514e41b63",
+            "category": "QUALITY_GATE",
+            "name": "Failed",
+            "description": "New Issues > 0, Coverage on New Code < 90"
+          }
+        ],
+        "projectVersion": "not provided",
+        "manualNewCodePeriodBaseline": false,
+        "detectedCI": "undetected"
+      },
+      {
+        "key": "6cf14d21-535a-4220-8f63-8bd938bc59aa",
+        "date": "2026-09-10T15:44:45+0000",
+        "events": [],
+        "projectVersion": "not provided",
+        "manualNewCodePeriodBaseline": false,
+        "detectedCI": "undetected"
+      },
+      {
+        "key": "69afc370-4fb8-4540-a075-3fd9001086ed",
+        "date": "2026-09-08T15:53:03+0000",
+        "events": [
+          {
+            "key": "add0e2c5-cde4-4e71-a4dd-194f56c8e315",
+            "category": "SQ_UPGRADE",
+            "name": "26.9.0.129388"
+          }
+        ],
+        "projectVersion": "not provided",
+        "manualNewCodePeriodBaseline": false,
+        "detectedCI": "undetected"
+      }
+    ]
+  },
+  "gate": {
+    "projectStatus": {
+      "status": "ERROR",
+      "conditions": [
+        {
+          "status": "ERROR",
+          "metricKey": "new_coverage",
+          "comparator": "LT",
+          "errorThreshold": "90",
+          "actualValue": "78.4"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_duplicated_lines_density",
+          "comparator": "GT",
+          "errorThreshold": "2",
+          "actualValue": "0.0"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_software_quality_maintainability_remediation_effort",
+          "comparator": "GT",
+          "errorThreshold": "90",
+          "actualValue": "0"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_violations",
+          "comparator": "GT",
+          "errorThreshold": "0",
+          "actualValue": "0"
+        }
+      ],
+      "ignoredConditions": false,
+      "period": {
+        "mode": "PREVIOUS_VERSION",
+        "date": "2026-09-08T15:53:03+0000"
+      },
+      "caycStatus": "over-compliant"
+    }
+  },
+  "definition": {
+    "qualityGate": {
+      "name": "Q10",
+      "default": false
+    }
+  },
+  "period": {
+    "projectKey": "la-morada-despues",
+    "type": "PREVIOUS_VERSION",
+    "inherited": true
+  },
+  "components": [
+    {
+      "key": "la-morada-despues:backend/src/modules/appointment/appointment-controller.js",
+      "name": "appointment-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/appointment-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "7",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "7"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "6"
+        },
+        {
+          "metric": "coverage",
+          "value": "93.3",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "57"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "51"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/appointment/appointment-routes.js",
+      "name": "appointment-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/appointment-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "4"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "21"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "ncloc",
+          "value": "10"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/appointment/appointment-service.js",
+      "name": "appointment-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/appointment-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "20",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "33"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "42"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "133"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "58"
+        },
+        {
+          "metric": "ncloc",
+          "value": "110"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/appointment/appointment.component.css",
+      "name": "appointment.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/appointment/appointment.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "lines",
+          "value": "142"
+        },
+        {
+          "metric": "ncloc",
+          "value": "137"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/appointment/appointment.component.html",
+      "name": "appointment.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/appointment/appointment.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "lines",
+          "value": "95"
+        },
+        {
+          "metric": "ncloc",
+          "value": "94"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/appointment/appointment.component.ts",
+      "name": "appointment.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "87.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "58",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "3"
+        },
+        {
+          "metric": "complexity",
+          "value": "133"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "106"
+        },
+        {
+          "metric": "coverage",
+          "value": "94.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "97.8",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "370"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "183"
+        },
+        {
+          "metric": "ncloc",
+          "value": "326"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "13",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "4",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/appointment/models/appointment.js",
+      "name": "appointment.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/models/appointment.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "21"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "5"
+        },
+        {
+          "metric": "ncloc",
+          "value": "18"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/models/appointment.model.ts",
+      "name": "appointment.model.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/models/appointment.model.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "3"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "lines",
+          "value": "12"
+        },
+        {
+          "metric": "ncloc",
+          "value": "11"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/appointment.service.ts",
+      "name": "appointment.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/appointment.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "9"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "coverage",
+          "value": "92.9",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "27"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "11"
+        },
+        {
+          "metric": "ncloc",
+          "value": "22"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/auth-controller.js",
+      "name": "auth-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/auth-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "2"
+        },
+        {
+          "metric": "complexity",
+          "value": "4"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "coverage",
+          "value": "84.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "90.5",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "51"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "21"
+        },
+        {
+          "metric": "ncloc",
+          "value": "41"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "2",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/guards/auth-role.guard.ts",
+      "name": "auth-role.guard.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/guards/auth-role.guard.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "58.3",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "9",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "2"
+        },
+        {
+          "metric": "complexity",
+          "value": "13"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "12"
+        },
+        {
+          "metric": "coverage",
+          "value": "82.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "95.5",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "41"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "22"
+        },
+        {
+          "metric": "ncloc",
+          "value": "32"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/auth-routes.js",
+      "name": "auth-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/auth-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "2"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "15"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "8"
+        },
+        {
+          "metric": "ncloc",
+          "value": "8"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/auth-service.js",
+      "name": "auth-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/auth-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "2"
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "6"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "49"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "27"
+        },
+        {
+          "metric": "ncloc",
+          "value": "36"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/core/state/auth-state.service.ts",
+      "name": "auth-state.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/core/state/auth-state.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "84.6",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "3"
+        },
+        {
+          "metric": "complexity",
+          "value": "12"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "13"
+        },
+        {
+          "metric": "coverage",
+          "value": "94.6",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "62"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "50"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/validators/auth-validator.js",
+      "name": "auth-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/validators/auth-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "9"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "12"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "46"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "38"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/core/interceptors/auth.interceptor.ts",
+      "name": "auth.interceptor.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/core/interceptors/auth.interceptor.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "15",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "5"
+        },
+        {
+          "metric": "complexity",
+          "value": "10"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "8"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "51"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "16"
+        },
+        {
+          "metric": "ncloc",
+          "value": "41"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/availability/models/availability.js",
+      "name": "availability.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/availability/models/availability.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "14"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "ncloc",
+          "value": "10"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/models/availability.model.ts",
+      "name": "availability.model.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/models/availability.model.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "1"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "lines",
+          "value": "9"
+        },
+        {
+          "metric": "ncloc",
+          "value": "6"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/availability.service.ts",
+      "name": "availability.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/availability.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "28.6",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "6",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "6"
+        },
+        {
+          "metric": "complexity",
+          "value": "26"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "21"
+        },
+        {
+          "metric": "coverage",
+          "value": "37.8",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "45.8",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "71"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "54"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "15",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "13",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/cart-controller.js",
+      "name": "cart-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/cart-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "2"
+        },
+        {
+          "metric": "coverage",
+          "value": "51.3",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "51.4",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "67"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "37"
+        },
+        {
+          "metric": "ncloc",
+          "value": "55"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "18",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/cart-routes.js",
+      "name": "cart-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/cart-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "4"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "20"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "9"
+        },
+        {
+          "metric": "ncloc",
+          "value": "9"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/cart-service.js",
+      "name": "cart-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/cart-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "15"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "9"
+        },
+        {
+          "metric": "coverage",
+          "value": "68.8",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "69.2",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "67"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "39"
+        },
+        {
+          "metric": "ncloc",
+          "value": "56"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "12",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/validators/cart-validator.js",
+      "name": "cart-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/validators/cart-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "80.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "6"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "82.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "85.7",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "16"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "7"
+        },
+        {
+          "metric": "ncloc",
+          "value": "12"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/cart/cart.component.css",
+      "name": "cart.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/cart/cart.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "13"
+        },
+        {
+          "metric": "lines",
+          "value": "224"
+        },
+        {
+          "metric": "ncloc",
+          "value": "198"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/cart/cart.component.html",
+      "name": "cart.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/cart/cart.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "bugs",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "10"
+        },
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "lines",
+          "value": "97"
+        },
+        {
+          "metric": "ncloc",
+          "value": "82"
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/cart/cart.component.ts",
+      "name": "cart.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/cart/cart.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "32.4",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "10",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "8"
+        },
+        {
+          "metric": "complexity",
+          "value": "47"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "37"
+        },
+        {
+          "metric": "coverage",
+          "value": "33.7",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "34.5",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "120"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "55"
+        },
+        {
+          "metric": "ncloc",
+          "value": "101"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "25",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "36",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/models/cart.js",
+      "name": "cart.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/models/cart.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "14"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "12"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/models/cart.models.ts",
+      "name": "cart.models.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/models/cart.models.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "1"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "lines",
+          "value": "20"
+        },
+        {
+          "metric": "ncloc",
+          "value": "16"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/cart.service.ts",
+      "name": "cart.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/cart.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "90.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "17"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "85.7",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "84.0",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "83"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "25"
+        },
+        {
+          "metric": "ncloc",
+          "value": "70"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "4",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/guards/client-only.guard.ts",
+      "name": "client-only.guard.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/guards/client-only.guard.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "3"
+        },
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "12"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "7"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/layout/header/header.component.css",
+      "name": "header.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/layout/header/header.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "9"
+        },
+        {
+          "metric": "lines",
+          "value": "147"
+        },
+        {
+          "metric": "ncloc",
+          "value": "128"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/layout/header/header.component.html",
+      "name": "header.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/layout/header/header.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "5"
+        },
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "lines",
+          "value": "54"
+        },
+        {
+          "metric": "ncloc",
+          "value": "42"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/layout/header/header.component.ts",
+      "name": "header.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/layout/header/header.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "4"
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "1"
+        },
+        {
+          "metric": "coverage",
+          "value": "61.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "64.7",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "45"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "17"
+        },
+        {
+          "metric": "ncloc",
+          "value": "36"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "6",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/middlewares/jwt-middleware.js",
+      "name": "jwt-middleware.js",
+      "qualifier": "FIL",
+      "path": "backend/src/middlewares/jwt-middleware.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "5"
+        },
+        {
+          "metric": "complexity",
+          "value": "6"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "52"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "29"
+        },
+        {
+          "metric": "ncloc",
+          "value": "37"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/strategies/jwt-strategy.js",
+      "name": "jwt-strategy.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/strategies/jwt-strategy.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "7"
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "44"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "19"
+        },
+        {
+          "metric": "ncloc",
+          "value": "32"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/core/utils/jwt.ts",
+      "name": "jwt.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/core/utils/jwt.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "3"
+        },
+        {
+          "metric": "complexity",
+          "value": "6"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "6"
+        },
+        {
+          "metric": "coverage",
+          "value": "76.5",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "90.9",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "26"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "11"
+        },
+        {
+          "metric": "ncloc",
+          "value": "20"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/strategies/password-strategy.js",
+      "name": "password-strategy.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/strategies/password-strategy.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "cognitive_complexity",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "8"
+        },
+        {
+          "metric": "complexity",
+          "value": "2"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "30"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "7"
+        },
+        {
+          "metric": "ncloc",
+          "value": "22"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/post-api.service.ts",
+      "name": "post-api.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/post-api.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "69.2",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "7",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "5"
+        },
+        {
+          "metric": "complexity",
+          "value": "19"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "13"
+        },
+        {
+          "metric": "coverage",
+          "value": "72.2",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "73.9",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "70"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "23"
+        },
+        {
+          "metric": "ncloc",
+          "value": "55"
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "72.2",
+            "bestValue": false
+          }
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "6",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/post-controller.js",
+      "name": "post-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/post-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "5"
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "coverage",
+          "value": "47.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "47.4",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "77"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "38"
+        },
+        {
+          "metric": "ncloc",
+          "value": "60"
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "47.4",
+            "bestValue": false
+          }
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "20",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/post/post-editor.component.css",
+      "name": "post-editor.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/post/post-editor.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "12"
+        },
+        {
+          "metric": "lines",
+          "value": "268"
+        },
+        {
+          "metric": "ncloc",
+          "value": "240"
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/post/post-editor.component.html",
+      "name": "post-editor.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/post/post-editor.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "2"
+        },
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "lines",
+          "value": "104"
+        },
+        {
+          "metric": "ncloc",
+          "value": "93"
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/post/post-editor.component.ts",
+      "name": "post-editor.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/post/post-editor.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "87.5",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "35",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "8"
+        },
+        {
+          "metric": "complexity",
+          "value": "63"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "64"
+        },
+        {
+          "metric": "coverage",
+          "value": "87.6",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "87.6",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "233"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "105"
+        },
+        {
+          "metric": "ncloc",
+          "value": "201"
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "87.6",
+            "bestValue": false
+          }
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "8",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "13",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/post-routes.js",
+      "name": "post-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/post-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "5"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "24"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "11"
+        },
+        {
+          "metric": "ncloc",
+          "value": "11"
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "100.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/post-service.js",
+      "name": "post-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/post-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "15.8",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "9",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "5"
+        },
+        {
+          "metric": "complexity",
+          "value": "14"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "19"
+        },
+        {
+          "metric": "coverage",
+          "value": "29.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "37.5",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "67"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "32"
+        },
+        {
+          "metric": "ncloc",
+          "value": "48"
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "29.4",
+            "bestValue": false
+          }
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "16",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "20",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/validators/post-validator.js",
+      "name": "post-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/validators/post-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "87.5",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "6",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "9"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "16"
+        },
+        {
+          "metric": "coverage",
+          "value": "88.5",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "90.0",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "22"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "ncloc",
+          "value": "16"
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "88.5",
+            "bestValue": false
+          }
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/models/post.js",
+      "name": "post.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/models/post.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "12"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "9"
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "100.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/product/product.component.css",
+      "name": "product.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/product/product.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "code_smells",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "10"
+        },
+        {
+          "metric": "lines",
+          "value": "228"
+        },
+        {
+          "metric": "ncloc",
+          "value": "207"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_remediation_effort",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_debt_ratio",
+          "value": "0.1",
+          "bestValue": false
+        },
+        {
+          "metric": "sqale_index",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/product/product.component.html",
+      "name": "product.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/product/product.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "bugs",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "5"
+        },
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "lines",
+          "value": "48"
+        },
+        {
+          "metric": "ncloc",
+          "value": "36"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/product/product.component.ts",
+      "name": "product.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/product/product.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "27.6",
+          "bestValue": false
+        },
+        {
+          "metric": "bugs",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "code_smells",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "19",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "4"
+        },
+        {
+          "metric": "complexity",
+          "value": "24"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "29"
+        },
+        {
+          "metric": "coverage",
+          "value": "46.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "55.2",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "132"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "58"
+        },
+        {
+          "metric": "ncloc",
+          "value": "114"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_remediation_effort",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_debt_ratio",
+          "value": "0.1",
+          "bestValue": false
+        },
+        {
+          "metric": "sqale_index",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "21",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "26",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/product/models/product.js",
+      "name": "product.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/product/models/product.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "17"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "ncloc",
+          "value": "13"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/profile-edit/profile-edit.component.css",
+      "name": "profile-edit.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/profile-edit/profile-edit.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "13"
+        },
+        {
+          "metric": "lines",
+          "value": "179"
+        },
+        {
+          "metric": "ncloc",
+          "value": "147"
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/profile-edit/profile-edit.component.html",
+      "name": "profile-edit.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/profile-edit/profile-edit.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "1"
+        },
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "lines",
+          "value": "113"
+        },
+        {
+          "metric": "ncloc",
+          "value": "100"
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "name": "profile-edit.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "83.8",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "34",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "4"
+        },
+        {
+          "metric": "complexity",
+          "value": "73"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "80"
+        },
+        {
+          "metric": "coverage",
+          "value": "88.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "91.8",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "229"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "97"
+        },
+        {
+          "metric": "ncloc",
+          "value": "199"
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "88.1",
+            "bestValue": false
+          }
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "13",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "8",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/middlewares/rate-limit-middleware.js",
+      "name": "rate-limit-middleware.js",
+      "qualifier": "FIL",
+      "path": "backend/src/middlewares/rate-limit-middleware.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "2"
+        },
+        {
+          "metric": "complexity",
+          "value": "2"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "coverage",
+          "value": "77.8",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "12"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "5"
+        },
+        {
+          "metric": "ncloc",
+          "value": "8"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/middlewares/role-middleware.js",
+      "name": "role-middleware.js",
+      "qualifier": "FIL",
+      "path": "backend/src/middlewares/role-middleware.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "3"
+        },
+        {
+          "metric": "complexity",
+          "value": "4"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "5"
+        },
+        {
+          "metric": "coverage",
+          "value": "94.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "92.3",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "27"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "13"
+        },
+        {
+          "metric": "ncloc",
+          "value": "19"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-in/sign-in.component.css",
+      "name": "sign-in.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-in/sign-in.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "8"
+        },
+        {
+          "metric": "lines",
+          "value": "205"
+        },
+        {
+          "metric": "ncloc",
+          "value": "185"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-in/sign-in.component.html",
+      "name": "sign-in.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-in/sign-in.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "lines",
+          "value": "58"
+        },
+        {
+          "metric": "ncloc",
+          "value": "51"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-in/sign-in.component.ts",
+      "name": "sign-in.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-in/sign-in.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "94.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "15",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "17"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "19"
+        },
+        {
+          "metric": "coverage",
+          "value": "98.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "71"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "30"
+        },
+        {
+          "metric": "ncloc",
+          "value": "60"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-up/sign-up.component.css",
+      "name": "sign-up.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-up/sign-up.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "16"
+        },
+        {
+          "metric": "lines",
+          "value": "316"
+        },
+        {
+          "metric": "ncloc",
+          "value": "284"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-up/sign-up.component.html",
+      "name": "sign-up.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "4"
+        },
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "lines",
+          "value": "220"
+        },
+        {
+          "metric": "ncloc",
+          "value": "200"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "name": "sign-up.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "60.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "28",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "7"
+        },
+        {
+          "metric": "complexity",
+          "value": "55"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "60"
+        },
+        {
+          "metric": "coverage",
+          "value": "80.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "94.1",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "208"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "85"
+        },
+        {
+          "metric": "ncloc",
+          "value": "178"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "24",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "5",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/user-controller.js",
+      "name": "user-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/user-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "70.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "13",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "8"
+        },
+        {
+          "metric": "complexity",
+          "value": "13"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "42.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "36.2",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "102"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "47"
+        },
+        {
+          "metric": "ncloc",
+          "value": "81"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "30",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/user-routes.js",
+      "name": "user-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/user-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "8"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "32"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "14"
+        },
+        {
+          "metric": "ncloc",
+          "value": "14"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/user-service.js",
+      "name": "user-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/user-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "41.4",
+          "bestValue": false
+        },
+        {
+          "metric": "code_smells",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "16",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "12"
+        },
+        {
+          "metric": "complexity",
+          "value": "26"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "29"
+        },
+        {
+          "metric": "coverage",
+          "value": "49.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "52.2",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "135"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "69"
+        },
+        {
+          "metric": "ncloc",
+          "value": "92"
+        },
+        {
+          "metric": "new_coverage",
+          "period": {
+            "index": 1,
+            "value": "100.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "new_duplicated_lines_density",
+          "period": {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_remediation_effort",
+          "value": "12",
+          "bestValue": false
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_debt_ratio",
+          "value": "0.4",
+          "bestValue": false
+        },
+        {
+          "metric": "sqale_index",
+          "value": "12",
+          "bestValue": false
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "17",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "33",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/validators/user-validator.js",
+      "name": "user-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/validators/user-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "11",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "0"
+        },
+        {
+          "metric": "complexity",
+          "value": "13"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "25"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "27"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "17"
+        },
+        {
+          "metric": "ncloc",
+          "value": "19"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/models/user.js",
+      "name": "user.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/models/user.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "comment_lines",
+          "value": "1"
+        },
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines",
+          "value": "21"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "17"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/user.service.ts",
+      "name": "user.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/user.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "89.6",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "17",
+          "bestValue": false
+        },
+        {
+          "metric": "comment_lines",
+          "value": "14"
+        },
+        {
+          "metric": "complexity",
+          "value": "82"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "77"
+        },
+        {
+          "metric": "coverage",
+          "value": "92.5",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "95.1",
+          "bestValue": false
+        },
+        {
+          "metric": "lines",
+          "value": "198"
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "82"
+        },
+        {
+          "metric": "ncloc",
+          "value": "157"
+        },
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_maintainability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "software_quality_security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "8",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "4",
+          "bestValue": false
+        }
+      ]
+    }
+  ]
+}
