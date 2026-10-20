@@ -1,0 +1,159 @@
+{
+  "spec": "cypress\\e2e\\screenplay.cy.js",
+  "stats": {
+    "duration": 29667,
+    "endedAt": "2026-10-11T18:05:58.741Z",
+    "failures": 2,
+    "passes": 4,
+    "pending": 0,
+    "skipped": 0,
+    "startedAt": "2026-10-11T18:05:29.074Z",
+    "suites": 1,
+    "tests": 6
+  },
+  "tests": [
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1886,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-01 acceso exitoso y cierre de sesión"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1158,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-02 contraseña incorrecta mantiene formulario"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1233,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-03 buscar libro y búsqueda alternativa sin resultados"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "failed"
+        }
+      ],
+      "displayError": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[aria-live=\"polite\"]`, but never found it.\n    at BrowseTheWeb.element (webpack://la-morada-rubrica-integral/./cypress/screenplay/index.js:6:30)\n    at Object.answeredBy (webpack://la-morada-rubrica-integral/./cypress/screenplay/index.js:24:86)\n    at Actor.asks (webpack://la-morada-rubrica-integral/./cypress/screenplay/index.js:14:35)\n    at Object.performAs (webpack://la-morada-rubrica-integral/./cypress/screenplay/index.js:28:83)\n    at Context.eval (webpack://la-morada-rubrica-integral/./cypress/screenplay/index.js:13:102)\n    at getRet (http://localhost:4200/__cypress/runner/cypress_runner.js:120751:20)\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://localhost:4200/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.thenFn (http://localhost:4200/__cypress/runner/cypress_runner.js:120763:66)",
+      "duration": 12305,
+      "state": "failed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-04 agregar aumentar eliminar y verificar carrito"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1222,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-05 invitado no agrega ni entra a carrito privado"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "failed"
+        }
+      ],
+      "displayError": "AssertionError: Timed out retrying after 10000ms: expected '/sign-in' to equal '/home'\n    at Context.eval (webpack://la-morada-rubrica-integral/./cypress/screenplay/index.js:27:123)\n    at <unknown> (http://localhost:4200/__cypress/runner/cypress_runner.js:120161:17)\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://localhost:4200/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.shouldFnWithCallback (http://localhost:4200/__cypress/runner/cypress_runner.js:120158:66)\n    at Context.shouldFn (http://localhost:4200/__cypress/runner/cypress_runner.js:120201:37)",
+      "duration": 11720,
+      "state": "failed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-06 paciente no entra a crear productos"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "height": 845,
+      "name": "SP-01-acceso-exitoso-y-cierre-de-sesi-n",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\screenplay.cy.js\\SP-01-acceso-exitoso-y-cierre-de-sesi-n.png",
+      "takenAt": "2026-10-11T18:05:30.629Z",
+      "width": 1264
+    },
+    {
+      "height": 859,
+      "name": "SP-02-contrase-a-incorrecta-mantiene-formulario",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\screenplay.cy.js\\SP-02-contrase-a-incorrecta-mantiene-formulario.png",
+      "takenAt": "2026-10-11T18:05:31.849Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "SP-03-buscar-libro-y-b-squeda-alternativa-sin-resultados",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\screenplay.cy.js\\SP-03-buscar-libro-y-b-squeda-alternativa-sin-resultados.png",
+      "takenAt": "2026-10-11T18:05:33.136Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": null,
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\screenplay.cy.js\\E2E — Screenplay con API, MongoDB y Redis reales -- SP-04 agregar aumentar eliminar y verificar carrito (failed).png",
+      "takenAt": "2026-10-11T18:05:44.971Z",
+      "width": 1264
+    },
+    {
+      "height": 717,
+      "name": "SP-04-agregar-aumentar-eliminar-y-verificar-carrito",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\screenplay.cy.js\\SP-04-agregar-aumentar-eliminar-y-verificar-carrito.png",
+      "takenAt": "2026-10-11T18:05:45.239Z",
+      "width": 1264
+    },
+    {
+      "height": 845,
+      "name": "SP-05-invitado-no-agrega-ni-entra-a-carrito-privado",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\screenplay.cy.js\\SP-05-invitado-no-agrega-ni-entra-a-carrito-privado.png",
+      "takenAt": "2026-10-11T18:05:46.724Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": null,
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\screenplay.cy.js\\E2E — Screenplay con API, MongoDB y Redis reales -- SP-06 paciente no entra a crear productos (failed).png",
+      "takenAt": "2026-10-11T18:05:58.063Z",
+      "width": 1264
+    },
+    {
+      "height": 845,
+      "name": "SP-06-paciente-no-entra-a-crear-productos",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\screenplay.cy.js\\SP-06-paciente-no-entra-a-crear-productos.png",
+      "takenAt": "2026-10-11T18:05:58.267Z",
+      "width": 1264
+    }
+  ],
+  "video": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\videos\\screenplay.cy.js.mp4"
+}

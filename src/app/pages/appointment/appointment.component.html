@@ -57,7 +57,7 @@
     @if (!listing && appointments.length) {
       <ul class="list">
         @for (a of appointments; track a) {
-          <li>
+          <li [attr.data-appointment-id]="a._id" [attr.data-status]="a.status" [attr.data-start]="a.start">
             <div class="row2">
               <div class="who">
                 <div><strong>Psicólogo:</strong> {{ findUserName(a.psychologist_id) }}</div>
@@ -77,10 +77,10 @@
               </div>
             </div>
             <div class="row3">
-              <button class="link danger" (click)="delete(a._id)">Cancelar</button>
+              <button class="link danger" data-testid="appointment-cancel" (click)="delete(a._id)">Cancelar</button>
               @if (role === 'psychologist') {
-                <button class="link" (click)="setStatus(a, 'confirmada')" [disabled]="a.status==='cancelada' || a.status==='completada'">Confirmar</button>
-                <button class="link" (click)="setStatus(a, 'completada')" [disabled]="a.status==='cancelada'">Marcar completada</button>
+                <button class="link" data-testid="appointment-confirm" (click)="setStatus(a, 'confirmada')" [disabled]="a.status==='cancelada' || a.status==='completada'">Confirmar</button>
+                <button class="link" data-testid="appointment-complete" (click)="setStatus(a, 'completada')" [disabled]="a.status==='cancelada'">Marcar completada</button>
                 <button class="link" (click)="setStatus(a, 'cancelada')" [disabled]="a.status==='completada'">Marcar cancelada</button>
               }
             </div>

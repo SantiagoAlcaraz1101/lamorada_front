@@ -1,0 +1,3440 @@
+{
+  "generatedAt": "2026-10-11T18:06:30.479Z",
+  "summary": {
+    "passed": 248,
+    "failed": 4,
+    "NOT_EXECUTED": 8
+  },
+  "cases": [
+    {
+      "id": "A11Y-01",
+      "title": "A11Y-01 auditoría /home",
+      "category": "Accesibilidad",
+      "objective": "Auditar /home con axe-core WCAG 2.1 A/AA.",
+      "expected": "Cero violaciones automatizables A/AA en el estado auditado; catálogo y tabla de carrito cargados. No certifica conformidad completa.",
+      "status": "passed",
+      "actual": "{\"url\":\"http://localhost:4200/home\",\"timestamp\":\"2026-10-11T18:04:59.294Z\",\"axeVersion\":\"4.14.0\",\"violations\":[],\"passes\":[{\"id\":\"aria-allowed-attr\",\"nodes\":13},{\"id\":\"aria-conditional-attr\",\"nodes\":13},{\"id\":\"aria-deprecated-role\",\"nodes\":1},{\"id\":\"aria-hidden-body\",\"nodes\":1},{\"id\":\"aria-hidden-focus\",\"nodes\":6},{\"id\":\"aria-prohibited-attr\",\"nodes\":11},{\"id\":\"aria-required-attr\",\"nodes\":1},{\"id\":\"aria-roles\",\"nodes\":1},{\"id\":\"aria-valid-attr-value\",\"nodes\":13},{\"id\":\"aria-valid-attr\",\"nodes\":13},{\"id\":\"avoid-inline-spacing\",\"nodes\":1},{\"id\":\"button-name\",\"nodes\":1},{\"id\":\"bypass\",\"nodes\":1},{\"id\":\"color-contrast\",\"nodes\":11},{\"id\":\"document-title\",\"nodes\":1},{\"id\":\"form-field-multiple-labels\",\"nodes\":1},{\"id\":\"html-has-lang\",\"nodes\":1},{\"id\":\"html-lang-valid\",\"nodes\":1},{\"id\":\"image-alt\",\"nodes\":2},{\"id\":\"label-content-name-mismatch\",\"nodes\":1},{\"id\":\"label\",\"nodes\":1},{\"id\":\"link-name\",\"nodes\":19},{\"id\":\"list\",\"nodes\":1},{\"id\":\"listitem\",\"nodes\":3},{\"id\":\"meta-viewport\",\"nodes\":1},{\"id\":\"nested-interactive\",\"nodes\":3}]}",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-01-auditor-a-home.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "A11Y-02",
+      "title": "A11Y-02 auditoría /sign-in",
+      "category": "Accesibilidad",
+      "objective": "Auditar /sign-in con axe-core WCAG 2.1 A/AA.",
+      "expected": "Cero violaciones automatizables A/AA en el estado auditado; catálogo y tabla de carrito cargados. No certifica conformidad completa.",
+      "status": "passed",
+      "actual": "{\"url\":\"http://localhost:4200/sign-in\",\"timestamp\":\"2026-10-11T18:05:00.623Z\",\"axeVersion\":\"4.14.0\",\"violations\":[],\"passes\":[{\"id\":\"aria-allowed-attr\",\"nodes\":10},{\"id\":\"aria-conditional-attr\",\"nodes\":10},{\"id\":\"aria-deprecated-role\",\"nodes\":1},{\"id\":\"aria-hidden-body\",\"nodes\":1},{\"id\":\"aria-hidden-focus\",\"nodes\":3},{\"id\":\"aria-prohibited-attr\",\"nodes\":8},{\"id\":\"aria-required-attr\",\"nodes\":1},{\"id\":\"aria-roles\",\"nodes\":1},{\"id\":\"aria-valid-attr-value\",\"nodes\":10},{\"id\":\"aria-valid-attr\",\"nodes\":10},{\"id\":\"autocomplete-valid\",\"nodes\":2},{\"id\":\"avoid-inline-spacing\",\"nodes\":1},{\"id\":\"button-name\",\"nodes\":1},{\"id\":\"bypass\",\"nodes\":1},{\"id\":\"color-contrast\",\"nodes\":13},{\"id\":\"document-title\",\"nodes\":1},{\"id\":\"duplicate-id-aria\",\"nodes\":3},{\"id\":\"form-field-multiple-labels\",\"nodes\":2},{\"id\":\"html-has-lang\",\"nodes\":1},{\"id\":\"html-lang-valid\",\"nodes\":1},{\"id\":\"image-alt\",\"nodes\":3},{\"id\":\"label-content-name-mismatch\",\"nodes\":1},{\"id\":\"label\",\"nodes\":2},{\"id\":\"link-in-text-block\",\"nodes\":1},{\"id\":\"link-name\",\"nodes\":13},{\"id\":\"meta-viewport\",\"nodes\":1},{\"id\":\"nested-interactive\",\"nodes\":4}]}",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-02-auditor-a-sign-in.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "A11Y-03",
+      "title": "A11Y-03 auditoría /product",
+      "category": "Accesibilidad",
+      "objective": "Auditar /product con axe-core WCAG 2.1 A/AA.",
+      "expected": "Cero violaciones automatizables A/AA en el estado auditado; catálogo y tabla de carrito cargados. No certifica conformidad completa.",
+      "status": "passed",
+      "actual": "{\"url\":\"http://localhost:4200/product\",\"timestamp\":\"2026-10-11T18:05:01.363Z\",\"axeVersion\":\"4.14.0\",\"violations\":[],\"passes\":[{\"id\":\"aria-allowed-attr\",\"nodes\":8},{\"id\":\"aria-conditional-attr\",\"nodes\":8},{\"id\":\"aria-deprecated-role\",\"nodes\":1},{\"id\":\"aria-hidden-body\",\"nodes\":1},{\"id\":\"aria-hidden-focus\",\"nodes\":3},{\"id\":\"aria-prohibited-attr\",\"nodes\":6},{\"id\":\"aria-required-attr\",\"nodes\":1},{\"id\":\"aria-roles\",\"nodes\":1},{\"id\":\"aria-valid-attr-value\",\"nodes\":8},{\"id\":\"aria-valid-attr\",\"nodes\":8},{\"id\":\"avoid-inline-spacing\",\"nodes\":1},{\"id\":\"button-name\",\"nodes\":2},{\"id\":\"bypass\",\"nodes\":1},{\"id\":\"color-contrast\",\"nodes\":1},{\"id\":\"document-title\",\"nodes\":1},{\"id\":\"duplicate-id-aria\",\"nodes\":1},{\"id\":\"form-field-multiple-labels\",\"nodes\":1},{\"id\":\"html-has-lang\",\"nodes\":1},{\"id\":\"html-lang-valid\",\"nodes\":1},{\"id\":\"image-alt\",\"nodes\":3},{\"id\":\"label-content-name-mismatch\",\"nodes\":1},{\"id\":\"label\",\"nodes\":1},{\"id\":\"link-name\",\"nodes\":11},{\"id\":\"meta-viewport\",\"nodes\":1},{\"id\":\"nested-interactive\",\"nodes\":5}]}",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-03-auditor-a-product.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "A11Y-04",
+      "title": "A11Y-04 auditoría /sign-up",
+      "category": "Accesibilidad",
+      "objective": "Auditar /sign-up con axe-core WCAG 2.1 A/AA.",
+      "expected": "Cero violaciones automatizables A/AA en el estado auditado; catálogo y tabla de carrito cargados. No certifica conformidad completa.",
+      "status": "passed",
+      "actual": "{\"url\":\"http://localhost:4200/sign-up\",\"timestamp\":\"2026-10-11T18:05:02.297Z\",\"axeVersion\":\"4.14.0\",\"violations\":[],\"passes\":[{\"id\":\"aria-allowed-attr\",\"nodes\":12},{\"id\":\"aria-conditional-attr\",\"nodes\":12},{\"id\":\"aria-deprecated-role\",\"nodes\":1},{\"id\":\"aria-hidden-body\",\"nodes\":1},{\"id\":\"aria-hidden-focus\",\"nodes\":5},{\"id\":\"aria-prohibited-attr\",\"nodes\":10},{\"id\":\"aria-required-attr\",\"nodes\":1},{\"id\":\"aria-roles\",\"nodes\":1},{\"id\":\"aria-valid-attr-value\",\"nodes\":12},{\"id\":\"aria-valid-attr\",\"nodes\":12},{\"id\":\"autocomplete-valid\",\"nodes\":3},{\"id\":\"avoid-inline-spacing\",\"nodes\":1},{\"id\":\"button-name\",\"nodes\":3},{\"id\":\"bypass\",\"nodes\":1},{\"id\":\"color-contrast\",\"nodes\":27},{\"id\":\"document-title\",\"nodes\":1},{\"id\":\"duplicate-id-aria\",\"nodes\":11},{\"id\":\"form-field-multiple-labels\",\"nodes\":10},{\"id\":\"html-has-lang\",\"nodes\":1},{\"id\":\"html-lang-valid\",\"nodes\":1},{\"id\":\"image-alt\",\"nodes\":3},{\"id\":\"label-content-name-mismatch\",\"nodes\":1},{\"id\":\"label\",\"nodes\":9},{\"id\":\"link-name\",\"nodes\":11},{\"id\":\"meta-viewport\",\"nodes\":1},{\"id\":\"nested-interactive\",\"nodes\":10},{\"id\":\"select-name\",\"nodes\":1}]}",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-04-auditor-a-sign-up.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "A11Y-05",
+      "title": "A11Y-05 auditoría /password-request",
+      "category": "Accesibilidad",
+      "objective": "Auditar /password-request con axe-core WCAG 2.1 A/AA.",
+      "expected": "Cero violaciones automatizables A/AA en el estado auditado; catálogo y tabla de carrito cargados. No certifica conformidad completa.",
+      "status": "passed",
+      "actual": "{\"url\":\"http://localhost:4200/password-request\",\"timestamp\":\"2026-10-11T18:05:03.155Z\",\"axeVersion\":\"4.14.0\",\"violations\":[],\"passes\":[{\"id\":\"aria-allowed-attr\",\"nodes\":8},{\"id\":\"aria-conditional-attr\",\"nodes\":8},{\"id\":\"aria-deprecated-role\",\"nodes\":1},{\"id\":\"aria-hidden-body\",\"nodes\":1},{\"id\":\"aria-hidden-focus\",\"nodes\":3},{\"id\":\"aria-prohibited-attr\",\"nodes\":6},{\"id\":\"aria-required-attr\",\"nodes\":1},{\"id\":\"aria-roles\",\"nodes\":1},{\"id\":\"aria-valid-attr-value\",\"nodes\":8},{\"id\":\"aria-valid-attr\",\"nodes\":8},{\"id\":\"avoid-inline-spacing\",\"nodes\":1},{\"id\":\"button-name\",\"nodes\":1},{\"id\":\"bypass\",\"nodes\":1},{\"id\":\"color-contrast\",\"nodes\":6},{\"id\":\"document-title\",\"nodes\":1},{\"id\":\"form-field-multiple-labels\",\"nodes\":1},{\"id\":\"html-has-lang\",\"nodes\":1},{\"id\":\"html-lang-valid\",\"nodes\":1},{\"id\":\"image-alt\",\"nodes\":2},{\"id\":\"label-content-name-mismatch\",\"nodes\":1},{\"id\":\"label\",\"nodes\":1},{\"id\":\"link-name\",\"nodes\":11},{\"id\":\"meta-viewport\",\"nodes\":1},{\"id\":\"nested-interactive\",\"nodes\":3}]}",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-05-auditor-a-password-request.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "A11Y-06",
+      "title": "A11Y-06 auditoría /profile",
+      "category": "Accesibilidad",
+      "objective": "Auditar /profile con axe-core WCAG 2.1 A/AA.",
+      "expected": "Cero violaciones automatizables A/AA en el estado auditado; catálogo y tabla de carrito cargados. No certifica conformidad completa.",
+      "status": "passed",
+      "actual": "{\"url\":\"http://localhost:4200/profile\",\"timestamp\":\"2026-10-11T18:05:03.868Z\",\"axeVersion\":\"4.14.0\",\"violations\":[],\"passes\":[{\"id\":\"aria-allowed-attr\",\"nodes\":9},{\"id\":\"aria-conditional-attr\",\"nodes\":9},{\"id\":\"aria-deprecated-role\",\"nodes\":1},{\"id\":\"aria-hidden-body\",\"nodes\":1},{\"id\":\"aria-hidden-focus\",\"nodes\":3},{\"id\":\"aria-prohibited-attr\",\"nodes\":7},{\"id\":\"aria-required-attr\",\"nodes\":1},{\"id\":\"aria-roles\",\"nodes\":1},{\"id\":\"aria-valid-attr-value\",\"nodes\":9},{\"id\":\"aria-valid-attr\",\"nodes\":9},{\"id\":\"avoid-inline-spacing\",\"nodes\":1},{\"id\":\"button-name\",\"nodes\":2},{\"id\":\"bypass\",\"nodes\":1},{\"id\":\"color-contrast\",\"nodes\":13},{\"id\":\"document-title\",\"nodes\":1},{\"id\":\"form-field-multiple-labels\",\"nodes\":1},{\"id\":\"html-has-lang\",\"nodes\":1},{\"id\":\"html-lang-valid\",\"nodes\":1},{\"id\":\"image-alt\",\"nodes\":2},{\"id\":\"label-content-name-mismatch\",\"nodes\":1},{\"id\":\"label\",\"nodes\":1},{\"id\":\"link-name\",\"nodes\":13},{\"id\":\"meta-viewport\",\"nodes\":1},{\"id\":\"nested-interactive\",\"nodes\":4}]}",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-06-auditor-a-profile.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "A11Y-07",
+      "title": "A11Y-07 auditoría /post",
+      "category": "Accesibilidad",
+      "objective": "Auditar /post con axe-core WCAG 2.1 A/AA.",
+      "expected": "Cero violaciones automatizables A/AA en el estado auditado; catálogo y tabla de carrito cargados. No certifica conformidad completa.",
+      "status": "passed",
+      "actual": "{\"url\":\"http://localhost:4200/post\",\"timestamp\":\"2026-10-11T18:05:05.063Z\",\"axeVersion\":\"4.14.0\",\"violations\":[],\"passes\":[{\"id\":\"aria-allowed-attr\",\"nodes\":9},{\"id\":\"aria-conditional-attr\",\"nodes\":9},{\"id\":\"aria-deprecated-role\",\"nodes\":1},{\"id\":\"aria-hidden-body\",\"nodes\":1},{\"id\":\"aria-hidden-focus\",\"nodes\":5},{\"id\":\"aria-prohibited-attr\",\"nodes\":7},{\"id\":\"aria-required-attr\",\"nodes\":1},{\"id\":\"aria-roles\",\"nodes\":1},{\"id\":\"aria-valid-attr-value\",\"nodes\":9},{\"id\":\"aria-valid-attr\",\"nodes\":9},{\"id\":\"avoid-inline-spacing\",\"nodes\":1},{\"id\":\"bypass\",\"nodes\":1},{\"id\":\"color-contrast\",\"nodes\":1},{\"id\":\"document-title\",\"nodes\":1},{\"id\":\"form-field-multiple-labels\",\"nodes\":1},{\"id\":\"html-has-lang\",\"nodes\":1},{\"id\":\"html-lang-valid\",\"nodes\":1},{\"id\":\"image-alt\",\"nodes\":2},{\"id\":\"label-content-name-mismatch\",\"nodes\":1},{\"id\":\"label\",\"nodes\":1},{\"id\":\"link-name\",\"nodes\":11},{\"id\":\"meta-viewport\",\"nodes\":1},{\"id\":\"nested-interactive\",\"nodes\":2}]}",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-07-auditor-a-post.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "A11Y-08",
+      "title": "A11Y-08 salto de teclado al contenido",
+      "category": "Accesibilidad",
+      "objective": "Acceder al contenido mediante enlace de salto.",
+      "expected": "Enlace recibe foco; al activar, main queda enfocado; lang=es.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-08-salto-de-teclado-al-contenido.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "A11Y-09",
+      "title": "A11Y-09 campos login y error accesible",
+      "category": "Accesibilidad",
+      "objective": "Verificar campos, foco y aviso de login inválido.",
+      "expected": "Autocomplete username/current-password; foco en controles; alerta accesible; cero violaciones axe con error visible.",
+      "status": "passed",
+      "actual": "{\"url\":\"http://localhost:4200/sign-in\",\"timestamp\":\"2026-10-11T18:05:07.627Z\",\"axeVersion\":\"4.14.0\",\"violations\":[],\"passes\":[{\"id\":\"aria-allowed-attr\",\"nodes\":11},{\"id\":\"aria-conditional-attr\",\"nodes\":11},{\"id\":\"aria-deprecated-role\",\"nodes\":2},{\"id\":\"aria-hidden-body\",\"nodes\":1},{\"id\":\"aria-hidden-focus\",\"nodes\":3},{\"id\":\"aria-prohibited-attr\",\"nodes\":9},{\"id\":\"aria-required-attr\",\"nodes\":2},{\"id\":\"aria-roles\",\"nodes\":2},{\"id\":\"aria-valid-attr-value\",\"nodes\":11},{\"id\":\"aria-valid-attr\",\"nodes\":11},{\"id\":\"autocomplete-valid\",\"nodes\":2},{\"id\":\"avoid-inline-spacing\",\"nodes\":1},{\"id\":\"button-name\",\"nodes\":1},{\"id\":\"bypass\",\"nodes\":1},{\"id\":\"color-contrast\",\"nodes\":14},{\"id\":\"document-title\",\"nodes\":1},{\"id\":\"duplicate-id-aria\",\"nodes\":3},{\"id\":\"form-field-multiple-labels\",\"nodes\":2},{\"id\":\"html-has-lang\",\"nodes\":1},{\"id\":\"html-lang-valid\",\"nodes\":1},{\"id\":\"image-alt\",\"nodes\":3},{\"id\":\"label-content-name-mismatch\",\"nodes\":1},{\"id\":\"label\",\"nodes\":2},{\"id\":\"link-in-text-block\",\"nodes\":1},{\"id\":\"link-name\",\"nodes\":13},{\"id\":\"meta-viewport\",\"nodes\":1},{\"id\":\"nested-interactive\",\"nodes\":4}]}",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-09-campos-login-y-error-accesible.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "A11Y-10",
+      "title": "A11Y-10 carrito autenticado",
+      "category": "Accesibilidad",
+      "objective": "Auditar /cart con axe-core WCAG 2.1 A/AA.",
+      "expected": "Cero violaciones automatizables A/AA en el estado auditado; catálogo y tabla de carrito cargados. No certifica conformidad completa.",
+      "status": "passed",
+      "actual": "{\"url\":\"http://localhost:4200/cart\",\"timestamp\":\"2026-10-11T18:05:08.914Z\",\"axeVersion\":\"4.14.0\",\"violations\":[],\"passes\":[{\"id\":\"aria-allowed-attr\",\"nodes\":12},{\"id\":\"aria-conditional-attr\",\"nodes\":12},{\"id\":\"aria-deprecated-role\",\"nodes\":2},{\"id\":\"aria-hidden-body\",\"nodes\":1},{\"id\":\"aria-hidden-focus\",\"nodes\":4},{\"id\":\"aria-prohibited-attr\",\"nodes\":9},{\"id\":\"aria-required-attr\",\"nodes\":2},{\"id\":\"aria-required-children\",\"nodes\":1},{\"id\":\"aria-roles\",\"nodes\":2},{\"id\":\"aria-valid-attr-value\",\"nodes\":12},{\"id\":\"aria-valid-attr\",\"nodes\":12},{\"id\":\"avoid-inline-spacing\",\"nodes\":1},{\"id\":\"button-name\",\"nodes\":5},{\"id\":\"bypass\",\"nodes\":1},{\"id\":\"color-contrast\",\"nodes\":9},{\"id\":\"document-title\",\"nodes\":1},{\"id\":\"duplicate-id-aria\",\"nodes\":1},{\"id\":\"form-field-multiple-labels\",\"nodes\":1},{\"id\":\"html-has-lang\",\"nodes\":1},{\"id\":\"html-lang-valid\",\"nodes\":1},{\"id\":\"image-alt\",\"nodes\":3},{\"id\":\"label-content-name-mismatch\",\"nodes\":1},{\"id\":\"label\",\"nodes\":1},{\"id\":\"link-name\",\"nodes\":15},{\"id\":\"meta-viewport\",\"nodes\":1},{\"id\":\"nested-interactive\",\"nodes\":8},{\"id\":\"td-headers-attr\",\"nodes\":1},{\"id\":\"th-has-data-cells\",\"nodes\":1}]}",
+      "evidence": [
+        "accessibility.cy.js.json",
+        "screenshots/accessibility.cy.js/A11Y-10-carrito-autenticado.png",
+        "videos/accessibility.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-01",
+      "title": "API-01 salud y cabeceras",
+      "category": "API / seguridad",
+      "objective": "Comprobar disponibilidad y cabeceras protectoras.",
+      "expected": "200; JSON de salud exacto; nosniff; sin X-Powered-By.",
+      "status": "passed",
+      "actual": "{\"status\":200,\"body\":{\"status\":\"ok\",\"service\":\"la-morada-back\"},\"headers\":{\"vary\":\"Origin\",\"access-control-expose-headers\":\"x-new-token\",\"content-security-policy\":\"default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests\",\"cross-origin-opener-policy\":\"same-origin\",\"cross-origin-resource-policy\":\"same-origin\",\"origin-agent-cluster\":\"?1\",\"referrer-policy\":\"no-referrer\",\"strict-transport-security\":\"max-age=31536000; includeSubDomains\",\"x-content-type-options\":\"nosniff\",\"x-dns-prefetch-control\":\"off\",\"x-download-options\":\"noopen\",\"x-frame-options\":\"SAMEORIGIN\",\"x-permitted-cross-domain-policies\":\"none\",\"x-xss-protection\":\"0\",\"content-type\":\"application/json; charset=utf-8\",\"content-length\":\"42\",\"etag\":\"W/\\\"2a-iL5mjkcvt1D4i2sD1wRgOjRdyPE\\\"\",\"date\":\"Sun, 11 Oct 2026 18:05:11 GMT\",\"connection\":\"keep-alive\",\"keep-alive\":\"timeout=5\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-01-salud-y-cabeceras.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-02",
+      "title": "API-02 login correcto sin contraseña expuesta",
+      "category": "API",
+      "objective": "Autenticar paciente y evitar exponer el hash de contraseña.",
+      "expected": "200; token presente; rol patient; respuesta sin password.",
+      "status": "passed",
+      "actual": "{\"status\":200,\"role\":\"patient\",\"tokenPresent\":true,\"passwordExposed\":false}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-02-login-correcto-sin-contrase-a-expuesta.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-03",
+      "title": "API-03 rechazo de credenciales inválidas",
+      "category": "API negativo",
+      "objective": "Rechazar credenciales faltantes.",
+      "expected": "400; success=false; sin token.",
+      "status": "passed",
+      "actual": "{\"status\":400,\"body\":{\"success\":false,\"message\":\"Credenciales faltantes\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-03-rechazo-de-credenciales-inv-lidas.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-04",
+      "title": "API-04 rechazo de credenciales inválidas",
+      "category": "API negativo",
+      "objective": "Rechazar correo mal formado.",
+      "expected": "400; success=false; sin token.",
+      "status": "passed",
+      "actual": "{\"status\":400,\"body\":{\"success\":false,\"message\":\"Correo electrónico inválido\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-04-rechazo-de-credenciales-inv-lidas.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-05",
+      "title": "API-05 rechazo de credenciales inválidas",
+      "category": "API negativo",
+      "objective": "Rechazar contraseña incorrecta.",
+      "expected": "401; success=false; sin token.",
+      "status": "passed",
+      "actual": "{\"status\":401,\"body\":{\"success\":false,\"message\":\"Contraseña incorrecta\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-05-rechazo-de-credenciales-inv-lidas.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-06",
+      "title": "API-06 rechazo de credenciales inválidas",
+      "category": "Seguridad / API negativo",
+      "objective": "Rechazar operador NoSQL enviado como correo.",
+      "expected": "400; sin token; no autenticar.",
+      "status": "passed",
+      "actual": "{\"status\":400,\"body\":{\"success\":false,\"message\":\"Correo electrónico inválido\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-06-rechazo-de-credenciales-inv-lidas.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-07",
+      "title": "API-07 catálogo y búsqueda existente",
+      "category": "API",
+      "objective": "Buscar título existente en catálogo real.",
+      "expected": "200; lista contiene ID del libro QA.",
+      "status": "passed",
+      "actual": "{\"status\":200,\"count\":1}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-07-cat-logo-y-b-squeda-existente.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-08",
+      "title": "API-08 búsqueda sin coincidencias",
+      "category": "API negativo",
+      "objective": "Buscar título inexistente.",
+      "expected": "200; lista products vacía.",
+      "status": "passed",
+      "actual": "{\"status\":200,\"body\":{\"success\":true,\"products\":[]}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-08-b-squeda-sin-coincidencias.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-09",
+      "title": "API-09 carrito positivo y cálculo de total",
+      "category": "Regresión / API",
+      "objective": "Agregar dos unidades y comprobar cálculo backend.",
+      "expected": "200; cantidad=2; total=130000 COP; limpieza final exitosa.",
+      "status": "passed",
+      "actual": "{\"status\":200,\"body\":{\"success\":true,\"cart\":{\"_id\":\"6acbcdbbe07b39ef207503cf\",\"user_id\":\"2000000001\",\"__v\":5,\"products_id\":[{\"product_id\":{\"_id\":\"650000000000000000000001\",\"__v\":0,\"author\":\"James Clear\",\"cover_url\":\"http://localhost:4200/assets/lamorada-logo.png\",\"createdAt\":\"2026-10-11T17:56:11.591Z\",\"price\":65000,\"publish_year\":2018,\"title\":\"Habitos atomicos QA\",\"updatedAt\":\"2026-10-11T17:56:11.591Z\"},\"quantity\":2,\"_id\":\"6acbcfdae5523e09ccec543b\"}],\"total\":130000}}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-09-carrito-positivo-y-c-lculo-de-total.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-10",
+      "title": "API-10 cantidad negativa no modifica carrito",
+      "category": "API negativo",
+      "objective": "Impedir cantidad negativa y preservar carrito.",
+      "expected": "400; total posterior=0.",
+      "status": "passed",
+      "actual": "{\"status\":400,\"body\":{\"success\":false,\"message\":\"Cantidad inválida\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-10-cantidad-negativa-no-modifica-carrito.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "API-11",
+      "title": "API-11 ID inválido y producto inexistente",
+      "category": "API negativo",
+      "objective": "Distinguir identificador inválido y producto inexistente.",
+      "expected": "400 para ID mal formado; 404 para ID válido inexistente.",
+      "status": "passed",
+      "actual": "{\"status\":404,\"body\":{\"success\":false,\"message\":\"Producto no encontrado\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/API-11-ID-inv-lido-y-producto-inexistente.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SEC-01",
+      "title": "SEC-01 recursos privados exigen token",
+      "category": "Seguridad",
+      "objective": "Exigir autenticación del carrito.",
+      "expected": "401 sin Authorization.",
+      "status": "passed",
+      "actual": "{\"status\":401,\"body\":{\"success\":false,\"message\":\"Se requiere un token\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/SEC-01-recursos-privados-exigen-token.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SEC-02",
+      "title": "SEC-02 token manipulado rechazado",
+      "category": "Seguridad",
+      "objective": "Impedir acceso con JWT manipulado.",
+      "expected": "401; mensaje sin datos internos.",
+      "status": "passed",
+      "actual": "{\"status\":401,\"body\":{\"success\":false,\"message\":\"Token inválido o expirado\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/SEC-02-token-manipulado-rechazado.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SEC-03",
+      "title": "SEC-03 paciente no crea productos",
+      "category": "Seguridad",
+      "objective": "Aplicar autorización por rol en API.",
+      "expected": "403 cuando paciente intenta crear producto.",
+      "status": "passed",
+      "actual": "{\"status\":403,\"body\":{\"success\":false,\"message\":\"Acceso denegado\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/SEC-03-paciente-no-crea-productos.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SEC-04",
+      "title": "SEC-04 logout revoca sesión",
+      "category": "Seguridad",
+      "objective": "Revocar sesión al cerrar sesión.",
+      "expected": "Logout=200; reutilizar token produce 401.",
+      "status": "passed",
+      "actual": "{\"status\":401,\"body\":{\"success\":false,\"message\":\"Token inválido o expirado\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/SEC-04-logout-revoca-sesi-n.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SEC-05",
+      "title": "SEC-05 CORS rechaza origen desconocido",
+      "category": "Seguridad",
+      "objective": "Restringir origen CORS.",
+      "expected": "403 al origen desconocido; no devuelve Access-Control-Allow-Origin.",
+      "status": "passed",
+      "actual": "{\"status\":403,\"body\":{\"success\":false,\"message\":\"Origen no permitido\"}}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/SEC-05-CORS-rechaza-origen-desconocido.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SEC-06",
+      "title": "SEC-06 aislamiento entre carritos",
+      "category": "Seguridad",
+      "objective": "Separar carritos de dos cuentas.",
+      "expected": "Carrito de psicóloga vacío; el de paciente conserva total=65000.",
+      "status": "passed",
+      "actual": "{\"status\":200,\"ownCartEmpty\":true}",
+      "evidence": [
+        "api.cy.js.json",
+        "screenshots/api.cy.js/SEC-06-aislamiento-entre-carritos.png",
+        "videos/api.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "REG-01",
+      "title": "REG-01 navegar desde inicio al catálogo",
+      "category": "Regresión",
+      "objective": "Conservar navegación desde inicio a catálogo.",
+      "expected": "Ruta /product y libro QA visible.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "regression.cy.js.json",
+        "screenshots/regression.cy.js/REG-01-navegar-desde-inicio-al-cat-logo.png",
+        "videos/regression.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "REG-02",
+      "title": "REG-02 formulario inválido no envía solicitud",
+      "category": "Regresión negativo",
+      "objective": "Prevenir envío con formulario inválido.",
+      "expected": "Botón deshabilitado; cero solicitudes de login.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "regression.cy.js.json",
+        "screenshots/regression.cy.js/REG-02-formulario-inv-lido-no-env-a-solicitud.png",
+        "videos/regression.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "REG-03",
+      "title": "REG-03 error de red visible y recuperación al buscar",
+      "category": "Regresión negativo",
+      "objective": "Mostrar fallo HTTP y recuperarse al buscar.",
+      "expected": "Mensaje 503 visible; una búsqueda real devuelve libro y elimina el error.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "regression.cy.js.json",
+        "screenshots/regression.cy.js/REG-03-error-de-red-visible-y-recuperaci-n-al-buscar.png",
+        "videos/regression.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "REG-04",
+      "title": "REG-04 rutas públicas no producen error fatal",
+      "category": "Regresión",
+      "objective": "Cargar rutas públicas sin error fatal.",
+      "expected": "Seis rutas conservan URL y shell visible. Smoke; no valida cada operación de esas pantallas.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "regression.cy.js.json",
+        "screenshots/regression.cy.js/REG-04-rutas-p-blicas-no-producen-error-fatal.png",
+        "videos/regression.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "UI-01",
+      "title": "UI-01 inicio móvil sin desbordamiento horizontal",
+      "category": "Interfaz",
+      "objective": "Comprobar inicio en viewport móvil.",
+      "expected": "375×812; título visible; scrollWidth <= clientWidth.",
+      "status": "failed",
+      "actual": "No completado; consultar log.",
+      "evidence": [
+        "regression.cy.js.json",
+        "screenshots/regression.cy.js/Regresión e interfaz -- UI-01 inicio móvil sin desbordamiento horizontal (failed).png",
+        "screenshots/regression.cy.js/UI-01-inicio-m-vil-sin-desbordamiento-horizontal.png",
+        "videos/regression.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "UI-02",
+      "title": "UI-02 catálogo móvil y moneda consistente",
+      "category": "Interfaz",
+      "objective": "Comprobar catálogo móvil y consistencia de moneda.",
+      "expected": "375×812; libro visible; precio COP; sin desbordamiento horizontal.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "regression.cy.js.json",
+        "screenshots/regression.cy.js/UI-02-cat-logo-m-vil-y-moneda-consistente.png",
+        "videos/regression.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SP-01",
+      "title": "SP-01 acceso exitoso y cierre de sesión",
+      "category": "E2E Screenplay",
+      "objective": "Ingresar y cerrar sesión usando actor y tareas.",
+      "expected": "Ruta /home; menú Carrito; al salir vuelve Crear cuenta.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "screenplay.cy.js.json",
+        "screenshots/screenplay.cy.js/SP-01-acceso-exitoso-y-cierre-de-sesi-n.png",
+        "videos/screenplay.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SP-02",
+      "title": "SP-02 contraseña incorrecta mantiene formulario",
+      "category": "E2E Screenplay negativo",
+      "objective": "Rechazar acceso con contraseña incorrecta.",
+      "expected": "Credenciales inválidas; permanece /sign-in.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "screenplay.cy.js.json",
+        "screenshots/screenplay.cy.js/SP-02-contrase-a-incorrecta-mantiene-formulario.png",
+        "videos/screenplay.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SP-03",
+      "title": "SP-03 buscar libro y búsqueda alternativa sin resultados",
+      "category": "E2E Screenplay",
+      "objective": "Buscar título existente y alternativo inexistente.",
+      "expected": "Tarjeta QA y después mensaje de búsqueda vacía.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "screenplay.cy.js.json",
+        "screenshots/screenplay.cy.js/SP-03-buscar-libro-y-b-squeda-alternativa-sin-resultados.png",
+        "videos/screenplay.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SP-04",
+      "title": "SP-04 agregar aumentar eliminar y verificar carrito",
+      "category": "E2E Screenplay",
+      "objective": "Completar ciclo agregar, aumentar y eliminar.",
+      "expected": "Cantidad 1→2; total 130000; eliminación deja carrito vacío.",
+      "status": "failed",
+      "actual": "No completado; consultar log.",
+      "evidence": [
+        "screenplay.cy.js.json",
+        "screenshots/screenplay.cy.js/E2E — Screenplay con API, MongoDB y Redis reales -- SP-04 agregar aumentar eliminar y verificar carrito (failed).png",
+        "screenshots/screenplay.cy.js/SP-04-agregar-aumentar-eliminar-y-verificar-carrito.png",
+        "videos/screenplay.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SP-05",
+      "title": "SP-05 invitado no agrega ni entra a carrito privado",
+      "category": "E2E Screenplay negativo",
+      "objective": "Restringir carrito a invitados.",
+      "expected": "Aviso de iniciar sesión al agregar; /cart redirige /sign-in.",
+      "status": "passed",
+      "actual": "Todas las aserciones del escenario aprobadas; ? ms. Ver fuente y video para los valores verificados.",
+      "evidence": [
+        "screenplay.cy.js.json",
+        "screenshots/screenplay.cy.js/SP-05-invitado-no-agrega-ni-entra-a-carrito-privado.png",
+        "videos/screenplay.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "SP-06",
+      "title": "SP-06 paciente no entra a crear productos",
+      "category": "E2E Screenplay negativo",
+      "objective": "Restringir creación a rol psicólogo.",
+      "expected": "Paciente redirigido /home desde /product/create.",
+      "status": "failed",
+      "actual": "No completado; consultar log.",
+      "evidence": [
+        "screenplay.cy.js.json",
+        "screenshots/screenplay.cy.js/E2E — Screenplay con API, MongoDB y Redis reales -- SP-06 paciente no entra a crear productos (failed).png",
+        "screenshots/screenplay.cy.js/SP-06-paciente-no-entra-a-crear-productos.png",
+        "videos/screenplay.cy.js.mp4"
+      ]
+    },
+    {
+      "id": "BE-40",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-01: registra paciente, oculta password y crea carrito; rechaza duplicado",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-01: registra paciente, oculta password y crea carrito; rechaza duplicado",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (173 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-42",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-02: evidencia la brecha: solicitar psychologist termina almacenando patient",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-02: evidencia la brecha: solicitar psychologist termina almacenando patient",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (103 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-44",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-03: inicia sesion con credenciales validas y rechaza password incorrecto",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-03: inicia sesion con credenciales validas y rechaza password incorrecto",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (269 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-46",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-04: logout invalida el token y evita reutilizarlo",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-04: logout invalida el token y evita reutilizarlo",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (231 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-48",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-13: crea cita disponible y rechaza horario cruzado y fecha pasada",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-13: crea cita disponible y rechaza horario cruzado y fecha pasada",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (449 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-50",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-14: paciente y psicologo consultan únicamente sus citas autenticadas",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-14: paciente y psicologo consultan únicamente sus citas autenticadas",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (379 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-52",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-15: psicologo confirma su cita y el paciente no puede completarla",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-15: psicologo confirma su cita y el paciente no puede completarla",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (397 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-54",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-16: un tercero no cancela la cita y el paciente propietario si puede",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-16: un tercero no cancela la cita y el paciente propietario si puede",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (615 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-56",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-26: agrega un producto al carrito y rechaza solicitudes invalidas",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-26: agrega un producto al carrito y rechaza solicitudes invalidas",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (251 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-58",
+      "title": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-27: consulta el carrito autenticado con productos y total calculado",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-27: consulta el carrito autenticado con productos y total calculado",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (220 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-50",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA01 conserva el acceso con credenciales válidas",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA01 conserva el acceso con credenciales válidas",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-52",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA02 conserva el rechazo de credenciales: ",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA02 conserva el rechazo de credenciales: ",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (6 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-54",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA02 conserva el rechazo de credenciales: incorrecto",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA02 conserva el rechazo de credenciales: incorrecto",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-56",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA02 conserva el rechazo de credenciales: paciente@lamorada.test",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA02 conserva el rechazo de credenciales: paciente@lamorada.test",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-58",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA03 conserva la denegación de un rol ajeno a la colección permitida",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA03 conserva la denegación de un rol ajeno a la colección permitida",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-60",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA04 un hash dañado sigue devolviendo falso",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA04 un hash dañado sigue devolviendo falso",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-62",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA05 conserva el límite de renovación TTL=599",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA05 conserva el límite de renovación TTL=599",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-64",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA05 conserva el límite de renovación TTL=600",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA05 conserva el límite de renovación TTL=600",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-66",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA06 una sesión revocada no autoriza: null",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA06 una sesión revocada no autoriza: null",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-68",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA06 una sesión revocada no autoriza: revoked-token",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA06 una sesión revocada no autoriza: revoked-token",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-70",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA07 conserva la edad límite válida: 5",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA07 conserva la edad límite válida: 5",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-72",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA07 conserva la edad límite válida: 110",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA07 conserva la edad límite válida: 110",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-74",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA08 conserva el rechazo de edad inválida: 4",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA08 conserva el rechazo de edad inválida: 4",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-76",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA08 conserva el rechazo de edad inválida: 111",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA08 conserva el rechazo de edad inválida: 111",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-78",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA08 conserva el rechazo de edad inválida: 25.5",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA08 conserva el rechazo de edad inválida: 25.5",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-80",
+      "title": "Regresión Clase 15: AAA y Fluent Assertions FA09 actualizar el perfil sin contraseña conserva los datos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Regresión Clase 15: AAA y Fluent Assertions FA09 actualizar el perfil sin contraseña conserva los datos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-66",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB01 patient conserva cambios permitidos y oculta contraseña",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB01 patient conserva cambios permitidos y oculta contraseña",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (32 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-68",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB01 psychologist conserva cambios permitidos y oculta contraseña",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB01 psychologist conserva cambios permitidos y oculta contraseña",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (20 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-70",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB02 cambia la contraseña con confirmación y la almacena cifrada",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB02 cambia la contraseña con confirmación y la almacena cifrada",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (163 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-72",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB03 no permite modificar un perfil ajeno",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB03 no permite modificar un perfil ajeno",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (24 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-74",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB04 requiere sesión y rechaza token inválido",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB04 requiere sesión y rechaza token inválido",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (16 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-76",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida name= no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida name= no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (22 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-78",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida name=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida name=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (17 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-80",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida last_name1=123 no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida last_name1=123 no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (16 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-82",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida last_name2= no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida last_name2= no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (16 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-84",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida email=sin-arroba no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida email=sin-arroba no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (23 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-86",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida phone=123456 no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida phone=123456 no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (17 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-88",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida phone=1111111111111111 no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida phone=1111111111111111 no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (16 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-90",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=4 no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=4 no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (16 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-92",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=111 no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=111 no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (16 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-94",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=5.5 no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=5.5 no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (15 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-96",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida role=psychologist no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida role=psychologist no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (17 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-98",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida _id=999 no persiste",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida _id=999 no persiste",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (22 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-100",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB06 acepta edad límite 5",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB06 acepta edad límite 5",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (19 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-102",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB06 acepta edad límite 110",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB06 acepta edad límite 110",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (17 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-104",
+      "title": "F07 - caja negra: actualización del perfil propio F07-BB07 contraseñas diferentes o débiles no se guardan",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-BB07 contraseñas diferentes o débiles no se guardan",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (22 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-106",
+      "title": "F07 - caja negra: actualización del perfil propio F07-GAP01 reproduce rechazo de specialty enviado por la pantalla del psicólogo",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caja negra: actualización del perfil propio F07-GAP01 reproduce rechazo de specialty enviado por la pantalla del psicólogo",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (17 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-108",
+      "title": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=undefined",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=undefined",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (38 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-110",
+      "title": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=true",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=true",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (27 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-112",
+      "title": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=false",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=false",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (26 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-114",
+      "title": "F17 - caja negra: crear publicación F17-BB02 rechaza paciente y solicitudes sin sesión",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB02 rechaza paciente y solicitudes sin sesión",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (21 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-116",
+      "title": "F17 - caja negra: crear publicación F17-BB03 valida title= antes de guardar",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB03 valida title= antes de guardar",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (16 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-118",
+      "title": "F17 - caja negra: crear publicación F17-BB03 valida title=12 antes de guardar",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB03 valida title=12 antes de guardar",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (14 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-120",
+      "title": "F17 - caja negra: crear publicación F17-BB03 valida content= antes de guardar",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB03 valida content= antes de guardar",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (14 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-122",
+      "title": "F17 - caja negra: crear publicación F17-BB03 valida content=12 antes de guardar",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB03 valida content=12 antes de guardar",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (14 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-124",
+      "title": "F17 - caja negra: crear publicación F17-BB03 valida active=true antes de guardar",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB03 valida active=true antes de guardar",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (16 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-126",
+      "title": "F17 - caja negra: crear publicación F17-BB03 valida active=null antes de guardar",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB03 valida active=null antes de guardar",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (16 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-128",
+      "title": "F17 - caja negra: crear publicación F17-BB04 revalida al autor en la base de datos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-BB04 revalida al autor en la base de datos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (26 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-130",
+      "title": "F17 - caja negra: crear publicación F17-GAP01 documenta que la API no impone los límites 160/10 de la pantalla",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caja negra: crear publicación F17-GAP01 documenta que la API no impone los límites 160/10 de la pantalla",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (18 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-99",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 genera código, TTL undefined y correo simulado",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 genera código, TTL undefined y correo simulado",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (8 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-101",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 genera código, TTL 120 y correo simulado",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 genera código, TTL 120 y correo simulado",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-103",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 inexistente no envía correo",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 inexistente no envía correo",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (12 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-105",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 propaga fallo storage sin éxito falso",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 propaga fallo storage sin éxito falso",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (4 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-107",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 propaga fallo mail sin éxito falso",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 propaga fallo mail sin éxito falso",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-109",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 código null rechazado sin guardar",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 código null rechazado sin guardar",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-111",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 código OTHER rechazado sin guardar",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 código OTHER rechazado sin guardar",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-113",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 usuario inexistente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 usuario inexistente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-115",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 contraseña débil no consume el código",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 contraseña débil no consume el código",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (4 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-117",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 fake Redis conserva estado entre solicitud y uso y evita reutilización",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 fake Redis conserva estado entre solicitud y uso y evita reutilización",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-119",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados getPatients proyecta sin contraseña",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados getPatients proyecta sin contraseña",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-121",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados getPsychologists proyecta sin contraseña",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados getPsychologists proyecta sin contraseña",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-123",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 rechaza filtro inválido undefined",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 rechaza filtro inválido undefined",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-125",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 rechaza filtro inválido ",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 rechaza filtro inválido ",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-127",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 rechaza filtro inválido 42",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 rechaza filtro inválido 42",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-129",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 escapa metacaracteres y no los interpreta como expresión del usuario",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 escapa metacaracteres y no los interpreta como expresión del usuario",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-131",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados EX01 elimina solo el ID solicitado",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados EX01 elimina solo el ID solicitado",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-133",
+      "title": "F05 F06 F08 F09 y eliminación propia - servicios aislados EX01 inexistente no ejecuta borrado",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F05 F06 F08 F09 y eliminación propia - servicios aislados EX01 inexistente no ejecuta borrado",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-135",
+      "title": "F19 F20 F21 - autor y publicación F19 consulta null",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación F19 consulta null",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-137",
+      "title": "F19 F20 F21 - autor y publicación F19 consulta {\"_id\":\"post1\"}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación F19 consulta {\"_id\":\"post1\"}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-139",
+      "title": "F19 F20 F21 - autor y publicación updatePost bloquea inexistente y autor ajeno",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación updatePost bloquea inexistente y autor ajeno",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-141",
+      "title": "F19 F20 F21 - autor y publicación deletePost bloquea inexistente y autor ajeno",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación deletePost bloquea inexistente y autor ajeno",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-143",
+      "title": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-145",
+      "title": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"title\":\"Nuevo\"}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"title\":\"Nuevo\"}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-147",
+      "title": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"content\":\"Texto nuevo\"}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"content\":\"Texto nuevo\"}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-149",
+      "title": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"active\":false}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"active\":false}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-151",
+      "title": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"title\":\"Nuevo\",\"content\":\"Texto nuevo\",\"active\":false}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"title\":\"Nuevo\",\"content\":\"Texto nuevo\",\"active\":false}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-153",
+      "title": "F19 F20 F21 - autor y publicación F21 mock con expectativa de interacción elimina exactamente la publicación propia",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación F21 mock con expectativa de interacción elimina exactamente la publicación propia",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-155",
+      "title": "F19 F20 F21 - autor y publicación F20 ID opcional inválido se rechaza",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F19 F20 F21 - autor y publicación F20 ID opcional inválido se rechaza",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (3 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-157",
+      "title": "F28 - persistencia del carrito F27 crea el carrito ausente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F28 - persistencia del carrito F27 crea el carrito ausente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-159",
+      "title": "F28 - persistencia del carrito F28 retira solo el producto indicado y recalcula",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F28 - persistencia del carrito F28 retira solo el producto indicado y recalcula",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-161",
+      "title": "F28 - persistencia del carrito F28 vacía productos y total y guarda",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F28 - persistencia del carrito F28 vacía productos y total y guarda",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-163",
+      "title": "F28 - persistencia del carrito F26 ID obligatorio no pasa validación",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F28 - persistencia del carrito F26 ID obligatorio no pasa validación",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-165",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.getPatients responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.getPatients responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-167",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.getPatients propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.getPatients propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-169",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.getPsychologists responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.getPsychologists responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-171",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.getPsychologists propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.getPsychologists propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-173",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.getPsychologistsBySpecialty responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.getPsychologistsBySpecialty responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-175",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.getPsychologistsBySpecialty propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.getPsychologistsBySpecialty propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-177",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.deleteUser responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.deleteUser responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-179",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.deleteUser propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.deleteUser propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-181",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.requestPasswordReset responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.requestPasswordReset responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-183",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.requestPasswordReset propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.requestPasswordReset propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-185",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.resetPassword responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.resetPassword responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-187",
+      "title": "Controladores - contratos HTTP con servicio doble UserController.resetPassword propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble UserController.resetPassword propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-189",
+      "title": "Controladores - contratos HTTP con servicio doble PostController.getPostById responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble PostController.getPostById responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-191",
+      "title": "Controladores - contratos HTTP con servicio doble PostController.getPostById propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble PostController.getPostById propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-193",
+      "title": "Controladores - contratos HTTP con servicio doble PostController.updatePost responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble PostController.updatePost responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-195",
+      "title": "Controladores - contratos HTTP con servicio doble PostController.updatePost propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble PostController.updatePost propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-197",
+      "title": "Controladores - contratos HTTP con servicio doble PostController.deletePost responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble PostController.deletePost responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-199",
+      "title": "Controladores - contratos HTTP con servicio doble PostController.deletePost propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble PostController.deletePost propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-201",
+      "title": "Controladores - contratos HTTP con servicio doble CartController.getCart responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble CartController.getCart responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-203",
+      "title": "Controladores - contratos HTTP con servicio doble CartController.getCart propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble CartController.getCart propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-205",
+      "title": "Controladores - contratos HTTP con servicio doble CartController.removeProduct responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble CartController.removeProduct responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-207",
+      "title": "Controladores - contratos HTTP con servicio doble CartController.removeProduct propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble CartController.removeProduct propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-209",
+      "title": "Controladores - contratos HTTP con servicio doble CartController.clearCart responde 200 y delega argumentos correctos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble CartController.clearCart responde 200 y delega argumentos correctos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-211",
+      "title": "Controladores - contratos HTTP con servicio doble CartController.clearCart propaga fallo como 500",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble CartController.clearCart propaga fallo como 500",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-213",
+      "title": "Controladores - contratos HTTP con servicio doble register bloquea confirmación diferente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble register bloquea confirmación diferente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (3 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-215",
+      "title": "Controladores - contratos HTTP con servicio doble resetPassword bloquea confirmación diferente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble resetPassword bloquea confirmación diferente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-217",
+      "title": "Controladores - contratos HTTP con servicio doble F04 encabezado undefined no revoca",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble F04 encabezado undefined no revoca",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-219",
+      "title": "Controladores - contratos HTTP con servicio doble F04 encabezado Bearer no revoca",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "Controladores - contratos HTTP con servicio doble F04 encabezado Bearer no revoca",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-160",
+      "title": "F07 - caminos de actualización F07-B-P1 usuario inexistente termina sin hash",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caminos de actualización F07-B-P1 usuario inexistente termina sin hash",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (10 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-162",
+      "title": "F07 - caminos de actualización F07-B-P2 campo protegido termina sin persistir",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caminos de actualización F07-B-P2 campo protegido termina sin persistir",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-164",
+      "title": "F07 - caminos de actualización F07-B-P3 datos inválidos terminan sin persistir",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caminos de actualización F07-B-P3 datos inválidos terminan sin persistir",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-166",
+      "title": "F07 - caminos de actualización F07-B-P4 actualiza campos definidos y conserva el hash si no cambia contraseña",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caminos de actualización F07-B-P4 actualiza campos definidos y conserva el hash si no cambia contraseña",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-168",
+      "title": "F07 - caminos de actualización F07-B-P5 cifra la contraseña y no la devuelve",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caminos de actualización F07-B-P5 cifra la contraseña y no la devuelve",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-170",
+      "title": "F07 - caminos de actualización F07-B-P6 propaga fallo del almacenamiento",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F07 - caminos de actualización F07-B-P6 propaga fallo del almacenamiento",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-172",
+      "title": "F17 - caminos de creación F17-B-P0 error del refresco posterior a crear se informa, no se silencia",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-P0 error del refresco posterior a crear se informa, no se silencia",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (3 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-174",
+      "title": "F17 - caminos de creación F17-B-P1 autor inválido null no crea",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-P1 autor inválido null no crea",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-176",
+      "title": "F17 - caminos de creación F17-B-P1 autor inválido {\"role\":\"patient\"} no crea",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-P1 autor inválido {\"role\":\"patient\"} no crea",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-178",
+      "title": "F17 - caminos de creación F17-B-P2 creación conserva active=undefined",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-P2 creación conserva active=undefined",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-180",
+      "title": "F17 - caminos de creación F17-B-P2 creación conserva active=false",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-P2 creación conserva active=false",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-182",
+      "title": "F17 - caminos de creación F17-B-P3 fallo al guardar no se convierte en éxito",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-P3 fallo al guardar no se convierte en éxito",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-184",
+      "title": "F17 - caminos de creación F17-B-V valida partición {\"content\":\"Texto\"}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-V valida partición {\"content\":\"Texto\"}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-186",
+      "title": "F17 - caminos de creación F17-B-V valida partición {\"title\":1,\"content\":\"Texto\"}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-V valida partición {\"title\":1,\"content\":\"Texto\"}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-188",
+      "title": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\"}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\"}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-190",
+      "title": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\",\"content\":[]}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\",\"content\":[]}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-192",
+      "title": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\",\"content\":\"Texto\",\"active\":1}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\",\"content\":\"Texto\",\"active\":1}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-177",
+      "title": "F01 - UserService.register (3 caminos exactos) F01-B-P1: existingById verdadero",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01 - UserService.register (3 caminos exactos) F01-B-P1: existingById verdadero",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (11 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-179",
+      "title": "F01 - UserService.register (3 caminos exactos) F01-B-P2: ID libre y existingByEmail verdadero",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01 - UserService.register (3 caminos exactos) F01-B-P2: ID libre y existingByEmail verdadero",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-181",
+      "title": "F01 - UserService.register (3 caminos exactos) F01-B-P3: ID y correo libres completan el registro",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01 - UserService.register (3 caminos exactos) F01-B-P3: ID y correo libres completan el registro",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-183",
+      "title": "F02 - UserService.register (3 caminos exactos) F02-B-P1: existingById verdadero",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F02 - UserService.register (3 caminos exactos) F02-B-P1: existingById verdadero",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-185",
+      "title": "F02 - UserService.register (3 caminos exactos) F02-B-P2: ID libre y existingByEmail verdadero",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F02 - UserService.register (3 caminos exactos) F02-B-P2: ID libre y existingByEmail verdadero",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-187",
+      "title": "F02 - UserService.register (3 caminos exactos) F02-B-P3: ID y correo libres completan el registro",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F02 - UserService.register (3 caminos exactos) F02-B-P3: ID y correo libres completan el registro",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-189",
+      "title": "F03 - AuthService.loginUser (2 caminos exactos) F03-B-P1: usuario no encontrado",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - AuthService.loginUser (2 caminos exactos) F03-B-P1: usuario no encontrado",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (6 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-191",
+      "title": "F03 - AuthService.loginUser (2 caminos exactos) F03-B-P2: usuario encontrado completa validaciones y genera token",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - AuthService.loginUser (2 caminos exactos) F03-B-P2: usuario encontrado completa validaciones y genera token",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-193",
+      "title": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P1: token ausente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P1: token ausente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (14 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-195",
+      "title": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P2: token presente pero inválido",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P2: token presente pero inválido",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-197",
+      "title": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P3: token válido se invalida",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P3: token válido se invalida",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-199",
+      "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P1: paciente inválido",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P1: paciente inválido",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (3 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-201",
+      "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P2: psicólogo inválido",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P2: psicólogo inválido",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-203",
+      "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P3: disponibilidad inexistente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P3: disponibilidad inexistente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-205",
+      "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P4: fecha inválida",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P4: fecha inválida",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-207",
+      "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P5: fecha no futura",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P5: fecha no futura",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-209",
+      "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P6: día no disponible",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P6: día no disponible",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-211",
+      "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P7: hora fuera de los slots",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P7: hora fuera de los slots",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-213",
+      "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P8: horario ocupado",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P8: horario ocupado",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-215",
+      "title": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P9: horario libre crea cita",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P9: horario libre crea cita",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-217",
+      "title": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P1: rol patient consulta por paciente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P1: rol patient consulta por paciente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-219",
+      "title": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P2: rol distinto de patient consulta por psicólogo",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P2: rol distinto de patient consulta por psicólogo",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-221",
+      "title": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P3: excepción delegada a handleError",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P3: excepción delegada a handleError",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-223",
+      "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P1: cita inexistente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P1: cita inexistente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-225",
+      "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P2: usuario ajeno",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P2: usuario ajeno",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-227",
+      "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P3: estado inválido",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P3: estado inválido",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-229",
+      "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P4: paciente intenta estado distinto de cancelada",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P4: paciente intenta estado distinto de cancelada",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-231",
+      "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P5: cita completada",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P5: cita completada",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-233",
+      "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P6: cita cancelada",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P6: cita cancelada",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-235",
+      "title": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P7: cambio permitido",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P7: cambio permitido",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-237",
+      "title": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P1: cita inexistente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P1: cita inexistente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-239",
+      "title": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P2: usuario ajeno",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P2: usuario ajeno",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-241",
+      "title": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P3: propietario cambia estado a cancelada",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P3: propietario cambia estado a cancelada",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-243",
+      "title": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P1: producto inexistente",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P1: producto inexistente",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (2 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-245",
+      "title": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P2: producto nuevo usa rama else",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P2: producto nuevo usa rama else",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-247",
+      "title": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P3: producto existente usa rama if",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P3: producto existente usa rama if",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-249",
+      "title": "F27 - CartService.getCart (1 camino lineal) F27-B-P1: obtiene, recalcula, guarda y popula",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F27 - CartService.getCart (1 camino lineal) F27-B-P1: obtiene, recalcula, guarda y popula",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-214",
+      "title": "F03 - decisiones de validación de credenciales F03-V1  / Morada123! rechaza con MISSING CREDENTIALS",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - decisiones de validación de credenciales F03-V1  / Morada123! rechaza con MISSING CREDENTIALS",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (11 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-216",
+      "title": "F03 - decisiones de validación de credenciales F03-V1 a@lamorada.test /  rechaza con MISSING CREDENTIALS",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - decisiones de validación de credenciales F03-V1 a@lamorada.test /  rechaza con MISSING CREDENTIALS",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-218",
+      "title": "F03 - decisiones de validación de credenciales F03-V1 invalido / Morada123! rechaza con INVALID EMAIL",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - decisiones de validación de credenciales F03-V1 invalido / Morada123! rechaza con INVALID EMAIL",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-220",
+      "title": "F03 - decisiones de validación de credenciales F03-V1 a@lamorada.test / debil rechaza con INVALID PASSWORD",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - decisiones de validación de credenciales F03-V1 a@lamorada.test / debil rechaza con INVALID PASSWORD",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-222",
+      "title": "F03 - decisiones de validación de credenciales F03-V2 acepta credenciales válidas",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - decisiones de validación de credenciales F03-V2 acepta credenciales válidas",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-224",
+      "title": "F03 - decisiones de validación de credenciales F03-V3 verificación de contraseña true",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - decisiones de validación de credenciales F03-V3 verificación de contraseña true",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-226",
+      "title": "F03 - decisiones de validación de credenciales F03-V3 verificación de contraseña false",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - decisiones de validación de credenciales F03-V3 verificación de contraseña false",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-228",
+      "title": "F03 - decisiones de validación de credenciales F03-V4 roles permitidos y prohibidos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - decisiones de validación de credenciales F03-V4 roles permitidos y prohibidos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-230",
+      "title": "F03 - decisiones de validación de credenciales F01/F03 fallo de verificación del hash devuelve falso",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F03 - decisiones de validación de credenciales F01/F03 fallo de verificación del hash devuelve falso",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-232",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES01 no acepta token sin cabecera",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES01 no acepta token sin cabecera",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-234",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES02 rechaza token inválido",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES02 rechaza token inválido",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-236",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES03 sesión revocada o diferente null",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES03 sesión revocada o diferente null",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-238",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES03 sesión revocada o diferente other-token",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES03 sesión revocada o diferente other-token",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-240",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES04 límite de renovación TTL=599",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES04 límite de renovación TTL=599",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-242",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES04 límite de renovación TTL=600",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES04 límite de renovación TTL=600",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-244",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES05 indisponibilidad Redis no autoriza",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES05 indisponibilidad Redis no autoriza",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-246",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor undefined",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor undefined",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (3 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-248",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor {\"role\":\"patient\"}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor {\"role\":\"patient\"}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-250",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor {\"role\":\"psychologist\"}",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor {\"role\":\"psychologist\"}",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-252",
+      "title": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL02 sin lista de roles no concede acceso",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL02 sin lista de roles no concede acceso",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-254",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 _id fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 _id fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-256",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 _id fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 _id fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-258",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 document_type fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 document_type fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-260",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 name fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 name fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-262",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 last_name1 fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 last_name1 fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-264",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 last_name2 fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 last_name2 fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-266",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 age fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 age fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-268",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 email fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 email fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-270",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 phone fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 phone fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-272",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR01 password fuera del contrato",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR01 password fuera del contrato",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (1 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-274",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR02 longitud ID válida 1",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR02 longitud ID válida 1",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-276",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR02 longitud ID válida 15",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR02 longitud ID válida 15",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-278",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR03 longitud teléfono válida 7",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR03 longitud teléfono válida 7",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-280",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR03 longitud teléfono válida 15",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR03 longitud teléfono válida 15",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "BE-282",
+      "title": "F01/F02/F07 - particiones de datos de usuario USR04 actualizar sin contraseña conserva validación de otros campos",
+      "category": "Regresión backend / integración o unidad según suite",
+      "objective": "F01/F02/F07 - particiones de datos de usuario USR04 actualizar sin contraseña conserva validación de otros campos",
+      "expected": "Cumplir las aserciones específicas del caso en el archivo de prueba identificado por la suite.",
+      "status": "passed",
+      "actual": "Aserciones aprobadas (0 ms).",
+      "evidence": [
+        "backend-regression.json",
+        "backend-regression.log"
+      ]
+    },
+    {
+      "id": "SEC-07",
+      "title": "SEC-07 límite de login en configuración de producción SEC-07 cinco solicitudes aceptadas y sexta 429 con Retry-After",
+      "category": "Seguridad",
+      "objective": "Comprobar límite de intentos con configuración de producción.",
+      "expected": "Primeras cinco solicitudes llegan al controlador (401); sexta=429 con Retry-After positivo.",
+      "status": "passed",
+      "actual": "5 respuestas 401 del controlador y sexta 429 con Retry-After > 0; ver aserciones y resultado Jest.",
+      "evidence": [
+        "security-limiter.json",
+        "security-limiter.log"
+      ]
+    },
+    {
+      "id": "PERF-01",
+      "title": "1 usuarios",
+      "category": "Rendimiento",
+      "objective": "Medir catálogo/búsqueda con 1 usuarios simultáneos.",
+      "expected": "10 s; think time 50 ms; >=30 solicitudes; p95<=500 ms; errores<=1%; timeout=2000 ms.",
+      "status": "passed",
+      "actual": "168 solicitudes; p50=3.579 ms; p95=5.305 ms; p99=6.807 ms; errores=0 (0.00%); throughput=16.79 req/s.",
+      "evidence": [
+        "performance.json",
+        "performance.log"
+      ]
+    },
+    {
+      "id": "PERF-02",
+      "title": "5 usuarios",
+      "category": "Rendimiento",
+      "objective": "Medir catálogo/búsqueda con 5 usuarios simultáneos.",
+      "expected": "10 s; think time 50 ms; >=30 solicitudes; p95<=500 ms; errores<=1%; timeout=2000 ms.",
+      "status": "passed",
+      "actual": "830 solicitudes; p50=4.075 ms; p95=7.826 ms; p99=14.07 ms; errores=0 (0.00%); throughput=82.85 req/s.",
+      "evidence": [
+        "performance.json",
+        "performance.log"
+      ]
+    },
+    {
+      "id": "PERF-03",
+      "title": "15 usuarios",
+      "category": "Rendimiento",
+      "objective": "Medir catálogo/búsqueda con 15 usuarios simultáneos.",
+      "expected": "10 s; think time 50 ms; >=30 solicitudes; p95<=500 ms; errores<=1%; timeout=2000 ms.",
+      "status": "failed",
+      "actual": "2370 solicitudes; p50=6.201 ms; p95=10.963 ms; p99=15.743 ms; errores=2340 (98.73%); throughput=235.72 req/s.",
+      "evidence": [
+        "performance.json",
+        "performance.log"
+      ]
+    },
+    {
+      "id": "KAT-01",
+      "title": "Login correcto y logout",
+      "category": "E2E Katalon Recorder",
+      "objective": "Login correcto y logout",
+      "expected": "Navegación a home, menú Carrito; cierre vuelve a menú invitado.",
+      "status": "NOT_EXECUTED",
+      "actual": "NO EJECUTADO EN RECORDER",
+      "evidence": [
+        "../../katalon/LaMorada-Recorder.html",
+        "../../katalon/login.csv",
+        "../../katalon/LEEME.md"
+      ]
+    },
+    {
+      "id": "KAT-02",
+      "title": "Rechazar contraseña incorrecta",
+      "category": "E2E Katalon Recorder",
+      "objective": "Rechazar contraseña incorrecta",
+      "expected": "Credenciales inválidas, continúa en sign-in y sin sesión.",
+      "status": "NOT_EXECUTED",
+      "actual": "NO EJECUTADO EN RECORDER",
+      "evidence": [
+        "../../katalon/LaMorada-Recorder.html",
+        "../../katalon/login.csv",
+        "../../katalon/LEEME.md"
+      ]
+    },
+    {
+      "id": "KAT-03",
+      "title": "Buscar libro existente",
+      "category": "E2E Katalon Recorder",
+      "objective": "Buscar libro existente",
+      "expected": "Una tarjeta del libro QA.",
+      "status": "NOT_EXECUTED",
+      "actual": "NO EJECUTADO EN RECORDER",
+      "evidence": [
+        "../../katalon/LaMorada-Recorder.html",
+        "../../katalon/login.csv",
+        "../../katalon/LEEME.md"
+      ]
+    },
+    {
+      "id": "KAT-04",
+      "title": "Búsqueda sin resultados",
+      "category": "E2E Katalon Recorder",
+      "objective": "Búsqueda sin resultados",
+      "expected": "Estado vacío; ninguna tarjeta.",
+      "status": "NOT_EXECUTED",
+      "actual": "NO EJECUTADO EN RECORDER",
+      "evidence": [
+        "../../katalon/LaMorada-Recorder.html",
+        "../../katalon/login.csv",
+        "../../katalon/LEEME.md"
+      ]
+    },
+    {
+      "id": "KAT-05",
+      "title": "Agregar, aumentar, calcular y eliminar producto",
+      "category": "E2E Katalon Recorder",
+      "objective": "Agregar, aumentar, calcular y eliminar producto",
+      "expected": "Cantidad 1→2, total COP 130000; al eliminar queda vacío.",
+      "status": "NOT_EXECUTED",
+      "actual": "NO EJECUTADO EN RECORDER",
+      "evidence": [
+        "../../katalon/LaMorada-Recorder.html",
+        "../../katalon/login.csv",
+        "../../katalon/LEEME.md"
+      ]
+    },
+    {
+      "id": "KAT-06",
+      "title": "Invitado no modifica carrito",
+      "category": "E2E Katalon Recorder",
+      "objective": "Invitado no modifica carrito",
+      "expected": "Aviso de iniciar sesión; carrito redirige a sign-in.",
+      "status": "NOT_EXECUTED",
+      "actual": "NO EJECUTADO EN RECORDER",
+      "evidence": [
+        "../../katalon/LaMorada-Recorder.html",
+        "../../katalon/login.csv",
+        "../../katalon/LEEME.md"
+      ]
+    },
+    {
+      "id": "KAT-07",
+      "title": "Paciente no crea productos",
+      "category": "E2E Katalon Recorder",
+      "objective": "Paciente no crea productos",
+      "expected": "Redirección a home, sin formulario de creación.",
+      "status": "NOT_EXECUTED",
+      "actual": "NO EJECUTADO EN RECORDER",
+      "evidence": [
+        "../../katalon/LaMorada-Recorder.html",
+        "../../katalon/login.csv",
+        "../../katalon/LEEME.md"
+      ]
+    },
+    {
+      "id": "KAT-08",
+      "title": "Login con datos CSV positivos y negativos",
+      "category": "E2E Katalon Recorder",
+      "objective": "Login con datos CSV positivos y negativos",
+      "expected": "Cada fila valida mensaje, localizador y ruta esperados.",
+      "status": "NOT_EXECUTED",
+      "actual": "NO EJECUTADO EN RECORDER",
+      "evidence": [
+        "../../katalon/LaMorada-Recorder.html",
+        "../../katalon/login.csv",
+        "../../katalon/LEEME.md"
+      ]
+    }
+  ]
+}

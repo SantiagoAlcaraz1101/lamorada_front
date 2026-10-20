@@ -1,0 +1,7 @@
+
+Test Suites: 7 passed, 7 total
+Tests:       209 passed, 209 total
+Snapshots:   0 total
+Time:        10.198 s, estimated 100 s
+Ran all test suites in 2 projects.
+Test results written to: ..\quality\assessment\evidence\2026-10-11T18-01-15-553Z\backend-regression.json

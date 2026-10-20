@@ -1,0 +1,3 @@
+id,email,password,expectedPath,expectedSelector,expectedText
+correcto,paciente@lamorada.test,Morada123!,home,css=nav .who,glob:*patient*
+incorrecto,paciente@lamorada.test,Incorrecta123!,sign-in,css=[role="alert"],glob:*Credenciales inválidas*

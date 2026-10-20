@@ -9,7 +9,7 @@
 
   <!-- Mensajes -->
   @if (loading) {
-    <div>Cargando…</div>
+    <div data-testid="cart-loading" role="status">Cargando…</div>
   }
   @if (err) {
     <p class="err" aria-live="assertive">{{ err }}</p>
@@ -67,7 +67,7 @@
                 </td>
                 <!-- Eliminar -->
                 <td class="center">
-                  <button type="button" class="link" (click)="remove(it)" [disabled]="loading">Eliminar</button>
+                  <button type="button" class="link" data-testid="cart-remove" (click)="remove(it)" [disabled]="loading">Eliminar</button>
                 </td>
               </tr>
             }
@@ -92,7 +92,7 @@
     @if (!loading && items.length > 0) {
       <div class="actions">
         <a class="btn btn-primary" routerLink="/checkout">Continuar al pago</a>
-        <button type="button" class="btn" (click)="clear()" [disabled]="loading">Vaciar carrito</button>
+        <button type="button" class="btn" data-testid="cart-clear" (click)="clear()" [disabled]="loading">Vaciar carrito</button>
       </div>
     }
   </section>

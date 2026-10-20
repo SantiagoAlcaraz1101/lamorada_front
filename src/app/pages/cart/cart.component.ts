@@ -28,9 +28,11 @@ export class CartComponent implements OnInit {
     this.cartSvc.cart$.subscribe((resp: CartResponse) => {
       this.items = resp.products_id ?? [];
       this.total = resp.total ?? 0;
-      this.loading = false;
     });
-    this.cartSvc.getCart().subscribe(); // dispara sync en background
+    this.cartSvc.getCart().subscribe({
+      next: () => { this.loading = false; },
+      error: () => { this.err = 'No se pudo cargar el carrito. Intenta de nuevo.'; this.loading = false; },
+    });
   }
 
   /** ---------- Helpers para leer datos del producto ---------- */

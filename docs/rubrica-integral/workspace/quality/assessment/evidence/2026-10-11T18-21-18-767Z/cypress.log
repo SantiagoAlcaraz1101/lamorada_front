@@ -1,0 +1,332 @@
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        16.1.1                                                                         │
+  │ Browser:        Chrome 154 (headless)                                                          │
+  │ Node Version:   v24.15.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          4 found (accessibility.cy.js, api.cy.js, regression.cy.js, screenplay.cy.js)   │
+  │ Searched:       cypress/e2e/**/*.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  accessibility.cy.js                                                             (1 of 4)
+
+
+  Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales
+    √ A11Y-01 auditoría /home (1535ms)
+    √ A11Y-02 auditoría /sign-in (482ms)
+    √ A11Y-03 auditoría /product (539ms)
+    √ A11Y-04 auditoría /sign-up (455ms)
+    √ A11Y-05 auditoría /password-request (342ms)
+    √ A11Y-06 auditoría /profile (350ms)
+    √ A11Y-07 auditoría /post (387ms)
+    √ A11Y-08 salto de teclado al contenido (558ms)
+    √ A11Y-09 campos login y error accesible (730ms)
+    √ A11Y-10 carrito autenticado (841ms)
+
+
+  10 passing (11s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        10                                                                               │
+  │ Passing:      10                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  10                                                                               │
+  │ Video:        true                                                                             │
+  │ Duration:     10 seconds                                                                       │
+  │ Spec Ran:     accessibility.cy.js                                                              │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació    (1264x1071)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-01-auditor-a-home.png                                                     
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x845)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-02-auditor-a-sign-in.png                                                  
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x670)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-03-auditor-a-product.png                                                  
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació    (1264x1190)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-04-auditor-a-sign-up.png                                                  
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-05-auditor-a-password-request.png                                         
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x666)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-06-auditor-a-profile.png                                                  
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-07-auditor-a-post.png                                                     
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació    (1264x1071)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-08-salto-de-teclado-al-contenido.png                                      
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x859)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-09-campos-login-y-error-accesible.png                                     
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\acce               
+     ssibility.cy.js\A11Y-10-carrito-autenticado.png                                                
+
+
+  (Video)
+
+  -  Video output: C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficación\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\videos\accessibility.cy.js.mp4
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  api.cy.js                                                                       (2 of 4)
+
+
+  API real — contratos positivos y negativos
+    √ API-01 salud y cabeceras (79ms)
+    √ API-02 login correcto sin contraseña expuesta (148ms)
+    √ API-03 rechazo de credenciales inválidas (52ms)
+    √ API-04 rechazo de credenciales inválidas (50ms)
+    √ API-05 rechazo de credenciales inválidas (174ms)
+    √ API-06 rechazo de credenciales inválidas (70ms)
+    √ API-07 catálogo y búsqueda existente (64ms)
+    √ API-08 búsqueda sin coincidencias (87ms)
+    √ API-09 carrito positivo y cálculo de total (194ms)
+    √ API-10 cantidad negativa no modifica carrito (165ms)
+    √ API-11 ID inválido y producto inexistente (139ms)
+    √ SEC-01 recursos privados exigen token (26ms)
+    √ SEC-02 token manipulado rechazado (40ms)
+    √ SEC-03 paciente no crea productos (162ms)
+    √ SEC-04 logout revoca sesión (241ms)
+    √ SEC-05 CORS rechaza origen desconocido (56ms)
+    √ SEC-06 aislamiento entre carritos (445ms)
+
+
+  17 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        17                                                                               │
+  │ Passing:      17                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  17                                                                               │
+  │ Video:        true                                                                             │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     api.cy.js                                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-01-salud-y-cabeceras.png                                                             
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-02-login-correcto-sin-contrase-a-expuesta.png                                        
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-03-rechazo-de-credenciales-inv-lidas.png                                             
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-04-rechazo-de-credenciales-inv-lidas.png                                             
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-05-rechazo-de-credenciales-inv-lidas.png                                             
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-06-rechazo-de-credenciales-inv-lidas.png                                             
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-07-cat-logo-y-b-squeda-existente.png                                                 
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-08-b-squeda-sin-coincidencias.png                                                    
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-09-carrito-positivo-y-c-lculo-de-total.png                                           
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-10-cantidad-negativa-no-modifica-carrito.png                                         
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\API-11-ID-inv-lido-y-producto-inexistente.png                                            
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\SEC-01-recursos-privados-exigen-token.png                                                
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\SEC-02-token-manipulado-rechazado.png                                                    
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\SEC-03-paciente-no-crea-productos.png                                                    
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\SEC-04-logout-revoca-sesi-n.png                                                          
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\SEC-05-CORS-rechaza-origen-desconocido.png                                               
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\api.               
+     cy.js\SEC-06-aislamiento-entre-carritos.png                                                    
+
+
+  (Video)
+
+  -  Video output: C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficación\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\videos\api.cy.js.mp4
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  regression.cy.js                                                                (3 of 4)
+
+
+  Regresión e interfaz
+    √ REG-01 navegar desde inicio al catálogo (877ms)
+    √ REG-02 formulario inválido no envía solicitud (625ms)
+    √ REG-03 error de red visible y recuperación al buscar (455ms)
+    √ REG-04 rutas públicas no producen error fatal (1657ms)
+    √ REG-05 suscripción no anuncia un envío inexistente (479ms)
+    √ UI-01 inicio móvil sin desbordamiento horizontal (213ms)
+    √ UI-02 catálogo móvil y moneda consistente (275ms)
+
+
+  7 passing (8s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        7                                                                                │
+  │ Passing:      7                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  7                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     regression.cy.js                                                                 │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x670)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\regr               
+     ession.cy.js\REG-01-navegar-desde-inicio-al-cat-logo.png                                       
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x845)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\regr               
+     ession.cy.js\REG-02-formulario-inv-lido-no-env-a-solicitud.png                                 
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x670)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\regr               
+     ession.cy.js\REG-03-error-de-red-visible-y-recuperaci-n-al-buscar.png                          
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\regr               
+     ession.cy.js\REG-04-rutas-p-blicas-no-producen-error-fatal.png                                 
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació    (1264x1120)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\regr               
+     ession.cy.js\REG-05-suscripci-n-no-anuncia-un-env-o-inexistente.png                            
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (375x2186)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\regr               
+     ession.cy.js\UI-01-inicio-m-vil-sin-desbordamiento-horizontal.png                              
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació      (375x897)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\regr               
+     ession.cy.js\UI-02-cat-logo-m-vil-y-moneda-consistente.png                                     
+
+
+  (Video)
+
+  -  Video output: C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficación\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\videos\regression.cy.js.mp4
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  screenplay.cy.js                                                                (4 of 4)
+
+
+  E2E — Screenplay con API, MongoDB y Redis reales
+    √ SP-01 acceso exitoso y cierre de sesión (1712ms)
+    √ SP-02 contraseña incorrecta mantiene formulario (835ms)
+    √ SP-03 buscar libro y búsqueda alternativa sin resultados (1132ms)
+    √ SP-04 agregar aumentar eliminar y verificar carrito (2468ms)
+    √ SP-05 invitado no agrega ni entra a carrito privado (867ms)
+    √ SP-06 paciente no entra a crear productos (1061ms)
+
+
+  6 passing (11s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        6                                                                                │
+  │ Passing:      6                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  6                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     10 seconds                                                                       │
+  │ Spec Ran:     screenplay.cy.js                                                                 │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x845)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\scre               
+     enplay.cy.js\SP-01-acceso-exitoso-y-cierre-de-sesi-n.png                                       
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x859)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\scre               
+     enplay.cy.js\SP-02-contrase-a-incorrecta-mantiene-formulario.png                               
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\scre               
+     enplay.cy.js\SP-03-buscar-libro-y-b-squeda-alternativa-sin-resultados.png                      
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x625)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\scre               
+     enplay.cy.js\SP-04-agregar-aumentar-eliminar-y-verificar-carrito.png                           
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació     (1264x845)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\scre               
+     enplay.cy.js\SP-05-invitado-no-agrega-ni-entra-a-carrito-privado.png                           
+  -  C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficació    (1264x1079)
+     n\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\screenshots\scre               
+     enplay.cy.js\SP-06-paciente-no-entra-a-crear-productos.png                                     
+
+
+  (Video)
+
+  -  Video output: C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficación\LaMorada\quality\assessment\evidence\2026-10-11T18-21-18-767Z\videos\screenplay.cy.js.mp4
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  accessibility.cy.js                      00:10       10       10        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  api.cy.js                                00:05       17       17        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  regression.cy.js                         00:07        7        7        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  screenplay.cy.js                         00:10        6        6        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:34       40       40        -        -        -  
+

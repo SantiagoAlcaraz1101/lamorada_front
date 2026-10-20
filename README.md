@@ -30,3 +30,6 @@ Las configuraciones de desarrollo y producción local usan `http://localhost:300
 - `npm audit --omit=dev`: revisa las dependencias utilizadas en producción.
 
 El flujo de pago es deliberadamente simulado para uso educativo. La interfaz solo presenta la marca y los últimos cuatro dígitos de la tarjeta guardada.
+# Entrega compartida de validación y verificación
+
+La documentación, rúbricas y herramientas comunes están en el [repositorio central privado](https://github.com/SantiagoAlcaraz1101/la-morada-validacion). Su README permite descargar este frontend y la API en versiones compatibles, instalar dependencias y ejecutar las pruebas por responsable. Las evidencias de `docs/`, incluida la copia de `rubrica-integral/workspace`, se conservan como histórico; el arnés vigente está en el repositorio central.

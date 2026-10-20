@@ -1,0 +1,29 @@
+{
+  "status": 200,
+  "body": {
+    "success": true,
+    "cart": {
+      "_id": "6acbcdbbe07b39ef207503cf",
+      "user_id": "2000000001",
+      "__v": 21,
+      "products_id": [
+        {
+          "product_id": {
+            "_id": "650000000000000000000001",
+            "__v": 0,
+            "author": "James Clear",
+            "cover_url": "http://localhost:4200/assets/lamorada-logo.png",
+            "createdAt": "2026-10-11T17:56:11.591Z",
+            "price": 65000,
+            "publish_year": 2018,
+            "title": "Habitos atomicos QA",
+            "updatedAt": "2026-10-11T18:12:12.004Z"
+          },
+          "quantity": 2,
+          "_id": "6acbd3d1eec1207b6870b0d7"
+        }
+      ],
+      "total": 130000
+    }
+  }
+}

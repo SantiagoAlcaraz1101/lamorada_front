@@ -164,6 +164,7 @@
                 type="button"
                 class="pw-toggle"
                 (click)="togglePw()"
+                [attr.aria-label]="pwVisible ? 'Ocultar contraseña' : 'Mostrar contraseña'"
                 [attr.aria-pressed]="pwVisible"
               >
                 <span *ngIf="!pwVisible" aria-hidden="true">👁️</span>
@@ -194,6 +195,7 @@
                 type="button"
                 class="pw-toggle"
                 (click)="toggleCpw()"
+                [attr.aria-label]="cpwVisible ? 'Ocultar confirmación de contraseña' : 'Mostrar confirmación de contraseña'"
                 [attr.aria-pressed]="cpwVisible"
               >
                 <span *ngIf="!cpwVisible" aria-hidden="true">👁️</span>

@@ -1,7 +1,6 @@
 # Registro de revisión manual y visual
 
-Revisión asistida realizada el 14 de septiembre de 2026 en el navegador integrado, sobre el frontend local en http://127.0.0.1:4201. No se atribuye ejecución a los estudiantes ni al profesor. Solo se registran aquí observaciones realmente efectuadas; las suites automáticas tienen su propia evidencia.
-
+Revisión asistida realizada el 14 de septiembre de 2026 en el navegador integrado, sobre el frontend local en http://127.0.0.1:4201. 
 ## Observaciones ejecutadas
 
 | ID | Pasos y condición | Esperado | Observado | Estado |

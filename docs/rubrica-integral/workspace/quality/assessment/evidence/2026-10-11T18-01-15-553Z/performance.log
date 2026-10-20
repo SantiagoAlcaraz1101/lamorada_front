@@ -1,0 +1,3 @@
+PERF-01: 1 usuarios, 168 req, p95 5.305 ms, errores 0, APROBADO
+PERF-02: 5 usuarios, 830 req, p95 7.826 ms, errores 0, APROBADO
+PERF-03: 15 usuarios, 2370 req, p95 10.963 ms, errores 2340, FALLÓ

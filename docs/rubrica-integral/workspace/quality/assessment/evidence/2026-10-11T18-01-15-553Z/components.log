@@ -1,0 +1,83 @@
+> Building...
+√ Building...
+Initial chunk files                 | Names                            |  Raw size
+chunk-OOP67IKM.js                   | -                                |   2.48 MB | 
+polyfills.js                        | polyfills                        |   1.04 MB | 
+chunk-F3GVYF7M.js                   | -                                | 254.03 kB | 
+chunk-7FAFRAQY.js                   | -                                | 242.84 kB | 
+spec-fluent.regression.spec.js      | spec-fluent.regression.spec      | 180.89 kB | 
+chunk-62AXPE6Q.js                   | -                                |  96.64 kB | 
+jasmine-cleanup-1.js                | jasmine-cleanup-1                |  67.20 kB | 
+chunk-GPI2DIUS.js                   | -                                |  43.38 kB | 
+spec-delivery.paths.spec.js         | spec-delivery.paths.spec         |  26.71 kB | 
+chunk-FJCFG4X6.js                   | -                                |  24.80 kB | 
+test_main.js                        | test_main                        |  21.83 kB | 
+chunk-RPRBTS3D.js                   | -                                |  21.52 kB | 
+spec-quality.expanded.spec.js       | spec-quality.expanded.spec       |  20.85 kB | 
+spec-payment.component.spec.js      | spec-payment.component.spec      |  18.45 kB | 
+spec-podcast.component.spec.js      | spec-podcast.component.spec      |  18.14 kB | 
+chunk-C5R3CCSY.js                   | -                                |  18.03 kB | 
+chunk-5IELFTLQ.js                   | -                                |  15.94 kB | 
+spec-home.component.spec.js         | spec-home.component.spec         |  13.59 kB | 
+chunk-2IPYMTXO.js                   | -                                |  13.14 kB | 
+spec-profile.component.spec.js      | spec-profile.component.spec      |  13.04 kB | 
+chunk-OSKNSIPC.js                   | -                                |  12.72 kB | 
+chunk-TVZHW6VJ.js                   | -                                |  12.24 kB | 
+spec-quality.http.spec.js           | spec-quality.http.spec           |  12.08 kB | 
+spec-quality.ui.spec.js             | spec-quality.ui.spec             |  11.24 kB | 
+chunk-P623667H.js                   | -                                |  11.14 kB | 
+spec-checkout.component.spec.js     | spec-checkout.component.spec     |  10.63 kB | 
+chunk-KQ3HNMCV.js                   | -                                |   9.78 kB | 
+chunk-XHKZAVKD.js                   | -                                |   9.21 kB | 
+spec-plan20.post.spec.js            | spec-plan20.post.spec            |   8.50 kB | 
+chunk-QETYKA2T.js                   | -                                |   8.35 kB | 
+spec-plan20.profile.spec.js         | spec-plan20.profile.spec         |   7.87 kB | 
+spec-availability.component.spec.js | spec-availability.component.spec |   6.86 kB | 
+spec-assessment.components.spec.js  | spec-assessment.components.spec  |   6.77 kB | 
+spec-sonar-regression.spec.js       | spec-sonar-regression.spec       |   5.13 kB | 
+chunk-OMDFWCSB.js                   | -                                |   4.58 kB | 
+spec-post.service.spec.js           | spec-post.service.spec           |   4.42 kB | 
+chunk-62SQHQZC.js                   | -                                |   3.15 kB | 
+chunk-FKTRYWFI.js                   | -                                |   2.98 kB | 
+spec-app.spec.js                    | spec-app.spec                    |   2.80 kB | 
+chunk-AAO66GC5.js                   | -                                |   2.71 kB | 
+chunk-5BLBPJHQ.js                   | -                                |   2.48 kB | 
+chunk-LJSPAQMJ.js                   | -                                |   2.14 kB | 
+chunk-54NR64WY.js                   | -                                |   2.10 kB | 
+chunk-AJV5KUOB.js                   | -                                |   1.53 kB | 
+spec-appointment.component.spec.js  | spec-appointment.component.spec  |   1.48 kB | 
+spec-profile-edit.component.spec.js | spec-profile-edit.component.spec |   1.46 kB | 
+spec-product.component.spec.js      | spec-product.component.spec      |   1.43 kB | 
+spec-sign-in.component.spec.js      | spec-sign-in.component.spec      |   1.43 kB | 
+spec-sign-up.component.spec.js      | spec-sign-up.component.spec      |   1.40 kB | 
+spec-header.component.spec.js       | spec-header.component.spec       |   1.36 kB | 
+spec-cart.component.spec.js         | spec-cart.component.spec         |   1.33 kB | 
+spec-footer.component.spec.js       | spec-footer.component.spec       |   1.30 kB | 
+chunk-QCF4Z3NV.js                   | -                                |   1.28 kB | 
+styles.css                          | styles                           |   1.12 kB | 
+spec-availability.service.spec.js   | spec-availability.service.spec   | 873 bytes | 
+spec-appointment.service.spec.js    | spec-appointment.service.spec    | 866 bytes | 
+chunk-6P26DLMW.js                   | -                                | 848 bytes | 
+spec-product.service.spec.js        | spec-product.service.spec        | 838 bytes | 
+spec-payment.service.spec.js        | spec-payment.service.spec        | 838 bytes | 
+spec-podcast.service.spec.js        | spec-podcast.service.spec        | 838 bytes | 
+spec-auth-role.guard.spec.js        | spec-auth-role.guard.spec        | 819 bytes | 
+spec-user.service.spec.js           | spec-user.service.spec           | 817 bytes | 
+spec-cart.service.spec.js           | spec-cart.service.spec           | 817 bytes | 
+jasmine-cleanup-0.js                | jasmine-cleanup-0                | 519 bytes | 
+chunk-NW3KHQPT.js                   | -                                | 379 bytes | 
+
+                                    | Initial total                    |   4.82 MB
+
+Application bundle generation complete. [4.840 seconds] - 2026-10-11T18:01:41.123Z
+
+11 10 2026 13:01:41.814:INFO [karma-server]: Karma v6.4.4 server started at http://localhost:3000/
+11 10 2026 13:01:41.815:INFO [launcher]: Launching browsers ChromeHeadless with concurrency unlimited
+11 10 2026 13:01:41.863:INFO [launcher]: Starting browser ChromeHeadless
+11 10 2026 13:02:41.878:WARN [launcher]: ChromeHeadless has not captured in 60000 ms, killing.
+11 10 2026 13:02:41.962:INFO [launcher]: Trying to start ChromeHeadless again (1/2).
+11 10 2026 13:03:41.966:WARN [launcher]: ChromeHeadless has not captured in 60000 ms, killing.
+11 10 2026 13:03:42.036:INFO [launcher]: Trying to start ChromeHeadless again (2/2).
+11 10 2026 13:04:42.041:WARN [launcher]: ChromeHeadless has not captured in 60000 ms, killing.
+11 10 2026 13:04:42.121:ERROR [launcher]: ChromeHeadless failed 2 times (timeout). Giving up.
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`

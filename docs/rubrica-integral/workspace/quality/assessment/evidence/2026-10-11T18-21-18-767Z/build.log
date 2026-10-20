@@ -1,0 +1,38 @@
+
+> front-lamorada@0.0.0 build
+> ng build
+
+> Building...
+√ Building...
+Initial chunk files | Names                    |  Raw size | Estimated transfer size
+main-HO2737HD.js    | main                     | 296.87 kB |                67.74 kB
+chunk-NB62ZKES.js   | -                        | 259.21 kB |                69.83 kB
+chunk-VOZZKVDB.js   | -                        |   5.06 kB |                 1.64 kB
+styles-LDC4KHKL.css | styles                   | 819 bytes |               819 bytes
+chunk-6SUNQ2CQ.js   | -                        | 629 bytes |               629 bytes
+
+                    | Initial total            | 562.59 kB |               140.66 kB
+
+Lazy chunk files    | Names                    |  Raw size | Estimated transfer size
+chunk-S7YXEGEK.js   | post-editor-component    |  15.12 kB |                 4.95 kB
+chunk-3EALX4DM.js   | product-create-component |   4.51 kB |                 1.77 kB
+
+Application bundle generation complete. [6.783 seconds] - 2026-10-11T18:24:22.104Z
+
+▲ [WARNING] bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 62.59 kB with a total of 562.59 kB.
+
+
+▲ [WARNING] src/app/auth/sign-up/sign-up.component.css exceeded maximum budget. Budget 4.00 kB was not met by 607 bytes with a total of 4.61 kB.
+
+
+▲ [WARNING] src/app/pages/podcast/podcast.component.css exceeded maximum budget. Budget 4.00 kB was not met by 427 bytes with a total of 4.43 kB.
+
+
+▲ [WARNING] src/app/pages/home/home.component.css exceeded maximum budget. Budget 4.00 kB was not met by 924 bytes with a total of 4.92 kB.
+
+
+▲ [WARNING] src/app/pages/payment/payment.component.css exceeded maximum budget. Budget 4.00 kB was not met by 1.73 kB with a total of 5.72 kB.
+
+
+Output location: C:\Users\user\OneDrive\Escritorio\U\Semestres\Semestre 7\Validación y verficación\LaMorada\frontend\dist\front-lamorada
+

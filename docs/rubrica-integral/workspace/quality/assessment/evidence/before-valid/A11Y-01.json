@@ -1,0 +1,146 @@
+{
+  "url": "http://localhost:4200/home",
+  "timestamp": "2026-10-11T17:59:19.500Z",
+  "axeVersion": "4.14.0",
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "label-content-name-mismatch",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Text inside the element is not included in the accessible name"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a _ngcontent-ng-c2219854981=\"\" routerlink=\"/home\" aria-label=\"Ir al inicio\" class=\"brand\" href=\"/home\">",
+          "target": [
+            "a[href$=\"home\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "id": "aria-allowed-attr",
+      "nodes": 13
+    },
+    {
+      "id": "aria-conditional-attr",
+      "nodes": 13
+    },
+    {
+      "id": "aria-deprecated-role",
+      "nodes": 1
+    },
+    {
+      "id": "aria-hidden-body",
+      "nodes": 1
+    },
+    {
+      "id": "aria-hidden-focus",
+      "nodes": 6
+    },
+    {
+      "id": "aria-prohibited-attr",
+      "nodes": 11
+    },
+    {
+      "id": "aria-required-attr",
+      "nodes": 1
+    },
+    {
+      "id": "aria-roles",
+      "nodes": 1
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "nodes": 13
+    },
+    {
+      "id": "aria-valid-attr",
+      "nodes": 13
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "nodes": 1
+    },
+    {
+      "id": "button-name",
+      "nodes": 1
+    },
+    {
+      "id": "bypass",
+      "nodes": 1
+    },
+    {
+      "id": "color-contrast",
+      "nodes": 11
+    },
+    {
+      "id": "document-title",
+      "nodes": 1
+    },
+    {
+      "id": "form-field-multiple-labels",
+      "nodes": 1
+    },
+    {
+      "id": "html-has-lang",
+      "nodes": 1
+    },
+    {
+      "id": "html-lang-valid",
+      "nodes": 1
+    },
+    {
+      "id": "image-alt",
+      "nodes": 2
+    },
+    {
+      "id": "label",
+      "nodes": 1
+    },
+    {
+      "id": "link-name",
+      "nodes": 18
+    },
+    {
+      "id": "list",
+      "nodes": 1
+    },
+    {
+      "id": "listitem",
+      "nodes": 3
+    },
+    {
+      "id": "meta-viewport",
+      "nodes": 1
+    },
+    {
+      "id": "nested-interactive",
+      "nodes": 3
+    }
+  ]
+}

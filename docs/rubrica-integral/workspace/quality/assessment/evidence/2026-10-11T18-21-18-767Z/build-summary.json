@@ -1,0 +1,14 @@
+{
+  "command": "npm run build",
+  "cwd": "frontend",
+  "exitCode": 0,
+  "recordedAt": "2026-10-11T18:28:02.439Z",
+  "evidence": "build.log",
+  "warnings": [
+    "▲ [WARNING] bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 62.59 kB with a total of 562.59 kB.",
+    "▲ [WARNING] src/app/auth/sign-up/sign-up.component.css exceeded maximum budget. Budget 4.00 kB was not met by 607 bytes with a total of 4.61 kB.",
+    "▲ [WARNING] src/app/pages/podcast/podcast.component.css exceeded maximum budget. Budget 4.00 kB was not met by 427 bytes with a total of 4.43 kB.",
+    "▲ [WARNING] src/app/pages/home/home.component.css exceeded maximum budget. Budget 4.00 kB was not met by 924 bytes with a total of 4.92 kB.",
+    "▲ [WARNING] src/app/pages/payment/payment.component.css exceeded maximum budget. Budget 4.00 kB was not met by 1.73 kB with a total of 5.72 kB."
+  ]
+}

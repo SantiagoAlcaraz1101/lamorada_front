@@ -1,0 +1,66 @@
+[
+  {
+    "id": "KAT-01",
+    "objective": "Login correcto y logout",
+    "expected": "Navegación a home, menú Carrito; cierre vuelve a menú invitado.",
+    "result": "NO EJECUTADO EN RECORDER",
+    "evidence": null,
+    "commands": 16
+  },
+  {
+    "id": "KAT-02",
+    "objective": "Rechazar contraseña incorrecta",
+    "expected": "Credenciales inválidas, continúa en sign-in y sin sesión.",
+    "result": "NO EJECUTADO EN RECORDER",
+    "evidence": null,
+    "commands": 13
+  },
+  {
+    "id": "KAT-03",
+    "objective": "Buscar libro existente",
+    "expected": "Una tarjeta del libro QA.",
+    "result": "NO EJECUTADO EN RECORDER",
+    "evidence": null,
+    "commands": 11
+  },
+  {
+    "id": "KAT-04",
+    "objective": "Búsqueda sin resultados",
+    "expected": "Estado vacío; ninguna tarjeta.",
+    "result": "NO EJECUTADO EN RECORDER",
+    "evidence": null,
+    "commands": 12
+  },
+  {
+    "id": "KAT-05",
+    "objective": "Agregar, aumentar, calcular y eliminar producto",
+    "expected": "Cantidad 1→2, total COP 130000; al eliminar queda vacío.",
+    "result": "NO EJECUTADO EN RECORDER",
+    "evidence": null,
+    "commands": 36
+  },
+  {
+    "id": "KAT-06",
+    "objective": "Invitado no modifica carrito",
+    "expected": "Aviso de iniciar sesión; carrito redirige a sign-in.",
+    "result": "NO EJECUTADO EN RECORDER",
+    "evidence": null,
+    "commands": 17
+  },
+  {
+    "id": "KAT-07",
+    "objective": "Paciente no crea productos",
+    "expected": "Redirección a home, sin formulario de creación.",
+    "result": "NO EJECUTADO EN RECORDER",
+    "evidence": null,
+    "commands": 13
+  },
+  {
+    "id": "KAT-08",
+    "objective": "Login con datos CSV positivos y negativos",
+    "expected": "Cada fila valida mensaje, localizador y ruta esperados.",
+    "result": "NO EJECUTADO EN RECORDER",
+    "evidence": null,
+    "commands": 14
+  }
+]

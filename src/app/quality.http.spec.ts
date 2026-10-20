@@ -79,6 +79,16 @@ describe('Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27', () => {
     user.updateMe('p1', {}).subscribe({ next: () => fail('No debe aprobar'), error: e => expect(e.status).toBe(403) });
     http.expectOne(base + '/user/p1').flush({ message: 'Acceso denegado' }, { status: 403, statusText: 'Forbidden' });
   });
+  it('F07 conserva la confirmación de contraseña requerida por el controlador', () => {
+    const user = TestBed.inject(UserService);
+    const form = { name: 'Laura', password: 'Nueva123!', rePassword: 'Nueva123!' };
+    user.updateMe('p1', form).subscribe();
+    const req = http.expectOne(base + '/user/p1');
+    expect(req.request.method).toBe('PUT');
+    expect(req.request.body).toEqual({ name: 'Laura', password: 'Nueva123!', rePassword: 'Nueva123!' });
+    expect(form.rePassword).toBe('Nueva123!');
+    req.flush({ success: true });
+  });
   it('F07 perfil de paciente proviene del token sin consulta externa', () => {
     const user = TestBed.inject(UserService); user.setToken(jwt({ _id: 'p1', role: 'patient', name: 'Camila' }));
     user.getMe().subscribe(me => expect(me.name).toBe('Camila'));

@@ -24,8 +24,6 @@ export class HomeComponent {
       this.note = 'Por favor escribe tu correo.';
       return;
     }
-    // Aquí podrías llamar a tu API de newsletter
-    this.note = '¡Gracias! Te enviaremos novedades cada semana 💜';
-    this.email = '';
+    this.note = 'Las suscripciones aún no están disponibles. Puedes explorar nuestros recursos desde el menú.';
   }
 }
