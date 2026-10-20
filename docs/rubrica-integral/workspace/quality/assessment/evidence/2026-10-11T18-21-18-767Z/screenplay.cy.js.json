@@ -1,0 +1,145 @@
+{
+  "spec": "cypress\\e2e\\screenplay.cy.js",
+  "stats": {
+    "duration": 10691,
+    "endedAt": "2026-10-11T18:22:36.675Z",
+    "failures": 0,
+    "passes": 6,
+    "pending": 0,
+    "skipped": 0,
+    "startedAt": "2026-10-11T18:22:25.984Z",
+    "suites": 1,
+    "tests": 6
+  },
+  "tests": [
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 2169,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-01 acceso exitoso y cierre de sesión"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1286,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-02 contraseña incorrecta mantiene formulario"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1387,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-03 buscar libro y búsqueda alternativa sin resultados"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 2735,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-04 agregar aumentar eliminar y verificar carrito"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1298,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-05 invitado no agrega ni entra a carrito privado"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1765,
+      "state": "passed",
+      "title": [
+        "E2E — Screenplay con API, MongoDB y Redis reales",
+        "SP-06 paciente no entra a crear productos"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "height": 845,
+      "name": "SP-01-acceso-exitoso-y-cierre-de-sesi-n",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-21-18-767Z\\screenshots\\screenplay.cy.js\\SP-01-acceso-exitoso-y-cierre-de-sesi-n.png",
+      "takenAt": "2026-10-11T18:22:27.834Z",
+      "width": 1264
+    },
+    {
+      "height": 859,
+      "name": "SP-02-contrase-a-incorrecta-mantiene-formulario",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-21-18-767Z\\screenshots\\screenplay.cy.js\\SP-02-contrase-a-incorrecta-mantiene-formulario.png",
+      "takenAt": "2026-10-11T18:22:29.114Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "SP-03-buscar-libro-y-b-squeda-alternativa-sin-resultados",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-21-18-767Z\\screenshots\\screenplay.cy.js\\SP-03-buscar-libro-y-b-squeda-alternativa-sin-resultados.png",
+      "takenAt": "2026-10-11T18:22:30.608Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "SP-04-agregar-aumentar-eliminar-y-verificar-carrito",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-21-18-767Z\\screenshots\\screenplay.cy.js\\SP-04-agregar-aumentar-eliminar-y-verificar-carrito.png",
+      "takenAt": "2026-10-11T18:22:33.343Z",
+      "width": 1264
+    },
+    {
+      "height": 845,
+      "name": "SP-05-invitado-no-agrega-ni-entra-a-carrito-privado",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-21-18-767Z\\screenshots\\screenplay.cy.js\\SP-05-invitado-no-agrega-ni-entra-a-carrito-privado.png",
+      "takenAt": "2026-10-11T18:22:34.548Z",
+      "width": 1264
+    },
+    {
+      "height": 1079,
+      "name": "SP-06-paciente-no-entra-a-crear-productos",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-21-18-767Z\\screenshots\\screenplay.cy.js\\SP-06-paciente-no-entra-a-crear-productos.png",
+      "takenAt": "2026-10-11T18:22:36.177Z",
+      "width": 1264
+    }
+  ],
+  "video": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-21-18-767Z\\videos\\screenplay.cy.js.mp4"
+}

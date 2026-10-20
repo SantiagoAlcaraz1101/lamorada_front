@@ -1,0 +1,3019 @@
+{
+  "generatedAt": "2026-09-15T14:08:29.491Z",
+  "server": "http://localhost:9000",
+  "project": "la-morada-despues",
+  "serverVersion": "26.9.0.129388",
+  "analysisId": "9b976abe-66fc-438b-859a-b1178d16d4fd",
+  "taskId": "cf1a7bec-5782-4510-9b3a-3c01e8a009f2",
+  "gate": {
+    "status": "OK",
+    "conditions": [
+      {
+        "status": "OK",
+        "metricKey": "new_coverage",
+        "comparator": "LT",
+        "errorThreshold": "90",
+        "actualValue": "98.5"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_duplicated_lines_density",
+        "comparator": "GT",
+        "errorThreshold": "2",
+        "actualValue": "0.0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_software_quality_maintainability_remediation_effort",
+        "comparator": "GT",
+        "errorThreshold": "90",
+        "actualValue": "0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_violations",
+        "comparator": "GT",
+        "errorThreshold": "0",
+        "actualValue": "0"
+      }
+    ],
+    "ignoredConditions": false,
+    "period": {
+      "mode": "PREVIOUS_VERSION",
+      "date": "2026-09-08T15:53:03+0000"
+    },
+    "caycStatus": "over-compliant"
+  },
+  "measures": [
+    {
+      "metric": "coverage",
+      "value": "95.3",
+      "bestValue": false
+    },
+    {
+      "metric": "complexity",
+      "value": "799"
+    },
+    {
+      "metric": "duplicated_lines_density",
+      "value": "0.0",
+      "bestValue": true
+    },
+    {
+      "metric": "lines_to_cover",
+      "value": "1467"
+    },
+    {
+      "metric": "uncovered_conditions",
+      "value": "92",
+      "bestValue": false
+    },
+    {
+      "metric": "branch_coverage",
+      "value": "88.1",
+      "bestValue": false
+    },
+    {
+      "metric": "uncovered_lines",
+      "value": "14",
+      "bestValue": false
+    },
+    {
+      "metric": "cognitive_complexity",
+      "value": "393",
+      "bestValue": false
+    },
+    {
+      "metric": "ncloc",
+      "value": "4946"
+    },
+    {
+      "metric": "conditions_to_cover",
+      "value": "772"
+    },
+    {
+      "metric": "line_coverage",
+      "value": "99.0",
+      "bestValue": false
+    }
+  ],
+  "counts": {
+    "totalServerIssues": 0,
+    "scopeUniqueIssues": 0,
+    "testIssues": 0,
+    "outsideScopeIssues": 0,
+    "scopeHotspots": 0
+  },
+  "features": {
+    "F01": {
+      "name": "Registro de pacientes",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F02": {
+      "name": "Registro de psicólogos",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F03": {
+      "name": "Inicio de sesión",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F04": {
+      "name": "Cierre de sesión",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F07": {
+      "name": "Actualizar el perfil propio",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F17": {
+      "name": "Crear publicación",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F13": {
+      "name": "Crear cita",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F14": {
+      "name": "Listar citas del usuario autenticado",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F15": {
+      "name": "Actualizar estado de cita autorizada",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F16": {
+      "name": "Cancelar cita autorizada",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F26": {
+      "name": "Agregar producto al carrito",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F27": {
+      "name": "Consultar carrito persistido",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F05": {
+      "name": "Solicitar código de recuperación",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F06": {
+      "name": "Restablecer contraseña",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F08": {
+      "name": "Listar psicólogos",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F09": {
+      "name": "Filtrar psicólogos por especialidad",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F10": {
+      "name": "Crear disponibilidad (contrato frontend)",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F11": {
+      "name": "Consultar disponibilidad (contrato frontend)",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F12": {
+      "name": "Eliminar disponibilidad (contrato frontend)",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F18": {
+      "name": "Listar publicaciones",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F19": {
+      "name": "Consultar publicación por ID",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F20": {
+      "name": "Actualizar publicación propia",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F21": {
+      "name": "Eliminar publicación propia",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F25": {
+      "name": "Listar y buscar productos (pantalla)",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "F28": {
+      "name": "Retirar producto o vaciar carrito",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "EX01": {
+      "name": "Eliminar cuenta propia (extensión BP02 sin ID en plan 2.0)",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    },
+    "EX02": {
+      "name": "Cambiar cantidad de carrito (extensión BP02)",
+      "direct": 0,
+      "shared": 0,
+      "hotspots": 0
+    }
+  },
+  "issues": [],
+  "hotspots": [],
+  "components": [
+    {
+      "key": "la-morada-despues:backend/src/modules/appointment/appointment-controller.js",
+      "name": "appointment-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/appointment-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "7",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "7"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "6"
+        },
+        {
+          "metric": "coverage",
+          "value": "93.3",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "51"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/appointment/appointment-routes.js",
+      "name": "appointment-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/appointment-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "ncloc",
+          "value": "10"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/appointment/appointment-service.js",
+      "name": "appointment-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/appointment-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "20",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "33"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "42"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "58"
+        },
+        {
+          "metric": "ncloc",
+          "value": "110"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/appointment/appointment.component.css",
+      "name": "appointment.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/appointment/appointment.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "137"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/appointment/appointment.component.html",
+      "name": "appointment.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/appointment/appointment.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "94"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/appointment/appointment.component.ts",
+      "name": "appointment.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/appointment/appointment.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "87.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "58",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "133"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "106"
+        },
+        {
+          "metric": "coverage",
+          "value": "94.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "97.8",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "183"
+        },
+        {
+          "metric": "ncloc",
+          "value": "326"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "13",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "4",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/appointment/models/appointment.js",
+      "name": "appointment.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/appointment/models/appointment.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "5"
+        },
+        {
+          "metric": "ncloc",
+          "value": "18"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/models/appointment.model.ts",
+      "name": "appointment.model.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/models/appointment.model.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "ncloc",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/appointment.service.ts",
+      "name": "appointment.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/appointment.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "66.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "9"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "coverage",
+          "value": "92.9",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "11"
+        },
+        {
+          "metric": "ncloc",
+          "value": "22"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/auth-controller.js",
+      "name": "auth-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/auth-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "4"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "21"
+        },
+        {
+          "metric": "ncloc",
+          "value": "41"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/guards/auth-role.guard.ts",
+      "name": "auth-role.guard.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/guards/auth-role.guard.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "58.3",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "9",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "13"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "12"
+        },
+        {
+          "metric": "coverage",
+          "value": "82.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "95.5",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "22"
+        },
+        {
+          "metric": "ncloc",
+          "value": "32"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/auth-routes.js",
+      "name": "auth-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/auth-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "8"
+        },
+        {
+          "metric": "ncloc",
+          "value": "8"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/auth-service.js",
+      "name": "auth-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/auth-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "6"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "27"
+        },
+        {
+          "metric": "ncloc",
+          "value": "36"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/core/state/auth-state.service.ts",
+      "name": "auth-state.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/core/state/auth-state.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "84.6",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "12"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "13"
+        },
+        {
+          "metric": "coverage",
+          "value": "94.6",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "50"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/validators/auth-validator.js",
+      "name": "auth-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/validators/auth-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "9"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "12"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "38"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/core/interceptors/auth.interceptor.ts",
+      "name": "auth.interceptor.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/core/interceptors/auth.interceptor.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "15",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "10"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "8"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "16"
+        },
+        {
+          "metric": "ncloc",
+          "value": "41"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/availability/models/availability.js",
+      "name": "availability.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/availability/models/availability.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "ncloc",
+          "value": "10"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/models/availability.model.ts",
+      "name": "availability.model.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/models/availability.model.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "ncloc",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/availability.service.ts",
+      "name": "availability.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/availability.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "85.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "6",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "26"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "21"
+        },
+        {
+          "metric": "coverage",
+          "value": "93.3",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "24"
+        },
+        {
+          "metric": "ncloc",
+          "value": "54"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/cart-controller.js",
+      "name": "cart-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/cart-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "2"
+        },
+        {
+          "metric": "coverage",
+          "value": "97.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "37"
+        },
+        {
+          "metric": "ncloc",
+          "value": "55"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/cart-routes.js",
+      "name": "cart-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/cart-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "9"
+        },
+        {
+          "metric": "ncloc",
+          "value": "9"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/cart-service.js",
+      "name": "cart-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/cart-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "77.8",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "15"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "9"
+        },
+        {
+          "metric": "coverage",
+          "value": "93.8",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "97.4",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "39"
+        },
+        {
+          "metric": "ncloc",
+          "value": "56"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/validators/cart-validator.js",
+      "name": "cart-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/validators/cart-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "6"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "7"
+        },
+        {
+          "metric": "ncloc",
+          "value": "12"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/cart/cart.component.css",
+      "name": "cart.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/cart/cart.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "198"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/cart/cart.component.html",
+      "name": "cart.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/cart/cart.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "84"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/cart/cart.component.ts",
+      "name": "cart.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/cart/cart.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "64.9",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "10",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "43"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "37"
+        },
+        {
+          "metric": "coverage",
+          "value": "84.9",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "49"
+        },
+        {
+          "metric": "ncloc",
+          "value": "95"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "13",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/cart/models/cart.js",
+      "name": "cart.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/cart/models/cart.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "12"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/models/cart.models.ts",
+      "name": "cart.models.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/models/cart.models.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "ncloc",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/cart.service.ts",
+      "name": "cart.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/cart.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "90.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "17"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "97.1",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "25"
+        },
+        {
+          "metric": "ncloc",
+          "value": "70"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/guards/client-only.guard.ts",
+      "name": "client-only.guard.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/guards/client-only.guard.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "7"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/layout/header/header.component.css",
+      "name": "header.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/layout/header/header.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "128"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/layout/header/header.component.html",
+      "name": "header.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/layout/header/header.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/layout/header/header.component.ts",
+      "name": "header.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/layout/header/header.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "1"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "17"
+        },
+        {
+          "metric": "ncloc",
+          "value": "36"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/middlewares/jwt-middleware.js",
+      "name": "jwt-middleware.js",
+      "qualifier": "FIL",
+      "path": "backend/src/middlewares/jwt-middleware.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "6"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "29"
+        },
+        {
+          "metric": "ncloc",
+          "value": "37"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/strategies/jwt-strategy.js",
+      "name": "jwt-strategy.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/strategies/jwt-strategy.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "19"
+        },
+        {
+          "metric": "ncloc",
+          "value": "32"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/core/utils/jwt.ts",
+      "name": "jwt.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/core/utils/jwt.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "6"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "6"
+        },
+        {
+          "metric": "coverage",
+          "value": "76.5",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "90.9",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "11"
+        },
+        {
+          "metric": "ncloc",
+          "value": "20"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/auth/strategies/password-strategy.js",
+      "name": "password-strategy.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/auth/strategies/password-strategy.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "cognitive_complexity",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "2"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "7"
+        },
+        {
+          "metric": "ncloc",
+          "value": "22"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/post-api.service.ts",
+      "name": "post-api.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/post-api.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "7",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "19"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "13"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "23"
+        },
+        {
+          "metric": "ncloc",
+          "value": "55"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/post-controller.js",
+      "name": "post-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/post-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "cognitive_complexity",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "5"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "38"
+        },
+        {
+          "metric": "ncloc",
+          "value": "60"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/post/post-editor.component.css",
+      "name": "post-editor.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/post/post-editor.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "240"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/post/post-editor.component.html",
+      "name": "post-editor.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/post/post-editor.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "93"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/post/post-editor.component.ts",
+      "name": "post-editor.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/post/post-editor.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "35",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "63"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "64"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "105"
+        },
+        {
+          "metric": "ncloc",
+          "value": "201"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/post-routes.js",
+      "name": "post-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/post-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "11"
+        },
+        {
+          "metric": "ncloc",
+          "value": "11"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/post-service.js",
+      "name": "post-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/post-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "9",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "14"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "19"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "32"
+        },
+        {
+          "metric": "ncloc",
+          "value": "48"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/validators/post-validator.js",
+      "name": "post-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/validators/post-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "6",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "9"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "16"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "ncloc",
+          "value": "16"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/post/models/post.js",
+      "name": "post.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/post/models/post.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "9"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/product/product.component.css",
+      "name": "product.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/product/product.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "207"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/product/product.component.html",
+      "name": "product.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/product/product.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "37"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/product/product.component.ts",
+      "name": "product.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/product/product.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "89.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "18",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "24"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "29"
+        },
+        {
+          "metric": "coverage",
+          "value": "96.7",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "63"
+        },
+        {
+          "metric": "ncloc",
+          "value": "119"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/product/models/product.js",
+      "name": "product.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/product/models/product.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "ncloc",
+          "value": "13"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/profile-edit/profile-edit.component.css",
+      "name": "profile-edit.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/profile-edit/profile-edit.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "147"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/profile-edit/profile-edit.component.html",
+      "name": "profile-edit.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/profile-edit/profile-edit.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "100"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "name": "profile-edit.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "91.3",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "34",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "73"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "80"
+        },
+        {
+          "metric": "coverage",
+          "value": "96.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "97"
+        },
+        {
+          "metric": "ncloc",
+          "value": "199"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "7",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/middlewares/rate-limit-middleware.js",
+      "name": "rate-limit-middleware.js",
+      "qualifier": "FIL",
+      "path": "backend/src/middlewares/rate-limit-middleware.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "50.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "2"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "4"
+        },
+        {
+          "metric": "coverage",
+          "value": "77.8",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "5"
+        },
+        {
+          "metric": "ncloc",
+          "value": "8"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/middlewares/role-middleware.js",
+      "name": "role-middleware.js",
+      "qualifier": "FIL",
+      "path": "backend/src/middlewares/role-middleware.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "4"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "5"
+        },
+        {
+          "metric": "coverage",
+          "value": "94.4",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "92.3",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "13"
+        },
+        {
+          "metric": "ncloc",
+          "value": "19"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-in/sign-in.component.css",
+      "name": "sign-in.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-in/sign-in.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "185"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-in/sign-in.component.html",
+      "name": "sign-in.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-in/sign-in.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-in/sign-in.component.ts",
+      "name": "sign-in.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-in/sign-in.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "94.7",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "15",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "17"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "19"
+        },
+        {
+          "metric": "coverage",
+          "value": "98.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "30"
+        },
+        {
+          "metric": "ncloc",
+          "value": "60"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-up/sign-up.component.css",
+      "name": "sign-up.component.css",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-up/sign-up.component.css",
+      "language": "css",
+      "measures": [
+        {
+          "metric": "ncloc",
+          "value": "284"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-up/sign-up.component.html",
+      "name": "sign-up.component.html",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-up/sign-up.component.html",
+      "language": "web",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "1"
+        },
+        {
+          "metric": "ncloc",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "name": "sign-up.component.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/auth/sign-up/sign-up.component.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "60.0",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "28",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "55"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "60"
+        },
+        {
+          "metric": "coverage",
+          "value": "80.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "94.1",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "85"
+        },
+        {
+          "metric": "ncloc",
+          "value": "178"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "24",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "5",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/user-controller.js",
+      "name": "user-controller.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/user-controller.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "13",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "13"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "10"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "47"
+        },
+        {
+          "metric": "ncloc",
+          "value": "81"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/user-routes.js",
+      "name": "user-routes.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/user-routes.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "14"
+        },
+        {
+          "metric": "ncloc",
+          "value": "14"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/user-service.js",
+      "name": "user-service.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/user-service.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "96.6",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "16",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "26"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "29"
+        },
+        {
+          "metric": "coverage",
+          "value": "98.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "98.6",
+          "bestValue": false
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "69"
+        },
+        {
+          "metric": "ncloc",
+          "value": "92"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/validators/user-validator.js",
+      "name": "user-validator.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/validators/user-validator.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "11",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "13"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "25"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "17"
+        },
+        {
+          "metric": "ncloc",
+          "value": "19"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:backend/src/modules/user/models/user.js",
+      "name": "user.js",
+      "qualifier": "FIL",
+      "path": "backend/src/modules/user/models/user.js",
+      "language": "js",
+      "measures": [
+        {
+          "metric": "complexity",
+          "value": "0"
+        },
+        {
+          "metric": "coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "3"
+        },
+        {
+          "metric": "ncloc",
+          "value": "17"
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    },
+    {
+      "key": "la-morada-despues:frontend/src/app/services/user.service.ts",
+      "name": "user.service.ts",
+      "qualifier": "FIL",
+      "path": "frontend/src/app/services/user.service.ts",
+      "language": "ts",
+      "measures": [
+        {
+          "metric": "branch_coverage",
+          "value": "89.6",
+          "bestValue": false
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "17",
+          "bestValue": false
+        },
+        {
+          "metric": "complexity",
+          "value": "82"
+        },
+        {
+          "metric": "conditions_to_cover",
+          "value": "77"
+        },
+        {
+          "metric": "coverage",
+          "value": "95.0",
+          "bestValue": false
+        },
+        {
+          "metric": "line_coverage",
+          "value": "100.0",
+          "bestValue": true
+        },
+        {
+          "metric": "lines_to_cover",
+          "value": "82"
+        },
+        {
+          "metric": "ncloc",
+          "value": "157"
+        },
+        {
+          "metric": "uncovered_conditions",
+          "value": "8",
+          "bestValue": false
+        },
+        {
+          "metric": "uncovered_lines",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    }
+  ],
+  "sourceHashes": {
+    "backend/src/middlewares/jwt-middleware.js": "33b2969887bd59e48ee9a932ed7bd10ae9f319f3e3b45507093f1d22cd6d0c4e",
+    "backend/src/middlewares/rate-limit-middleware.js": "7c8b50194b393654a908ed657297c1083896728a142fe690c02c70e0f7ba84f4",
+    "backend/src/middlewares/role-middleware.js": "0b0e512867c5b12de908073482dc6d3f6162b8064d5fba07c65a7807a92d9261",
+    "backend/src/modules/appointment/appointment-controller.js": "15ab4c6da0489c0b6d61935f7effe42821a4eb44d314bed2f1c035f73ec8f2ae",
+    "backend/src/modules/appointment/appointment-routes.js": "9afbcc3ec5880966649d700e4a20b148d6abff88e91083c47646e95bc987ec01",
+    "backend/src/modules/appointment/appointment-service.js": "c85e10e437d1bade684c341a55fec8fd136dde6d9148c400c89eb5cf7feabd28",
+    "backend/src/modules/appointment/models/appointment.js": "cf0ab8a1b9f44d25babcb754e8ab7adb46b75b514844a376a3f0d83b2e783c0d",
+    "backend/src/modules/auth/auth-controller.js": "9b3aaa06e1bbb746cf5c2e01b6528b37fab6246d8660fa829f4c86c97724c672",
+    "backend/src/modules/auth/auth-routes.js": "6f04adddba0e0099cf9e89ed466cdeafe6bd14a11ad126bb0f2388f477eb6753",
+    "backend/src/modules/auth/auth-service.js": "67d57ef8aac877041c342a41491920c61edd507e1046f7c238bfaa2e8dc243b4",
+    "backend/src/modules/auth/strategies/jwt-strategy.js": "f0abf05771db48eab1a0f0d679ad74c9f5a82eee874db47861ee7de76d6ccb97",
+    "backend/src/modules/auth/strategies/password-strategy.js": "2f14c1919dff2242d3a5e0ab9c155082ac4fcabeda3a0255b4301e9da5ef21d8",
+    "backend/src/modules/auth/validators/auth-validator.js": "ddbc665c9a1cae9f476223a0bb2f7bc9182949b4ab132f66d18428621efc6bfb",
+    "backend/src/modules/availability/models/availability.js": "8167d031715b3de2506fbaad87c0d018459b1dc65f504661aa4ec268f9a55d96",
+    "backend/src/modules/cart/cart-controller.js": "dcdb63f9bf0e76890e27e9f7241500dc6229b05eb5bcb1167fd7313d1cf580cb",
+    "backend/src/modules/cart/cart-routes.js": "fb0686ffa251ce5ae3f23c37264ed20415d1ca74f9a44ccad54a2dfa4a01ebd1",
+    "backend/src/modules/cart/cart-service.js": "ab2bd95344159426aa0c1892b5b30e7303b712c3387d08ba4380dea67b379f83",
+    "backend/src/modules/cart/models/cart.js": "716c043b2c36ac44f67966774a0df1569cd71e5cc18c734ee3282dc10b5160b7",
+    "backend/src/modules/cart/validators/cart-validator.js": "8ecce91efd72553d047b7f6f88d71b3df81c74a5125ea2e730d5cf70afe842d0",
+    "backend/src/modules/post/models/post.js": "8ffa852d9d0524c69cf392aaf94d26df2eebd45c4b50f64d78d7bf7692e32fc3",
+    "backend/src/modules/post/post-controller.js": "3521429270a436981cbbdf2f6b1588093b8b5d29327abe47c7027acd777fbb84",
+    "backend/src/modules/post/post-routes.js": "8dddc94b1c5f3a4776db1f0618cdd5c6faa6486573734b2d3dbf0078643126ad",
+    "backend/src/modules/post/post-service.js": "06cbe71b21726c18c590bce7679f9ca0602c513595aac28db189e70da7b31b05",
+    "backend/src/modules/post/validators/post-validator.js": "8758ca446a131f697c0311c2a6ab4d8458714abe268e08cbbac878aedf9385d0",
+    "backend/src/modules/product/models/product.js": "692b882c6c136a94e51520f40f25e563ce9c829f344fd9ac7d4c31a06015c7b9",
+    "backend/src/modules/user/models/user.js": "be35a6e6d1642a3e064d979d2984f195991cd0aca64b6c443843e5ab2fa7d5a4",
+    "backend/src/modules/user/user-controller.js": "7cbf1b453a602b80c27708caf986c82c56c852307a4585972ea4f319b1c2b842",
+    "backend/src/modules/user/user-routes.js": "8bb558614575748dc5b50c6f6f94c702a0768d276995c770746fec7eb79ed96f",
+    "backend/src/modules/user/user-service.js": "525c74256bc1796fa24fde5826671683e0b23c1a5f147c51f8250a4bcfdcd87f",
+    "backend/src/modules/user/validators/user-validator.js": "3a3b88e5fb12fb76226e974bc87d8961622dede84065414201eb459a6abcaa25",
+    "frontend/src/app/auth/sign-in/sign-in.component.css": "7cd8cc38f076e00570f257964b3fc6509d2565974fdf79ad6d2e230d2dcb4f9d",
+    "frontend/src/app/auth/sign-in/sign-in.component.html": "00bcdb50a562e9d6a97a2bd036ab3b14d0821a5085a8ec120102f165b359e893",
+    "frontend/src/app/auth/sign-in/sign-in.component.ts": "536012217352429524da831e16ac8206760c3b976867b776a633f383cb5e1a19",
+    "frontend/src/app/auth/sign-up/sign-up.component.css": "7f79a7dac9f89a057c3f9e3ca43d43f7b0b0085ed2d7a688a6694cc34aec79db",
+    "frontend/src/app/auth/sign-up/sign-up.component.html": "3e2714cd5317d6d635e93c68f0da7da0b37301dfdca5ce2945c2afecd4d15742",
+    "frontend/src/app/auth/sign-up/sign-up.component.ts": "18c67450701b457a03ae8733f9ef02767955dc78d99615cbd5c7b8e7df688820",
+    "frontend/src/app/core/interceptors/auth.interceptor.ts": "508b30a4b6881b3e2eaf582c39082398bd60af9ba7e1c17946ea1954299d55c3",
+    "frontend/src/app/core/state/auth-state.service.ts": "96009aa42aa927bb2434c7d22685c3cd930837fff1bdf194512bf24d510838a1",
+    "frontend/src/app/core/utils/jwt.ts": "67ea5778d21e059ea98c09d5791432a1c3a76eff00d184a8aa635370562ef353",
+    "frontend/src/app/guards/auth-role.guard.ts": "e5e47cbdc3c1fa7abf5f1de682531d7a66e0429ae5bfdae34877a5547e76416d",
+    "frontend/src/app/guards/client-only.guard.ts": "a4d40b370b13148fbd49835ba0df108d9baf7f3e9fbdc2be4834754279370ea2",
+    "frontend/src/app/layout/header/header.component.css": "086e42087e55c3b41b5d5b5c1b3675bbe811a7e59c7d50e90172cb3a5cb32ee9",
+    "frontend/src/app/layout/header/header.component.html": "08c2aaddc58ebfd8cda2c5da89247b2efd5c179943c86da06700b74850b8ae92",
+    "frontend/src/app/layout/header/header.component.ts": "2961b7b4a651d1a1540267f8ae9ccc7ef148b9d0f7720e276aa5c0e3082b558c",
+    "frontend/src/app/models/appointment.model.ts": "c50b47d683540ec033456c54898a4b14e633adc1c3be4b43a0b289e893ffc905",
+    "frontend/src/app/models/availability.model.ts": "366cdc31ff9bed4b05e35d9cfcfb41758644c088dc7a1cdde08239e33f4caf1b",
+    "frontend/src/app/models/cart.models.ts": "f11c851f5bbf00e6d444dd066aaa3611bc475afdfda038c7a2ffed19be45b33d",
+    "frontend/src/app/pages/appointment/appointment.component.css": "b23d5cfd5d9832f7caf522a07e814ad7e7eefd91340601ae06b794a9994d1469",
+    "frontend/src/app/pages/appointment/appointment.component.html": "1654946644793a36fb0c97ea997bfaf9ccd263c5301b8edc2e688ab81b9bf95a",
+    "frontend/src/app/pages/appointment/appointment.component.ts": "c6c62089f806013fe31d9290a631db63698502405278c94ed82bda72a39be7bd",
+    "frontend/src/app/pages/cart/cart.component.css": "afd47adbfe8c82c0858c90811a1d6cf91e912e3414bfed2f46d608fba48dc304",
+    "frontend/src/app/pages/cart/cart.component.html": "548c72882f30cfe550f45f0a19c4d08d1bd2ddfcbee95099f5bc90593f00561c",
+    "frontend/src/app/pages/cart/cart.component.ts": "9287888c8484d630c563469a2c12082a208cd191acc7a45349593c40bb60c87c",
+    "frontend/src/app/pages/post/post-editor.component.css": "034164641e882ecbb52956c65e6cf719a99f494ecfd3fde67aa02f6fdd9f584a",
+    "frontend/src/app/pages/post/post-editor.component.html": "1f3baa98dd80d6a88afb6d94a2fe839191d3610cde08888fa026edf12e2c54fe",
+    "frontend/src/app/pages/post/post-editor.component.ts": "c6b77efff73727b565fe717cb73ee0fa5fb11fbc710a8ac1b733f8f48189f319",
+    "frontend/src/app/pages/product/product.component.css": "1d0a08905b9c59df399429e8a89314de0b250df08f2f6218a6cda5716f23f4f1",
+    "frontend/src/app/pages/product/product.component.html": "3a167f8935cf776760361c94fc4382df46eb62846fe8181e8aa833103dcd8291",
+    "frontend/src/app/pages/product/product.component.ts": "609437b925fef452544ea6cca0865478146a8662fcb993eb4a6b5dae4e141cf7",
+    "frontend/src/app/pages/profile-edit/profile-edit.component.css": "aa0aed2042b450ceacc16ac44ae786542702882a299d2309cc56e5b8c6591577",
+    "frontend/src/app/pages/profile-edit/profile-edit.component.html": "c9d1f6223d24fea6e2a365c3fb50083d6916865e8c2a905950a7f38a6481270e",
+    "frontend/src/app/pages/profile-edit/profile-edit.component.ts": "22c43a0a56d6458321a56444ff400f00e0aaf44653e17afd3f2814c88bd762d0",
+    "frontend/src/app/services/appointment.service.ts": "2271eb9450dedc42236c9eac437d9d750ca303d86219309419dfb7c70ab68bdd",
+    "frontend/src/app/services/availability.service.ts": "76ba4f7081b22cfb06ebe90ddf6fc5333aabf28c61bab9bf5aff31a0a5a955ac",
+    "frontend/src/app/services/cart.service.ts": "f44b2e8ce835c92ee63954a8f26676f6c5bb0ef1cb1db69ac7249dfeff6c2309",
+    "frontend/src/app/services/post-api.service.ts": "1a9e3b0e203a1e478930a6c2c090adb6eb7c1bc86e6b58f0517789717e8b225d",
+    "frontend/src/app/services/user.service.ts": "4dff2dd55ed671e313fd38261dc6c459c2d9f8fbf81d770a059e0459eed262c3"
+  }
+}

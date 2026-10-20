@@ -3,8 +3,9 @@
   <div class="toolbar">
     <form class="search" (ngSubmit)="search()">
       <span class="ico">🔎</span>
-      <input [(ngModel)]="q" name="q" placeholder="Buscar por título…" />
-      <button class="btn" type="submit">Buscar</button>
+      <label class="sr-only" for="product-search">Buscar por título</label>
+      <input id="product-search" [(ngModel)]="q" name="q" placeholder="Buscar por título…" />
+      <button class="btn" type="submit" data-testid="product-search-submit" [disabled]="loading">Buscar</button>
     </form>
   </div>
 
@@ -25,16 +26,16 @@
 
   <!-- Lista -->
   <div class="grid" *ngIf="!loading && products?.length">
-    <div class="card" *ngFor="let p of products">
+    <div class="card" data-testid="product-card" *ngFor="let p of products">
       <div class="cover">
         <img *ngIf="p.cover_url" [src]="p.cover_url" alt="Portada de {{ p.title }}" />
       </div>
 
       <h3>{{ p.title }}</h3>
       <div class="meta">{{ p.author }} — {{ p.publish_year }}</div>
-      <div class="price">{{ p.price | currency : 'USD' : 'symbol' }}</div>
+      <div class="price">{{ p.price | currency : 'COP' : 'code' : '1.2-2' }}</div>
 
-      <button [disabled]="addingId === p._id" (click)="addToCart(p)">
+      <button data-testid="product-add" [disabled]="addingId === p._id" (click)="addToCart(p)">
         {{ addingId === p._id ? 'Agregando…' : 'Agregar' }}
       </button>
     </div>

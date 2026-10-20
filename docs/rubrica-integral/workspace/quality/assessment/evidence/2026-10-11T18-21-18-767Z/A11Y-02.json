@@ -1,0 +1,116 @@
+{
+  "url": "http://localhost:4200/sign-in",
+  "timestamp": "2026-10-11T18:21:56.514Z",
+  "axeVersion": "4.14.0",
+  "violations": [],
+  "passes": [
+    {
+      "id": "aria-allowed-attr",
+      "nodes": 10
+    },
+    {
+      "id": "aria-conditional-attr",
+      "nodes": 10
+    },
+    {
+      "id": "aria-deprecated-role",
+      "nodes": 1
+    },
+    {
+      "id": "aria-hidden-body",
+      "nodes": 1
+    },
+    {
+      "id": "aria-hidden-focus",
+      "nodes": 3
+    },
+    {
+      "id": "aria-prohibited-attr",
+      "nodes": 8
+    },
+    {
+      "id": "aria-required-attr",
+      "nodes": 1
+    },
+    {
+      "id": "aria-roles",
+      "nodes": 1
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "nodes": 10
+    },
+    {
+      "id": "aria-valid-attr",
+      "nodes": 10
+    },
+    {
+      "id": "autocomplete-valid",
+      "nodes": 2
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "nodes": 1
+    },
+    {
+      "id": "button-name",
+      "nodes": 1
+    },
+    {
+      "id": "bypass",
+      "nodes": 1
+    },
+    {
+      "id": "color-contrast",
+      "nodes": 13
+    },
+    {
+      "id": "document-title",
+      "nodes": 1
+    },
+    {
+      "id": "duplicate-id-aria",
+      "nodes": 3
+    },
+    {
+      "id": "form-field-multiple-labels",
+      "nodes": 2
+    },
+    {
+      "id": "html-has-lang",
+      "nodes": 1
+    },
+    {
+      "id": "html-lang-valid",
+      "nodes": 1
+    },
+    {
+      "id": "image-alt",
+      "nodes": 3
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "nodes": 1
+    },
+    {
+      "id": "label",
+      "nodes": 2
+    },
+    {
+      "id": "link-in-text-block",
+      "nodes": 1
+    },
+    {
+      "id": "link-name",
+      "nodes": 13
+    },
+    {
+      "id": "meta-viewport",
+      "nodes": 1
+    },
+    {
+      "id": "nested-interactive",
+      "nodes": 4
+    }
+  ]
+}

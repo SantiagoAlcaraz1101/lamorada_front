@@ -74,14 +74,14 @@
 }
 .nav a.active {
   color: #fff;
-  background: linear-gradient(180deg, #b096ff, #9b7bff 60%, #8f6bff);
+  background: linear-gradient(180deg, #6941c6, #5e35b1 60%, #512da8);
   box-shadow: 0 8px 24px rgba(143, 107, 255, 0.35);
 }
 
 /* Botón CTA */
 .btn-primary {
   color: #fff !important;
-  background: linear-gradient(180deg, #b096ff, #9b7bff 60%, #8f6bff);
+  background: linear-gradient(180deg, #6941c6, #5e35b1 60%, #512da8);
   border-color: transparent !important;
   box-shadow: 0 10px 26px rgba(143, 107, 255, 0.35);
 }

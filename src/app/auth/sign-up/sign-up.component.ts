@@ -25,7 +25,7 @@ function passwordsMatchValidator(group: AbstractControl): ValidationErrors | nul
 // ID del usuario
 const USER_ID_REGEX = /^[A-Za-z0-9._-]{5,30}$/;
 // Teléfono local sencillo: 7–15 dígitos
-const PHONE_REGEX = /^[0-9]{7,15}$/;
+const PHONE_REGEX = /^\d{7,15}$/;
 
 @Component({
   standalone: true,
@@ -76,7 +76,7 @@ export class SignUpComponent {
     { value: 'PAS', label: 'Pasaporte' },
   ];
 
-  constructor(private fb: FormBuilder, private user: UserService, private router: Router) {
+  constructor(private readonly fb: FormBuilder, private readonly user: UserService, private readonly router: Router) {
     this.form = this.fb.group(
       {
         _id: ['', [Validators.required, Validators.pattern(USER_ID_REGEX)]],
@@ -110,14 +110,16 @@ export class SignUpComponent {
     if (/[A-Z]/.test(v) && /[a-z]/.test(v)) score += 25;
     if (/\d/.test(v)) score += 25;
     if (/[@$!%*?&]/.test(v)) score += 25;
-    const label =
-      score >= 90 ? 'Fuerte' : score >= 60 ? 'Media' : score >= 30 ? 'Débil' : 'Muy débil';
+    let label = 'Muy débil';
+    if (score >= 90) label = 'Fuerte';
+    else if (score >= 60) label = 'Media';
+    else if (score >= 30) label = 'Débil';
     return { score, label };
   }
 
   get passwordErrors(): string | null {
     const c = this.f['password'];
-    if (!c || !c.touched) return null;
+    if (!c?.touched) return null;
     if (c.hasError('required')) return 'La contraseña es obligatoria.';
     if (c.hasError('pattern')) {
       return 'Debe tener 8+ caracteres, 1 mayúscula, 1 minúscula, 1 número y 1 símbolo de @$!%*?&.';
@@ -184,7 +186,7 @@ export class SignUpComponent {
       const resp = await firstValueFrom(this.user.register(payload));
       const msg = this.extractMsg(resp);
 
-      if (resp && resp.success === false) {
+      if (resp?.success === false) {
         this.error = this.translateBackendMessage(msg);
         this.loading = false;
         return;

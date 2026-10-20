@@ -1,8 +1,7 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { PLATFORM_ID } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 
 import { UserService } from '../../services/user.service';
@@ -21,10 +20,10 @@ export class SignInComponent {
   err: string | null = null;
 
   constructor(
-    private fb: FormBuilder,
-    private userSvc: UserService,
-    private router: Router,
-    @Inject(PLATFORM_ID) private platformId: Object
+    private readonly fb: FormBuilder,
+    private readonly userSvc: UserService,
+    private readonly router: Router,
+    @Inject(PLATFORM_ID) private readonly platformId: Object
   ) {
     this.form = this.fb.group({
       email: ['', [Validators.required, Validators.email]],

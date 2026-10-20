@@ -1,0 +1,243 @@
+{
+  "spec": "cypress\\e2e\\accessibility.cy.js",
+  "stats": {
+    "duration": 31295,
+    "endedAt": "2026-10-11T17:59:49.174Z",
+    "failures": 2,
+    "passes": 8,
+    "pending": 0,
+    "skipped": 0,
+    "startedAt": "2026-10-11T17:59:17.879Z",
+    "suites": 1,
+    "tests": 10
+  },
+  "tests": [
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 2468,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-01 auditoría /home"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 825,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-02 auditoría /sign-in"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 818,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-03 auditoría /product"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 944,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-04 auditoría /sign-up"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 710,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-05 auditoría /password-request"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 718,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-06 auditoría /profile"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 897,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-07 auditoría /post"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "failed"
+        }
+      ],
+      "displayError": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.skip-link`, but never found it.\n    at Context.eval (webpack://la-morada-rubrica-integral/./cypress/e2e/accessibility.cy.js:10:26)",
+      "duration": 11143,
+      "state": "failed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-08 salto de teclado al contenido"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "failed"
+        }
+      ],
+      "displayError": "AssertionError: Timed out retrying after 10000ms: expected '<input#signin-email.ng-untouched.ng-pristine.ng-invalid>' to have attribute 'autocomplete'\n    at Context.eval (webpack://la-morada-rubrica-integral/./cypress/e2e/accessibility.cy.js:14:50)",
+      "duration": 11020,
+      "state": "failed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-09 campos login y error accesible"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1607,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-10 carrito autenticado"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "height": 1083,
+      "name": "A11Y-01-auditor-a-home",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-01-auditor-a-home.png",
+      "takenAt": "2026-10-11T17:59:19.952Z",
+      "width": 1264
+    },
+    {
+      "height": 921,
+      "name": "A11Y-02-auditor-a-sign-in",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-02-auditor-a-sign-in.png",
+      "takenAt": "2026-10-11T17:59:20.916Z",
+      "width": 1264
+    },
+    {
+      "height": 765,
+      "name": "A11Y-03-auditor-a-product",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-03-auditor-a-product.png",
+      "takenAt": "2026-10-11T17:59:21.696Z",
+      "width": 1264
+    },
+    {
+      "height": 1214,
+      "name": "A11Y-04-auditor-a-sign-up",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-04-auditor-a-sign-up.png",
+      "takenAt": "2026-10-11T17:59:22.577Z",
+      "width": 1264
+    },
+    {
+      "height": 765,
+      "name": "A11Y-05-auditor-a-password-request",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-05-auditor-a-password-request.png",
+      "takenAt": "2026-10-11T17:59:23.459Z",
+      "width": 1264
+    },
+    {
+      "height": 765,
+      "name": "A11Y-06-auditor-a-profile",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-06-auditor-a-profile.png",
+      "takenAt": "2026-10-11T17:59:24.168Z",
+      "width": 1264
+    },
+    {
+      "height": 765,
+      "name": "A11Y-07-auditor-a-post",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-07-auditor-a-post.png",
+      "takenAt": "2026-10-11T17:59:24.940Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": null,
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\Accesibilidad WCAG 2.1 AAA — axe y comprobaciones funcionales -- A11Y-08 salto de teclado al contenido (failed).png",
+      "takenAt": "2026-10-11T17:59:35.599Z",
+      "width": 1264
+    },
+    {
+      "height": 1083,
+      "name": "A11Y-08-salto-de-teclado-al-contenido",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-08-salto-de-teclado-al-contenido.png",
+      "takenAt": "2026-10-11T17:59:35.982Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": null,
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\Accesibilidad WCAG 2.1 AAA — axe y comprobaciones funcionales -- A11Y-09 campos login y error accesible (failed).png",
+      "takenAt": "2026-10-11T17:59:46.946Z",
+      "width": 1264
+    },
+    {
+      "height": 921,
+      "name": "A11Y-09-campos-login-y-error-accesible",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-09-campos-login-y-error-accesible.png",
+      "takenAt": "2026-10-11T17:59:47.176Z",
+      "width": 1264
+    },
+    {
+      "height": 765,
+      "name": "A11Y-10-carrito-autenticado",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\screenshots\\accessibility.cy.js\\A11Y-10-carrito-autenticado.png",
+      "takenAt": "2026-10-11T17:59:48.919Z",
+      "width": 1264
+    }
+  ],
+  "video": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\before-valid\\videos\\accessibility.cy.js.mp4"
+}

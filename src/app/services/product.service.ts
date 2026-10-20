@@ -1,3 +1,4 @@
+import { environment } from '../../environments/environment';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -6,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductService {
-  private baseUrl = 'https://la-morada-back-production.up.railway.app/product';
+  private baseUrl = `${environment.API_BASE}/product`;
 
   constructor(private http: HttpClient) {}
 

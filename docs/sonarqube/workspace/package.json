@@ -1,0 +1,13 @@
+{
+  "name": "la-morada-quality",
+  "private": true,
+  "description": "Análisis SonarQube de F01–F04, F13–F16 y F26–F27",
+  "scripts": {
+    "quality:server": "docker start sonarqube",
+    "quality:infra": "docker compose -f quality/compose.tests.yml up -d --wait",
+    "quality:test": "node quality/run-tests.cjs",
+    "sonar": "node quality/scan.mjs",
+    "sonar:report": "node quality/export-report.mjs",
+    "quality": "node quality/run-quality.cjs"
+  }
+}

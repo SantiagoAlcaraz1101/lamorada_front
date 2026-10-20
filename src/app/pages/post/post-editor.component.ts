@@ -24,10 +24,10 @@ type Post = {
   styleUrls: ['./post-editor.component.css'],
 })
 export class PostEditorComponent {
-  private platformId = inject(PLATFORM_ID);
-  private fb = inject(FormBuilder);
-  private svc = inject(PostApiService);
-  private userSvc = inject(UserService);
+  private readonly platformId = inject(PLATFORM_ID);
+  private readonly fb = inject(FormBuilder);
+  private readonly svc = inject(PostApiService);
+  private readonly userSvc = inject(UserService);
 
   isBrowser = isPlatformBrowser(this.platformId);
   loading = signal(false);
@@ -140,7 +140,7 @@ export class PostEditorComponent {
   }
 
   /** Draft en localStorage */
-  private draftKey = 'post_editor_draft_v1';
+  private readonly draftKey = 'post_editor_draft_v1';
   private saveDraft() {
     try {
       localStorage.setItem(this.draftKey, JSON.stringify(this.form.getRawValue()));

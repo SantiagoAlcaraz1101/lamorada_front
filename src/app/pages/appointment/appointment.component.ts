@@ -1,5 +1,6 @@
-import { Component, Inject, PLATFORM_ID, ChangeDetectorRef } from '@angular/core';
-import { CommonModule, NgIf, NgFor, isPlatformBrowser } from '@angular/common';
+import { environment } from '../../../environments/environment';
+import { Component, Inject, PLATFORM_ID, ChangeDetectorRef, OnInit } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { AppointmentService } from '../../services/appointment.service';
@@ -41,18 +42,18 @@ const HOURS_FALLBACK = [
 @Component({
   standalone: true,
   selector: 'app-appointment',
-  imports: [CommonModule, ReactiveFormsModule, NgIf, NgFor],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './appointment.component.html',
   styleUrls: ['./appointment.component.css'],
 })
-export class AppointmentComponent {
+export class AppointmentComponent implements OnInit {
   constructor(
-    private fb: FormBuilder,
-    private http: HttpClient,
-    private apSrv: AppointmentService,
-    private avSrv: AvailabilityService,
-    private cdr: ChangeDetectorRef,
-    @Inject(PLATFORM_ID) private platformId: Object
+    private readonly fb: FormBuilder,
+    private readonly http: HttpClient,
+    private readonly apSrv: AppointmentService,
+    private readonly avSrv: AvailabilityService,
+    private readonly cdr: ChangeDetectorRef,
+    @Inject(PLATFORM_ID) private readonly platformId: Object
   ) {
     this.form = this.fb.group({
       date: this.fb.control<string>('', { nonNullable: true, validators: [Validators.required] }),
@@ -84,13 +85,13 @@ export class AppointmentComponent {
     return new HttpHeaders({ 'Content-Type': 'application/json', Authorization: t ? `Bearer ${t}` : '' });
   }
 
-  private decodeToken(): any | null {
+  private decodeToken(): any {
     if (!this.isBrowser()) return null;
     try {
       const t = localStorage.getItem('token');
       if (!t) return null;
       const payload = t.split('.')[1];
-      const json = atob(payload.replace(/-/g, '+').replace(/_/g, '/'));
+      const json = atob(payload.replaceAll('-', '+').replaceAll('_', '/'));
       return JSON.parse(json);
     } catch { return null; }
   }
@@ -146,7 +147,7 @@ export class AppointmentComponent {
 
   private fetchPsychologists(): Promise<void> {
     return new Promise((resolve) => {
-      const url = 'https://la-morada-back-production.up.railway.app/user/get-psychologists';
+      const url = `${environment.API_BASE}/user/get-psychologists`;
       this.http.get<any>(url, { headers: this.headers() })
         .subscribe({ next: (r) => { this.psychologists = this.hydrateUsers(this.extractUsers(r)); }, error: () => { this.psychologists = []; }, complete: () => resolve() });
     });
@@ -154,7 +155,7 @@ export class AppointmentComponent {
 
   private fetchPatients(): Promise<void> {
     return new Promise((resolve) => {
-      const url = 'https://la-morada-back-production.up.railway.app/user/get-patients';
+      const url = `${environment.API_BASE}/user/get-patients`;
       this.http.get<any>(url, { headers: this.headers() })
         .subscribe({ next: (r) => { this.patients = this.hydrateUsers(this.extractUsers(r)); }, error: () => { this.patients = []; }, complete: () => resolve() });
     });
@@ -268,12 +269,10 @@ export class AppointmentComponent {
     }
   }
 
-  // UTC fijo para conservar la hora elegida
-  private toStartISO(date: string, hourHHmm: string): string {
-    const [y, m, d] = date.split('-').map(Number);
-    const [H, Min] = hourHHmm.split(':').map(Number);
-    const dt = new Date(Date.UTC(y, m - 1, d, H, Min, 0, 0));
-    return dt.toISOString();
+private toStartISO(date: string, hourHHmm: string): string {
+    const [year, month, day] = date.split('-').map(Number);
+    const [hour, minute] = hourHHmm.split(':').map(Number);
+    return new Date(year, month - 1, day, hour, minute, 0, 0).toISOString();
   }
 
   public create() {

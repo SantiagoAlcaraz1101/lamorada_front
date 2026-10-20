@@ -1,0 +1,2751 @@
+{
+  "finishedAt": "2026-10-11T18:21:37.274Z",
+  "results": {
+    "success": 268,
+    "failed": 0,
+    "skipped": 0,
+    "error": false,
+    "disconnected": false,
+    "exitCode": 0
+  },
+  "cases": [
+    {
+      "suite": [
+        "ProductService"
+      ],
+      "description": "should be created",
+      "success": true,
+      "skipped": false,
+      "timeMs": 13,
+      "log": []
+    },
+    {
+      "suite": [
+        "F25 - regresión de plantilla tras fallo asíncrono"
+      ],
+      "description": "muestra el error y retira carga sin requerir otro clic",
+      "success": true,
+      "skipped": false,
+      "timeMs": 52,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F12 SSR elimina con ID codificado sin leer almacenamiento",
+      "success": true,
+      "skipped": false,
+      "timeMs": 5,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F18 listado público normaliza {}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F10 no reintenta {\"status\":403,\"message\":\"dia invalido\"}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 3,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F18 listado público normaliza {\"posts\":[{\"_id\":\"p1\"}]}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F10 no reintenta {\"status\":400,\"message\":\"otro error\"}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F18 listado público normaliza null",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F10 guarda disponibilidad respuesta envuelta=true",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F10 guarda disponibilidad respuesta envuelta=false",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F20 F21 envían autor autenticado por cabecera",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F28 retirar y vaciar actualizan estado desde respuesta",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F10 error del fallback conserva el error original",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F18 listado público normaliza []",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F10 fallback convierte solo días conocidos [\"monday\",\"martes\"]",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F10 fallback convierte solo días conocidos undefined",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - contratos HTTP ampliados"
+      ],
+      "description": "F05 F06 F09 EX01 rutas y payloads reales",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - cabecera reactiva F03 F04"
+      ],
+      "description": "inicializa estado server",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - cabecera reactiva F03 F04"
+      ],
+      "description": "inicializa estado browser",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "ngOnInit muestra error {\"error\":{\"message\":\"Servidor no disponible\"}}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "búsqueda normaliza {\"_id\":\"a\"}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "búsqueda normaliza null",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "carga inicial {\"products\":[{\"_id\":\"a\"}]}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "search muestra error {}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "carga inicial {}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "búsqueda normaliza [{\"_id\":\"a\"}]",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "search muestra error {\"error\":{\"message\":\"Servidor no disponible\"}}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "carga inicial [{\"_id\":\"a\"}]",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "búsqueda normaliza {\"products\":[{\"_id\":\"a\"}]}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "SSR no consulta ni busca",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "ngOnInit muestra error {}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - catálogo F25"
+      ],
+      "description": "búsqueda vacía recarga catálogo",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "dec ignora línea sin ID",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "remove informa fallo del primer servicio y termina loading",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "remove ignora línea sin ID",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "inc informa fallo del primer servicio y termina loading",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "dec informa fallo del primer servicio y termina loading",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "onQtyChange informa fallo al reinsertar, sin éxito falso",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "onQtyChange ignora línea sin ID",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "clear informa fallo del primer servicio y termina loading",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "dec informa fallo al reinsertar, sin éxito falso",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "cambio de cantidad 4 respeta mínimo uno",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "remove y clear informan éxito",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "inc conserva loading hasta recibir resultado",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "cambio de cantidad 0 respeta mínimo uno",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "dec con una unidad retira, con tres añade dos después de retirar",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "cambio de cantidad  respeta mínimo uno",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "inc ignora línea sin ID",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - acciones del carrito F26 F28"
+      ],
+      "description": "onQtyChange informa fallo del primer servicio y termina loading",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "EX01 cancelación no elimina ni navega",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "EX01 éxito elimina sesión y redirige",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "EX01 error {\"error\":{\"message\":\"No permitido\"}} conserva sesión",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "EX01 error {\"message\":\"Offline\"} conserva sesión",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "EX01 error {} conserva sesión",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "F21 error {}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "F21 no permite autor ajeno ni cancelación",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "F21 elimina propia y refresca",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "F21 error {\"error\":{\"message\":\"Offline\"}}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "F21 error {\"status\":403}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Rúbrica - eliminación de publicación y cuenta"
+      ],
+      "description": "F21 error {\"status\":401}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "ProfileComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 15,
+      "log": []
+    },
+    {
+      "suite": [
+        "HeaderComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 12,
+      "log": []
+    },
+    {
+      "suite": [
+        "HomeComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 21,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P11 identidad alternativa header.eyJ1c",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P11 identidad alternativa malformed",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-UI el formulario real muestra validación y confirmación de creación",
+      "success": true,
+      "skipped": false,
+      "timeMs": 25,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P12 plantillas y contadores actualizan el contenido sin publicar",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-V límites título=161, contenido=10",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P11 identidad alternativa ausente",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P3 éxito envía DTO, limpia borrador y refresca",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P10b respuesta de refresco no iterable se presenta como lista vacía",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-V límites título=1, contenido=9",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P9 filtra el refresco por autor, admite referencia poblada",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P7 restaura de forma tolerante el borrador {\"title\":\"Borrador\",\"content\":\"Texto de prueba\",\"active\":false}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P10 error al refrescar no deja cargando",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P7 restaura de forma tolerante el borrador 12",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P8 bloqueo de almacenamiento no impide crear",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P6 atajo no duplica solicitud pendiente",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P7 restaura de forma tolerante el borrador not-json",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-V límites título=160, contenido=10",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P11 identidad alternativa header.eyJyb",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P7 restaura de forma tolerante el borrador {}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P5 muestra mensaje de validación recibido del servidor",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P4 error 500 mantiene el borrador y libera saving",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P4 error 404 mantiene el borrador y libera saving",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P7 restaura de forma tolerante el borrador null",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P4 error 401 mantiene el borrador y libera saving",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P1 SSR no consulta ni crea",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-V límites título=0, contenido=10",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P2 formulario inválido no envía y marca controles",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F17 - crear publicación: caminos y plantilla"
+      ],
+      "description": "F17-F-P4 error 403 mantiene el borrador y libera saving",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Regresión Clase 15: carrito con AAA y Fluent Assertions"
+      ],
+      "description": "FA10 conserva el carrito persistido, la sesión y su publicación a la vista",
+      "success": true,
+      "skipped": false,
+      "timeMs": 3,
+      "log": []
+    },
+    {
+      "suite": [
+        "Regresión Clase 15: carrito con AAA y Fluent Assertions"
+      ],
+      "description": "FA13 un fallo HTTP conserva el carrito previo y llega al consumidor",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Regresión Clase 15: carrito con AAA y Fluent Assertions"
+      ],
+      "description": "FA12 vaciar el carrito también actualiza el estado observado",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Regresión Clase 15: carrito con AAA y Fluent Assertions"
+      ],
+      "description": "FA11 conserva producto y cantidad enviados al agregar al carrito",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Componentes de aceptación de la rúbrica integral",
+        "Carrito — sincronización con la API"
+      ],
+      "description": "COMP-08 fallo inicial del carrito se informa y termina carga",
+      "success": true,
+      "skipped": false,
+      "timeMs": 17,
+      "log": []
+    },
+    {
+      "suite": [
+        "Componentes de aceptación de la rúbrica integral",
+        "Carrito — sincronización con la API"
+      ],
+      "description": "COMP-07 estado local vacío no oculta carga pendiente",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Componentes de aceptación de la rúbrica integral",
+        "Productos — plantilla real con servicio controlado"
+      ],
+      "description": "COMP-06 fallo HTTP permite nueva búsqueda exitosa",
+      "success": true,
+      "skipped": false,
+      "timeMs": 5,
+      "log": []
+    },
+    {
+      "suite": [
+        "Componentes de aceptación de la rúbrica integral",
+        "Productos — plantilla real con servicio controlado"
+      ],
+      "description": "COMP-05 catálogo vacío tiene mensaje comprensible",
+      "success": true,
+      "skipped": false,
+      "timeMs": 3,
+      "log": []
+    },
+    {
+      "suite": [
+        "Componentes de aceptación de la rúbrica integral",
+        "Login — plantilla real con servicio controlado"
+      ],
+      "description": "COMP-01 formulario vacío e email inválido bloquean envío",
+      "success": true,
+      "skipped": false,
+      "timeMs": 53,
+      "log": []
+    },
+    {
+      "suite": [
+        "Componentes de aceptación de la rúbrica integral",
+        "Login — plantilla real con servicio controlado"
+      ],
+      "description": "COMP-04 solicitud pendiente desactiva botón y anuncia carga",
+      "success": true,
+      "skipped": false,
+      "timeMs": 6,
+      "log": []
+    },
+    {
+      "suite": [
+        "Componentes de aceptación de la rúbrica integral",
+        "Login — plantilla real con servicio controlado"
+      ],
+      "description": "COMP-03 error 401 muestra mensaje en región de alerta",
+      "success": true,
+      "skipped": false,
+      "timeMs": 5,
+      "log": []
+    },
+    {
+      "suite": [
+        "Componentes de aceptación de la rúbrica integral",
+        "Login — plantilla real con servicio controlado"
+      ],
+      "description": "COMP-02 login correcto guarda token y navega",
+      "success": true,
+      "skipped": false,
+      "timeMs": 5,
+      "log": []
+    },
+    {
+      "suite": [
+        "FooterComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 17,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P2 formulario inválido marca campos y no envía",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P6 respuesta sin ID no muestra éxito ni actualiza el nombre",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P9 carga datos desde token y completa con API",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P1 sin identidad redirige y no actualiza",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P3 rechaza par de contraseñas Abcdefgh! / Abcdefgh!",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P3 rechaza par de contraseñas Aa1! / Aa1!",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-GAP01 psicólogo envía specialty: contrato que la API actualmente rechaza",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P3 rechaza par de contraseñas Nueva123! / Diferente1!",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P7 fallo PASSWORD_MISMATCH restablece saving",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P5 omite edad vacía y admite el límite mínimo de contraseña",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P7 fallo FIELDS NOT UPDATABLE restablece saving",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P3 rechaza par de contraseñas Nueva123! / vacío",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-UI formulario real enlaza campos y muestra la identidad",
+      "success": true,
+      "skipped": false,
+      "timeMs": 17,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P3 rechaza par de contraseñas vacío / vacío",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P7 fallo INVALID PASSWORD restablece saving",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P11 SSR no consulta API y libera suscripción al destruir",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P3 rechaza par de contraseñas vacío / vacío",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P10 sin identidad conserva formulario recuperable aunque API falle",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P12 nueva carga cancela la consulta anterior y destroy la actual",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P7 fallo USER NOT FOUND restablece saving",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P4 guarda paciente sin specialty y vuelve a cargar",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P3 rechaza par de contraseñas Abcdefg12 / Abcdefg12",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P3 rechaza par de contraseñas ABCDEFG1! / ABCDEFG1!",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P3 rechaza par de contraseñas abcdefg1! / abcdefg1!",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P8 mantiene saving mientras espera la respuesta",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F07 - perfil propio: caminos y plantilla"
+      ],
+      "description": "F07-F-P7 fallo desconocido restablece saving",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F13 - AppointmentComponent.create (7 caminos)"
+      ],
+      "description": "F13-F-P7: error del observable muestra mensaje mapeado",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F13 - AppointmentComponent.create (7 caminos)"
+      ],
+      "description": "F13-F-P6: psicólogo crea cita con patient_id",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F13 - AppointmentComponent.create (7 caminos)"
+      ],
+      "description": "F13-F-P4: psicólogo sin patient_id muestra alerta",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F13 - AppointmentComponent.create (7 caminos)"
+      ],
+      "description": "F13-F-P5: paciente crea cita sin patient_id explícito",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F13 - AppointmentComponent.create (7 caminos)"
+      ],
+      "description": "F13-F-P2: formulario inválido se marca y termina",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F13 - AppointmentComponent.create (7 caminos)"
+      ],
+      "description": "F13-F-P1: fuera de browser termina inmediatamente",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F13 - AppointmentComponent.create (7 caminos)"
+      ],
+      "description": "F13-F-P3: psyId vacío muestra alerta",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F04 - HeaderComponent.onLogout (2 caminos)"
+      ],
+      "description": "F04-F-P1: logout resuelve y continúa con limpieza y navegación",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F04 - HeaderComponent.onLogout (2 caminos)"
+      ],
+      "description": "F04-F-P2: logout falla, catch vacío y continúa",
+      "success": true,
+      "skipped": false,
+      "timeMs": 264,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P8: token con name y rol local existente omite setRole y getMe",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P2: error 401 usa la primera rama del ternario del catch externo",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P11: getMe devuelve solo name",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P5: token no decodificable entra al catch interno y conserva rol existente",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P10: getMe devuelve solo role",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P4: respuesta sin token termina antes de guardar sesión",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P1: condición inicial verdadera termina sin login",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P7: token con role y sin name omite setName",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P6: token con role y name ejecuta ambos if y omite getMe",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P3: otro error usa el mensaje de la segunda rama del ternario",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P9: sin rol local, getMe devuelve role y name",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F03 - SignInComponent.onSubmit (12 caminos)"
+      ],
+      "description": "F03-F-P12: error de getMe entra al catch interno y aun navega",
+      "success": true,
+      "skipped": false,
+      "timeMs": 7,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F02 - SignUpComponent.submit (4 caminos)"
+      ],
+      "description": "F02-F-P2: respuesta success false muestra error y termina",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F02 - SignUpComponent.submit (4 caminos)"
+      ],
+      "description": "F02-F-P4: excepción del observable se procesa en catch",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F02 - SignUpComponent.submit (4 caminos)"
+      ],
+      "description": "F02-F-P1: formulario inválido termina sin registrar",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F02 - SignUpComponent.submit (4 caminos)"
+      ],
+      "description": "F02-F-P3: respuesta exitosa confirma y programa navegación",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F01 - SignUpComponent.submit (4 caminos)"
+      ],
+      "description": "F01-F-P2: respuesta success false muestra error y termina",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F01 - SignUpComponent.submit (4 caminos)"
+      ],
+      "description": "F01-F-P1: formulario inválido termina sin registrar",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F01 - SignUpComponent.submit (4 caminos)"
+      ],
+      "description": "F01-F-P4: excepción del observable se procesa en catch",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F01 - SignUpComponent.submit (4 caminos)"
+      ],
+      "description": "F01-F-P3: respuesta exitosa confirma y programa navegación",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F26 - ProductComponent.addToCart (7 caminos)"
+      ],
+      "description": "F26-F-P7: otro error usa el else",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F26 - ProductComponent.addToCart (7 caminos)"
+      ],
+      "description": "F26-F-P6: error 403 usa el else if",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F26 - ProductComponent.addToCart (7 caminos)"
+      ],
+      "description": "F26-F-P2: usuario no autenticado termina con mensaje",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F26 - ProductComponent.addToCart (7 caminos)"
+      ],
+      "description": "F26-F-P3: producto sin id termina con mensaje",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F26 - ProductComponent.addToCart (7 caminos)"
+      ],
+      "description": "F26-F-P4: servicio exitoso muestra confirmación",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F26 - ProductComponent.addToCart (7 caminos)"
+      ],
+      "description": "F26-F-P5: error 401 usa el primer if del catch",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F26 - ProductComponent.addToCart (7 caminos)"
+      ],
+      "description": "F26-F-P1: fuera de browser termina inmediatamente",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F16 - AppointmentComponent.delete (4 caminos)"
+      ],
+      "description": "F16-F-P4: error del observable muestra alerta",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F16 - AppointmentComponent.delete (4 caminos)"
+      ],
+      "description": "F16-F-P2: éxito elimina el elemento cuyo id coincide",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F16 - AppointmentComponent.delete (4 caminos)"
+      ],
+      "description": "F16-F-P3: el filter conserva los elementos cuyo id no coincide",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F16 - AppointmentComponent.delete (4 caminos)"
+      ],
+      "description": "F16-F-P1: confirmación negativa termina sin llamar el servicio",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F15 - AppointmentComponent.setStatus (6 caminos)"
+      ],
+      "description": "F15-F-P3: psicólogo no cambia una cita cancelada",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F15 - AppointmentComponent.setStatus (6 caminos)"
+      ],
+      "description": "F15-F-P1: paciente no puede confirmar ni completar",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F15 - AppointmentComponent.setStatus (6 caminos)"
+      ],
+      "description": "F15-F-P6: error del observable muestra alerta",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F15 - AppointmentComponent.setStatus (6 caminos)"
+      ],
+      "description": "F15-F-P4: éxito actualiza el elemento cuyo id coincide",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F15 - AppointmentComponent.setStatus (6 caminos)"
+      ],
+      "description": "F15-F-P5: el map conserva los elementos cuyo id no coincide",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F15 - AppointmentComponent.setStatus (6 caminos)"
+      ],
+      "description": "F15-F-P2: psicólogo no reabre una cita completada",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F14 - AppointmentComponent.refreshList (4 caminos)"
+      ],
+      "description": "F14-F-P2: respuesta objeto usa appointments en la rama falsa",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F14 - AppointmentComponent.refreshList (4 caminos)"
+      ],
+      "description": "F14-F-P3: excepción al normalizar entra al catch interno",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F14 - AppointmentComponent.refreshList (4 caminos)"
+      ],
+      "description": "F14-F-P4: error del observable vacía la lista",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend",
+        "F14 - AppointmentComponent.refreshList (4 caminos)"
+      ],
+      "description": "F14-F-P1: respuesta array usa la rama verdadera del ternario",
+      "success": true,
+      "skipped": false,
+      "timeMs": 11,
+      "log": []
+    },
+    {
+      "suite": [
+        "Caminos exactos por función - frontend"
+      ],
+      "description": "F27-F-P1 - CartComponent.ngOnInit: ejecuta su único camino lineal",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "AuthRoleGuard"
+      ],
+      "description": "should be created",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "CheckoutComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 10,
+      "log": []
+    },
+    {
+      "suite": [
+        "Regresion de las plantillas corregidas por SonarQube"
+      ],
+      "description": "conserva las acciones por rol y el estado vacio de citas",
+      "success": true,
+      "skipped": false,
+      "timeMs": 20,
+      "log": []
+    },
+    {
+      "suite": [
+        "Regresion de las plantillas corregidas por SonarQube"
+      ],
+      "description": "pinta el carrito persistido y cambia al estado vacio",
+      "success": true,
+      "skipped": false,
+      "timeMs": 5,
+      "log": []
+    },
+    {
+      "suite": [
+        "Regresion de las plantillas corregidas por SonarQube"
+      ],
+      "description": "asocia las etiquetas con los diez campos de registro",
+      "success": true,
+      "skipped": false,
+      "timeMs": 38,
+      "log": []
+    },
+    {
+      "suite": [
+        "Regresion de las plantillas corregidas por SonarQube"
+      ],
+      "description": "asocia las etiquetas con los dos campos de inicio de sesion",
+      "success": true,
+      "skipped": false,
+      "timeMs": 4,
+      "log": []
+    },
+    {
+      "suite": [
+        "CartService"
+      ],
+      "description": "should be created",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "AvailabilityComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 6,
+      "log": []
+    },
+    {
+      "suite": [
+        "PaymentComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 12,
+      "log": []
+    },
+    {
+      "suite": [
+        "F01/F02 - ayudas de validación y mensajes del registro"
+      ],
+      "description": "F01/F02-V1 fuerza Media",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F01/F02 - ayudas de validación y mensajes del registro"
+      ],
+      "description": "F01/F02-V1 fuerza Débil",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F01/F02 - ayudas de validación y mensajes del registro"
+      ],
+      "description": "F01/F02-V3 controles de visibilidad y logo alternativo",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F01/F02 - ayudas de validación y mensajes del registro"
+      ],
+      "description": "F01/F02-V1 fuerza Fuerte",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F01/F02 - ayudas de validación y mensajes del registro"
+      ],
+      "description": "F01/F02-V1 fuerza –",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F01/F02 - ayudas de validación y mensajes del registro"
+      ],
+      "description": "F01/F02-V2 mensajes distinguen campo sin tocar, requerido y patrón",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F01/F02 - ayudas de validación y mensajes del registro"
+      ],
+      "description": "F01/F02-V1 fuerza Muy débil",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "PodcastService"
+      ],
+      "description": "should be created",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "SignInComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 4,
+      "log": []
+    },
+    {
+      "suite": [
+        "CartComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 3,
+      "log": []
+    },
+    {
+      "suite": [
+        "PaymentService"
+      ],
+      "description": "should be created",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F03/F04 y funciones autenticadas - guardas e interceptor"
+      ],
+      "description": "SES-F01 interceptor añade token y guarda su renovación",
+      "success": true,
+      "skipped": false,
+      "timeMs": 3,
+      "log": []
+    },
+    {
+      "suite": [
+        "F03/F04 y funciones autenticadas - guardas e interceptor"
+      ],
+      "description": "SES-F02 no añade token en browser /auth/login",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "F03/F04 y funciones autenticadas - guardas e interceptor"
+      ],
+      "description": "GUARD01 browser / patient",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "F03/F04 y funciones autenticadas - guardas e interceptor"
+      ],
+      "description": "GUARD01 browser / psychologist",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F03/F04 y funciones autenticadas - guardas e interceptor"
+      ],
+      "description": "GUARD01 browser / sin token",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F03/F04 y funciones autenticadas - guardas e interceptor"
+      ],
+      "description": "GUARD01 server / sin token",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F03/F04 y funciones autenticadas - guardas e interceptor"
+      ],
+      "description": "SES-F02 no añade token en server /appointment",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "AvailabilityService"
+      ],
+      "description": "should be created",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "PodcastComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 21,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 token ausente, sin identidad o dañado no inventa ID",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F17 fallback de creación solo ante 405",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F07 perfil de paciente proviene del token sin consulta externa",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 perfil profesional admite respuesta psychologists",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 reconoce identidad JWT {\"id\":\"p1\"}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 perfil profesional admite respuesta users",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 falla de consulta conserva perfil base",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F07 PUT usa exclusivamente la identidad del token",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F17 fallback de creación solo ante 404",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 perfil profesional admite respuesta data",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 reconoce identidad JWT {\"_id\":\"p1\",\"role\":\"patient\",\"name\":\"Camila\",\"email\":\"c@lamorada.test\",\"age\":25,\"phone\":\"3000000001\",\"specialty\":\"A\"}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13 normaliza listado de profesionales psychologists",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13 lee disponibilidad {\"availability\":null}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13 lee disponibilidad {\"availability\":{\"days\":[\"lunes\"],\"slots\":[]}}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13 normaliza listado de profesionales users",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13 lee disponibilidad null",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F04 almacenamiento y estado se actualizan y se limpian",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F17 403 no reintenta ni oculta el error",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 reconoce identidad JWT {\"user\":{\"_id\":\"p1\",\"role\":\"patient\",\"name\":\"Camila\",\"email\":\"c@lamorada.test\",\"age\":25,\"phone\":\"3000000001\",\"specialty\":\"A\"}}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13 error de profesionales se transforma en lista vacía y conserva error",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F01/F03/F04 rutas, payload y cabecera de sesión",
+      "success": true,
+      "skipped": false,
+      "timeMs": 11,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F17 éxito directo y refresco toleran envoltorio y lista",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13 normaliza listado de profesionales missing",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 SSR no lee ni escribe almacenamiento",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13-F16 servicios de cita respetan verbo, payload e identidad",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F26/F27 normaliza carrito persistido {}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 reconoce identidad JWT {\"user_id\":\"p1\"}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13 consulta pacientes autenticados",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F26 agrega cantidad y actualiza el estado del carrito",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 reconoce identidad JWT {\"user\":{\"id\":\"p1\"}}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F07 propaga un rechazo de permisos sin convertirlo en éxito",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F26/F27 normaliza carrito persistido {\"cart\":{\"products_id\":[],\"total\":12}}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F13 lee disponibilidad {\"days\":[\"lunes\"],\"slots\":[]}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F26/F27 normaliza carrito persistido {\"products_id\":[],\"total\":0}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "Contratos HTTP del alcance F01-F04 F07 F13-F17 F26-F27"
+      ],
+      "description": "F03/F07 reconoce identidad JWT {\"sub\":\"p1\"}",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "UserService"
+      ],
+      "description": "should be created",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "ProductComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 3,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F14-C01 ordena el listado y resuelve nombres",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C04 normaliza usuarios data",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F14-C02 error o forma inesperada muestran lista vacía y apagan carga",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C06 disponibilidad vacía no inventa horas",
+      "success": true,
+      "skipped": false,
+      "timeMs": 10,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C04 normaliza usuarios array",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C07 hoy solo ofrece horas posteriores a la actual",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C04 normaliza usuarios users",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C04 normaliza usuarios items",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C01 inicio como patient obtiene dependencias y lista",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C01 inicio como psychologist obtiene dependencias y lista",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C05 disponibilidad propia filtra día y conserva hora válida",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C04 normaliza usuarios none",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C03 token inválido no fabrica identidad",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C02 SSR termina carga sin HTTP",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "F13/F14 - carga y disponibilidad de la pantalla de citas"
+      ],
+      "description": "F13-C04 normaliza usuarios legacy",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "PostService"
+      ],
+      "description": "should be created",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "ProfileEditComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 2,
+      "log": []
+    },
+    {
+      "suite": [
+        "SignUpComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 4,
+      "log": []
+    },
+    {
+      "suite": [
+        "AppointmentService"
+      ],
+      "description": "should be created",
+      "success": true,
+      "skipped": false,
+      "timeMs": 0,
+      "log": []
+    },
+    {
+      "suite": [
+        "AppointmentComponent"
+      ],
+      "description": "should create",
+      "success": true,
+      "skipped": false,
+      "timeMs": 1,
+      "log": []
+    },
+    {
+      "suite": [
+        "AppComponent"
+      ],
+      "description": "should create the application shell",
+      "success": true,
+      "skipped": false,
+      "timeMs": 4,
+      "log": []
+    }
+  ]
+}

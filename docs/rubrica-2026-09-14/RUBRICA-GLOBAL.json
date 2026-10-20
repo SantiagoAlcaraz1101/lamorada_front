@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-09-15T14:08:30.657Z",
+  "project": "la-morada-despues",
+  "status": "OK",
+  "scope": "Overall code; control adicional, no reemplaza Q10 de código nuevo",
+  "conditions": [
+    {
+      "metric": "coverage",
+      "value": 95.3,
+      "requirement": ">= 90",
+      "passed": true
+    },
+    {
+      "metric": "duplicated_lines_density",
+      "value": 0,
+      "requirement": "<= 2",
+      "passed": true
+    },
+    {
+      "metric": "software_quality_maintainability_remediation_effort",
+      "value": 0,
+      "requirement": "<= 90 min",
+      "passed": true
+    },
+    {
+      "metric": "software_quality_maintainability_rating",
+      "value": 1,
+      "requirement": "A = 1",
+      "passed": true
+    },
+    {
+      "metric": "software_quality_reliability_rating",
+      "value": 1,
+      "requirement": "A = 1",
+      "passed": true
+    },
+    {
+      "metric": "software_quality_security_rating",
+      "value": 1,
+      "requirement": "A = 1",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "executedAt": "2026-10-13T14:11:59.116Z",
+  "scope": "Validación de formato con parser público sin modificar sus funciones DOM; modelos mínimos de datos y DOMParser jsdom. No es ejecución de la extensión.",
+  "sourceUrl": "https://github.com/katalon-studio/katalon-recorder/blob/master/panel/js/UI/services/helper-service/parser.js",
+  "parserSha256": "cffb6047d9548b215258772c9e667b1e1bf5058959ffd536ced688db70961251",
+  "jsdom": "26.1.0",
+  "checks": [
+    {
+      "case": "Archivo original",
+      "expected": "Reproducir rechazo Incorrect format",
+      "obtained": "Incorrect format",
+      "passed": true
+    },
+    {
+      "case": "KAT-01",
+      "expected": "Importar un caso y todos sus comandos con destinos válidos",
+      "obtained": {
+        "name": "KAT-01 — Login correcto y logout",
+        "commands": 18
+      },
+      "passed": true
+    },
+    {
+      "case": "KAT-02",
+      "expected": "Importar un caso y todos sus comandos con destinos válidos",
+      "obtained": {
+        "name": "KAT-02 — Rechazar contraseña incorrecta",
+        "commands": 15
+      },
+      "passed": true
+    },
+    {
+      "case": "KAT-03",
+      "expected": "Importar un caso y todos sus comandos con destinos válidos",
+      "obtained": {
+        "name": "KAT-03 — Buscar libro existente",
+        "commands": 13
+      },
+      "passed": true
+    },
+    {
+      "case": "KAT-04",
+      "expected": "Importar un caso y todos sus comandos con destinos válidos",
+      "obtained": {
+        "name": "KAT-04 — Búsqueda sin resultados",
+        "commands": 14
+      },
+      "passed": true
+    },
+    {
+      "case": "KAT-05",
+      "expected": "Importar un caso y todos sus comandos con destinos válidos",
+      "obtained": {
+        "name": "KAT-05 — Agregar, aumentar, calcular y eliminar producto",
+        "commands": 38
+      },
+      "passed": true
+    },
+    {
+      "case": "KAT-06",
+      "expected": "Importar un caso y todos sus comandos con destinos válidos",
+      "obtained": {
+        "name": "KAT-06 — Invitado no modifica carrito",
+        "commands": 19
+      },
+      "passed": true
+    },
+    {
+      "case": "KAT-07",
+      "expected": "Importar un caso y todos sus comandos con destinos válidos",
+      "obtained": {
+        "name": "KAT-07 — Paciente no crea productos",
+        "commands": 15
+      },
+      "passed": true
+    },
+    {
+      "case": "KAT-08",
+      "expected": "Importar un caso y todos sus comandos con destinos válidos",
+      "obtained": {
+        "name": "KAT-08 — Login con datos CSV positivos y negativos",
+        "commands": 16
+      },
+      "passed": true
+    },
+    {
+      "case": "Suite y roundtrip nativo",
+      "expected": "8 casos después de importación y exportación/importación",
+      "obtained": 8,
+      "passed": true
+    }
+  ],
+  "katalonE2EStatus": "NOT_EXECUTED"
+}

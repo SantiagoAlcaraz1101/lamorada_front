@@ -1,3 +1,4 @@
+import { environment } from '../../environments/environment';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
@@ -17,7 +18,7 @@ export interface LoginResponse {
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private readonly base = 'https://la-morada-back-production.up.railway.app';
+  private readonly base = environment.API_BASE;
   private readonly json = new HttpHeaders({ 'Content-Type': 'application/json' });
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {}

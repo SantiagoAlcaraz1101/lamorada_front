@@ -1,0 +1,196 @@
+{
+  "generatedAt": "2026-09-15T14:08:30.535Z",
+  "project": "la-morada-despues",
+  "definition": {
+    "name": "Q10",
+    "conditions": [
+      {
+        "id": "ef80522d-ad95-4587-a441-8cc0ab976ad7",
+        "metric": "new_violations",
+        "op": "GT",
+        "error": "0",
+        "isCaycCondition": true
+      },
+      {
+        "id": "12abc4ae-1404-42ea-a355-c7bf34357e97",
+        "metric": "new_coverage",
+        "op": "LT",
+        "error": "90",
+        "isCaycCondition": true
+      },
+      {
+        "id": "ee6f03ab-2224-46c6-8260-3b1bceba5503",
+        "metric": "new_duplicated_lines_density",
+        "op": "GT",
+        "error": "2",
+        "isCaycCondition": true
+      },
+      {
+        "id": "ffe820f8-1706-4690-8c12-cdf65ae4ac7d",
+        "metric": "new_security_hotspots_reviewed",
+        "op": "LT",
+        "error": "100",
+        "isCaycCondition": true
+      },
+      {
+        "id": "e1466538-f9d2-4694-87b8-3ecd828f21d5",
+        "metric": "new_software_quality_maintainability_remediation_effort",
+        "op": "GT",
+        "error": "90",
+        "isCaycCondition": false
+      }
+    ],
+    "isBuiltIn": false,
+    "actions": {
+      "rename": true,
+      "setAsDefault": true,
+      "copy": true,
+      "associateProjects": true,
+      "delete": true,
+      "manageConditions": true,
+      "delegate": true,
+      "manageAiCodeAssurance": false
+    },
+    "caycStatus": "over-compliant",
+    "isDefault": false,
+    "hasStandardConditions": false,
+    "hasMQRConditions": true,
+    "isAiCodeSupported": false
+  },
+  "association": {
+    "qualityGate": {
+      "name": "Q10",
+      "default": false
+    }
+  },
+  "measures": [
+    {
+      "metric": "new_coverage",
+      "period": {
+        "index": 1,
+        "value": "98.5",
+        "bestValue": false
+      }
+    },
+    {
+      "metric": "new_conditions_to_cover",
+      "period": {
+        "index": 1,
+        "value": "202"
+      }
+    },
+    {
+      "metric": "new_uncovered_conditions",
+      "period": {
+        "index": 1,
+        "value": "8",
+        "bestValue": false
+      }
+    },
+    {
+      "metric": "new_uncovered_lines",
+      "period": {
+        "index": 1,
+        "value": "0",
+        "bestValue": true
+      }
+    },
+    {
+      "metric": "new_lines_to_cover",
+      "period": {
+        "index": 1,
+        "value": "336"
+      }
+    }
+  ],
+  "denominator": 538,
+  "covered": 530,
+  "inScope": {
+    "units": 538,
+    "covered": 530
+  },
+  "outside": {
+    "units": 0,
+    "covered": 0
+  },
+  "ceilingWithoutExpandingTests": 100,
+  "uncovered": [
+    {
+      "file": "frontend/src/app/pages/cart/cart.component.ts",
+      "line": 72,
+      "features": [
+        "EX02"
+      ],
+      "relation": "direct",
+      "method": "dec",
+      "units": 3,
+      "covered": 2
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 130,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "fetch",
+      "units": 4,
+      "covered": 2
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 131,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "fetch",
+      "units": 4,
+      "covered": 3
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 132,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "fetch",
+      "units": 4,
+      "covered": 3
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 178,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "submit",
+      "units": 4,
+      "covered": 3
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 180,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "submit",
+      "units": 3,
+      "covered": 2
+    },
+    {
+      "file": "frontend/src/app/pages/profile-edit/profile-edit.component.ts",
+      "line": 181,
+      "features": [
+        "F07"
+      ],
+      "relation": "direct",
+      "method": "submit",
+      "units": 3,
+      "covered": 2
+    }
+  ]
+}

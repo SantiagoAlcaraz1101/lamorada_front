@@ -1,0 +1,997 @@
+[
+  {
+    "file": "backend/tests/delivery.functional.test.js",
+    "cases": [
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-01: registra paciente, oculta password y crea carrito; rechaza duplicado",
+        "status": "passed",
+        "durationMs": 374
+      },
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-02: evidencia la brecha: solicitar psychologist termina almacenando patient",
+        "status": "passed",
+        "durationMs": 136
+      },
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-03: inicia sesion con credenciales validas y rechaza password incorrecto",
+        "status": "passed",
+        "durationMs": 294
+      },
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-04: logout invalida el token y evita reutilizarlo",
+        "status": "passed",
+        "durationMs": 220
+      },
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-13: crea cita disponible y rechaza horario cruzado y fecha pasada",
+        "status": "passed",
+        "durationMs": 477
+      },
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-14: paciente y psicologo consultan únicamente sus citas autenticadas",
+        "status": "passed",
+        "durationMs": 417
+      },
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-15: psicologo confirma su cita y el paciente no puede completarla",
+        "status": "passed",
+        "durationMs": 420
+      },
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-16: un tercero no cancela la cita y el paciente propietario si puede",
+        "status": "passed",
+        "durationMs": 574
+      },
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-26: agrega un producto al carrito y rechaza solicitudes invalidas",
+        "status": "passed",
+        "durationMs": 264
+      },
+      {
+        "name": "caja negra F-01 a F-04, F-13 a F-16, F-26 y F-27 F-27: consulta el carrito autenticado con productos y total calculado",
+        "status": "passed",
+        "durationMs": 206
+      }
+    ]
+  },
+  {
+    "file": "backend/tests/plan20.functional.test.js",
+    "cases": [
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB01 patient conserva cambios permitidos y oculta contraseña",
+        "status": "passed",
+        "durationMs": 35
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB01 psychologist conserva cambios permitidos y oculta contraseña",
+        "status": "passed",
+        "durationMs": 19
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB02 cambia la contraseña con confirmación y la almacena cifrada",
+        "status": "passed",
+        "durationMs": 184
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB03 no permite modificar un perfil ajeno",
+        "status": "passed",
+        "durationMs": 31
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB04 requiere sesión y rechaza token inválido",
+        "status": "passed",
+        "durationMs": 18
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida name= no persiste",
+        "status": "passed",
+        "durationMs": 23
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida name=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA no persiste",
+        "status": "passed",
+        "durationMs": 17
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida last_name1=123 no persiste",
+        "status": "passed",
+        "durationMs": 17
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida last_name2= no persiste",
+        "status": "passed",
+        "durationMs": 17
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida email=sin-arroba no persiste",
+        "status": "passed",
+        "durationMs": 16
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida phone=123456 no persiste",
+        "status": "passed",
+        "durationMs": 16
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida phone=1111111111111111 no persiste",
+        "status": "passed",
+        "durationMs": 16
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=4 no persiste",
+        "status": "passed",
+        "durationMs": 17
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=111 no persiste",
+        "status": "passed",
+        "durationMs": 16
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida age=5.5 no persiste",
+        "status": "passed",
+        "durationMs": 16
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida role=psychologist no persiste",
+        "status": "passed",
+        "durationMs": 16
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB05 partición inválida _id=999 no persiste",
+        "status": "passed",
+        "durationMs": 15
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB06 acepta edad límite 5",
+        "status": "passed",
+        "durationMs": 16
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB06 acepta edad límite 110",
+        "status": "passed",
+        "durationMs": 19
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-BB07 contraseñas diferentes o débiles no se guardan",
+        "status": "passed",
+        "durationMs": 22
+      },
+      {
+        "name": "F07 - caja negra: actualización del perfil propio F07-GAP01 reproduce rechazo de specialty enviado por la pantalla del psicólogo",
+        "status": "passed",
+        "durationMs": 16
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=undefined",
+        "status": "passed",
+        "durationMs": 41
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=true",
+        "status": "passed",
+        "durationMs": 30
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB01 psicólogo crea y persiste con active=false",
+        "status": "passed",
+        "durationMs": 30
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB02 rechaza paciente y solicitudes sin sesión",
+        "status": "passed",
+        "durationMs": 25
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB03 valida title= antes de guardar",
+        "status": "passed",
+        "durationMs": 18
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB03 valida title=12 antes de guardar",
+        "status": "passed",
+        "durationMs": 15
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB03 valida content= antes de guardar",
+        "status": "passed",
+        "durationMs": 15
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB03 valida content=12 antes de guardar",
+        "status": "passed",
+        "durationMs": 14
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB03 valida active=true antes de guardar",
+        "status": "passed",
+        "durationMs": 15
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB03 valida active=null antes de guardar",
+        "status": "passed",
+        "durationMs": 17
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-BB04 revalida al autor en la base de datos",
+        "status": "passed",
+        "durationMs": 23
+      },
+      {
+        "name": "F17 - caja negra: crear publicación F17-GAP01 documenta que la API no impone los límites 160/10 de la pantalla",
+        "status": "passed",
+        "durationMs": 18
+      }
+    ]
+  },
+  {
+    "file": "backend/tests/plan20.whitebox.test.js",
+    "cases": [
+      {
+        "name": "F07 - caminos de actualización F07-B-P1 usuario inexistente termina sin hash",
+        "status": "passed",
+        "durationMs": 10
+      },
+      {
+        "name": "F07 - caminos de actualización F07-B-P2 campo protegido termina sin persistir",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F07 - caminos de actualización F07-B-P3 datos inválidos terminan sin persistir",
+        "status": "passed",
+        "durationMs": 4
+      },
+      {
+        "name": "F07 - caminos de actualización F07-B-P4 actualiza campos definidos y conserva el hash si no cambia contraseña",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F07 - caminos de actualización F07-B-P5 cifra la contraseña y no la devuelve",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F07 - caminos de actualización F07-B-P6 propaga fallo del almacenamiento",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-P0 error del refresco posterior a crear se informa, no se silencia",
+        "status": "passed",
+        "durationMs": 4
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-P1 autor inválido null no crea",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-P1 autor inválido {\"role\":\"patient\"} no crea",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-P2 creación conserva active=undefined",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-P2 creación conserva active=false",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-P3 fallo al guardar no se convierte en éxito",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-V valida partición {\"content\":\"Texto\"}",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-V valida partición {\"title\":1,\"content\":\"Texto\"}",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\"}",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\",\"content\":[]}",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F17 - caminos de creación F17-B-V valida partición {\"title\":\"Título\",\"content\":\"Texto\",\"active\":1}",
+        "status": "passed",
+        "durationMs": 0
+      }
+    ]
+  },
+  {
+    "file": "backend/tests/whitebox.paths.test.js",
+    "cases": [
+      {
+        "name": "F01 - UserService.register (3 caminos exactos) F01-B-P1: existingById verdadero",
+        "status": "passed",
+        "durationMs": 12
+      },
+      {
+        "name": "F01 - UserService.register (3 caminos exactos) F01-B-P2: ID libre y existingByEmail verdadero",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F01 - UserService.register (3 caminos exactos) F01-B-P3: ID y correo libres completan el registro",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F02 - UserService.register (3 caminos exactos) F02-B-P1: existingById verdadero",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F02 - UserService.register (3 caminos exactos) F02-B-P2: ID libre y existingByEmail verdadero",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F02 - UserService.register (3 caminos exactos) F02-B-P3: ID y correo libres completan el registro",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F03 - AuthService.loginUser (2 caminos exactos) F03-B-P1: usuario no encontrado",
+        "status": "passed",
+        "durationMs": 5
+      },
+      {
+        "name": "F03 - AuthService.loginUser (2 caminos exactos) F03-B-P2: usuario encontrado completa validaciones y genera token",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P1: token ausente",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P2: token presente pero inválido",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F04 - AuthService.logoutUser (3 caminos exactos) F04-B-P3: token válido se invalida",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P1: paciente inválido",
+        "status": "passed",
+        "durationMs": 4
+      },
+      {
+        "name": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P2: psicólogo inválido",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P3: disponibilidad inexistente",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P4: fecha inválida",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P5: fecha no futura",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P6: día no disponible",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P7: hora fuera de los slots",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P8: horario ocupado",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F13 - AppointmentService.createAppointment (9 caminos exactos) F13-B-P9: horario libre crea cita",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P1: rol patient consulta por paciente",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P2: rol distinto de patient consulta por psicólogo",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F14 - AppointmentController.getAll (3 caminos exactos) F14-B-P3: excepción delegada a handleError",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P1: cita inexistente",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P2: usuario ajeno",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P3: estado inválido",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P4: paciente intenta estado distinto de cancelada",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P5: cita completada",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P6: cita cancelada",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F15 - AppointmentService.updateAppointmentStatus (7 caminos exactos) F15-B-P7: cambio permitido",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P1: cita inexistente",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P2: usuario ajeno",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F16 - AppointmentService.deleteAppointment (3 caminos exactos) F16-B-P3: propietario cambia estado a cancelada",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P1: producto inexistente",
+        "status": "passed",
+        "durationMs": 3
+      },
+      {
+        "name": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P2: producto nuevo usa rama else",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F26 - CartService.addProduct (3 caminos exactos) F26-B-P3: producto existente usa rama if",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F27 - CartService.getCart (1 camino lineal) F27-B-P1: obtiene, recalcula, guarda y popula",
+        "status": "passed",
+        "durationMs": 1
+      }
+    ]
+  },
+  {
+    "file": "backend/tests/rubric.unit.test.js",
+    "cases": [
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 genera código, TTL undefined y correo simulado",
+        "status": "passed",
+        "durationMs": 6
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 genera código, TTL 120 y correo simulado",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 inexistente no envía correo",
+        "status": "passed",
+        "durationMs": 11
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 propaga fallo storage sin éxito falso",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F05 propaga fallo mail sin éxito falso",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 código null rechazado sin guardar",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 código OTHER rechazado sin guardar",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 usuario inexistente",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 contraseña débil no consume el código",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F06 fake Redis conserva estado entre solicitud y uso y evita reutilización",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados getPatients proyecta sin contraseña",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados getPsychologists proyecta sin contraseña",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 rechaza filtro inválido undefined",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 rechaza filtro inválido ",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 rechaza filtro inválido 42",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados F09 escapa metacaracteres y no los interpreta como expresión del usuario",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados EX01 elimina solo el ID solicitado",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F05 F06 F08 F09 y eliminación propia - servicios aislados EX01 inexistente no ejecuta borrado",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación F19 consulta null",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación F19 consulta {\"_id\":\"post1\"}",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación updatePost bloquea inexistente y autor ajeno",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación deletePost bloquea inexistente y autor ajeno",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {}",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"title\":\"Nuevo\"}",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"content\":\"Texto nuevo\"}",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"active\":false}",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación F20 conserva omitidos y aplica definidos {\"title\":\"Nuevo\",\"content\":\"Texto nuevo\",\"active\":false}",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación F21 mock con expectativa de interacción elimina exactamente la publicación propia",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F19 F20 F21 - autor y publicación F20 ID opcional inválido se rechaza",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F28 - persistencia del carrito F27 crea el carrito ausente",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F28 - persistencia del carrito F28 retira solo el producto indicado y recalcula",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F28 - persistencia del carrito F28 vacía productos y total y guarda",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F28 - persistencia del carrito F26 ID obligatorio no pasa validación",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.getPatients responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.getPatients propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.getPsychologists responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.getPsychologists propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.getPsychologistsBySpecialty responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.getPsychologistsBySpecialty propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.deleteUser responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.deleteUser propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.requestPasswordReset responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.requestPasswordReset propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.resetPassword responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble UserController.resetPassword propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble PostController.getPostById responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble PostController.getPostById propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble PostController.updatePost responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble PostController.updatePost propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble PostController.deletePost responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble PostController.deletePost propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble CartController.getCart responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble CartController.getCart propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble CartController.removeProduct responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble CartController.removeProduct propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble CartController.clearCart responde 200 y delega argumentos correctos",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble CartController.clearCart propaga fallo como 500",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble register bloquea confirmación diferente",
+        "status": "passed",
+        "durationMs": 4
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble resetPassword bloquea confirmación diferente",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble F04 encabezado undefined no revoca",
+        "status": "passed",
+        "durationMs": 3
+      },
+      {
+        "name": "Controladores - contratos HTTP con servicio doble F04 encabezado Bearer no revoca",
+        "status": "passed",
+        "durationMs": 1
+      }
+    ]
+  },
+  {
+    "file": "backend/tests/quality.regression.test.js",
+    "cases": [
+      {
+        "name": "F03 - decisiones de validación de credenciales F03-V1  / Morada123! rechaza con MISSING CREDENTIALS",
+        "status": "passed",
+        "durationMs": 11
+      },
+      {
+        "name": "F03 - decisiones de validación de credenciales F03-V1 a@lamorada.test /  rechaza con MISSING CREDENTIALS",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F03 - decisiones de validación de credenciales F03-V1 invalido / Morada123! rechaza con INVALID EMAIL",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F03 - decisiones de validación de credenciales F03-V1 a@lamorada.test / debil rechaza con INVALID PASSWORD",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F03 - decisiones de validación de credenciales F03-V2 acepta credenciales válidas",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F03 - decisiones de validación de credenciales F03-V3 verificación de contraseña true",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F03 - decisiones de validación de credenciales F03-V3 verificación de contraseña false",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F03 - decisiones de validación de credenciales F03-V4 roles permitidos y prohibidos",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F03 - decisiones de validación de credenciales F01/F03 fallo de verificación del hash devuelve falso",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES01 no acepta token sin cabecera",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES02 rechaza token inválido",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES03 sesión revocada o diferente null",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES03 sesión revocada o diferente other-token",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES04 límite de renovación TTL=599",
+        "status": "passed",
+        "durationMs": 2
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES04 límite de renovación TTL=600",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización SES05 indisponibilidad Redis no autoriza",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor undefined",
+        "status": "passed",
+        "durationMs": 4
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor {\"role\":\"patient\"}",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL01 decisión de autor {\"role\":\"psychologist\"}",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F04/F07/F13-F17/F26-F27 - decisiones de sesión y autorización ROL02 sin lista de roles no concede acceso",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 _id fuera del contrato",
+        "status": "passed",
+        "durationMs": 3
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 _id fuera del contrato",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 document_type fuera del contrato",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 name fuera del contrato",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 last_name1 fuera del contrato",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 last_name2 fuera del contrato",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 age fuera del contrato",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 email fuera del contrato",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 phone fuera del contrato",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR01 password fuera del contrato",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR02 longitud ID válida 1",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR02 longitud ID válida 15",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR03 longitud teléfono válida 7",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR03 longitud teléfono válida 15",
+        "status": "passed",
+        "durationMs": 1
+      },
+      {
+        "name": "F01/F02/F07 - particiones de datos de usuario USR04 actualizar sin contraseña conserva validación de otros campos",
+        "status": "passed",
+        "durationMs": 0
+      }
+    ]
+  }
+]

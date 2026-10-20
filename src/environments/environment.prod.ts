@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  API_BASE: 'https://la-morada-back-production.up.railway.app',
+  API_BASE: 'http://localhost:3000',
 };

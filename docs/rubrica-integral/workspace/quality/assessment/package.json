@@ -1,0 +1,16 @@
+{
+  "name": "la-morada-rubrica-integral",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node start.cjs",
+    "test": "node run.cjs",
+    "test:cypress": "cypress run --browser chrome",
+    "test:performance": "node performance.cjs",
+    "report": "node report.cjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "cypress": "16.1.1"
+  }
+}

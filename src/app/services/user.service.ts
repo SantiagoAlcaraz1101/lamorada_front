@@ -1,3 +1,4 @@
+import { environment } from '../../environments/environment';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
@@ -15,7 +16,7 @@ type JwtPayload = {
   user?: { _id?: string; id?: string; name?: string; role?: string; email?: string; phone?: string; age?: number; specialty?: string };
   name?: string;
   email?: string;
-  role?: 'patient' | 'psychologist' | string;
+  role?: string;
   phone?: string;
   age?: number;
   specialty?: string;
@@ -24,19 +25,28 @@ type JwtPayload = {
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
-  private baseUrl = 'https://la-morada-back-production.up.railway.app';
+  private readonly baseUrl = environment.API_BASE;
 
   constructor(
-    private http: HttpClient,
-    @Inject(PLATFORM_ID) private platformId: Object,
-    private authState: AuthStateService,
+    private readonly http: HttpClient,
+    @Inject(PLATFORM_ID) private readonly platformId: Object,
+    private readonly authState: AuthStateService,
   ) {}
 
   // ---------- SSR helpers ----------
   private isBrowser() { return isPlatformBrowser(this.platformId); }
-  private lsGet(key: string): string | null { if (!this.isBrowser()) return null; try { return localStorage.getItem(key); } catch { return null; } }
-  private lsSet(key: string, value: string) { if (!this.isBrowser()) return; try { localStorage.setItem(key, value); } catch {} }
-  private lsRemove(key: string) { if (!this.isBrowser()) return; try { localStorage.removeItem(key); } catch {} }
+  private lsGet(key: string): string | null {
+    if (!this.isBrowser()) return null;
+    try { return localStorage.getItem(key); } catch { return null; }
+  }
+  private lsSet(key: string, value: string) {
+    if (!this.isBrowser()) return;
+    try { localStorage.setItem(key, value); } catch {}
+  }
+  private lsRemove(key: string) {
+    if (!this.isBrowser()) return;
+    try { localStorage.removeItem(key); } catch {}
+  }
 
   // ---------- Token / sesión ----------
   getToken(): string | null { return this.lsGet('token'); }
@@ -59,7 +69,7 @@ export class UserService {
     if (!jwt) return null;
     try {
       const [, payloadB64] = jwt.split('.');
-      let s = (payloadB64 || '').replace(/-/g, '+').replace(/_/g, '/');
+      let s = (payloadB64 || '').replaceAll('-', '+').replaceAll('_', '/');
       const pad = s.length % 4; if (pad) s += '='.repeat(4 - pad);
       const json = atob(s);
       return JSON.parse(json) as T;

@@ -196,7 +196,7 @@ tfoot .total {
 /* Botón morado (Continuar / Vaciar) */
 .btn-primary {
   color: #fff;
-  background: linear-gradient(180deg, #b096ff, #9b7bff 60%, #8f6bff);
+  background: linear-gradient(180deg, #6941c6, #5e35b1 60%, #512da8);
   border: 0;
   box-shadow: 0 12px 28px rgba(143, 107, 255, 0.35);
 }

@@ -1,3 +1,4 @@
+import { environment } from '../../environments/environment';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
@@ -28,7 +29,7 @@ function coerceArray<T = any>(res: any): T[] {
 
 @Injectable({ providedIn: 'root' })
 export class PostService {
-  private readonly baseUrl = 'https://la-morada-back-production.up.railway.app/post';
+  private readonly baseUrl = `${environment.API_BASE}/post`;
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {}
 

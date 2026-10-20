@@ -20,7 +20,7 @@ export class AuthStateService {
 
   state$ = this.stateSub.asObservable();
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private readonly platformId: Object) {}
 
   private isBrowser() { return isPlatformBrowser(this.platformId); }
 

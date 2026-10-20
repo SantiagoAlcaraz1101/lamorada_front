@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>La Morada — Katalon Recorder</title></head><body>
+<table cellpadding="1" cellspacing="1" border="1"><thead><tr><td rowspan="1" colspan="3">KAT-08 — Login con datos CSV positivos y negativos</td></tr></thead><tbody>
+<tr><td>#</td><td>Objetivo: Login con datos CSV positivos y negativos<datalist><option>Objetivo: Login con datos CSV positivos y negativos</option></datalist></td><td></td></tr>
+<tr><td>#</td><td>Esperado: Cada fila valida mensaje, localizador y ruta esperados.<datalist><option>Esperado: Cada fila valida mensaje, localizador y ruta esperados.</option></datalist></td><td></td></tr>
+<tr><td>setTimeout</td><td>15000<datalist><option>15000</option></datalist></td><td></td></tr>
+<tr><td>loadVars</td><td>login.csv<datalist><option>login.csv</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>http://localhost:4200/home<datalist><option>http://localhost:4200/home</option></datalist></td><td></td></tr>
+<tr><td>runScript</td><td>window.localStorage.clear();<datalist><option>window.localStorage.clear();</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>http://localhost:4200/sign-in<datalist><option>http://localhost:4200/sign-in</option></datalist></td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>id=signin-email<datalist><option>id=signin-email</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=signin-email<datalist><option>id=signin-email</option></datalist></td><td>${email}</td></tr>
+<tr><td>type</td><td>id=signin-password<datalist><option>id=signin-password</option></datalist></td><td>${password}</td></tr>
+<tr><td>click</td><td>css=[data-testid=&quot;signin-submit&quot;]<datalist><option>css=[data-testid=&quot;signin-submit&quot;]</option></datalist></td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>${expectedSelector}<datalist><option>${expectedSelector}</option></datalist></td><td></td></tr>
+<tr><td>assertLocation</td><td>glob:*/${expectedPath}<datalist><option>glob:*/${expectedPath}</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>${expectedSelector}<datalist><option>${expectedSelector}</option></datalist></td><td>${expectedText}</td></tr>
+<tr><td>captureEntirePageScreenshot</td><td>KAT-08-${id}<datalist><option>KAT-08-${id}</option></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td></tr>
+</tbody></table>
+</body></html>

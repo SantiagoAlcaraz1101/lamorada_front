@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>La Morada — Katalon Recorder</title></head><body>
+<table cellpadding="1" cellspacing="1" border="1"><thead><tr><td rowspan="1" colspan="3">KAT-06 — Invitado no modifica carrito</td></tr></thead><tbody>
+<tr><td>#</td><td>Objetivo: Invitado no modifica carrito<datalist><option>Objetivo: Invitado no modifica carrito</option></datalist></td><td></td></tr>
+<tr><td>#</td><td>Esperado: Aviso de iniciar sesión; carrito redirige a sign-in.<datalist><option>Esperado: Aviso de iniciar sesión; carrito redirige a sign-in.</option></datalist></td><td></td></tr>
+<tr><td>setTimeout</td><td>15000<datalist><option>15000</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>http://localhost:4200/home<datalist><option>http://localhost:4200/home</option></datalist></td><td></td></tr>
+<tr><td>runScript</td><td>window.localStorage.clear();<datalist><option>window.localStorage.clear();</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>http://localhost:4200/product<datalist><option>http://localhost:4200/product</option></datalist></td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>id=product-search<datalist><option>id=product-search</option></datalist></td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>css=[data-testid=&quot;product-card&quot;]<datalist><option>css=[data-testid=&quot;product-card&quot;]</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=product-search<datalist><option>id=product-search</option></datalist></td><td>Habitos atomicos QA</td></tr>
+<tr><td>click</td><td>css=[data-testid=&quot;product-search-submit&quot;]<datalist><option>css=[data-testid=&quot;product-search-submit&quot;]</option></datalist></td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>css=[data-testid=&quot;product-add&quot;]<datalist><option>css=[data-testid=&quot;product-add&quot;]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>css=[data-testid=&quot;product-add&quot;]<datalist><option>css=[data-testid=&quot;product-add&quot;]</option></datalist></td><td></td></tr>
+<tr><td>waitForText</td><td>css=.banner.err<datalist><option>css=.banner.err</option></datalist></td><td>glob:*Debes iniciar sesión*</td></tr>
+<tr><td>assertText</td><td>css=.banner.err<datalist><option>css=.banner.err</option></datalist></td><td>glob:*Debes iniciar sesión*</td></tr>
+<tr><td>captureEntirePageScreenshot</td><td>KAT-06-guest<datalist><option>KAT-06-guest</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>http://localhost:4200/cart<datalist><option>http://localhost:4200/cart</option></datalist></td><td></td></tr>
+<tr><td>waitForElementPresent</td><td>id=signin-email<datalist><option>id=signin-email</option></datalist></td><td></td></tr>
+<tr><td>assertLocation</td><td>glob:*/sign-in<datalist><option>glob:*/sign-in</option></datalist></td><td></td></tr>
+<tr><td>captureEntirePageScreenshot</td><td>KAT-06-guard<datalist><option>KAT-06-guard</option></datalist></td><td></td></tr>
+</tbody></table>
+</body></html>

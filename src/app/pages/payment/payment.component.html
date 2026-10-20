@@ -18,7 +18,7 @@
           <div class="saved-item__left">
             <div class="chip-brand">••••</div>
             <div class="saved-lines">
-              <div class="saved-number">{{ mask(p.card_number) }}</div>
+              <div class="saved-number">{{ p.card_brand }} · {{ mask(p.card_last4) }}</div>
               <div class="saved-meta">{{ p.card_name }} · vence {{ p.expiration_date }}</div>
             </div>
           </div>

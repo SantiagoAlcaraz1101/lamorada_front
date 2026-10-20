@@ -1,0 +1,6 @@
+.sonar-token
+.sonar-token.*
+.scannerwork/
+.sonar-cache/
+quality/reports/
+quality/.local/

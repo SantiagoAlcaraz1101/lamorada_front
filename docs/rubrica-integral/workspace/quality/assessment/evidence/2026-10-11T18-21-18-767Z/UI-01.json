@@ -1,0 +1,14 @@
+{
+  "viewport": "375x812",
+  "route": "/home",
+  "clientWidth": 360,
+  "scrollWidth": 360,
+  "overflowElements": [
+    {
+      "tag": "DIV",
+      "class": "orb orb-2",
+      "right": 152,
+      "left": -8
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "spec": "cypress\\e2e\\regression.cy.js",
+  "stats": {
+    "duration": 6516,
+    "endedAt": "2026-10-11T18:05:26.218Z",
+    "failures": 1,
+    "passes": 5,
+    "pending": 0,
+    "skipped": 0,
+    "startedAt": "2026-10-11T18:05:19.702Z",
+    "suites": 1,
+    "tests": 6
+  },
+  "tests": [
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1335,
+      "state": "passed",
+      "title": [
+        "Regresión e interfaz",
+        "REG-01 navegar desde inicio al catálogo"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1022,
+      "state": "passed",
+      "title": [
+        "Regresión e interfaz",
+        "REG-02 formulario inválido no envía solicitud"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 697,
+      "state": "passed",
+      "title": [
+        "Regresión e interfaz",
+        "REG-03 error de red visible y recuperación al buscar"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1685,
+      "state": "passed",
+      "title": [
+        "Regresión e interfaz",
+        "REG-04 rutas públicas no producen error fatal"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "failed"
+        }
+      ],
+      "displayError": "AssertionError: expected 430 to be at most 360\n    at Context.eval (webpack://la-morada-rubrica-integral/./cypress/e2e/regression.cy.js:24:69)\n    at getRet (http://localhost:4200/__cypress/runner/cypress_runner.js:120751:20)\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://localhost:4200/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.thenFn (http://localhost:4200/__cypress/runner/cypress_runner.js:120763:66)\n    at Context.then (http://localhost:4200/__cypress/runner/cypress_runner.js:121014:21)",
+      "duration": 1257,
+      "state": "failed",
+      "title": [
+        "Regresión e interfaz",
+        "UI-01 inicio móvil sin desbordamiento horizontal"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 435,
+      "state": "passed",
+      "title": [
+        "Regresión e interfaz",
+        "UI-02 catálogo móvil y moneda consistente"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "height": 670,
+      "name": "REG-01-navegar-desde-inicio-al-cat-logo",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\regression.cy.js\\REG-01-navegar-desde-inicio-al-cat-logo.png",
+      "takenAt": "2026-10-11T18:05:20.722Z",
+      "width": 1264
+    },
+    {
+      "height": 845,
+      "name": "REG-02-formulario-inv-lido-no-env-a-solicitud",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\regression.cy.js\\REG-02-formulario-inv-lido-no-env-a-solicitud.png",
+      "takenAt": "2026-10-11T18:05:21.789Z",
+      "width": 1264
+    },
+    {
+      "height": 670,
+      "name": "REG-03-error-de-red-visible-y-recuperaci-n-al-buscar",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\regression.cy.js\\REG-03-error-de-red-visible-y-recuperaci-n-al-buscar.png",
+      "takenAt": "2026-10-11T18:05:22.551Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "REG-04-rutas-p-blicas-no-producen-error-fatal",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\regression.cy.js\\REG-04-rutas-p-blicas-no-producen-error-fatal.png",
+      "takenAt": "2026-10-11T18:05:24.219Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": null,
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\regression.cy.js\\Regresión e interfaz -- UI-01 inicio móvil sin desbordamiento horizontal (failed).png",
+      "takenAt": "2026-10-11T18:05:24.798Z",
+      "width": 1264
+    },
+    {
+      "height": 2165,
+      "name": "UI-01-inicio-m-vil-sin-desbordamiento-horizontal",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\regression.cy.js\\UI-01-inicio-m-vil-sin-desbordamiento-horizontal.png",
+      "takenAt": "2026-10-11T18:05:25.420Z",
+      "width": 375
+    },
+    {
+      "height": 897,
+      "name": "UI-02-cat-logo-m-vil-y-moneda-consistente",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\regression.cy.js\\UI-02-cat-logo-m-vil-y-moneda-consistente.png",
+      "takenAt": "2026-10-11T18:05:26.039Z",
+      "width": 375
+    }
+  ],
+  "video": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\videos\\regression.cy.js.mp4"
+}

@@ -1,0 +1,376 @@
+{
+  "spec": "cypress\\e2e\\api.cy.js",
+  "stats": {
+    "duration": 5396,
+    "endedAt": "2026-10-11T18:05:17.229Z",
+    "failures": 0,
+    "passes": 17,
+    "pending": 0,
+    "skipped": 0,
+    "startedAt": "2026-10-11T18:05:11.833Z",
+    "suites": 1,
+    "tests": 17
+  },
+  "tests": [
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 245,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-01 salud y cabeceras"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 326,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-02 login correcto sin contraseña expuesta"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 288,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-03 rechazo de credenciales inválidas"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 248,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-04 rechazo de credenciales inválidas"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 278,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-05 rechazo de credenciales inválidas"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 205,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-06 rechazo de credenciales inválidas"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 211,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-07 catálogo y búsqueda existente"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 216,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-08 búsqueda sin coincidencias"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 327,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-09 carrito positivo y cálculo de total"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 356,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-10 cantidad negativa no modifica carrito"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 272,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "API-11 ID inválido y producto inexistente"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 253,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "SEC-01 recursos privados exigen token"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 258,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "SEC-02 token manipulado rechazado"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 443,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "SEC-03 paciente no crea productos"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 464,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "SEC-04 logout revoca sesión"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 223,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "SEC-05 CORS rechaza origen desconocido"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 632,
+      "state": "passed",
+      "title": [
+        "API real — contratos positivos y negativos",
+        "SEC-06 aislamiento entre carritos"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "height": 625,
+      "name": "API-01-salud-y-cabeceras",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-01-salud-y-cabeceras.png",
+      "takenAt": "2026-10-11T18:05:11.914Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-02-login-correcto-sin-contrase-a-expuesta",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-02-login-correcto-sin-contrase-a-expuesta.png",
+      "takenAt": "2026-10-11T18:05:12.243Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-03-rechazo-de-credenciales-inv-lidas",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-03-rechazo-de-credenciales-inv-lidas.png",
+      "takenAt": "2026-10-11T18:05:12.508Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-04-rechazo-de-credenciales-inv-lidas",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-04-rechazo-de-credenciales-inv-lidas.png",
+      "takenAt": "2026-10-11T18:05:12.782Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-05-rechazo-de-credenciales-inv-lidas",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-05-rechazo-de-credenciales-inv-lidas.png",
+      "takenAt": "2026-10-11T18:05:13.107Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-06-rechazo-de-credenciales-inv-lidas",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-06-rechazo-de-credenciales-inv-lidas.png",
+      "takenAt": "2026-10-11T18:05:13.317Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-07-cat-logo-y-b-squeda-existente",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-07-cat-logo-y-b-squeda-existente.png",
+      "takenAt": "2026-10-11T18:05:13.533Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-08-b-squeda-sin-coincidencias",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-08-b-squeda-sin-coincidencias.png",
+      "takenAt": "2026-10-11T18:05:13.740Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-09-carrito-positivo-y-c-lculo-de-total",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-09-carrito-positivo-y-c-lculo-de-total.png",
+      "takenAt": "2026-10-11T18:05:14.093Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-10-cantidad-negativa-no-modifica-carrito",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-10-cantidad-negativa-no-modifica-carrito.png",
+      "takenAt": "2026-10-11T18:05:14.449Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "API-11-ID-inv-lido-y-producto-inexistente",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\API-11-ID-inv-lido-y-producto-inexistente.png",
+      "takenAt": "2026-10-11T18:05:14.748Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "SEC-01-recursos-privados-exigen-token",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\SEC-01-recursos-privados-exigen-token.png",
+      "takenAt": "2026-10-11T18:05:14.951Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "SEC-02-token-manipulado-rechazado",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\SEC-02-token-manipulado-rechazado.png",
+      "takenAt": "2026-10-11T18:05:15.223Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "SEC-03-paciente-no-crea-productos",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\SEC-03-paciente-no-crea-productos.png",
+      "takenAt": "2026-10-11T18:05:15.672Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "SEC-04-logout-revoca-sesi-n",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\SEC-04-logout-revoca-sesi-n.png",
+      "takenAt": "2026-10-11T18:05:16.154Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "SEC-05-CORS-rechaza-origen-desconocido",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\SEC-05-CORS-rechaza-origen-desconocido.png",
+      "takenAt": "2026-10-11T18:05:16.424Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "SEC-06-aislamiento-entre-carritos",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\api.cy.js\\SEC-06-aislamiento-entre-carritos.png",
+      "takenAt": "2026-10-11T18:05:17.081Z",
+      "width": 1264
+    }
+  ],
+  "video": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\videos\\api.cy.js.mp4"
+}

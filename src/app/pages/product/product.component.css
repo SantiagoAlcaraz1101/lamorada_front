@@ -47,11 +47,17 @@
   font-size: 14px;
 }
 .search input {
+  min-width: 0;
   flex: 1;
   border: 0;
   outline: 0;
   background: transparent;
   color: var(--lm-ink);
+}
+
+@media (max-width: 480px) {
+  .search { min-width: 0; width: 100%; }
+  .grid { grid-template-columns: minmax(0, 1fr); }
 }
 .btn {
   white-space: nowrap;
@@ -66,7 +72,7 @@
   letter-spacing: 0.2px;
   cursor: pointer;
   color: #fff;
-  background: linear-gradient(180deg, #b096ff, #9b7bff 60%, #8f6bff);
+  background: linear-gradient(180deg, #6341ae, #57379f 60%, #4c2e90);
   box-shadow: 0 10px 26px rgba(143, 107, 255, 0.35);
   transition: filter 0.15s ease, transform 0.06s ease, box-shadow 0.2s ease;
 }
@@ -149,7 +155,7 @@
   padding: 10px 12px;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(180deg, #b096ff, #9b7bff 60%, #8f6bff);
+  background: linear-gradient(180deg, #6941c6, #5e35b1 60%, #512da8);
   box-shadow: 0 10px 26px rgba(143, 107, 255, 0.28);
   transition: filter 0.15s ease, transform 0.06s ease, box-shadow 0.2s ease;
 }

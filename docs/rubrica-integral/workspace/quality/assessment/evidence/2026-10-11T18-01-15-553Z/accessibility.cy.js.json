@@ -1,0 +1,229 @@
+{
+  "spec": "cypress\\e2e\\accessibility.cy.js",
+  "stats": {
+    "duration": 11503,
+    "endedAt": "2026-10-11T18:05:09.292Z",
+    "failures": 0,
+    "passes": 10,
+    "pending": 0,
+    "skipped": 0,
+    "startedAt": "2026-10-11T18:04:57.789Z",
+    "suites": 1,
+    "tests": 10
+  },
+  "tests": [
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 2411,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-01 auditoría /home"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 783,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-02 auditoría /sign-in"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 814,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-03 auditoría /product"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 944,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-04 auditoría /sign-up"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 629,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-05 auditoría /password-request"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 988,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-06 auditoría /profile"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 992,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-07 auditoría /post"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1296,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-08 salto de teclado al contenido"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1313,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-09 campos login y error accesible"
+      ]
+    },
+    {
+      "attempts": [
+        {
+          "state": "passed"
+        }
+      ],
+      "displayError": null,
+      "duration": 1237,
+      "state": "passed",
+      "title": [
+        "Accesibilidad WCAG 2.1 A/AA — axe y comprobaciones funcionales",
+        "A11Y-10 carrito autenticado"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "height": 1071,
+      "name": "A11Y-01-auditor-a-home",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-01-auditor-a-home.png",
+      "takenAt": "2026-10-11T18:04:59.800Z",
+      "width": 1264
+    },
+    {
+      "height": 845,
+      "name": "A11Y-02-auditor-a-sign-in",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-02-auditor-a-sign-in.png",
+      "takenAt": "2026-10-11T18:05:00.735Z",
+      "width": 1264
+    },
+    {
+      "height": 670,
+      "name": "A11Y-03-auditor-a-product",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-03-auditor-a-product.png",
+      "takenAt": "2026-10-11T18:05:01.538Z",
+      "width": 1264
+    },
+    {
+      "height": 1190,
+      "name": "A11Y-04-auditor-a-sign-up",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-04-auditor-a-sign-up.png",
+      "takenAt": "2026-10-11T18:05:02.403Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "A11Y-05-auditor-a-password-request",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-05-auditor-a-password-request.png",
+      "takenAt": "2026-10-11T18:05:03.172Z",
+      "width": 1264
+    },
+    {
+      "height": 666,
+      "name": "A11Y-06-auditor-a-profile",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-06-auditor-a-profile.png",
+      "takenAt": "2026-10-11T18:05:04.066Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "A11Y-07-auditor-a-post",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-07-auditor-a-post.png",
+      "takenAt": "2026-10-11T18:05:05.089Z",
+      "width": 1264
+    },
+    {
+      "height": 1071,
+      "name": "A11Y-08-salto-de-teclado-al-contenido",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-08-salto-de-teclado-al-contenido.png",
+      "takenAt": "2026-10-11T18:05:06.299Z",
+      "width": 1264
+    },
+    {
+      "height": 859,
+      "name": "A11Y-09-campos-login-y-error-accesible",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-09-campos-login-y-error-accesible.png",
+      "takenAt": "2026-10-11T18:05:07.749Z",
+      "width": 1264
+    },
+    {
+      "height": 625,
+      "name": "A11Y-10-carrito-autenticado",
+      "path": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\screenshots\\accessibility.cy.js\\A11Y-10-carrito-autenticado.png",
+      "takenAt": "2026-10-11T18:05:08.965Z",
+      "width": 1264
+    }
+  ],
+  "video": "C:\\Users\\user\\OneDrive\\Escritorio\\U\\Semestres\\Semestre 7\\Validación y verficación\\LaMorada\\quality\\assessment\\evidence\\2026-10-11T18-01-15-553Z\\videos\\accessibility.cy.js.mp4"
+}

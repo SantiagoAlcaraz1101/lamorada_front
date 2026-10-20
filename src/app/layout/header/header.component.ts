@@ -1,6 +1,7 @@
-import { Component, inject, PLATFORM_ID } from '@angular/core';
+import { Component, inject, PLATFORM_ID, OnInit } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterLink, Router } from '@angular/router';
+import { firstValueFrom } from 'rxjs';
 import { UserService } from '../../services/user.service';
 import { AuthStateService } from '../../core/state/auth-state.service';
 
@@ -11,11 +12,11 @@ import { AuthStateService } from '../../core/state/auth-state.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent {
-  private userSvc = inject(UserService);
-  private router = inject(Router);
-  private platformId = inject(PLATFORM_ID);
-  private authState = inject(AuthStateService);
+export class HeaderComponent implements OnInit {
+  private readonly userSvc = inject(UserService);
+  private readonly router = inject(Router);
+  private readonly platformId = inject(PLATFORM_ID);
+  private readonly authState = inject(AuthStateService);
 
   isLogged = false;
   role: 'patient' | 'psychologist' | null = null;
@@ -36,7 +37,7 @@ export class HeaderComponent {
   }
 
   async onLogout() {
-    try { await this.userSvc.logout().toPromise(); } catch {}
+    try { await firstValueFrom(this.userSvc.logout()); } catch {}
     this.userSvc.clearToken();               // limpia storage + emite estado
     this.router.navigateByUrl('/sign-in');   // UI coherente
   }

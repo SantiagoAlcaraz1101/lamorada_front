@@ -303,6 +303,8 @@
 
 /* Responsive tweaks */
 @media (max-width: 720px) {
+  .hl-card, .hl-copy { min-width: 0; }
+  .hl-art { flex: 0 0 72px; width: 72px; }
   .n-card {
     grid-template-columns: 1fr;
   }
@@ -311,6 +313,10 @@
   }
   .n-actions input {
     flex: 1;
+    min-width: 0;
+    width: 100%;
     max-width: 100%;
   }
+  .n-actions { flex-wrap: wrap; }
+  .n-actions button { flex-shrink: 0; }
 }

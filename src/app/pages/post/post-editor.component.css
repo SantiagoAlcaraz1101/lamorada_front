@@ -166,7 +166,7 @@ button {
   border: 1px solid #e6dcff;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(180deg, #b096ff, #9b7bff 60%, #8f6bff);
+  background: linear-gradient(180deg, #6941c6, #5e35b1 60%, #512da8);
   box-shadow: 0 10px 26px rgba(143, 107, 255, 0.28);
   cursor: pointer;
 }

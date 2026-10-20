@@ -162,7 +162,7 @@ code {
 .btn.primary[disabled] {
   background: #bba3ff;
   border-color: #bba3ff;
-  color: #fff;
+  color: #2a173d;
   cursor: not-allowed;
 }
 

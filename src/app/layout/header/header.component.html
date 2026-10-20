@@ -1,7 +1,7 @@
 <header class="site-header">
   <nav class="nav" aria-label="Principal">
     <!-- Marca -->
-    <a routerLink="/home" class="brand" aria-label="Ir al inicio">
+    <a routerLink="/home" class="brand" aria-label="LaMorada: ir al inicio">
       <img
         src="assets/lamorada-logo.png"
         alt="LaMorada"
@@ -41,7 +41,7 @@
         {{ name || role || 'Usuario' }}
       </span>
 
-      <button type="button" class="btn-ghost" (click)="onLogout()">Salir</button>
+      <button type="button" class="btn-ghost" data-testid="logout" (click)="onLogout()">Salir</button>
     </ng-container>
 
     <!-- Invitado -->
