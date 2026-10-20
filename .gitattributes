@@ -1,5 +1,5 @@
 # Código con finales de línea estables; archivos históricos conservan sus bytes.
-/src/** text eol=lf
+/src/** text=auto eol=lf
 /package.json text eol=lf
 /package-lock.json text eol=lf
 /README.md text eol=lf
